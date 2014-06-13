@@ -1,0 +1,26 @@
+// readd some outdated bourbon functionality (still needed some times)
+@mixin magic_prefixer ($property, $value) {
+	-webkit-#{$property}: $value;
+	   -moz-#{$property}: $value;
+	    -ms-#{$property}: $value;
+	     -o-#{$property}: $value;
+	        #{$property}: $value;
+}
+
+// was outdated since bourbon 3.0
+@mixin box-shadow ( $shadow-1, $shadow-2: false, $shadow-3: false, $shadow-4: false, $shadow-5: false, $shadow-6: false, $shadow-7: false, $shadow-8: false, $shadow-9: false) {
+    $full: compact($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9);
+    @include magic_prefixer(box-shadow, $full);
+}
+
+@mixin border-radius ($radius) {
+	@include magic_prefixer(border-radius, $radius);
+}
+
+@mixin corner_border_radius($radius,$corner) {
+	@include magic_prefixer(border-#{$corner}-radius, $radius);
+}
+
+@mixin spezial_radius($borders...) {
+	@include magic_prefixer(border-radius, $borders);
+}

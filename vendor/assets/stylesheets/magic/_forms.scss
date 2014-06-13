@@ -1,0 +1,42 @@
+@mixin selection {
+  ::-moz-selection{ @content; }
+  ::selection{ @content; }
+}
+
+@mixin all_inputs {
+	input[type="color"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="email"],
+	input[type="month"],
+	input[type="number"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="text"],
+	input[type="time"],
+	input[type="week"],
+	input[type="url"] { @content; }
+}
+
+@mixin all_form_elements {
+	input[type="color"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="email"],
+	input[type="month"],
+	input[type="number"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="text"],
+	input[type="time"],
+	input[type="week"],
+	input[type="url"],
+	select,
+	textarea,
+	.select2-container,
+	.token-input-list { @content; }
+}

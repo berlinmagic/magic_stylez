@@ -1,0 +1,59 @@
+// before sm 
+@mixin responsiveStep-xs {
+	@media only screen and (min-width: 490px) {
+		@content;
+	}
+}
+@mixin responsiveStep-sm {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+@mixin responsiveStep-md {
+	@media only screen and (min-width: 992px) {
+		@content;
+	}
+}
+@mixin responsiveStep-lg {
+	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}
+@mixin responsiveStep-xl {
+	@media only screen and (min-width: 1600px) {
+		@content;
+	}
+}
+@mixin responsiveStep-xxl {
+	@media only screen and (min-width: 2000px) {
+		@content;
+	}
+}
+
+
+
+@mixin responsiveStep-xs-only {
+	@media only screen and (max-width: 767px) {
+		@content;
+	}
+}
+@mixin responsiveStep-sm-only {
+	@media only screen and (min-width: 768px) and (max-width: 991px) {
+		@content;
+	}
+}
+@mixin responsiveStep-md-only {
+	@media only screen and (min-width: 992px) and (max-width: 1199px) {
+		@content;
+	}
+}
+@mixin responsiveStep-lg-only {
+	@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+		@content;
+	}
+}
+@mixin responsiveStep-xl-only {
+	@media only screen and (min-width: 1600px) and (max-width: 1999px) {
+		@content;
+	}
+}

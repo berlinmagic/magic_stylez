@@ -33,4 +33,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'jquery-rails',    '>= 3.1.0'
   s.add_development_dependency 'uglifier'
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency "magic_stylez"
 end

@@ -44,7 +44,7 @@ module MagicStylez
     private
 
     def register_rails_engine
-      require 'bootstrap-sass/engine'
+      require 'magic_stylez/engine'
       require 'autoprefixer-rails'
     end
   end
