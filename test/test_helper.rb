@@ -2,6 +2,12 @@
 ENV["RAILS_ENV"] = "test"
 
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
+
+require 'test/unit'
+
+require 'sass'
+require 'lib/bootstrap-sass/sass_functions'
+
 require "rails/test_help"
 
 Rails.backtrace_cleaner.remove_silencers!
