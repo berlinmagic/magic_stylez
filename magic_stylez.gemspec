@@ -1,23 +1,28 @@
 $:.push File.expand_path("../lib", __FILE__)
-
-# Maintain your gem's version:
 require "magic_stylez/version"
 
-# Describe your gem and declare its dependencies:
+
 Gem::Specification.new do |s|
   s.name        = "magic_stylez"
   s.version     = MagicStylez::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["Torsten Wetzel"]
+  s.email       = ["torstenwetzel@berlinmagic.com"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of MagicStylez."
-  s.description = "TODO: Description of MagicStylez."
+  s.summary     = "A set of sass helper depending on bourbon and bootstrap-sass."
+  s.description = "Lots of styles and helpers we used for several projects."
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
+  # => s.files      = `git ls-files`.split("\n")
+  # => s.test_files = `git ls-files -- test/*`.split("\n")
 
-  s.add_dependency "rails", "~> 4.1.1"
+  # s.add_dependency "rails", "~> 4.1.1"
+  
+  s.add_dependency "rails", ">= 3.1.0"
+  s.add_runtime_dependency 'sass',            '~> 3.2'
+  s.add_runtime_dependency 'bootstrap-sass',  '~> 3.1.1'
+  s.add_runtime_dependency 'bourbon',         '~> 4.0.2'
 
   s.add_development_dependency "sqlite3"
 end
