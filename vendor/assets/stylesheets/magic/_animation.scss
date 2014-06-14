@@ -1,3 +1,0 @@
-@mixin rotation( $rotate ) {
-	@include magic_prefixer(transform, rotate(#{ $rotate }deg));
-}
