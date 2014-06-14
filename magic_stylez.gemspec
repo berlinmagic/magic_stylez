@@ -35,6 +35,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'eco'
   s.add_development_dependency 'uglifier'
   s.add_development_dependency "sqlite3"
-  s.add_development_dependency "actionpack-page_caching"
-  s.add_development_dependency "actionpack-action_caching"
 end
