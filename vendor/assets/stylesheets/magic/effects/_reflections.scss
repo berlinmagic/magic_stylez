@@ -1,0 +1,7 @@
+@mixin bottom-reflect( $size: 1px, $blur: 50, $stop: 60 ) {
+	$that_gradient: "linear, left top, left bottom, from(transparent), color-stop(0.#{$stop}, transparent), to(rgba(255,255,255,0.#{$blur}))";
+	-webkit-box-reflect: below $size -webkit-gradient(#{$that_gradient});
+	-moz-box-reflect: below $size -moz-gradient(#{$that_gradient});
+	-o-box-reflect: below $size -o-gradient(#{$that_gradient});
+	box-reflect: below $size gradient(#{$that_gradient});
+}

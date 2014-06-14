@@ -1,0 +1,255 @@
+@mixin make_shadows($horizontal, $vertical, $blur, $size, $color, $times) {
+	$shdw: '';
+	$seprat: "";
+	@while $times > 0 {
+		@if $times > 1 {
+			$seprat: ", ";
+		} @else {
+			$seprat: "";
+		}
+		$shdw: $shdw + "#{$horizontal} #{$vertical} #{$blur} #{$size} #{$color}#{$seprat}";
+		$times: $times - 1;
+	}
+	// @debug $shdw;
+	@include box-shadow( #{$shdw} );
+}
+
+
+
+
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+// // //     B O X - S H A D O W S
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+
+
+@mixin raised_shadow( $color, $times: 3, $horizontal: 0, $vertical: 10px, $blur: 10px, $size: -10px ) {
+	position: relative;
+	display: block;
+	@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
+}
+
+@mixin pseudo_raised_shadow($color,$times:3,$gap:10px,$radius:3px,$horizontal:0,$vertical:3px,$blur:7px,$size:0){
+	position: relative;
+	display: block;
+	// z-index: 3;
+	&:before {
+		content: ""; display: block; position: absolute; width:auto;
+		top: 0;
+		right: #{$gap};
+		left: #{$gap};
+		bottom: 0;
+		border: solid 1px #ccc;
+		@include border-radius( #{$radius} );
+		@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
+		z-index: -2;
+	}
+}
+
+@mixin lifted_shadow( $color, $times: 3, $horizontal: 0, $vertical: 15px, $blur: 10px, $size: 0 ) {
+	position: relative;
+	display: block;
+	&:before, &:after {
+		content: ""; display: block; position: absolute;
+		bottom:15px;
+		width:50%;
+		height:20%;
+		z-index: -2;
+		@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
+	}
+	&:before {
+		left:10px;
+		@include rotation(-3);
+	}
+	&:after {
+		right:10px;
+		@include rotation(3);
+	}
+}
+
+@mixin perspective_shadow( $color, $times: 3, $degre: 30, $blur: 10px ) {
+	position: relative;
+	display: block;
+	&:before, &:after {
+		content: ""; display: block; position: absolute;
+		background: transparent;
+		left: 80px;
+		bottom:5px;
+		right:20px;
+		height:35%;
+		z-index: -2;
+		@include make_shadows(-80px, 0, $blur, 0, $color, $times);
+			-webkit-transform:skew(#{$degre}deg);
+				 -moz-transform:skew(#{$degre}deg);
+					-ms-transform:skew(#{$degre}deg);
+					 -o-transform:skew(#{$degre}deg);
+							transform:skew(#{$degre}deg);
+		-webkit-transform-origin:0 100%;
+			 -moz-transform-origin:0 100%;
+				-ms-transform-origin:0 100%;
+				 -o-transform-origin:0 100%;
+						transform-origin:0 100%;
+	}
+}
+
+@mixin vertical_curves( $color, $times: 3, $horizontal: 0, $vertical: 0, $blur: 15px, $size: 0 ) {
+	position: relative;
+	display: block;
+	&:before {
+		content: ""; display: block; position: absolute;
+		top: 10px; bottom: 10px;
+		left: 0; right: 0;
+		z-index: -2;
+		@include elipse( 10, 100 );
+		@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
+	}
+}
+
+@mixin horizontal_curves( $color, $times: 3, $horizontal: 0, $vertical: 0, $blur: 15px, $size: 0 ) {
+	position: relative;
+	display: block;
+	&:before {
+		content: ""; display: block; position: absolute;
+		top: 0; bottom: 0;
+		left: 10px; right: 10px;
+		z-index: -2;
+		@include elipse( 100, 10 );
+		@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
+	}
+}
+
+@mixin vertical_shine( $color, $times: 1, $width: 3px, $blur: 10px, $size: 0 ) {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	&:before, &:after {
+		content: ""; display: block; position: absolute; z-index: 55;
+	}
+	&:before {
+		top:5px; bottom: 5px;
+		width: 100px; left: -100px;
+		@include elipse( 50, 100 );
+		@include make_shadows($width, 0, $blur, $size, $color, $times);
+	}
+	&:after {
+		top:5px; bottom: 5px;
+		width: 100px; right: -100px;
+		@include elipse( 50, 100 );
+		@include make_shadows(-$width, 0, $blur, $size, $color, $times);
+	}
+}
+
+@mixin horizontal_shine( $color, $times: 1, $width: 3px, $blur: 10px, $size: 0 ) {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	&:before, &:after {
+		content: ""; display: block; position: absolute; z-index: 55;
+	}
+	&:before {
+		left:5px; right: 5px;
+		height: 100px; top: -100px;
+		@include elipse( 100, 50 );
+		@include make_shadows(0, $width, $blur, $size, $color, $times);
+	}
+	&:after {
+		left:5px; right: 5px;
+		height: 100px; bottom: -100px;
+		@include elipse( 100, 50 );
+		@include make_shadows(0, -$width, $blur, $size, $color, $times);
+	}
+}
+
+@mixin single_curve( $color, $times: 3, $position: left, $width: 5px, $blur: 5px, $size: 0, $corner: 100 ) {
+	$that: "";
+	$horizontal: 0;
+	$vertical: 0;
+	position: relative;
+	display: block;
+	&:before {
+		content:""; position:absolute; z-index: -2;
+		@if $position == top {
+			left: 5px; right: 5px;
+			top: 0; bottom: 5px;
+			$horizontal: 0; $vertical: -#{$width};
+			// @include elipse( #{$corner}, #{round($corner / 2)} );
+			@include elipsis( $corner, round($corner / 10) );
+		} @else if $position == bottom {
+			left: 5px; right: 5px;
+			top: 5px; bottom: 0;
+			$horizontal: 0; $vertical: #{$width};
+			// @include elipse( #{$corner}, #{round($corner / 2)} );
+			@include elipsis( $corner, round($corner / 10) );
+		} @else if $position == right {
+			left: 5px; right: 0;
+			top: 5px; bottom: 5px;
+			$horizontal: #{$width}; $vertical: 0;
+			// @include elipse( #{round($corner / 2)}, #{$corner} );
+			@include elipsis( round($corner / 10), $corner );
+		} @else {
+			left: 0; right: 5px;
+			top: 5px; bottom: 5px;
+			$horizontal: -#{$width}; $vertical: 0;
+			// @include elipsis( round($corner / 2), $corner );
+			@include elipsis( round($corner / 10), $corner );
+		}
+		background: transparent;
+		@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
+	}
+}
+
+
+@mixin single_shine( $color, $times: 3, $position: right, $width: 5px, $blur: 5px, $size: 0, $corner: 100 ) {
+	$that: "";
+	$horizontal: 0;
+	$vertical: 0;
+	position: relative;
+	display: block;
+	overflow:hidden;
+	&:before {
+		content:""; position:absolute; z-index: 3;
+		
+		@if $position == top {
+			left: 5px; right: 5px;
+			height: 100px;
+			top: -100px;
+			$horizontal: 0; $vertical: #{$width};
+			@include elipse( #{$corner}, #{round($corner / 2)} );
+		} @else if $position == bottom {
+			left: 5px; right: 5px;
+			height: 100px;
+			bottom: -100px;
+			$horizontal: 0; $vertical: -#{$width};
+			@include elipse( #{$corner}, #{round($corner / 2)} );
+		} @else if $position == right {
+			top:5px; bottom: 5px;
+			width: 100px;
+			right: -100px;
+			$horizontal: -#{$width}; $vertical: 0;
+			@include elipsis( ($corner / 2), $corner );
+		} @else {
+			top:5px; bottom: 5px;
+			width: 100px;
+			left: -100px;
+			$horizontal: #{$width}; $vertical: 0;
+			@include elipsis( ($corner / 2), $corner );
+		}
+		background: transparent;
+		@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
+	}
+}
+
+
+
+@mixin paper_shadow( $color, $times: 3 ) {
+	position: relative;
+	display: block;
+	&:before {
+		content:""; position:absolute; z-index: -2;
+		// @include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
+		top: 0; bottom:10px;
+		left: 0; right: 0;
+
+		@include make_shadows(0, 0, 5px, 3px, $color, $times);
+		@include spezial_radius( 10px 10px 10px 10px / 10px 10px 300px 300px )
+	}
+}

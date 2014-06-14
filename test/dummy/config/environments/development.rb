@@ -1,4 +1,12 @@
 Rails.application.configure do
+  
+  
+  # => config.page_cache_directory = Rails.public_path
+  # => config.action_controller.page_cache_directory = Rails.public_path
+  # => config.perform_caching = true
+  # => config.cache_store = ActionController::Base.cache_store
+  
+  
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

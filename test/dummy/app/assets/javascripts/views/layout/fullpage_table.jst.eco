@@ -1,0 +1,76 @@
+<div class="fullpage-table" id="banner-one">
+  <div class="table-row">
+    <div class="banner-box responsive-hero with-footer with-header fill berlin">
+      <div class="banner-header">
+        <div class="corset">
+          <h1 class="loud">Fullpage Table</h1>
+        </div>
+      </div>
+      
+      <div class="banner-content">
+        <div class="corset">
+          <p class="loud">This is a fullpage-table, it allways uses fullpage-height<br/>(if content fits in).</p>
+        </div>
+      </div>
+      
+      <div class="banner-footer" id="sign_up_banner">
+        <div class="corset">
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+              <!--<a href="#" class="btn btn-success btn-block btn-lg">Sign up now</a>-->
+              <button class="btn btn-success btn-block help_arrow" data-intro="Go click me!">
+                Click Me
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="section shine-top">
+  <div class="corset">
+    <h2>Usage</h2>
+    <pre>
+    <code>
+&lt;div class=&quot;fullpage-table&quot; id=&quot;front-banner&quot;&gt;
+  &lt;div class=&quot;table-row&quot;&gt;<br/>    &lt;div class=&quot;banner-box responsive-hero with-footer with-header fill wood&quot;&gt;<br/>      &lt;div class=&quot;banner-header&quot;&gt;<br/>        &lt;div class=&quot;corset&quot;&gt;<br/>          &lt;h1 class=&quot;loud&quot;&gt;Fullpage Table&lt;/h1&gt;<br/>        &lt;/div&gt;<br/>      &lt;/div&gt;<br/>      <br/>      &lt;div class=&quot;banner-content&quot;&gt;<br/>        &lt;div class=&quot;corset&quot;&gt;<br/>          &lt;p class=&quot;loud&quot;&gt;This is a fullpage-table, it allways uses fullpage-height (if content fits in).&lt;/p&gt;<br/>        &lt;/div&gt;<br/>      &lt;/div&gt;<br/>      <br/>      &lt;div class=&quot;banner-footer&quot; id=&quot;sign_up_banner&quot;&gt;<br/>        &lt;div class=&quot;corset&quot;&gt;<br/>          &lt;div class=&quot;row&quot;&gt;<br/>            &lt;div class=&quot;col-sm-4 col-sm-offset-4&quot;&gt;<br/>              &lt;a href=&quot;#&quot; class=&quot;btn btn-success btn-block btn-lg&quot;&gt;Sign up now&lt;/a&gt;<br/>            &lt;/div&gt;<br/>          &lt;/div&gt;<br/>        &lt;/div&gt;<br/>      &lt;/div&gt;<br/>      <br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;
+    </code>
+    </pre>
+  </div>
+</div>
+
+<div class="fullpage-table" id="banner-two">
+  <div class="table-row">
+    <div class="banner-box responsive-hero with-footer with-header fill berlin fixed-bg">
+      <div class="banner-header">
+        <div class="corset">
+          <h1 class="loud">Fullpage Table <small>with fixed Background</small></h1>
+        </div>
+      </div>
+      
+      <div class="banner-content">
+        <div class="corset">
+          <p class="loud">This is a fullpage-table, it allways uses fullpage-height<br/>(if content fits in).</p>
+        </div>
+      </div>
+      
+      <div class="banner-footer" id="sign_up_banner">
+        <div class="corset">
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+              <!--<a href="#" class="btn btn-success btn-block btn-lg">Sign up now</a>-->
+              <button class="btn btn-success btn-block help_arrow" data-intro="Go click me!">
+                Click Me
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

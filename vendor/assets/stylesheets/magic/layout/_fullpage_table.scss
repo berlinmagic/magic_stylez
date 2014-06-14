@@ -1,0 +1,176 @@
+
+html, body, #body {
+	height: 100%;
+	// overflow-y: auto;
+}
+
+.fullpage-table, div.table {
+	width: 100%;
+	display: block;
+	position: relative;
+	& > .table-row, & > .tr {
+		display: block;
+		position: relative;
+		& > * {
+			display: block;
+			position: relative;
+			
+			
+		}
+	}
+}
+
+
+
+
+.fixed-table, .layout-table, .inline_table {
+    display: block; position: relative;
+	padding: 0; margin: 0;
+    & > * {
+        display: block; position: relative;
+        padding: 0; margin: 0;
+        vertical-align: top;
+		&.top { vertical-align: top; }
+		&.middle { vertical-align: middle; }
+		&.bottom { vertical-align: bottom; }
+		
+    }
+}
+
+
+.inline_table, .newsfeed {
+	display: table; position: relative;
+	padding: 0; margin: 0;
+	width: 100%;
+	& > * {
+		display: table-cell;
+		border-collapse: separate;
+		&.top { vertical-align: top; }
+		&.middled { vertical-align: middle; }
+		&.bottom { vertical-align: bottom; }
+		&.aside {
+			width: 220px;
+		}
+	}
+	&.grid > * {
+		padding: 10px;
+		&:first-child { padding-left: 0; }
+		&:last-child { padding-right: 0; }
+	}
+}
+
+
+
+
+
+// basics/magic
+// min-width: 750px
+@include responsiveStep-sm {
+	.fullpage-table {
+		height: 100%;
+		max-height: 800px;
+		display: table;
+		top: 0; left: 0;
+		// z-index: 1;
+		& > .table-row {
+			display: table-row;
+			& > * {
+				display: table-cell;
+				vertical-align: middle;
+				// &.banner-box.responsive-hero > .corset { padding-bottom: 100px; }
+				.banner-footer { position: absolute; bottom: 0; left: 0; right: 0; }
+			}
+			& > .table-footer { 
+				height: 50px; line-height: 50px; background-color: #fff;
+				& > .corset { max-height: 50px; overflow: hidden;}
+			}
+			&.top, &.top > * { vertical-align: top; }
+			&.middle, &.middle > * { vertical-align: middle; }
+			&.bottom, &.bottom > * { vertical-align: bottom; }
+			
+		}
+		.fill { height: 100%; }
+	}
+	div.table {
+		height: 100%;
+		display: table;
+		top: 0; left: 0;
+		& > .tr, & > .row, & > .table-row {
+			display: table-row;
+			& > .td, & > .th, & > .cell {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 10px;
+				&.top { vertical-align: top; }
+				&.bottom { vertical-align: bottom; }
+			}
+		}
+	}
+	
+	.fixed-table, .layout-table {
+		display: table;
+	    width: 100%;
+		& > * {
+	        display: table-cell;
+	        border-collapse: separate;
+			&.feature-pic {
+				width: 140px;
+			}
+	    }
+		&.grid > * {
+			padding: 10px;
+			&:first-child { padding-left: 0; }
+			&:last-child { padding-right: 0; }
+		}
+	}
+	
+	.fixed-table {
+	    table-layout:fixed;
+	    & > * {
+	        border-spacing: 10px;
+	    }
+		&.boxed { max-width: 750px; margin: 0 auto; }
+	}
+
+	
+	
+}
+
+@include responsiveStep-md {
+	.fixed-table {
+		&.boxed { max-width: 970px; } 
+		& > * {
+			// .header-text-home { padding: 0; }
+			.img-ipad-home { margin: 0 10%; }
+	    }
+	}
+}
+
+@include responsiveStep-lg {
+	.fixed-table {
+		&.boxed { max-width: 1170px; }
+		// & > * {
+		// 	.header-text-home { padding: 0; }
+		// 	.img-ipad-home { margin: 0 20%; }
+	    // }
+	}
+}
+
+
+.modal-content .fullpage-table {
+	display: block;
+	& > .table-row {
+		display: block;
+		& > * { display: block; }
+	}
+}
+
+
+// min-width: 1400px
+// @include responsiveStep-2 {
+// 	.responsive-hero { 
+// 		h1.loud { font-size: 80px; line-height: 90px; font-weight: 700; }
+// 		p.loud { font-size: 30px; line-height: 40px; }
+// 	}
+// }
+

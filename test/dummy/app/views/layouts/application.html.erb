@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dummy</title>
+  <title>Magic-Stylez</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" charset="utf-8">
+    App = {};
+    App.Environment = "<%= Rails.env.to_s %>";
+  </script>
 </head>
 <body>
   
   <%= render "front/aside" %>
-  
-  <%= yield %>
+  <div class="clearfix"></div>
+  <div id="app_content">
+    <%= yield %>
+  </div>
+  <div class="clearfix"></div>
   
 </body>
 </html>

@@ -10,4 +10,6 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//- require magic-stylez
+//= require jquery
+//= require_tree ./views
+//= require magic-stylez

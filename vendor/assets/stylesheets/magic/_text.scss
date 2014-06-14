@@ -28,3 +28,14 @@
 								 0px -1px 0 #{$black},
 								-1px 0px 0 #{$black}" 	 );
 }
+
+@mixin text_outline( $color: #000, $blur: 1px ) {
+	text-shadow:        -1px  1px #{$blur} #{$color}, 
+						 0px  1px #{$blur} #{$color}, 
+						 1px  0px #{$blur} #{$color}, 
+						 1px  1px #{$blur} #{$color}, 
+						 1px -1px #{$blur} #{$color}, 
+						 0px -1px #{$blur} #{$color}, 
+						-1px  0px #{$blur} #{$color}, 
+						 1px -1px #{$blur} #{$color};
+}
