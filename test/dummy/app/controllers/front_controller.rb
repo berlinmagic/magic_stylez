@@ -1,9 +1,7 @@
 class FrontController < ApplicationController
   
-  caches_page :start
-  
   def start
-    
+    Rails.logger.info "Front - Start"
   end
   
 end

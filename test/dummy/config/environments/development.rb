@@ -42,4 +42,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  config.assets.prefix = '/assets'
+  config.action_controller.asset_host = "https://berlinmagic.github.io/magic_stylez"
+  
 end
