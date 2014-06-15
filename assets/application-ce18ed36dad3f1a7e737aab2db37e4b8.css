@@ -302,8 +302,8 @@ th {
     border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("/assets/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("/assets/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/assets/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/assets/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/assets/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("//berlinmagic.github.io/magic_stylez/assets/bootstrap/glyphicons-halflings-regular-98249245bc06de908bee7fd5bf298d60.eot");
+  src: url("//berlinmagic.github.io/magic_stylez/assets/bootstrap/glyphicons-halflings-regular-98249245bc06de908bee7fd5bf298d60.eot?#iefix") format("embedded-opentype"), url("//berlinmagic.github.io/magic_stylez/assets/bootstrap/glyphicons-halflings-regular-388a4c2c22cad7c06492b1916e16dedf.woff") format("woff"), url("//berlinmagic.github.io/magic_stylez/assets/bootstrap/glyphicons-halflings-regular-ff989be9e5d5cfe89e6be80c2fab094e.ttf") format("truetype"), url("//berlinmagic.github.io/magic_stylez/assets/bootstrap/glyphicons-halflings-regular-0eba5e8b4b2b570146996c8e9cc06cf8.svg#glyphicons_halflingsregular") format("svg"); }
 .glyphicon {
   position: relative;
   top: 1px;
@@ -5789,7 +5789,7 @@ html, body, #body {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
-    background-image: url(/assets/magic/bgs/2013-berlin.jpg); }
+    background-image: url(//berlinmagic.github.io/magic_stylez/assets/magic/bgs/2013-berlin-d10c010f0332ccb64505e3b03fce3454.jpg); }
   .banner-box.responsive-hero.fixed-bg {
     background-attachment: fixed; }
   .banner-box.responsive-hero .banner-footer {
@@ -6205,7 +6205,7 @@ ul {
     bottom: 100%;
     left: 50%;
     margin: 0 0 10px -25px;
-    background: transparent url(/assets/magic/arrows/arrow2-2.png) center center no-repeat;
+    background: transparent url(//berlinmagic.github.io/magic_stylez/assets/magic/arrows/arrow2-2-284a4a436af0f56824c9eb5128a7ed0d.png) center center no-repeat;
     -webkit-background-size: contain;
             background-size: contain;
     -webkit-transform: rotate(-53deg);
