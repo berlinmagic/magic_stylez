@@ -6,6 +6,9 @@
     background: transparent;
 	width: auto;
     // max-width: 1200px;
+	text-align: inherit;
+	&.left { text-align: left; }
+	&.right { text-align: right; }
 
 	&.full {
 		margin: 0 40px !important;
@@ -22,6 +25,8 @@
 		overflow: hidden;
 		text-align: center;
 	}
+	
+	&.top { z-index: 15; }
     // min-width: 320px;
 }
 

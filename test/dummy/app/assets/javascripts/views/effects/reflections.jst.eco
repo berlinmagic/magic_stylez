@@ -1,0 +1,70 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Reflections</h1>
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="corset top">
+	<table class="layout fancy">
+        <tbody><tr>
+            <td class="tbox side-bar small bg-graySoft">
+                <div class="fancy_box">
+                    <div class="reflection"></div>
+                </div>
+                <div class="in_box">
+                    <ul id="devise_links" class="nav_list big">
+	<li class="">
+		<a href="#effects/reflections" class="shaguar">
+			<i class="icon-check"></i> Anmelden
+</a>	</li>
+		<li class="">
+			<a href="#effects/reflections" class="shaguar">
+				<i class="icon-edit"></i> Registrieren
+</a>		</li>
+	<li class="">
+	    <span class="lst_lnk"><i class="icon-cog"></i> Probleme</span>
+	    <ul class="sub_nav">
+        		<li class="">
+        			<a href="#effects/reflections" class="shaguar">
+        				Passwort vergessen
+</a>        		</li>
+        		<li class="">
+        			<a href="#effects/reflections" class="shaguar">
+        				Bestätigung erneut senden
+</a>        		</li>
+        		<li class="">
+        			<a href="#effects/reflections" class="shaguar">
+        				Entsperr-E-Mail erneut senden
+</a>        		</li>
+	    </ul>
+    </li>
+</ul>
+
+
+                    <br>
+                </div>
+            </td>
+            <td class="tbox center">
+                <div class="fancy_box">
+                    <div class="reflection"></div>
+                </div>
+                <div class="in_box padding_10">
+                    body
+                </div>
+            </td>
+            <td class="tbox side-bar small min_grid_20 bg-graySoft">
+                <div class="fancy_box">
+                    <div class="reflection"></div>
+                </div>
+                <div class="in_box padding_10">
+                    
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+</div>
+
+

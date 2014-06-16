@@ -91,3 +91,90 @@ ul {
 
 
 
+
+
+
+
+.samplebox {
+	display: block; position: relative;
+	margin: 0 0 20px;
+	padding: 10px;
+	border: solid 1px #ccc;
+	background: #fff;
+	
+	h2 { font-size: 16px; }
+	
+	&.raised_shadow { 
+		@include raised_shadow( rgba(0, 0, 0, 0.5), 5 );
+		&.one { @include raised_shadow( rgba(102, 53, 53, 0.5), 5 ); }
+		&.two { @include raised_shadow( rgba(102, 53, 53, 0.5), 5, -10px, 0 ); }
+	}
+	&.pseudo_raised_shadow {
+		@include pseudo_raised_shadow( rgba(0, 0, 0, 0.5), 3 );
+		&.one { @include pseudo_raised_shadow( rgba(102, 53, 53, 0.5), 5, 30px, 10px, 0, 10px ); }
+		&.two { @include pseudo_raised_shadow( rgba(102, 53, 53, 0.5), 5, 10px, 10px, 20px, 10px ); }
+	}
+	&.lifted_shadow {
+		@include lifted_shadow( rgba(0, 0, 0, 0.5), 2 );
+		&.one { @include lifted_shadow( rgba(102, 53, 53, 0.5), 5 ); }
+		&.two { @include lifted_shadow( rgba(204, 0, 0, 0.5), 2 ); }
+	}
+	&.perspective_shadow {
+		@include perspective_shadow( rgba(0, 0, 0, 0.42), 1, 30, 3px );
+		&.one { @include perspective_shadow( rgba(102, 53, 53, 0.5), 5, 50, 5px ); }
+		&.two { @include perspective_shadow( rgba(204, 0, 0, 0.5), 2, 42, 10px ); }
+	}
+	&.vertical_curves {
+		@include vertical_curves( rgba(0, 0, 0, 0.42), 3 );
+		&.one { @include vertical_curves( rgba(102, 53, 53, 0.5), 5 ); }
+		&.two { @include vertical_curves( rgba(204, 0, 0, 0.5), 2 ); }
+	}
+	&.horizontal_curves {
+		@include horizontal_curves( rgba(0, 0, 0, 0.42), 3 );
+		&.one { @include horizontal_curves( rgba(102, 53, 53, 0.5), 5 ); }
+		&.two { @include horizontal_curves( rgba(204, 0, 0, 0.5), 2 ); }
+	}
+	&.vertical_shine {
+		@include vertical_shine( rgba(0, 0, 0, 0.3), 2 );
+		&.one { @include vertical_shine( rgba(102, 53, 53, 0.5), 5 ); }
+		&.two { @include vertical_shine( rgba(204, 0, 0, 0.5), 2 ); }
+	}
+	&.horizontal_shine {
+		@include horizontal_shine( rgba(0, 0, 0, 0.3), 2 );
+		&.one { @include horizontal_shine( rgba(102, 53, 53, 0.5), 5 ); }
+		&.two { @include horizontal_shine( rgba(204, 0, 0, 0.5), 2 ); }
+	}
+	
+	&.single_shine {
+		@include single_shine( rgba(0, 0, 0, 0.5), 2 );
+		&.one { @include single_shine( rgba(102, 53, 53, 0.5), 5 ); }
+		&.two { @include single_shine( rgba(204, 0, 0, 0.5), 2 ); }
+	}
+	
+	&.single_curve {
+		@include single_curve( rgba(0, 0, 0, 0.5), 2 );
+		&.one { @include single_curve( rgba(102, 53, 53, 0.5), 5 ); }
+		&.two { @include single_curve( rgba(204, 0, 0, 0.5), 2 ); }
+	}
+	
+	&.paper_shadow {
+		@include paper_shadow( rgba(0, 0, 0, 0.5), 2 );
+		&.one { @include paper_shadow( rgba(102, 53, 53, 0.5), 5 ); }
+		&.two { @include paper_shadow( rgba(204, 0, 0, 0.5), 2 ); }
+	}
+	
+	
+	&.smal { 
+		width: 40%; float: left;
+		margin: 0 4% 3% 5%;
+		padding: 0;
+		// border: solid 1px #555;
+		// @include verlauf_A;
+		h2 { padding: 20px 30px; text-align: center; }
+		p.warning { font-size: 10px; color: #663333; }
+	}
+	.warning { text-align: left; }
+}
+
+
+

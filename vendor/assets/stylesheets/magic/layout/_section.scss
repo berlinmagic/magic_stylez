@@ -7,12 +7,7 @@
     text-align: center;
     z-index: 1;
 	font-size: $font-size-base;
-	.corset, .container {
-		background: inherit;
-		text-align: inherit;
-		&.left { text-align: left; }
-		&.right { text-align: right; }
-	}
+	.corset, .container { background: inherit; }
     
     h1, h2, h3, h4, h5, h6, p {
         margin-bottom: 10px;

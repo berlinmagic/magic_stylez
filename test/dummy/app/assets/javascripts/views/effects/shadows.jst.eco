@@ -1,0 +1,1528 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Shadows</h1>
+  </div>
+</div>
+
+
+			
+<div class="section">
+  <div class="corset top">
+    
+
+			
+			<div class="box">
+		  <div class="head">
+        <a name="all">All Samples</a>
+		  </div>
+		  <div class="inner">
+		    
+  			
+
+<div class="samplebox raised_shadow smal">
+	<h2>Raised Shadow</h2>
+</div>
+
+
+			
+  			
+
+<div class="samplebox lifted_shadow smal">
+	<h2>Lifted Shadow</h2>
+</div>
+
+
+			
+  			
+
+<div class="samplebox vertical_curves smal">
+	<h2>Vertical Curves</h2>
+</div>
+
+
+			
+  			
+
+<div class="samplebox horizontal_curves smal">
+	<h2>Horizontal Curves</h2>
+</div>
+
+
+			
+			
+  			
+
+<div class="samplebox vertical_shine smal">
+	<h2>Vertical Shine</h2>
+</div>
+
+
+			
+  			
+
+<div class="samplebox horizontal_shine smal">
+	<h2>Horizontal Shine</h2>
+</div>
+
+
+			
+			
+  			
+
+<div class="samplebox single_shine smal">
+	<h2>Single Shine</h2>
+</div>
+
+
+			
+  			
+
+<div class="samplebox single_curve smal">
+	<h2>Single Curve</h2>
+</div>
+
+
+			
+			
+  			
+
+<div class="samplebox paper_shadow smal">
+	<h2>Paper Shadow</h2>
+</div>
+
+
+			
+			
+			
+			
+			
+			
+  			
+
+<div class="samplebox pseudo_raised_shadow smal">
+	<h2>Pseudo-Raised Shadow</h2>
+</div>
+
+
+			
+  			
+
+<div class="samplebox perspective_shadow smal">
+	<h2>Perspective Shadow</h2>
+</div>
+
+
+			
+  			<div class="clearfix"></div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+		
+	<div class="box">
+	
+	<div class="head">
+		<a name="raised_shadow">Raised Shadow</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox raised_shadow ">
+	<h2>Raised Shadow</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Raised Shadow via Box-Shadow .. no other box-shadows possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						raised_shadow( <span class="vars">color, times, horizontal, vertical, blur, size</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>3</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>horizontal</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>vertical</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>10px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>blur</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>10px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>size</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>-10px</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include raised_shadow( rgba(0, 0, 0, 0.5), 5 );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox raised_shadow one smal">
+	<h2>Raised Shadow</h2>
+		<p class="warning">@include raised_shadow( rgba(102, 53, 53, 0.5), 5 );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox raised_shadow two smal">
+	<h2>Raised Shadow</h2>
+		<p class="warning">@include raised_shadow( rgba(102, 53, 53, 0.5), 5, -10px, 0 );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+	
+	
+	
+	<div class="box">
+	
+	<div class="head">
+		<a name="lifted_shadow">Lifted Shadow</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox lifted_shadow ">
+	<h2>Lifted Shadow</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Lifted Shadow via :before &amp; :after Pseudo-Elements .. other box-shadows still possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						lifted_shadow( <span class="vars">color, times, horizontal, vertical, blur, size</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>3</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>horizontal</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>vertical</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>15px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>blur</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>10px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>size</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>1</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include lifted_shadow( rgba(0, 0, 0, 0.5), 2 );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox lifted_shadow one smal">
+	<h2>Lifted Shadow</h2>
+		<p class="warning">@include lifted_shadow( rgba(102, 53, 53, 0.5), 5 );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox lifted_shadow two smal">
+	<h2>Lifted Shadow</h2>
+		<p class="warning">@include lifted_shadow( rgba(204, 0, 0, 0.5), 2 );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+
+
+	<div class="box">
+	
+	<div class="head">
+		<a name="vertical_curves">Vertical Curves</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox vertical_curves ">
+	<h2>Vertical Curves</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Vertical Curves via :before Pseudo-Elements .. other box-shadows still possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						vertical_curves( <span class="vars">color, times, horizontal, vertical, blur, size</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>3</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>horizontal</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>vertical</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>blur</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>15px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>size</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include vertical_curves( rgba(0, 0, 0, 0.42), 3 );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox vertical_curves one smal">
+	<h2>Vertical Curves</h2>
+		<p class="warning">@include vertical_curves( rgba(102, 53, 53, 0.5), 5 );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox vertical_curves two smal">
+	<h2>Vertical Curves</h2>
+		<p class="warning">@include vertical_curves( rgba(204, 0, 0, 0.5), 2 );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+
+
+	<div class="box">
+	
+	<div class="head">
+		<a name="horizontal_curves">Horizontal Curves</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox horizontal_curves ">
+	<h2>Horizontal Curves</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Horizontal Curves via :before Pseudo-Elements .. other box-shadows still possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						horizontal_curves( <span class="vars">color, times, horizontal, vertical, blur, size</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>3</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>horizontal</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>vertical</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>blur</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>15px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>size</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include horizontal_curves( rgba(0, 0, 0, 0.42), 3 );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox horizontal_curves one smal">
+	<h2>Horizontal Curves</h2>
+		<p class="warning">@include horizontal_curves( rgba(102, 53, 53, 0.5), 5 );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox horizontal_curves two smal">
+	<h2>Horizontal Curves</h2>
+		<p class="warning">@include horizontal_curves( rgba(204, 0, 0, 0.5), 2 );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+
+
+	<div class="box">
+	
+	<div class="head">
+		<a name="vertical_shine">Vertical Shine</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox vertical_shine ">
+	<h2>Vertical Shine</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Vertical Shine via :before &amp; :after Pseudo-Elements .. other box-shadows still possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						vertical_shine( <span class="vars">color, times, width, blur, size</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>1</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>width</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>3px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>blur</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>10px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>size</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include vertical_shine( rgba(0, 0, 0, 0.3), 2 );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox vertical_shine one smal">
+	<h2>Vertical Shine</h2>
+		<p class="warning">@include vertical_shine( rgba(102, 53, 53, 0.5), 5 );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox vertical_shine two smal">
+	<h2>Vertical Shine</h2>
+		<p class="warning">@include vertical_shine( rgba(204, 0, 0, 0.5), 2 );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+
+
+	<div class="box">
+	
+	<div class="head">
+		<a name="horizontal_shine">Horizontal Shine</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox horizontal_shine ">
+	<h2>Horizontal Shine</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Horizontal Shine via :before &amp; :after Pseudo-Elements .. other box-shadows still possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						horizontal_shine( <span class="vars">color, times, width, blur, size</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>1</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>width</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>3px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>blur</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>10px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>size</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include horizontal_shine( rgba(0, 0, 0, 0.3), 2 );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox horizontal_shine one smal">
+	<h2>Horizontal Shine</h2>
+		<p class="warning">@include horizontal_shine( rgba(102, 53, 53, 0.5), 5 );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox horizontal_shine two smal">
+	<h2>Horizontal Shine</h2>
+		<p class="warning">@include horizontal_shine( rgba(204, 0, 0, 0.5), 2 );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+
+
+	<div class="box">
+	
+	<div class="head">
+		<a name="single_curve">Single Curve</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox single_curve ">
+	<h2>Single Curve</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Single Curve via :before Pseudo-Elements .. other box-shadows still possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						single_curve( <span class="vars">color, times, position, width, blur, size, corner</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>1</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>position</th>
+				<td>position</td>
+				<td>top | left</td>
+				<td>left</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>width</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>5px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>blur</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>10px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>size</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>corner</th>
+				<td>number</td>
+				<td>50 | 100</td>
+				<td>50</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include single_curve( rgba(0, 0, 0, 0.5), 2 );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox single_curve one smal">
+	<h2>Single Curve</h2>
+		<p class="warning">@include single_curve( rgba(102, 53, 53, 0.5), 5 );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox single_curve two smal">
+	<h2>Single Curve</h2>
+		<p class="warning">@include single_curve( rgba(204, 0, 0, 0.5), 2 );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+
+
+	<div class="box">
+	
+	<div class="head">
+		<a name="single_shine">Single Shine</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox single_shine ">
+	<h2>Single Shine</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Single Shine via :before Pseudo-Elements .. other box-shadows still possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						single_shine( <span class="vars">color, times, position, width, blur, size, corner</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>1</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>position</th>
+				<td>position</td>
+				<td>top | left</td>
+				<td>right</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>width</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>5px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>blur</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>10px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>size</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>corner</th>
+				<td>number</td>
+				<td>50 | 100</td>
+				<td>50</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include single_shine( rgba(0, 0, 0, 0.5), 2 );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox single_shine one smal">
+	<h2>Single Shine</h2>
+		<p class="warning">@include single_shine( rgba(102, 53, 53, 0.5), 5 );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox single_shine two smal">
+	<h2>Single Shine</h2>
+		<p class="warning">@include single_shine( rgba(204, 0, 0, 0.5), 2 );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+
+
+	<div class="box">
+	
+	<div class="head">
+		<a name="paper_shadow">Paper Shadow</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox paper_shadow ">
+	<h2>Paper Shadow</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Paper Shadow via :before Pseudo-Elements .. other box-shadows still possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						paper_shadow( <span class="vars">color, times</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>1</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include paper_shadow( rgba(0, 0, 0, 0.5), 2 );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox paper_shadow one smal">
+	<h2>Paper Shadow</h2>
+		<p class="warning">@include paper_shadow( rgba(102, 53, 53, 0.5), 5 );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox paper_shadow two smal">
+	<h2>Paper Shadow</h2>
+		<p class="warning">@include paper_shadow( rgba(204, 0, 0, 0.5), 2 );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+
+
+
+	<div class="box">
+	
+	<div class="head">
+		<a name="pseudo_raised_shadow">Pseudo Raised Shadow</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox pseudo_raised_shadow ">
+	<h2>Pseudo Raised Shadow</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Pseudo Raised Shadow via :before Pseudo-Elements .. other box-shadows still possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						pseudo_raised_shadow( <span class="vars">color, times, gap, radius, horizontal, vertical, blur, size</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>3</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>gap</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>10px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>radius</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>3px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>horizontal</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>vertical</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>5px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>blur</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>5px</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>size</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>0</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include paper_shadow( rgba(0, 0, 0, 0.5), 3 );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox pseudo_raised_shadow one smal">
+	<h2>Pseudo Raised Shadow</h2>
+		<p class="warning">@include pseudo_raised_shadow( rgba(102, 53, 53, 0.5), 5, 30px, 10px, 0, 10px );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox pseudo_raised_shadow two smal">
+	<h2>Pseudo Raised Shadow</h2>
+		<p class="warning">@include pseudo_raised_shadow( rgba(102, 53, 53, 0.5), 5, 10px, 10px, 20px, 10px );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+<div class="section">
+  <div class="corset top">
+
+
+	<div class="box">
+	
+	<div class="head">
+		<a name="perspective_shadow">Perspective Shadow</a>
+	</div>
+	<div class="context" style="position: relative; z-index: 1">
+		
+		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
+		
+		
+	<div class="clearfix"></div>
+
+<div class="samplebox perspective_shadow ">
+	<h2>Perspective Shadow</h2>
+		<table class="code">
+				<tbody><tr>
+					<td colspan="2">
+						Perspective Shadow via :before Pseudo-Elements .. other box-shadows still possible !
+					</td>
+				</tr>
+				<tr>
+					<th>usage</th>
+					<td>
+						perspective_shadow( <span class="vars">color, times, degre, blur</span> );
+					</td>
+				</tr>
+				<tr class="options">
+					<td colspan="2">
+						<table class="options">
+	<thead>
+		<tr>
+			<th class="option">option</th>
+			<th class="value">value</th>
+			<th class="sample">sample</th>
+			<th class="default">default</th>
+			<th class="status">optional</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th>color</th>
+				<td>rgba | hex</td>
+				<td>rgba(0,0,0,.5) | #333</td>
+				<td> - </td>
+				<td>✘</td>
+			</tr>
+			<tr>
+				<th>times</th>
+				<td>number</td>
+				<td>1 - 9</td>
+				<td>3</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>degre</th>
+				<td>degree</td>
+				<td>50 | 30</td>
+				<td>30</td>
+				<td>✔</td>
+			</tr>
+			<tr>
+				<th>blur</th>
+				<td>Pixel</td>
+				<td>3px | 0</td>
+				<td>10px</td>
+				<td>✔</td>
+			</tr>
+	</tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						this
+					</th>
+					<td class="code">
+						@include perspective_shadow( rgba(0, 0, 0, 0.42), 1, 30, 3px );
+					</td>
+				</tr>
+		</tbody></table>
+</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<div class="clearfix"></div>
+
+		
+		
+
+<div class="samplebox perspective_shadow one smal">
+	<h2>Perspective Shadow</h2>
+		<p class="warning">@include perspective_shadow( rgba(102, 53, 53, 0.5), 5, 50, 5px );</p>
+</div>
+
+
+		
+		
+
+<div class="samplebox perspective_shadow two smal">
+	<h2>Perspective Shadow</h2>
+		<p class="warning">@include perspective_shadow( rgba(204, 0, 0, 0.5), 2, 42, 10px );</p>
+</div>
+
+
+		
+		<div class="clearfix"></div>
+		<br>
+	</div>
+</div>
+
+  </div>
+</div>
+
+	
+			
+
+	</div>

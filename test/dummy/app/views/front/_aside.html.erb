@@ -3,7 +3,7 @@
     
     
     <ul class="nav_list dark">
-      <li class="current active"><%= link_to "Magic-Stylez", "/" %></li>
+      <li class="current active"><%= link_to "Magic-Stylez", "#", class: "app_lnk lst_lnk" %></li>
       
       <li><%= link_to "Layout", "#", class: "lst_lnk" %>
         <ul class="sub_nav">
@@ -19,14 +19,14 @@
         </ul>
       </li>
       
-      <% if 3 == 4 %>
+      
       <li><%= link_to "Effects", "#", class: "lst_lnk" %>
         <ul class="sub_nav">
-          <li><%= link_to "Reflections", "#", class: "lst_lnk" %></li>
+          <li><%= link_to "Reflections", "#", class: "app_lnk lst_lnk", data: {target: "effects/reflections"} %></li>
           <li><%= link_to "Shadows", "#", class: "app_lnk lst_lnk", data: {target: "effects/shadows"} %></li>
         </ul>
       </li>
-      
+      <% if 3 == 4 %>
       <li><%= link_to "Layout", "#", class: "lst_lnk" %></li>
       <% end %>
     </ul>

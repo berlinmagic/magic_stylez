@@ -5,3 +5,48 @@
 	-o-box-reflect: below $size -o-gradient(#{$that_gradient});
 	box-reflect: below $size gradient(#{$that_gradient});
 }
+
+
+.reflection {
+	display: block;
+	position: absolute;
+	
+	background: inherit;
+	border: inherit;
+	@include box-shadow( inherit );
+	@include border-radius( inherit );
+	
+	z-index: -1;
+	margin: 4px 0 0;
+	top: 100%;
+	// height: 50%;
+	height: 130px;
+	left: 0; right: 0;
+	// -moz-transform: scaleY(-1);
+	// -webkit-transform: scaleY(-1);
+	// -ms-transform: scaleY(-1);
+	// -o-transform: scaleY(-1);
+	// transform: scaleY(-1);
+	@include transform(scaleY(-1));
+	filter: url(assets/filter.svg#blur); /* FF, Opera + IE10*/
+	-webkit-filter: blur(2px); /* webkit */
+	filter: blur(2px);
+	opacity: .50;
+	&:after {
+		display: block;
+		position: absolute;
+		content: "";
+		top: -5px; bottom: 0;
+		left: -5px; right: -5px;
+		z-index: 3;
+		@include linear-gradient(
+										270deg, 
+										rgba(233,233,229,1.0) 0%, 
+										rgba(233,233,229,1.0) 30%, 
+										rgba(233,233,229,.00) 70%, 
+										rgba(233,233,229,.00) 100%, 
+										$fallback: transparent
+								);
+	}
+}
+

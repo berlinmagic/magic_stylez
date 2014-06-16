@@ -31,11 +31,10 @@
 	}
 	&.berlin {
 		background-color: rgba(255,255,255,.50);
-		background-position: top right;
+		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		// background-image: image-url('banner/wood_480.jpg');
-		background-image: image-url('magic/bgs/2013-berlin.jpg');
+		background-image: image-url('magic/bgs/hdr_landsberger.jpg');
 	}
 	&.fixed-bg { background-attachment:fixed; }
 	
