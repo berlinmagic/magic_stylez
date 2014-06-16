@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = MagicStylez::VERSION
   s.authors     = ["Torsten Wetzel"]
   s.email       = ["torstenwetzel@berlinmagic.com"]
-  s.homepage    = "http://berlinmagic.com/"
+  s.homepage    = "http://berlinmagic.github.io/magic_stylez/"
   s.summary     = "A set of sass helper depending on bourbon and bootstrap-sass."
   s.description = "Lots of styles and helpers we used for several projects."
   s.license     = "MIT"
