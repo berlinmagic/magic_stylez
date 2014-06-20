@@ -1,0 +1,5 @@
+(function(){this.JST||(this.JST={}),this.JST["views/report"]=function(e){e||(e={});var n,t=[],s=function(e){return e&&e.ecoSafe?e:"undefined"!=typeof e&&null!=e?r(e):""},p=e.safe,r=e.escape;return n=e.safe=function(e){if(e&&e.ecoSafe)return e;("undefined"==typeof e||null==e)&&(e="");var n=new String(e);return n.ecoSafe=!0,n},r||(r=e.escape=function(e){return(""+e).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}),function(){(function(){t.push('<div class="section">\n  <div class="corset">\n    \n    <h1>'),t.push(s(this.account.name)),t.push("</h1>\n    <p>\n      "),t.push(s(this.property.street)),t.push(" "),t.push(s(this.property.number)),t.push("\n      "),t.push(s(this.property.zip)),t.push(" "),t.push(s(this.property.city)),t.push("\n      "),t.push(s(this.property.country)),t.push("\n    </p>\n    \n  </div>\n</div>\n\nMore will follow\n")}).call(this)}.call(e),e.safe=p,e.escape=r,t.join("")}}).call(this);
+
+var getThatTemplate = function(property){
+  return JST["views/report"]({ property: property, account: {name: "test-account"}});
+}
