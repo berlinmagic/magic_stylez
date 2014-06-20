@@ -121,6 +121,9 @@ html, body, #body {
 			padding: 10px;
 			&:first-child { padding-left: 0; }
 			&:last-child { padding-right: 0; }
+			@for $i from 1 through 12 {
+			  &.col-#{$i} { width: #{100 / 12 * $i}px; }
+			}
 		}
 	}
 	

@@ -1,7 +1,7 @@
 .section {
     display: block; position: relative;
     margin: 0; 
-    padding: 42px 0 50px;
+    padding: 50px 0;
     // background: $white;
 	background: $main-bg;
     text-align: center;
@@ -50,11 +50,12 @@
 	&.flatted { padding-top: 30px; padding-bottom: 30px; }
 	
     &.flat { padding-top: 0; padding-bottom: 0; }
-	&.fat { padding-top: 62px; padding-bottom: 70px; }
-	
-	
-    &.flat-top { padding-top: 0; }
+	&.flat-top { padding-top: 0; }
     &.flat-bottom { padding-bottom: 0; }
+
+	&.fat { padding-top: 80px; padding-bottom: 80px; }
+	&.fatter { padding-top: 120px; padding-bottom: 120px; }
+	
     
 	// @include all_inputs { background: $white; }
 	

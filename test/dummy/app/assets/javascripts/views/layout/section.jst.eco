@@ -75,13 +75,23 @@
       <tbody>
         <tr>
           <th> </th>
-          <td>42px</td>
+          <td>50px</td>
           <td>50px</td>
         </tr>
         <tr>
           <th>.compact</th>
           <td>10px</td>
           <td>10px</td>
+        </tr>
+        <tr>
+          <th>.fat</th>
+          <td>80px</td>
+          <td>80px</td>
+        </tr>
+        <tr>
+          <th>.fatter</th>
+          <td>120px</td>
+          <td>120px</td>
         </tr>
         <tr>
           <th>.flatted</th>
