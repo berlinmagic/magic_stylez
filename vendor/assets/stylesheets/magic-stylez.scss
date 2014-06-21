@@ -61,27 +61,6 @@
 
 
 
-// other helpers
-
-
-
-@mixin blur-filter( $blur ) {
-	@include magic_prefixer(filter, blur(#{$blur}));
-}
-
-
-
-
-
-
-@mixin squareSize( $size ) {
-	width: #{ $size }px;
-	height: #{ $size }px;
-}
-
-
-
-
 
 
 

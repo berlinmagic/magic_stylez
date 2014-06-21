@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'autoprefixer-rails',  '>= 1.1'
   s.add_runtime_dependency 'sass',                '>= 3.2'
   s.add_runtime_dependency 'bootstrap-sass',      '>= 3.1.1'
-  s.add_runtime_dependency 'bourbon',             '>= 4.0.2'
+  s.add_runtime_dependency 'bourbon',             '>= 3.0.0'
   
    # Testing dependencies
   s.add_development_dependency 'test-unit',       '>= 2.5.5'
