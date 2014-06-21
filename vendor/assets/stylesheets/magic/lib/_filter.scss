@@ -1,0 +1,3 @@
+@mixin blur-filter( $blur ) {
+	@include magic_prefixer(filter, blur(#{$blur}));
+}

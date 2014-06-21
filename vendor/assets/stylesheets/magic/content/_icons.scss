@@ -1,0 +1,18 @@
+.feature-icon {
+	margin: 0 auto;
+	$that_size: 90px;
+	width: $that_size; height: $that_size;
+	@include border-radius($that_size);
+	border: solid 5px transparentize($orange, 0.5);
+	img { max-width: 80%; margin: 10%; }
+	i {
+		display:block; position: absolute;
+		top: -1px; right: -4px;
+		background: $orange;
+		color: #fff;
+		@include border-radius(20px);
+		width: 24px; height: 24px;
+		line-height: 24px;
+		font-size: 18px;
+	}
+}

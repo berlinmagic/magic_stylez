@@ -1,0 +1,143 @@
+//## Signup/Login Forms
+//
+.centered-form {
+	text-align: center;
+	max-width: 350px;
+	padding: 15px;
+	margin: 10px auto;
+	h2 { margin: 0 0 15px; }
+	.form-control {
+		position: relative;
+		@include border-radius(0);
+		margin: 0 0 -1px;
+		padding: 10px;
+		font-size: 16px;
+		
+		
+		
+		height: auto;
+		&:first-child { @include border-top-radius(3px); }
+		&:last-child { @include border-bottom-radius(3px); margin: 0 0 20px; }
+		@include placeholder {
+			color: #ccc;
+		}
+		&:focus, &:active { z-index: 99; }
+	}
+}
+
+
+
+// for checkbox and radio fields
+.input-group.labeled {
+	.input-group-addon {
+		border-color: transparent;
+		background: none;
+	}
+	label {
+		position: relative;
+		z-index: 2;
+		float: left;
+		width: 100%;
+		margin-bottom: 0;
+		border-color: transparent;
+		background: none;
+		text-align: left;
+		@include box-shadow( none );
+	}
+}
+
+
+// error inputs
+.form-control > input.form-control {
+	margin: 0 !important;
+	padding: 0;
+	border: none;
+	background: transparent;
+	@include box-shadow(none);
+	@include placeholder { color: red; }
+}
+
+.form-control.error > input.form-control { color: red; }
+
+.field_with_errors input.form-control {
+	color: red;
+	border: solid 1px red;
+}
+
+form.corset, .form {
+	label {
+		display: block; position: relative;
+		margin: 0; padding: 7px 0;
+		line-height: 20px;
+		text-align:left;
+	}
+}
+
+
+// Inputs with Icons (orderlifticons)
+.icon_field {
+	display: block; position: relative;
+	margin: 0; padding: 0;
+	&:after {
+		display: block; position: absolute;
+		margin: 0; padding: 0;
+		left: 2px; top: 0; bottom: 0; 
+		width: 24px; line-height: 34px;
+		text-align: center; vertical-align: middle;
+		content: "\e003";
+		z-index: 5;
+		color: #aaa;
+		text-shadow: 0 1px 1px #fff;
+		font-family: 'Glyphicons Halflings'; font-weight: normal;  font-style: normal; 
+		font-size: 14px;
+	}
+	// input {
+	// 	display: block; position: relative;
+	// 	margin: 0; padding-left: 32px;
+	// 	@include box-sizing(border-box);
+	// 	width: 100%; height: 30px;
+	// 	@include placeholder_styles {
+	// 		color: rgba(0,0,0,.20);
+	// 	}
+	// }
+	input, input.form-control { padding-left: 28px; }
+	&.half { width: 50%; margin: 0 auto; }
+	&.fat {
+		input {
+	        padding: 11px 20px 9px 34px;
+	        height: 42px;
+	        font-size: 18px;
+			@include placeholder {
+				font-size: 18px;
+				color: rgba(0,0,0,.20);
+			}
+			@include border-radius(0);
+	
+		}
+		&:after {
+			left: 2px; top: 0; bottom: 0; 
+			width: 30px; line-height: 44px;
+			content: "\f021";
+			text-shadow: 0 1px 0 rgba(0,0,0,.01);
+			font-size: 18px;
+		}
+	}
+	// glyphicons
+	&.search:after 		{ content: "\e003"; }
+	&.mail:after 		{ content: "\2709"; }
+	&.password:after 	{ content: "\e033"; }
+	&.user:after 		{ content: "\e008"; }
+	&.location:after 	{ content: "\e062"; }
+	&.globe:after 		{ content: "\e135"; }
+	&.filter:after 		{ content: "\e138"; }
+	&.euro:after 		{ content: "\20ac"; }
+	&.dollar:after 		{ content: "\e148"; }
+	
+	
+	&.euro, &.dollar {
+		input { text-align: right; }
+	}
+	
+}
+
+

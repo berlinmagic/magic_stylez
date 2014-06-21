@@ -1,11 +1,12 @@
 //** Load fonts from this directory.
-$olicons-font-path: "magic/" !default;
+$olicons-font-path: "magic/";
 //** File name for all font files.
-$olicons-font-name: "orderlifticons-webfont" !default;
+// $olicons-font-name: "orderlifticons-webfont" !default;
+$olicons-font-name: "newmagicons-regular-webfont";
 //** Element ID within SVG icon file.
-$olicons-font-svg-id: "orderlifticonsregular" !default;
+$olicons-font-svg-id: "orderlifticonsregular";
 
-$olicons-class-name: "olicons" !default;
+$olicons-class-name: "olicons";
 
 
 @font-face {
@@ -231,6 +232,47 @@ $olicons-class-name: "olicons" !default;
 .#{$olicons-class-name}-cash:before { content: "\f09e"; }
 
 .#{$olicons-class-name}-gift:before { content: "\f101"; }
+
+
+/* New Stuff .. 22.01.2014 */
+.#{$olicons-class-name}-auge:before { content: "\f102"; }
+.#{$olicons-class-name}-inventar:before { content: "\f103"; }
+.#{$olicons-class-name}-analytics-alt:before { content: "\f104"; }
+.#{$olicons-class-name}-settings-alt:before { content: "\f105"; }
+.#{$olicons-class-name}-slidebar:before { content: "\f106"; }
+.#{$olicons-class-name}-info-circle:before { content: "\f107"; }
+.#{$olicons-class-name}-product-circle:before { content: "\f108"; }
+.#{$olicons-class-name}-pos-circle:before { content: "\f109"; }
+.#{$olicons-class-name}-user:before { content: "\f10a"; }
+.#{$olicons-class-name}-calendar:before { content: "\f10b"; }
+.#{$olicons-class-name}-glass:before { content: "\f10c"; }
+.#{$olicons-class-name}-trash:before { content: "\f10d"; }
+.#{$olicons-class-name}-resize:before { content: "\f10e"; }
+
+
+.#{$olicons-class-name}-product-alt:before { content: "\f111"; }
+.#{$olicons-class-name}-circle-plus:before { content: "\f112"; }
+.#{$olicons-class-name}-circle-times:before { content: "\f113"; }
+.#{$olicons-class-name}-circle-minus:before { content: "\f114"; }
+.#{$olicons-class-name}-circle-ok:before { content: "\f115"; }
+.#{$olicons-class-name}-auge-alt:before { content: "\f116"; }
+.#{$olicons-class-name}-inventar-alt:before { content: "\f117"; }
+.#{$olicons-class-name}-analytics-alt:before { content: "\f118"; }
+.#{$olicons-class-name}-euro-circle:before { content: "\f119"; }
+.#{$olicons-class-name}-reports:before { content: "\f11a"; }
+.#{$olicons-class-name}-tasks:before { content: "\f11b"; }
+.#{$olicons-class-name}-vcard:before { content: "\f11c"; }
+.#{$olicons-class-name}-catalog:before { content: "\f11d"; }
+.#{$olicons-class-name}-flyer:before { content: "\f11e"; }
+
+
+
+
+
+
+
+// T E S T normal signs
+.#{$olicons-class-name}-euro:before { content: "\20AC"; }
 
 
 

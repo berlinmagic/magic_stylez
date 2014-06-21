@@ -1,0 +1,74 @@
+.pic, .pic-list, .pic-list > li, .pic-list > li > *, .pic-list .pic, 
+.pic-list .facts, .pic-list .facts .head, .pic-list .facts .body {
+	display: block; position: relative;
+	margin: 0; padding: 0;
+}
+
+.pic {
+	overflow: hidden;
+	img {
+		max-width: 100%; max-height: 100%;
+		vertical-align: top;
+	}
+	&.bordered { border: solid 1px $main-border-color; }
+	&.rounded { @include border-radius(3px); }
+	&.round, &.initials {
+		@include border-radius( 500px );
+		img { @include border-radius( 500px ); }
+	}
+}
+
+
+.pic-list {
+	list-style: none;
+	& > li {
+		margin: 0;
+		border: none;
+		border-bottom: solid 1px $main-border-color;
+		&:last-child { border-bottom: none; }
+		& > * {
+			padding: 5px 0;
+			@include clearfix;
+			.pic  {
+				width: 50px;
+				border: solid 1px $main-border-color;
+				float: left;
+				img {
+					max-width: 100%;
+					width: 100%;
+				}
+			}
+			.facts {
+				padding: 5px 0;
+				margin-left: 60px;
+				.head {
+					line-height: 20px;
+					font-size: 13px;
+					font-weight: bold;
+				}
+				.body {
+					line-height: 20px;
+					// font-size: 15px;
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}
+
+
+.box > .body > .pic-list {
+	margin: -10px;
+}
+
+
+// responsive background:
+
+// background-color: rgba(255,255,255,.50);
+// background-image: image-url("shiftchange_black.png");
+// background-position: center center;
+// background-repeat: no-repeat;
+// background-size: contain;
+
+
+

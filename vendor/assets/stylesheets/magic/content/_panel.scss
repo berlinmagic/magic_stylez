@@ -1,0 +1,48 @@
+.panel-task {
+	.panel-heading {
+		padding: 0;
+		overflow: hidden;
+		@include border-radius(0);
+		background: #fff;
+		.panel-title {
+			display: block; position: relative;
+			overflow: hidden;
+			line-height: 50px;
+			font-size: 18px;
+			color: #656565;
+			@include border-radius(0);
+			.cell.number, .cell.state-icon {
+				width: 50px;
+				text-align: center;
+			}
+			.cell.number {
+				background: $brand-color;
+				font-weight: bold;
+				color: #fff;
+				font-size: 24px;
+			}
+			.cell.text {
+				padding: 0 20px;
+				text-align: left;
+			}
+			.cell.state-icon { color: #fff; }
+		}
+	}
+	.panel-collapse {
+		.panel-body {
+			p { text-align: left; }
+		}
+	}
+	&.disabled  {
+		.panel-title {
+			.cell.number { background: lighten($brand-color, 20%); }
+		}
+	}
+	&.finished  {
+		.panel-title {
+			cursor: default;
+			.cell.number { background: #ccc; }
+			.cell.state-icon { color: $brand-color; }
+		}
+	}
+}

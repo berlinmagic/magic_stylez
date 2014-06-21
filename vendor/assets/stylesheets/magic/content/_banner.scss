@@ -53,6 +53,25 @@
 }
 
 
+.pic-bottom {
+	display: block; display: inline-block; position: relative;
+	height: 100%; width: 100%;
+	min-height: 300px;
+	vertical-align: bottom;
+	margin: 0; padding: 0;
+	background-color: transparent;
+	background-image: image-url('magic/helper/hero_buy.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+//   // more than 490px
+//   @include responsiveStep-xs2 {
+//   	.banner-box.responsive-hero.xxx { background-image: image-url('image_780.jpg'); }
+//   }
+
 // more than 768px
 @include responsiveStep-sm {
 	.banner-box.responsive-hero {
@@ -73,5 +92,22 @@
 		&.with-header { padding-top: 100px !important; }
 	}
 }
+
+//   // more than 992px
+//   @include responsiveStep-md {
+//   	.banner-box.responsive-hero.xxx { background-image: image-url('image_1200.jpg'); }
+//   }
+//   // more than 1200px
+//   @include responsiveStep-lg {
+//   	.banner-box.responsive-hero.xxx { background-image: image-url('image_1600.jpg'); }
+//   }
+//   // more than 1600px
+//   @include responsiveStep-xl {
+//   	.banner-box.responsive-hero.xxx { background-image: image-url('image_2000.jpg'); }
+//   }
+//   // more than 2000px
+//   @include responsiveStep-xxl {
+//   	.banner-box.responsive-hero.xxx { background-image: image-url('image_2500.jpg'); }
+//   }
 
 

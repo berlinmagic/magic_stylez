@@ -8,17 +8,18 @@
 // load some basic methods
 @import "magic/lib/cross_browser";
 @import "magic/lib/media_querries";
+// load style helper
+@import "magic/lib/animation";
+@import "magic/lib/text";
+@import "magic/lib/forms";
 
+// load effects
 @import "magic/effects/shadows";
 @import "magic/effects/reflections";
 
-// load style helper
-@import "magic/animation";
-@import "magic/text";
-@import "magic/forms";
-
-@import "magic/lists/nav";
-
+// load icons
+@import "magic/icons/magicons";
+@import "magic/icons/orderlifticons";
 
 
 // load layout helper
@@ -27,7 +28,27 @@
 @import "magic/layout/tables";
 @import "magic/layout/fullpage_table";
 
+
+// load content helper
 @import "magic/content/banner";
+@import "magic/content/box";
+@import "magic/content/forms";
+@import "magic/content/header";
+@import "magic/content/helper";
+@import "magic/content/pix";
+@import "magic/content/banner";
+
+
+
+
+
+@import "magic/lists/nav";
+
+
+
+
+
+
 
 
 

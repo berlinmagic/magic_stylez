@@ -138,6 +138,7 @@ ul.icons {
   }
 }
 
+
 .#{$magicons-class-name}-close-round:before             { content: "\f001"; }
 .#{$magicons-class-name}-ok-round:before                { content: "\f002"; }
 .#{$magicons-class-name}-minus-round:before             { content: "\f003"; }
@@ -700,7 +701,5 @@ ul.icons {
 .#{$magicons-class-name}-layout-theater:before     { content: "\f308"; }
 .#{$magicons-class-name}-layout-u-table:before     { content: "\f309"; }
 .#{$magicons-class-name}-layout-workspace:before   { content: "\f30a"; }
-
-
 
 
