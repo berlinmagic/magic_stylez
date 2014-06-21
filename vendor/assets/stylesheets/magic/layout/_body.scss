@@ -7,7 +7,7 @@ body {
 	#body { padding:0; margin:0; }
 }
 
-#fixedNav {
+#fixed_nav {
 	position: fixed;
 	// let graphic card render header:
 	@include transform( translateZ( 0 ) );
@@ -186,7 +186,7 @@ body.front { padding: 42px 0 0; }
 
 // # # #  R E S P O N S I V E - S T E P S  # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 @include responsiveStep-xs-only {
-	#fixedNav .logo-cell {display: none;}
+	#fixed_nav .logo-cell {display: none;}
 	#nav-aside .inner-aside {
 		display: table;
 		table-layout:fixed;
@@ -203,11 +203,11 @@ body.front { padding: 42px 0 0; }
 	}
 }
 @include responsiveStep-sm {
-	#fixedNav.full-links .navbar-header > .navbar-brand {display: none;}
+	#fixed_nav.full-links .navbar-header > .navbar-brand {display: none;}
 	body.app { 
 		padding: 42px 0 0;
 		#body { padding:0; margin-left: 50px; }
-		#fixedNav .container-fluid { padding: 0 20px 0 50px;}
+		#fixed_nav .container-fluid { padding: 0 20px 0 50px;}
 	}
 	
 	#nav-aside {

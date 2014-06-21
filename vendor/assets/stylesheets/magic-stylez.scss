@@ -24,7 +24,6 @@
 
 
 // load layout helper
-@import "magic/layout/body";
 @import "magic/layout/section";
 @import "magic/layout/corset";
 // @import "magic/layout/tables";
@@ -42,6 +41,7 @@
 @import "magic/content/pix";
 
 
+@import "magic/layout/body";
 
 
 
