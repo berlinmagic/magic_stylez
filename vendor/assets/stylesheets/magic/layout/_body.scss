@@ -186,7 +186,7 @@ body.front { padding: 42px 0 0; }
 
 // # # #  R E S P O N S I V E - S T E P S  # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 @include responsiveStep-xs-only {
-	.sppt-navbar .logo-cell {display: none;}
+	#fixedNav .logo-cell {display: none;}
 	#nav-aside .inner-aside {
 		display: table;
 		table-layout:fixed;
