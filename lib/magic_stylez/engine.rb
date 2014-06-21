@@ -8,8 +8,9 @@ module MagicStylez
         config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
         config.assets.precompile += %w(*.eot *.svg *.ttf *.woff)
         
-        Sass.load_paths << stylesheets_path("bourbon")
-        Sass.load_paths << stylesheets_path("bootstrap")
+        config.sass.load_paths << stylesheets_path("bourbon")
+        config.sass.load_paths << stylesheets_path("bootstrap")
+        config.sass.load_paths << javascripts_path("bootstrap")
       end
     end
   end
