@@ -13,3 +13,4 @@
 //= require jquery
 //= require_tree ./views
 //= require magic-stylez
+//= require app

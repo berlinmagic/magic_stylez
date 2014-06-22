@@ -202,6 +202,42 @@ form.corset, .form {
 }
 
 
+
+.btn-app, .btn-google, .btn-facebook, .btn-twitter {
+    // padding: 5px 22px !important;
+    color: #fff;
+    &:hover, &:active {
+        color: #fff;
+    }
+    &.icn { font-size: 24px !important; padding: 2px 7px 0 7px !important; line-height: 28px !important; }
+}
+
+.btn-socials {
+	padding: 5px 22px !important;
+}
+
+.btn-facebook {
+  background: #3b5998;
+  text-shadow: 0 1px 0 #3b5998;
+  vertical-align: middle;
+  &:hover { background: darken(#3b5998, 5%); }
+  &:active { background: darken(#3b5998, 10%) \9; }
+}
+
+.btn-google {
+  background: #dd4b39;
+  text-shadow: 0 1px 0 #dd4b39;
+  &:hover { background: #e74b37; }
+  &:active { background: #be3e2e; }
+}
+
+.btn-twitter {
+  background: #00aced;
+  text-shadow: 0 1px 0 #00aced;
+  &:hover { background: darken(#00aced, 10%); }
+  &:active { background: darken(#00aced, 20%); }
+}
+
 .btn-paypal {
-	background: #1ea0df;
+	background: #12398c;
 }

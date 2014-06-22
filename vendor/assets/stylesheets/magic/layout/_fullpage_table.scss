@@ -117,11 +117,11 @@ html, body, #body {
 				width: 140px;
 			}
 			@for $i from 1 through 12 {
-			  &.col-#{$i} { width: #{100 / 12 * $i}px; }
+			  &.col-#{$i} { width: percentage(1 / 12 * $i); }
 			}
 	    }
 		&.grid > * {
-			padding: 10px;
+			padding: 0 10px;
 			&:first-child { padding-left: 0; }
 			&:last-child { padding-right: 0; }
 		}

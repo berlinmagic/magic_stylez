@@ -1,8 +1,3 @@
-#= require magic/render_eco
-
-icon = (icn) ->
-  "<i class='icon icon-#{icn}'></i>"
-
 $ ->
 
   $("body").on "click", ".lst_lnk", ->
@@ -46,4 +41,3 @@ $ ->
     else
       nul.closest("li").addClass("current")
     lnk.addClass("active")
-    
