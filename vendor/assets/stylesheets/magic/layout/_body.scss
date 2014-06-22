@@ -19,8 +19,9 @@ body {
 	// background: #727270;
 	color: #fff;
 	.navbar-brand {
-		padding: 0;
+		padding: 0 10px 0 0;
 		height: 40px;
+		line-height: 40px;
 		&.logo {
 			width: 150px;
 			overflow: hidden;
@@ -45,6 +46,10 @@ body {
 					background: #000 !important;
 					color: #fff !important;
 				}
+			}
+			& > span {
+				padding: 10px;
+				line-height: 20px;
 			}
 			form {
 				padding: 4px 0;
