@@ -13,8 +13,6 @@ loadCircles = ->
 
 
 navigate = ->
-  console.log "Popstate", window.location.pathname
-  return false unless window.location.pathname == "/"
   path = window.location.hash.replace(/#/, "")
   if path != "" and path != currentPath
     $("#app_content").html( $(renderView( path )) )
@@ -68,7 +66,7 @@ $ ->
     console.log "hashchange", window.location.pathname
     navigate()
   
-  # $(window).on 'popstate', ->
-  #   console.log "Popstate", window.location.pathname
-  #   navigate()
+  $(window).on 'popstate', ->
+    console.log "Popstate", window.location.pathname
+    navigate()
     

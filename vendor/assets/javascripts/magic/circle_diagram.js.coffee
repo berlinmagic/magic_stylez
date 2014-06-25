@@ -143,6 +143,4 @@ window.CircleDiagram = CircleDiagram
 #   else if $('.circle-diagram').length > 0
 #     window.circleDiagram = new CircleDiagram( circle: $('.circle-diagram') )
 
-        
-        
 
