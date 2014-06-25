@@ -12,7 +12,7 @@ appImages = <%= imgs.to_json %>
 
 
 @rootPath = ->
-  if App?.Environment? == "production" 
+  if App?.Environment && App.Environment == "production" 
     return "/magic_stylez/"
   else
     return "/"

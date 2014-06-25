@@ -13,6 +13,7 @@ module Dummy
     
     
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    config.assets.precompile += %w(blank.js)
     
     # config.assets.enabled = true if config.assets.respond_to?(:enabled)
     

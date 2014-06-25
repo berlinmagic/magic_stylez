@@ -62,9 +62,9 @@ $ ->
     # $("#app_content").html( $(renderView( path )) )
     window.location.hash = path
     
-  $(window).on 'hashchange', ->
-    console.log "hashchange", window.location.pathname
-    navigate()
+  # $(window).on 'hashchange', ->
+  #   console.log "hashchange", window.location.pathname
+  #   navigate()
   
   $(window).on 'popstate', ->
     console.log "Popstate", window.location.pathname
