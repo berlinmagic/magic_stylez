@@ -14,6 +14,7 @@
 
 ## Load magic
 #= require magic/helper
+#= require magic/collapse
 
 icon = (icn) ->
   "<i class='icon icon-#{icn}'></i>"

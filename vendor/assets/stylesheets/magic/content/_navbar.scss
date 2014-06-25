@@ -39,13 +39,15 @@
 		&.navbar-slidebar {
 			.navbar-collapse {
 				display: block; position: fixed;
-				@include transition (all 0.9s ease-in-out);
 				top: 0; right: auto; bottom: 0; left: 0;
-				background: #333;
+				background: $dark-bg;
 				@include transform( translateZ( 0 ) );
 				@include transform( translateX( -222px ) ); 
 				width: 220px;
 				max-height: none;
+				overflow-y: scroll;
+				@include transition (all 0.7s ease-in-out);
+				.btn { @include horizontal-margin( 15px ); width: auto; }
 				&.on { @include transform( translateX( 0 ) );  }
 			}
 			

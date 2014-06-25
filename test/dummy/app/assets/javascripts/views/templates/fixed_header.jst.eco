@@ -1,4 +1,4 @@
-<iframe src="<%= "#{rootPath()}templates/fixed-header" %>" name="SELFHTML_in_a_box" id="mainFrame">
+<iframe src="<%= "#{rootPath()}fixed-header" %>" name="SELFHTML_in_a_box" id="mainFrame">
   <p>Sorry, your Browser doesn't like Frames.
   But we would need an iframe to show the template stuff
   <a href="../../../index.htm">SELFHTML</a></p>

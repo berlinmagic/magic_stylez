@@ -1,54 +1,30 @@
 <div id="aside">
   <div class="aside-content">
-    
-    
     <ul class="nav_list dark">
       <li class="current active"><%= link_to "Magic-Stylez", "#", class: "app_lnk lst_lnk", data: {target: ""} %></li>
-      
-      <li><%= link_to "Template", "#", class: "lst_lnk" %>
-        <ul class="sub_nav">
-          <li><%= link_to "fixed Header", "#", class: "app_lnk lst_lnk", data: {target: "templates/fixed_header"} %></li>
-          <li><%= link_to "Responsive Slidebar", "#", class: "app_lnk lst_lnk", data: {target: "templates/responsive_slidebar"} %></li>
-        </ul>
-      </li>
-      
-      <li><%= link_to "Layout", "#", class: "lst_lnk" %>
-        <ul class="sub_nav">
-          <li><%= link_to "Section", "#", class: "app_lnk lst_lnk", data: {target: "layout/section"} %></li>
-          <li><%= link_to "Corset", "#", class: "app_lnk lst_lnk", data: {target: "layout/corset"} %></li>
-          <li><%= link_to "Fullpage Table", "#", class: "app_lnk lst_lnk", data: {target: "layout/fullpage_table"} %></li>
-        </ul>
-      </li>
-      
-      <li><%= link_to "Elements", "#", class: "lst_lnk" %>
-        <ul class="sub_nav">
-          <li><%= link_to "Arrow Infos", "#", class: "app_lnk lst_lnk", data: {target: "elements/arrow_infos"} %></li>
-          <li><%= link_to "Buttons", "#", class: "app_lnk lst_lnk", data: {target: "elements/buttons"} %></li>
-          <li><%= link_to "Circle Diagram", "#", class: "app_lnk lst_lnk", data: {target: "elements/circle_diagram"} %></li>
-          <%#= link_to "Icons", "#", class: "app_lnk lst_lnk", data: {target: "elements/icons"} %>
-        </ul>
-      </li>
-      
-      
-      <li><%= link_to "Effects", "#", class: "lst_lnk" %>
-        <ul class="sub_nav">
-          <li><%= link_to "Reflections", "#", class: "app_lnk lst_lnk", data: {target: "effects/reflections"} %></li>
-          <li><%= link_to "Shadows", "#", class: "app_lnk lst_lnk", data: {target: "effects/shadows"} %></li>
-        </ul>
-      </li>
-      <li><%= link_to "Icons", "#", class: "lst_lnk" %>
-        <ul class="sub_nav">
-          <li><%= link_to "Glyphicons", "#", class: "app_lnk lst_lnk", data: {target: "icons/glyphicons"} %></li>
-          <li><%= link_to "Icomoons", "#", class: "app_lnk lst_lnk", data: {target: "icons/icomoon"} %></li>
-          <li><%= link_to "Magicons", "#", class: "app_lnk lst_lnk", data: {target: "icons/magicons"} %></li>
-          <li><%= link_to "Olicons", "#", class: "app_lnk lst_lnk", data: {target: "icons/olicons"} %></li>
-        </ul>
-      </li>
-      <% if 3 == 4 %>
-      <li><%= link_to "Layout", "#", class: "lst_lnk" %></li>
+      <% pathes = {} %>
+      <% Dir.glob("#{Rails.root}/app/assets/javascripts/views/**/*").each do |ff| %>
+        <% path = ff.gsub("#{Rails.root}/app/assets/javascripts/views/", "") %>
+        <% if path.match(/\.jst.eco$/) %>
+          <% path = path.gsub(".jst.eco", "") %>
+          <% ar = path.split("/") %>
+          <% pathes[ar[0]] ||= {} %>
+          <% pathes[ ar[0] ][ ar[1] ] = path %>
+        <% end %>
+      <% end %>
+      <% pathes.each do |main, sub| %>
+        <% unless main == "app" %>
+          <li><%= link_to main.titleize, "#", class: "lst_lnk" %>
+            <ul class="sub_nav">
+              <% sub.each do |lnk, path| %>
+                <li><%= link_to lnk.titleize, "#", class: "app_lnk lst_lnk", data: {target: path} %></li>
+              <% end %>
+            </ul>
+          </li>
+        <% end %>
       <% end %>
     </ul>
-    
-    
+    <br/>
+    <br/>
   </div>
 </div>

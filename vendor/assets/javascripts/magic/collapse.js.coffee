@@ -1,4 +1,11 @@
 $ ->
-  $("body").on "click", ".navbar.fixed-slidebar .collapse", (ev) ->
+  $("body").on "click", ".navbar-slidebar .navbar-toggle", (ev) ->
     ev.preventDefault()
-    log "yea"
+    $(@).closest(".navbar-slidebar").find(".navbar-collapse").toggleClass("on")
+    false
+
+  # $("body").on "click", ".navbar .slidebar-toggle", (ev) ->
+  #   ev.preventDefault()
+  #   header = $(@).closest(".navbar-slidebar")
+  #   slidebar = header.find(".navbar-collapse")
+  #   slidebar.toggleClass("on")

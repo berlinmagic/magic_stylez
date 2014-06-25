@@ -36,12 +36,6 @@ navigate = ->
 
 $ ->
 
-  $("body").on "click", ".navbar .slidebar-toggle", (ev) ->
-    ev.preventDefault()
-    header = $(@).closest(".navbar-slidebar")
-    slidebar = header.find(".navbar-collapse")
-    slidebar.toggleClass("on")
-
   $("body").on "click", ".lst_lnk", ->
     # nav = $(@).closest(".nav")
     nav = $(@).closest(".nav_list")

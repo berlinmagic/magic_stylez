@@ -72,7 +72,7 @@
   <div class="corset">
     <div class="row">
       <div class="col-md-6">
-        <h3 class="center_text">Flat</h3>
+        <h4 class="center_text">Flat</h4>
         <hr/>
         <% buttons = ["facebook", "google", "paypal", "twitter"]%>
         <% for btn, i in buttons: %>
@@ -87,7 +87,7 @@
         <% end%>
       </div>
       <div class="col-md-6">
-        <h3 class="center_text">Nice</h3>
+        <h4 class="center_text">Nice</h4>
         <hr/>
         <% buttons = ["facebook", "google", "paypal", "twitter"]%>
         <% for btn, i in buttons: %>
@@ -102,5 +102,18 @@
         <% end%>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="section shine-top">
+  <div class="corset">
+    <p class="loud">splited and divided buttons are nice little helper for buttons that contain an icon</p>
+    <p class="loud"><strong>Be carefull! .btn-splited & .btn-divided are always block elements.</strong></p>
+    <pre>
+      <code>
+  &lt;div class=&quot;btn btn-success btn-lg btn-splited&quot;&gt;<br/>    &lt;span&gt;.btn-splited&lt;/span&gt;<br/>    &lt;span class=&quot;icn&quot;&gt;<br/>      &lt;i class=&quot;magicons-caret-right&quot;&gt;&lt;/i&gt;<br/>    &lt;/span&gt;<br/>  &lt;/div&gt;<br/>  <br/>  <br/>  &lt;div class=&quot;btn btn-primary btn-lg btn-divided&quot;&gt;<br/>    &lt;div class=&quot;icn&quot;&gt;<br/>      &lt;i class=&quot;icomoon-globe&quot;&gt;&lt;/i&gt;<br/>    &lt;/div&gt;<br/>    &lt;div&gt;<br/>      .btn-divided<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>
+      </code>
+    </pre>
+    <p class="loud">tag of inner element doesn't matter just the element conaining the icon need class <strong>.icn</strong></p>
   </div>
 </div>

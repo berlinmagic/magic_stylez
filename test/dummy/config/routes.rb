@@ -3,8 +3,12 @@ Rails.application.routes.draw do
   root 'front#start'
   
   get 'stylez' => 'front#start'
-  get 'templates/:template' => 'front#templates'
-  get 'templates' => 'front#templates'
+  
+  FrontController::TEMPLATES.each do |tmpl|
+    get "#{tmpl}" => 'front#templates', template: tmpl
+  end
+  # get 'templates/:template' => 'front#templates'
+  # get 'templates' => 'front#templates'
   
   
   # The priority is based upon order of creation: first created -> highest priority.
