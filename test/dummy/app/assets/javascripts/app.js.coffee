@@ -1,3 +1,5 @@
+currentPath = ""
+
 loadCircles = ->
   if $('.circle-diagram').length > 1
     window.circles = {}
@@ -8,6 +10,31 @@ loadCircles = ->
   else if $('.circle-diagram').length > 0
     window.circleDiagram = new CircleDiagram( circle: $('.circle-diagram') )
 
+
+
+navigate = ->
+  console.log "Popstate", window.location.pathname
+  return false unless window.location.pathname == "/"
+  path = window.location.hash.replace(/#/, "")
+  if path != "" and path != currentPath
+    $("#app_content").html( $(renderView( path )) )
+    lnk = $(".app_lnk[data-target='#{path}']").closest("li")
+    nav = lnk.closest(".nav_list")
+    nul = lnk.closest("ul")
+    nav.find("li.active").removeClass("active")
+    nav.find("li.current").removeClass("current")
+    if nav == nul
+      lnk.addClass("current")
+    else
+      nul.closest("li").addClass("current")
+    lnk.addClass("active")
+    loadCircles()
+    currentPath = path
+  else
+    console.log path, currentPath
+    $("#app_content").html( $(renderView( "app/start" )) )
+    
+  
 
 $ ->
 
@@ -37,27 +64,11 @@ $ ->
     # $("#app_content").html( $(renderView( path )) )
     window.location.hash = path
     
-  # $(window).on 'hashchange', ->
-  #   path = window.location.hash.replace(/#/, "")
-  #   $("#app_content").html( $(renderView( path )) )
+  $(window).on 'hashchange', ->
+    console.log "hashchange", window.location.pathname
+    navigate()
   
-  $(window).on 'popstate', ->
-    console.log "Popstate", window.location.pathname
-    return false unless window.location.pathname == "/"
-    path = window.location.hash.replace(/#/, "")
-    if path != ""
-      $("#app_content").html( $(renderView( path )) )
-    else
-      $("#app_content").html( $(renderView( "app/start" )) )
-    lnk = $(".app_lnk[data-target='#{path}']").closest("li")
-    nav = lnk.closest(".nav_list")
-    nul = lnk.closest("ul")
-    nav.find("li.active").removeClass("active")
-    nav.find("li.current").removeClass("current")
-    if nav == nul
-      lnk.addClass("current")
-    else
-      nul.closest("li").addClass("current")
-    lnk.addClass("active")
-    loadCircles()
+  # $(window).on 'popstate', ->
+  #   console.log "Popstate", window.location.pathname
+  #   navigate()
     
