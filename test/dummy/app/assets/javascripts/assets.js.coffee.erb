@@ -1,0 +1,26 @@
+<% imgs = {} %>
+<% Dir.glob("#{MagicStylez::Rails::Engine.root}/vendor/assets/images/**/*").each do |ff| %>
+  <% img_path = ff.gsub("#{MagicStylez::Rails::Engine.root}/vendor/assets/images/", "") %>
+  <% imgs[img_path] = asset_path(img_path) if img_path.match(/\.png$/) || img_path.match(/\.jpg$/) || img_path.match(/\.jpeg$/) || img_path.match(/\.gif$/) %>
+<% end %>
+
+<% Dir.glob("#{Rails.root}/app/assets/html/**/*").each do |ff| %>
+  <% img_path = ff.gsub("#{Rails.root}/app/assets/html/", "") %>
+  <% img_path = img_path.gsub(".erb", "") if img_path.match(/\.erb$/) %>
+  <% imgs[img_path] = asset_path(img_path) if img_path.match(/\.html$/) %>
+  <%# imgs[img_path.to_s.gsub(".erb", "")] = asset_path( img_path.to_s.gsub(".erb", "") ) if img_path.match(/\.erb$/) %>
+<% end %>
+
+appImages = <%= imgs.to_json %>
+
+@assetPath = (path) ->
+  # "/assets/angular/app/views/#{path}.html"
+  appImages["#{path}"]
+
+
+@rootPath = ->
+  if App?.Environment? == "production" 
+    return "/magic_stylez/"
+  else
+    return "/"
+    

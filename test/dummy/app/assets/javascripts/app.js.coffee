@@ -1,4 +1,21 @@
+loadCircles = ->
+  if $('.circle-diagram').length > 1
+    window.circles = {}
+    count = 0
+    $('.circle-diagram').each ->
+      window.circles[count] = new CircleDiagram( circle: $(@) )
+      count = count + 1
+  else if $('.circle-diagram').length > 0
+    window.circleDiagram = new CircleDiagram( circle: $('.circle-diagram') )
+
+
 $ ->
+
+  $("body").on "click", ".navbar .slidebar-toggle", (ev) ->
+    ev.preventDefault()
+    header = $(@).closest(".navbar-slidebar")
+    slidebar = header.find(".navbar-collapse")
+    slidebar.toggleClass("on")
 
   $("body").on "click", ".lst_lnk", ->
     # nav = $(@).closest(".nav")
@@ -25,7 +42,8 @@ $ ->
   #   $("#app_content").html( $(renderView( path )) )
   
   $(window).on 'popstate', ->
-    console.log "Popstate"
+    console.log "Popstate", window.location.pathname
+    return false unless window.location.pathname == "/"
     path = window.location.hash.replace(/#/, "")
     if path != ""
       $("#app_content").html( $(renderView( path )) )
@@ -41,3 +59,5 @@ $ ->
     else
       nul.closest("li").addClass("current")
     lnk.addClass("active")
+    loadCircles()
+    

@@ -1,0 +1,27 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Olicons (used in orderlift.com)</h1>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    
+    <% olicons = ["market", "projects-empty", "projects-full", "tasks-empty", "tasks-full", "settings", "overview", "contacts", "message-empty", "message-full", "basket-empty", "basket-full", "bell", "notify", "about-me", "portfolio", "portfolio-alt", "general-informations", "contact-data", "career", "skills", "view-list", "view-tile", "view-cards", "view-map", "state-active", "state-inactive", "edit", "view-map-2", "search", "zoom-in", "zoom-out", "comment", "share", "like", "lock", "lock-open", "chevron-up", "chevron-right", "chevron-down", "chevron-left", "chevron-2-up", "chevron-2-right", "chevron-2-down", "chevron-2-left", "plus", "minus", "ok", "close", "plus-sign", "minus-sign", "ok-sign", "close-sign", "show-sb", "hide-sb", "filter", "preview", "hide-filter", "female", "male", "sex", "sort-down", "sort-up", "sort", "product", "object", "question-answer", "secure", "analytics", "inquiry", "orders", "environmentally-friendly", "waterproof", "delivery", "bright", "dark", "indoor", "outdoor", "accessible", "smoker", "non-smoker", "parking", "parking-meter", "elevator", "max-people", "wlan", "beamer", "microphone", "sockets", "internet", "electricity", "coffee", "water", "pizza", "burger", "drinks", "fast-food", "waiter", "wine", "dishes", "stove", "conference", "classroom", "banquet", "theatre", "u-shape", "workspace", "men", "woman", "company", "store", "bar", "restaurant", "men-investor", "men-work", "men-business", "men-normal", "men-business2", "men-dev", "men-html", "plus-contact", "plus-picture", "plus-company", "plus-company-contact", "ruby", "html5", "facebook", "facebook-block", "google", "google-block", "google-cut", "google-cut-block", "twitter", "twitter-block", "linkedin", "linkedin-block", "xing", "xing-block", "qr-code", "barcode", "cash", "gift", "auge", "inventar", "analytics-alt", "settings-alt", "slidebar", "info-circle", "product-circle", "pos-circle", "user", "calendar", "glass", "trash", "resize", "product-alt", "circle-plus", "circle-times", "circle-minus", "circle-ok", "auge-alt", "inventar-alt", "analytics-alt", "euro-circle", "reports", "tasks", "vcard", "catalog", "flyer", "euro"] %>
+    
+    
+    <% for icon, i in olicons: %>
+    
+      <div class="icon_sample">
+				<div class="sample_icon">
+					<i class="olicons-<%= icon %>"></i>
+				</div>
+				<div class="sample_name">
+					<%= icon %>
+				</div>
+			</div>
+    
+    <% end%>
+    
+  </div>
+</div>

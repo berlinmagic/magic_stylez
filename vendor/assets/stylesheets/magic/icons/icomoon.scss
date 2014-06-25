@@ -1,0 +1,1392 @@
+//** Load fonts from this directory.
+$icomoon-font-path: "magic/";
+//** File name for all font files.
+// $icomoon-font-name: "orderlifticons-webfont" !default;
+$icomoon-font-name: "icomoon";
+//** Element ID within SVG icon file.
+$icomoon-font-svg-id: "icomoon";
+
+$icomoon-class-name: "icomoon";
+
+
+@font-face {
+    font-family: 'icomoon';
+	src: 	url(if($magic-asset-helper, twbs-font-path('#{$icomoon-font-path}#{$icomoon-font-name}.eot'), '#{$icomoon-font-path}#{$icomoon-font-name}.eot'));
+    src: 	url(if($magic-asset-helper, twbs-font-path('#{$icomoon-font-path}#{$icomoon-font-name}.eot'), '#{$icomoon-font-path}#{$icomoon-font-name}.eot#iefix')) format('embedded-opentype'),
+			url(if($magic-asset-helper, twbs-font-path('#{$icomoon-font-path}#{$icomoon-font-name}.woff'), '#{$icomoon-font-path}#{$icomoon-font-name}.woff')) format('woff'),
+			url(if($magic-asset-helper, twbs-font-path('#{$icomoon-font-path}#{$icomoon-font-name}.ttf'), '#{$icomoon-font-path}#{$icomoon-font-name}.ttf')) format('truetype'),
+			url(if($magic-asset-helper, twbs-font-path('#{$icomoon-font-path}#{$icomoon-font-name}.svg##{$icomoon-font-svg-id}'), '#{$icomoon-font-path}#{$icomoon-font-name}.svg##{$icomoon-font-svg-id}')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+[class^="#{$icomoon-class-name}-"], [class*=" #{$icomoon-class-name}-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.#{$icomoon-class-name}-home:before {
+	content: "\e600";
+}
+.#{$icomoon-class-name}-home2:before {
+	content: "\e601";
+}
+.#{$icomoon-class-name}-home3:before {
+	content: "\e602";
+}
+.#{$icomoon-class-name}-office:before {
+	content: "\e603";
+}
+.#{$icomoon-class-name}-newspaper:before {
+	content: "\e604";
+}
+.#{$icomoon-class-name}-pencil:before {
+	content: "\e605";
+}
+.#{$icomoon-class-name}-pencil2:before {
+	content: "\e606";
+}
+.#{$icomoon-class-name}-quill:before {
+	content: "\e607";
+}
+.#{$icomoon-class-name}-pen:before {
+	content: "\e608";
+}
+.#{$icomoon-class-name}-blog:before {
+	content: "\e609";
+}
+.#{$icomoon-class-name}-droplet:before {
+	content: "\e60a";
+}
+.#{$icomoon-class-name}-paint-format:before {
+	content: "\e60b";
+}
+.#{$icomoon-class-name}-image:before {
+	content: "\e60c";
+}
+.#{$icomoon-class-name}-image2:before {
+	content: "\e60d";
+}
+.#{$icomoon-class-name}-images:before {
+	content: "\e60e";
+}
+.#{$icomoon-class-name}-camera:before {
+	content: "\e60f";
+}
+.#{$icomoon-class-name}-music:before {
+	content: "\e610";
+}
+.#{$icomoon-class-name}-headphones:before {
+	content: "\e611";
+}
+.#{$icomoon-class-name}-play:before {
+	content: "\e612";
+}
+.#{$icomoon-class-name}-film:before {
+	content: "\e613";
+}
+.#{$icomoon-class-name}-camera2:before {
+	content: "\e614";
+}
+.#{$icomoon-class-name}-dice:before {
+	content: "\e615";
+}
+.#{$icomoon-class-name}-pacman:before {
+	content: "\e616";
+}
+.#{$icomoon-class-name}-spades:before {
+	content: "\e617";
+}
+.#{$icomoon-class-name}-clubs:before {
+	content: "\e618";
+}
+.#{$icomoon-class-name}-diamonds:before {
+	content: "\e619";
+}
+.#{$icomoon-class-name}-pawn:before {
+	content: "\e61a";
+}
+.#{$icomoon-class-name}-bullhorn:before {
+	content: "\e61b";
+}
+.#{$icomoon-class-name}-connection:before {
+	content: "\e61c";
+}
+.#{$icomoon-class-name}-podcast:before {
+	content: "\e61d";
+}
+.#{$icomoon-class-name}-feed:before {
+	content: "\e61e";
+}
+.#{$icomoon-class-name}-book:before {
+	content: "\e61f";
+}
+.#{$icomoon-class-name}-books:before {
+	content: "\e620";
+}
+.#{$icomoon-class-name}-library:before {
+	content: "\e621";
+}
+.#{$icomoon-class-name}-file:before {
+	content: "\e622";
+}
+.#{$icomoon-class-name}-profile:before {
+	content: "\e623";
+}
+.#{$icomoon-class-name}-file2:before {
+	content: "\e624";
+}
+.#{$icomoon-class-name}-file3:before {
+	content: "\e625";
+}
+.#{$icomoon-class-name}-file4:before {
+	content: "\e626";
+}
+.#{$icomoon-class-name}-copy:before {
+	content: "\e627";
+}
+.#{$icomoon-class-name}-copy2:before {
+	content: "\e628";
+}
+.#{$icomoon-class-name}-copy3:before {
+	content: "\e629";
+}
+.#{$icomoon-class-name}-paste:before {
+	content: "\e62a";
+}
+.#{$icomoon-class-name}-paste2:before {
+	content: "\e62b";
+}
+.#{$icomoon-class-name}-paste3:before {
+	content: "\e62c";
+}
+.#{$icomoon-class-name}-stack:before {
+	content: "\e62d";
+}
+.#{$icomoon-class-name}-folder:before {
+	content: "\e62e";
+}
+.#{$icomoon-class-name}-folder-open:before {
+	content: "\e62f";
+}
+.#{$icomoon-class-name}-tag:before {
+	content: "\e630";
+}
+.#{$icomoon-class-name}-tags:before {
+	content: "\e631";
+}
+.#{$icomoon-class-name}-barcode:before {
+	content: "\e632";
+}
+.#{$icomoon-class-name}-qrcode:before {
+	content: "\e633";
+}
+.#{$icomoon-class-name}-ticket:before {
+	content: "\e634";
+}
+.#{$icomoon-class-name}-cart:before {
+	content: "\e635";
+}
+.#{$icomoon-class-name}-cart2:before {
+	content: "\e636";
+}
+.#{$icomoon-class-name}-cart3:before {
+	content: "\e637";
+}
+.#{$icomoon-class-name}-coin:before {
+	content: "\e638";
+}
+.#{$icomoon-class-name}-credit:before {
+	content: "\e639";
+}
+.#{$icomoon-class-name}-calculate:before {
+	content: "\e63a";
+}
+.#{$icomoon-class-name}-support:before {
+	content: "\e63b";
+}
+.#{$icomoon-class-name}-phone:before {
+	content: "\e63c";
+}
+.#{$icomoon-class-name}-phone-hang-up:before {
+	content: "\e63d";
+}
+.#{$icomoon-class-name}-address-book:before {
+	content: "\e63e";
+}
+.#{$icomoon-class-name}-notebook:before {
+	content: "\e63f";
+}
+.#{$icomoon-class-name}-envelope:before {
+	content: "\e640";
+}
+.#{$icomoon-class-name}-pushpin:before {
+	content: "\e641";
+}
+.#{$icomoon-class-name}-location:before {
+	content: "\e642";
+}
+.#{$icomoon-class-name}-location2:before {
+	content: "\e643";
+}
+.#{$icomoon-class-name}-compass:before {
+	content: "\e644";
+}
+.#{$icomoon-class-name}-map:before {
+	content: "\e645";
+}
+.#{$icomoon-class-name}-map2:before {
+	content: "\e646";
+}
+.#{$icomoon-class-name}-history:before {
+	content: "\e647";
+}
+.#{$icomoon-class-name}-clock:before {
+	content: "\e648";
+}
+.#{$icomoon-class-name}-clock2:before {
+	content: "\e649";
+}
+.#{$icomoon-class-name}-alarm:before {
+	content: "\e64a";
+}
+.#{$icomoon-class-name}-alarm2:before {
+	content: "\e64b";
+}
+.#{$icomoon-class-name}-bell:before {
+	content: "\e64c";
+}
+.#{$icomoon-class-name}-stopwatch:before {
+	content: "\e64d";
+}
+.#{$icomoon-class-name}-calendar:before {
+	content: "\e64e";
+}
+.#{$icomoon-class-name}-calendar2:before {
+	content: "\e64f";
+}
+.#{$icomoon-class-name}-print:before {
+	content: "\e650";
+}
+.#{$icomoon-class-name}-keyboard:before {
+	content: "\e651";
+}
+.#{$icomoon-class-name}-screen:before {
+	content: "\e652";
+}
+.#{$icomoon-class-name}-laptop:before {
+	content: "\e653";
+}
+.#{$icomoon-class-name}-mobile:before {
+	content: "\e654";
+}
+.#{$icomoon-class-name}-mobile2:before {
+	content: "\e655";
+}
+.#{$icomoon-class-name}-tablet:before {
+	content: "\e656";
+}
+.#{$icomoon-class-name}-tv:before {
+	content: "\e657";
+}
+.#{$icomoon-class-name}-cabinet:before {
+	content: "\e658";
+}
+.#{$icomoon-class-name}-drawer:before {
+	content: "\e659";
+}
+.#{$icomoon-class-name}-drawer2:before {
+	content: "\e65a";
+}
+.#{$icomoon-class-name}-drawer3:before {
+	content: "\e65b";
+}
+.#{$icomoon-class-name}-box-add:before {
+	content: "\e65c";
+}
+.#{$icomoon-class-name}-box-remove:before {
+	content: "\e65d";
+}
+.#{$icomoon-class-name}-download:before {
+	content: "\e65e";
+}
+.#{$icomoon-class-name}-upload:before {
+	content: "\e65f";
+}
+.#{$icomoon-class-name}-disk:before {
+	content: "\e660";
+}
+.#{$icomoon-class-name}-storage:before {
+	content: "\e661";
+}
+.#{$icomoon-class-name}-undo:before {
+	content: "\e662";
+}
+.#{$icomoon-class-name}-redo:before {
+	content: "\e663";
+}
+.#{$icomoon-class-name}-flip:before {
+	content: "\e664";
+}
+.#{$icomoon-class-name}-flip2:before {
+	content: "\e665";
+}
+.#{$icomoon-class-name}-undo2:before {
+	content: "\e666";
+}
+.#{$icomoon-class-name}-redo2:before {
+	content: "\e667";
+}
+.#{$icomoon-class-name}-forward:before {
+	content: "\e668";
+}
+.#{$icomoon-class-name}-reply:before {
+	content: "\e669";
+}
+.#{$icomoon-class-name}-bubble:before {
+	content: "\e66a";
+}
+.#{$icomoon-class-name}-bubbles:before {
+	content: "\e66b";
+}
+.#{$icomoon-class-name}-bubbles2:before {
+	content: "\e66c";
+}
+.#{$icomoon-class-name}-bubble2:before {
+	content: "\e66d";
+}
+.#{$icomoon-class-name}-bubbles3:before {
+	content: "\e66e";
+}
+.#{$icomoon-class-name}-bubbles4:before {
+	content: "\e66f";
+}
+.#{$icomoon-class-name}-user:before {
+	content: "\e670";
+}
+.#{$icomoon-class-name}-users:before {
+	content: "\e671";
+}
+.#{$icomoon-class-name}-user2:before {
+	content: "\e672";
+}
+.#{$icomoon-class-name}-users2:before {
+	content: "\e673";
+}
+.#{$icomoon-class-name}-user3:before {
+	content: "\e674";
+}
+.#{$icomoon-class-name}-user4:before {
+	content: "\e675";
+}
+.#{$icomoon-class-name}-quotes-left:before {
+	content: "\e676";
+}
+.#{$icomoon-class-name}-busy:before {
+	content: "\e677";
+}
+.#{$icomoon-class-name}-spinner:before {
+	content: "\e678";
+}
+.#{$icomoon-class-name}-spinner2:before {
+	content: "\e679";
+}
+.#{$icomoon-class-name}-spinner3:before {
+	content: "\e67a";
+}
+.#{$icomoon-class-name}-spinner4:before {
+	content: "\e67b";
+}
+.#{$icomoon-class-name}-spinner5:before {
+	content: "\e67c";
+}
+.#{$icomoon-class-name}-spinner6:before {
+	content: "\e67d";
+}
+.#{$icomoon-class-name}-binoculars:before {
+	content: "\e67e";
+}
+.#{$icomoon-class-name}-search:before {
+	content: "\e67f";
+}
+.#{$icomoon-class-name}-zoomin:before {
+	content: "\e680";
+}
+.#{$icomoon-class-name}-zoomout:before {
+	content: "\e681";
+}
+.#{$icomoon-class-name}-expand:before {
+	content: "\e682";
+}
+.#{$icomoon-class-name}-contract:before {
+	content: "\e683";
+}
+.#{$icomoon-class-name}-expand2:before {
+	content: "\e684";
+}
+.#{$icomoon-class-name}-contract2:before {
+	content: "\e685";
+}
+.#{$icomoon-class-name}-key:before {
+	content: "\e686";
+}
+.#{$icomoon-class-name}-key2:before {
+	content: "\e687";
+}
+.#{$icomoon-class-name}-lock:before {
+	content: "\e688";
+}
+.#{$icomoon-class-name}-lock2:before {
+	content: "\e689";
+}
+.#{$icomoon-class-name}-unlocked:before {
+	content: "\e68a";
+}
+.#{$icomoon-class-name}-wrench:before {
+	content: "\e68b";
+}
+.#{$icomoon-class-name}-settings:before {
+	content: "\e68c";
+}
+.#{$icomoon-class-name}-equalizer:before {
+	content: "\e68d";
+}
+.#{$icomoon-class-name}-cog:before {
+	content: "\e68e";
+}
+.#{$icomoon-class-name}-cogs:before {
+	content: "\e68f";
+}
+.#{$icomoon-class-name}-cog2:before {
+	content: "\e690";
+}
+.#{$icomoon-class-name}-hammer:before {
+	content: "\e691";
+}
+.#{$icomoon-class-name}-wand:before {
+	content: "\e692";
+}
+.#{$icomoon-class-name}-aid:before {
+	content: "\e693";
+}
+.#{$icomoon-class-name}-bug:before {
+	content: "\e694";
+}
+.#{$icomoon-class-name}-pie:before {
+	content: "\e695";
+}
+.#{$icomoon-class-name}-stats:before {
+	content: "\e696";
+}
+.#{$icomoon-class-name}-bars:before {
+	content: "\e697";
+}
+.#{$icomoon-class-name}-bars2:before {
+	content: "\e698";
+}
+.#{$icomoon-class-name}-gift:before {
+	content: "\e699";
+}
+.#{$icomoon-class-name}-trophy:before {
+	content: "\e69a";
+}
+.#{$icomoon-class-name}-glass:before {
+	content: "\e69b";
+}
+.#{$icomoon-class-name}-mug:before {
+	content: "\e69c";
+}
+.#{$icomoon-class-name}-food:before {
+	content: "\e69d";
+}
+.#{$icomoon-class-name}-leaf:before {
+	content: "\e69e";
+}
+.#{$icomoon-class-name}-rocket:before {
+	content: "\e69f";
+}
+.#{$icomoon-class-name}-meter:before {
+	content: "\e6a0";
+}
+.#{$icomoon-class-name}-meter2:before {
+	content: "\e6a1";
+}
+.#{$icomoon-class-name}-dashboard:before {
+	content: "\e6a2";
+}
+.#{$icomoon-class-name}-hammer2:before {
+	content: "\e6a3";
+}
+.#{$icomoon-class-name}-fire:before {
+	content: "\e6a4";
+}
+.#{$icomoon-class-name}-lab:before {
+	content: "\e6a5";
+}
+.#{$icomoon-class-name}-magnet:before {
+	content: "\e6a6";
+}
+.#{$icomoon-class-name}-remove:before {
+	content: "\e6a7";
+}
+.#{$icomoon-class-name}-remove2:before {
+	content: "\e6a8";
+}
+.#{$icomoon-class-name}-briefcase:before {
+	content: "\e6a9";
+}
+.#{$icomoon-class-name}-airplane:before {
+	content: "\e6aa";
+}
+.#{$icomoon-class-name}-truck:before {
+	content: "\e6ab";
+}
+.#{$icomoon-class-name}-road:before {
+	content: "\e6ac";
+}
+.#{$icomoon-class-name}-accessibility:before {
+	content: "\e6ad";
+}
+.#{$icomoon-class-name}-target:before {
+	content: "\e6ae";
+}
+.#{$icomoon-class-name}-shield:before {
+	content: "\e6af";
+}
+.#{$icomoon-class-name}-lightning:before {
+	content: "\e6b0";
+}
+.#{$icomoon-class-name}-switch:before {
+	content: "\e6b1";
+}
+.#{$icomoon-class-name}-powercord:before {
+	content: "\e6b2";
+}
+.#{$icomoon-class-name}-signup:before {
+	content: "\e6b3";
+}
+.#{$icomoon-class-name}-list:before {
+	content: "\e6b4";
+}
+.#{$icomoon-class-name}-list2:before {
+	content: "\e6b5";
+}
+.#{$icomoon-class-name}-numbered-list:before {
+	content: "\e6b6";
+}
+.#{$icomoon-class-name}-menu:before {
+	content: "\e6b7";
+}
+.#{$icomoon-class-name}-menu2:before {
+	content: "\e6b8";
+}
+.#{$icomoon-class-name}-tree:before {
+	content: "\e6b9";
+}
+.#{$icomoon-class-name}-cloud:before {
+	content: "\e6ba";
+}
+.#{$icomoon-class-name}-cloud-download:before {
+	content: "\e6bb";
+}
+.#{$icomoon-class-name}-cloud-upload:before {
+	content: "\e6bc";
+}
+.#{$icomoon-class-name}-download2:before {
+	content: "\e6bd";
+}
+.#{$icomoon-class-name}-upload2:before {
+	content: "\e6be";
+}
+.#{$icomoon-class-name}-download3:before {
+	content: "\e6bf";
+}
+.#{$icomoon-class-name}-upload3:before {
+	content: "\e6c0";
+}
+.#{$icomoon-class-name}-globe:before {
+	content: "\e6c1";
+}
+.#{$icomoon-class-name}-earth:before {
+	content: "\e6c2";
+}
+.#{$icomoon-class-name}-link:before {
+	content: "\e6c3";
+}
+.#{$icomoon-class-name}-flag:before {
+	content: "\e6c4";
+}
+.#{$icomoon-class-name}-attachment:before {
+	content: "\e6c5";
+}
+.#{$icomoon-class-name}-eye:before {
+	content: "\e6c6";
+}
+.#{$icomoon-class-name}-eye-blocked:before {
+	content: "\e6c7";
+}
+.#{$icomoon-class-name}-eye2:before {
+	content: "\e6c8";
+}
+.#{$icomoon-class-name}-bookmark:before {
+	content: "\e6c9";
+}
+.#{$icomoon-class-name}-bookmarks:before {
+	content: "\e6ca";
+}
+.#{$icomoon-class-name}-brightness-medium:before {
+	content: "\e6cb";
+}
+.#{$icomoon-class-name}-brightness-contrast:before {
+	content: "\e6cc";
+}
+.#{$icomoon-class-name}-contrast:before {
+	content: "\e6cd";
+}
+.#{$icomoon-class-name}-star:before {
+	content: "\e6ce";
+}
+.#{$icomoon-class-name}-star2:before {
+	content: "\e6cf";
+}
+.#{$icomoon-class-name}-star3:before {
+	content: "\e6d0";
+}
+.#{$icomoon-class-name}-heart:before {
+	content: "\e6d1";
+}
+.#{$icomoon-class-name}-heart2:before {
+	content: "\e6d2";
+}
+.#{$icomoon-class-name}-heart-broken:before {
+	content: "\e6d3";
+}
+.#{$icomoon-class-name}-thumbs-up:before {
+	content: "\e6d4";
+}
+.#{$icomoon-class-name}-thumbs-up2:before {
+	content: "\e6d5";
+}
+.#{$icomoon-class-name}-happy:before {
+	content: "\e6d6";
+}
+.#{$icomoon-class-name}-happy2:before {
+	content: "\e6d7";
+}
+.#{$icomoon-class-name}-smiley:before {
+	content: "\e6d8";
+}
+.#{$icomoon-class-name}-smiley2:before {
+	content: "\e6d9";
+}
+.#{$icomoon-class-name}-tongue:before {
+	content: "\e6da";
+}
+.#{$icomoon-class-name}-tongue2:before {
+	content: "\e6db";
+}
+.#{$icomoon-class-name}-sad:before {
+	content: "\e6dc";
+}
+.#{$icomoon-class-name}-sad2:before {
+	content: "\e6dd";
+}
+.#{$icomoon-class-name}-wink:before {
+	content: "\e6de";
+}
+.#{$icomoon-class-name}-wink2:before {
+	content: "\e6df";
+}
+.#{$icomoon-class-name}-grin:before {
+	content: "\e6e0";
+}
+.#{$icomoon-class-name}-grin2:before {
+	content: "\e6e1";
+}
+.#{$icomoon-class-name}-cool:before {
+	content: "\e6e2";
+}
+.#{$icomoon-class-name}-cool2:before {
+	content: "\e6e3";
+}
+.#{$icomoon-class-name}-angry:before {
+	content: "\e6e4";
+}
+.#{$icomoon-class-name}-angry2:before {
+	content: "\e6e5";
+}
+.#{$icomoon-class-name}-evil:before {
+	content: "\e6e6";
+}
+.#{$icomoon-class-name}-evil2:before {
+	content: "\e6e7";
+}
+.#{$icomoon-class-name}-shocked:before {
+	content: "\e6e8";
+}
+.#{$icomoon-class-name}-shocked2:before {
+	content: "\e6e9";
+}
+.#{$icomoon-class-name}-confused:before {
+	content: "\e6ea";
+}
+.#{$icomoon-class-name}-confused2:before {
+	content: "\e6eb";
+}
+.#{$icomoon-class-name}-neutral:before {
+	content: "\e6ec";
+}
+.#{$icomoon-class-name}-neutral2:before {
+	content: "\e6ed";
+}
+.#{$icomoon-class-name}-wondering:before {
+	content: "\e6ee";
+}
+.#{$icomoon-class-name}-wondering2:before {
+	content: "\e6ef";
+}
+.#{$icomoon-class-name}-point-up:before {
+	content: "\e6f0";
+}
+.#{$icomoon-class-name}-point-right:before {
+	content: "\e6f1";
+}
+.#{$icomoon-class-name}-point-down:before {
+	content: "\e6f2";
+}
+.#{$icomoon-class-name}-point-left:before {
+	content: "\e6f3";
+}
+.#{$icomoon-class-name}-warning:before {
+	content: "\e6f4";
+}
+.#{$icomoon-class-name}-notification:before {
+	content: "\e6f5";
+}
+.#{$icomoon-class-name}-question:before {
+	content: "\e6f6";
+}
+.#{$icomoon-class-name}-info:before {
+	content: "\e6f7";
+}
+.#{$icomoon-class-name}-info2:before {
+	content: "\e6f8";
+}
+.#{$icomoon-class-name}-blocked:before {
+	content: "\e6f9";
+}
+.#{$icomoon-class-name}-cancel-circle:before {
+	content: "\e6fa";
+}
+.#{$icomoon-class-name}-checkmark-circle:before {
+	content: "\e6fb";
+}
+.#{$icomoon-class-name}-spam:before {
+	content: "\e6fc";
+}
+.#{$icomoon-class-name}-close:before {
+	content: "\e6fd";
+}
+.#{$icomoon-class-name}-checkmark:before {
+	content: "\e6fe";
+}
+.#{$icomoon-class-name}-checkmark2:before {
+	content: "\e6ff";
+}
+.#{$icomoon-class-name}-spell-check:before {
+	content: "\e700";
+}
+.#{$icomoon-class-name}-minus:before {
+	content: "\e701";
+}
+.#{$icomoon-class-name}-plus:before {
+	content: "\e702";
+}
+.#{$icomoon-class-name}-enter:before {
+	content: "\e703";
+}
+.#{$icomoon-class-name}-exit:before {
+	content: "\e704";
+}
+.#{$icomoon-class-name}-play2:before {
+	content: "\e705";
+}
+.#{$icomoon-class-name}-pause:before {
+	content: "\e706";
+}
+.#{$icomoon-class-name}-stop:before {
+	content: "\e707";
+}
+.#{$icomoon-class-name}-backward:before {
+	content: "\e708";
+}
+.#{$icomoon-class-name}-forward2:before {
+	content: "\e709";
+}
+.#{$icomoon-class-name}-play3:before {
+	content: "\e70a";
+}
+.#{$icomoon-class-name}-pause2:before {
+	content: "\e70b";
+}
+.#{$icomoon-class-name}-stop2:before {
+	content: "\e70c";
+}
+.#{$icomoon-class-name}-backward2:before {
+	content: "\e70d";
+}
+.#{$icomoon-class-name}-forward3:before {
+	content: "\e70e";
+}
+.#{$icomoon-class-name}-first:before {
+	content: "\e70f";
+}
+.#{$icomoon-class-name}-last:before {
+	content: "\e710";
+}
+.#{$icomoon-class-name}-previous:before {
+	content: "\e711";
+}
+.#{$icomoon-class-name}-next:before {
+	content: "\e712";
+}
+.#{$icomoon-class-name}-eject:before {
+	content: "\e713";
+}
+.#{$icomoon-class-name}-volume-high:before {
+	content: "\e714";
+}
+.#{$icomoon-class-name}-volume-medium:before {
+	content: "\e715";
+}
+.#{$icomoon-class-name}-volume-low:before {
+	content: "\e716";
+}
+.#{$icomoon-class-name}-volume-mute:before {
+	content: "\e717";
+}
+.#{$icomoon-class-name}-volume-mute2:before {
+	content: "\e718";
+}
+.#{$icomoon-class-name}-volume-increase:before {
+	content: "\e719";
+}
+.#{$icomoon-class-name}-volume-decrease:before {
+	content: "\e71a";
+}
+.#{$icomoon-class-name}-loop:before {
+	content: "\e71b";
+}
+.#{$icomoon-class-name}-loop2:before {
+	content: "\e71c";
+}
+.#{$icomoon-class-name}-loop3:before {
+	content: "\e71d";
+}
+.#{$icomoon-class-name}-shuffle:before {
+	content: "\e71e";
+}
+.#{$icomoon-class-name}-arrow-up-left:before {
+	content: "\e71f";
+}
+.#{$icomoon-class-name}-arrow-up:before {
+	content: "\e720";
+}
+.#{$icomoon-class-name}-arrow-up-right:before {
+	content: "\e721";
+}
+.#{$icomoon-class-name}-arrow-right:before {
+	content: "\e722";
+}
+.#{$icomoon-class-name}-arrow-down-right:before {
+	content: "\e723";
+}
+.#{$icomoon-class-name}-arrow-down:before {
+	content: "\e724";
+}
+.#{$icomoon-class-name}-arrow-down-left:before {
+	content: "\e725";
+}
+.#{$icomoon-class-name}-arrow-left:before {
+	content: "\e726";
+}
+.#{$icomoon-class-name}-arrow-up-left2:before {
+	content: "\e727";
+}
+.#{$icomoon-class-name}-arrow-up2:before {
+	content: "\e728";
+}
+.#{$icomoon-class-name}-arrow-up-right2:before {
+	content: "\e729";
+}
+.#{$icomoon-class-name}-arrow-right2:before {
+	content: "\e72a";
+}
+.#{$icomoon-class-name}-arrow-down-right2:before {
+	content: "\e72b";
+}
+.#{$icomoon-class-name}-arrow-down2:before {
+	content: "\e72c";
+}
+.#{$icomoon-class-name}-arrow-down-left2:before {
+	content: "\e72d";
+}
+.#{$icomoon-class-name}-arrow-left2:before {
+	content: "\e72e";
+}
+.#{$icomoon-class-name}-arrow-up-left3:before {
+	content: "\e72f";
+}
+.#{$icomoon-class-name}-arrow-up3:before {
+	content: "\e730";
+}
+.#{$icomoon-class-name}-arrow-up-right3:before {
+	content: "\e731";
+}
+.#{$icomoon-class-name}-arrow-right3:before {
+	content: "\e732";
+}
+.#{$icomoon-class-name}-arrow-down-right3:before {
+	content: "\e733";
+}
+.#{$icomoon-class-name}-arrow-down3:before {
+	content: "\e734";
+}
+.#{$icomoon-class-name}-arrow-down-left3:before {
+	content: "\e735";
+}
+.#{$icomoon-class-name}-arrow-left3:before {
+	content: "\e736";
+}
+.#{$icomoon-class-name}-tab:before {
+	content: "\e737";
+}
+.#{$icomoon-class-name}-checkbox-checked:before {
+	content: "\e738";
+}
+.#{$icomoon-class-name}-checkbox-unchecked:before {
+	content: "\e739";
+}
+.#{$icomoon-class-name}-checkbox-partial:before {
+	content: "\e73a";
+}
+.#{$icomoon-class-name}-radio-checked:before {
+	content: "\e73b";
+}
+.#{$icomoon-class-name}-radio-unchecked:before {
+	content: "\e73c";
+}
+.#{$icomoon-class-name}-crop:before {
+	content: "\e73d";
+}
+.#{$icomoon-class-name}-scissors:before {
+	content: "\e73e";
+}
+.#{$icomoon-class-name}-filter:before {
+	content: "\e73f";
+}
+.#{$icomoon-class-name}-filter2:before {
+	content: "\e740";
+}
+.#{$icomoon-class-name}-font:before {
+	content: "\e741";
+}
+.#{$icomoon-class-name}-text-height:before {
+	content: "\e742";
+}
+.#{$icomoon-class-name}-text-width:before {
+	content: "\e743";
+}
+.#{$icomoon-class-name}-bold:before {
+	content: "\e744";
+}
+.#{$icomoon-class-name}-underline:before {
+	content: "\e745";
+}
+.#{$icomoon-class-name}-italic:before {
+	content: "\e746";
+}
+.#{$icomoon-class-name}-strikethrough:before {
+	content: "\e747";
+}
+.#{$icomoon-class-name}-omega:before {
+	content: "\e748";
+}
+.#{$icomoon-class-name}-sigma:before {
+	content: "\e749";
+}
+.#{$icomoon-class-name}-table:before {
+	content: "\e74a";
+}
+.#{$icomoon-class-name}-table2:before {
+	content: "\e74b";
+}
+.#{$icomoon-class-name}-insert-template:before {
+	content: "\e74c";
+}
+.#{$icomoon-class-name}-pilcrow:before {
+	content: "\e74d";
+}
+.#{$icomoon-class-name}-lefttoright:before {
+	content: "\e74e";
+}
+.#{$icomoon-class-name}-righttoleft:before {
+	content: "\e74f";
+}
+.#{$icomoon-class-name}-paragraph-left:before {
+	content: "\e750";
+}
+.#{$icomoon-class-name}-paragraph-center:before {
+	content: "\e751";
+}
+.#{$icomoon-class-name}-paragraph-right:before {
+	content: "\e752";
+}
+.#{$icomoon-class-name}-paragraph-justify:before {
+	content: "\e753";
+}
+.#{$icomoon-class-name}-paragraph-left2:before {
+	content: "\e754";
+}
+.#{$icomoon-class-name}-paragraph-center2:before {
+	content: "\e755";
+}
+.#{$icomoon-class-name}-paragraph-right2:before {
+	content: "\e756";
+}
+.#{$icomoon-class-name}-paragraph-justify2:before {
+	content: "\e757";
+}
+.#{$icomoon-class-name}-indent-increase:before {
+	content: "\e758";
+}
+.#{$icomoon-class-name}-indent-decrease:before {
+	content: "\e759";
+}
+.#{$icomoon-class-name}-newtab:before {
+	content: "\e75a";
+}
+.#{$icomoon-class-name}-embed:before {
+	content: "\e75b";
+}
+.#{$icomoon-class-name}-code:before {
+	content: "\e75c";
+}
+.#{$icomoon-class-name}-console:before {
+	content: "\e75d";
+}
+.#{$icomoon-class-name}-share:before {
+	content: "\e75e";
+}
+.#{$icomoon-class-name}-mail:before {
+	content: "\e75f";
+}
+.#{$icomoon-class-name}-mail2:before {
+	content: "\e760";
+}
+.#{$icomoon-class-name}-mail3:before {
+	content: "\e761";
+}
+.#{$icomoon-class-name}-mail4:before {
+	content: "\e762";
+}
+.#{$icomoon-class-name}-google:before {
+	content: "\e763";
+}
+.#{$icomoon-class-name}-googleplus:before {
+	content: "\e764";
+}
+.#{$icomoon-class-name}-googleplus2:before {
+	content: "\e765";
+}
+.#{$icomoon-class-name}-googleplus3:before {
+	content: "\e766";
+}
+.#{$icomoon-class-name}-googleplus4:before {
+	content: "\e767";
+}
+.#{$icomoon-class-name}-google-drive:before {
+	content: "\e768";
+}
+.#{$icomoon-class-name}-facebook:before {
+	content: "\e769";
+}
+.#{$icomoon-class-name}-facebook2:before {
+	content: "\e76a";
+}
+.#{$icomoon-class-name}-facebook3:before {
+	content: "\e76b";
+}
+.#{$icomoon-class-name}-instagram:before {
+	content: "\e76c";
+}
+.#{$icomoon-class-name}-twitter:before {
+	content: "\e76d";
+}
+.#{$icomoon-class-name}-twitter2:before {
+	content: "\e76e";
+}
+.#{$icomoon-class-name}-twitter3:before {
+	content: "\e76f";
+}
+.#{$icomoon-class-name}-feed2:before {
+	content: "\e770";
+}
+.#{$icomoon-class-name}-feed3:before {
+	content: "\e771";
+}
+.#{$icomoon-class-name}-feed4:before {
+	content: "\e772";
+}
+.#{$icomoon-class-name}-youtube:before {
+	content: "\e773";
+}
+.#{$icomoon-class-name}-youtube2:before {
+	content: "\e774";
+}
+.#{$icomoon-class-name}-vimeo:before {
+	content: "\e775";
+}
+.#{$icomoon-class-name}-vimeo2:before {
+	content: "\e776";
+}
+.#{$icomoon-class-name}-vimeo3:before {
+	content: "\e777";
+}
+.#{$icomoon-class-name}-lanyrd:before {
+	content: "\e778";
+}
+.#{$icomoon-class-name}-flickr:before {
+	content: "\e779";
+}
+.#{$icomoon-class-name}-flickr2:before {
+	content: "\e77a";
+}
+.#{$icomoon-class-name}-flickr3:before {
+	content: "\e77b";
+}
+.#{$icomoon-class-name}-flickr4:before {
+	content: "\e77c";
+}
+.#{$icomoon-class-name}-picassa:before {
+	content: "\e77d";
+}
+.#{$icomoon-class-name}-picassa2:before {
+	content: "\e77e";
+}
+.#{$icomoon-class-name}-dribbble:before {
+	content: "\e77f";
+}
+.#{$icomoon-class-name}-dribbble2:before {
+	content: "\e780";
+}
+.#{$icomoon-class-name}-dribbble3:before {
+	content: "\e781";
+}
+.#{$icomoon-class-name}-forrst:before {
+	content: "\e782";
+}
+.#{$icomoon-class-name}-forrst2:before {
+	content: "\e783";
+}
+.#{$icomoon-class-name}-deviantart:before {
+	content: "\e784";
+}
+.#{$icomoon-class-name}-deviantart2:before {
+	content: "\e785";
+}
+.#{$icomoon-class-name}-steam:before {
+	content: "\e786";
+}
+.#{$icomoon-class-name}-steam2:before {
+	content: "\e787";
+}
+.#{$icomoon-class-name}-github:before {
+	content: "\e788";
+}
+.#{$icomoon-class-name}-github2:before {
+	content: "\e789";
+}
+.#{$icomoon-class-name}-github3:before {
+	content: "\e78a";
+}
+.#{$icomoon-class-name}-github4:before {
+	content: "\e78b";
+}
+.#{$icomoon-class-name}-github5:before {
+	content: "\e78c";
+}
+.#{$icomoon-class-name}-wordpress:before {
+	content: "\e78d";
+}
+.#{$icomoon-class-name}-wordpress2:before {
+	content: "\e78e";
+}
+.#{$icomoon-class-name}-joomla:before {
+	content: "\e78f";
+}
+.#{$icomoon-class-name}-blogger:before {
+	content: "\e790";
+}
+.#{$icomoon-class-name}-blogger2:before {
+	content: "\e791";
+}
+.#{$icomoon-class-name}-tumblr:before {
+	content: "\e792";
+}
+.#{$icomoon-class-name}-tumblr2:before {
+	content: "\e793";
+}
+.#{$icomoon-class-name}-yahoo:before {
+	content: "\e794";
+}
+.#{$icomoon-class-name}-tux:before {
+	content: "\e795";
+}
+.#{$icomoon-class-name}-apple:before {
+	content: "\e796";
+}
+.#{$icomoon-class-name}-finder:before {
+	content: "\e797";
+}
+.#{$icomoon-class-name}-android:before {
+	content: "\e798";
+}
+.#{$icomoon-class-name}-windows:before {
+	content: "\e799";
+}
+.#{$icomoon-class-name}-windows8:before {
+	content: "\e79a";
+}
+.#{$icomoon-class-name}-soundcloud:before {
+	content: "\e79b";
+}
+.#{$icomoon-class-name}-soundcloud2:before {
+	content: "\e79c";
+}
+.#{$icomoon-class-name}-skype:before {
+	content: "\e79d";
+}
+.#{$icomoon-class-name}-reddit:before {
+	content: "\e79e";
+}
+.#{$icomoon-class-name}-linkedin:before {
+	content: "\e79f";
+}
+.#{$icomoon-class-name}-lastfm:before {
+	content: "\e7a0";
+}
+.#{$icomoon-class-name}-lastfm2:before {
+	content: "\e7a1";
+}
+.#{$icomoon-class-name}-delicious:before {
+	content: "\e7a2";
+}
+.#{$icomoon-class-name}-stumbleupon:before {
+	content: "\e7a3";
+}
+.#{$icomoon-class-name}-stumbleupon2:before {
+	content: "\e7a4";
+}
+.#{$icomoon-class-name}-stackoverflow:before {
+	content: "\e7a5";
+}
+.#{$icomoon-class-name}-pinterest:before {
+	content: "\e7a6";
+}
+.#{$icomoon-class-name}-pinterest2:before {
+	content: "\e7a7";
+}
+.#{$icomoon-class-name}-xing:before {
+	content: "\e7a8";
+}
+.#{$icomoon-class-name}-xing2:before {
+	content: "\e7a9";
+}
+.#{$icomoon-class-name}-flattr:before {
+	content: "\e7aa";
+}
+.#{$icomoon-class-name}-foursquare:before {
+	content: "\e7ab";
+}
+.#{$icomoon-class-name}-foursquare2:before {
+	content: "\e7ac";
+}
+.#{$icomoon-class-name}-paypal:before {
+	content: "\e7ad";
+}
+.#{$icomoon-class-name}-paypal2:before {
+	content: "\e7ae";
+}
+.#{$icomoon-class-name}-paypal3:before {
+	content: "\e7af";
+}
+.#{$icomoon-class-name}-yelp:before {
+	content: "\e7b0";
+}
+.#{$icomoon-class-name}-libreoffice:before {
+	content: "\e7b1";
+}
+.#{$icomoon-class-name}-file-pdf:before {
+	content: "\e7b2";
+}
+.#{$icomoon-class-name}-file-openoffice:before {
+	content: "\e7b3";
+}
+.#{$icomoon-class-name}-file-word:before {
+	content: "\e7b4";
+}
+.#{$icomoon-class-name}-file-excel:before {
+	content: "\e7b5";
+}
+.#{$icomoon-class-name}-file-zip:before {
+	content: "\e7b6";
+}
+.#{$icomoon-class-name}-file-powerpoint:before {
+	content: "\e7b7";
+}
+.#{$icomoon-class-name}-file-xml:before {
+	content: "\e7b8";
+}
+.#{$icomoon-class-name}-file-css:before {
+	content: "\e7b9";
+}
+.#{$icomoon-class-name}-html5:before {
+	content: "\e7ba";
+}
+.#{$icomoon-class-name}-html52:before {
+	content: "\e7bb";
+}
+.#{$icomoon-class-name}-css3:before {
+	content: "\e7bc";
+}
+.#{$icomoon-class-name}-chrome:before {
+	content: "\e7bd";
+}
+.#{$icomoon-class-name}-firefox:before {
+	content: "\e7be";
+}
+.#{$icomoon-class-name}-IE:before {
+	content: "\e7bf";
+}
+.#{$icomoon-class-name}-opera:before {
+	content: "\e7c0";
+}
+.#{$icomoon-class-name}-safari:before {
+	content: "\e7c1";
+}
+.#{$icomoon-class-name}-IcoMoon:before {
+	content: "\e7c2";
+}

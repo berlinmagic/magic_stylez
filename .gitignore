@@ -9,3 +9,4 @@ test/dummy/tmp/
 test/dummy/public/assets
 test/dummy/.sass-cache
 *.gem
+gems/

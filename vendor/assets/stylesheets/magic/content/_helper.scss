@@ -11,13 +11,55 @@
 	}
 	&:after {
 		display: block; position: absolute; content: "";
-		margin: 0; padding: 0;
-		top: 50%; height: 1px;
+		margin: -1px 0 0; padding: 0;
+		top: 50%; height: 0;
 		left: 0; right: 0;
-		background: #ccc;
+		border-top: solid 1px #ccc;
+		border-bottom: solid 1px $white;
 		z-index: 1;
 	}
 }
+
+.section {
+	.divider {
+		
+		span { background: $main-bg; }
+	}
+	hr {
+		display: block; position: relative;
+		margin: 10px 0; padding: 0;
+		height: 0;
+		border: none;
+		border-top: solid 1px #ccc;
+		border-bottom: solid 1px $white;
+	}
+
+    &.dark {
+        background: $dark-bg;
+		.divider span { background: $dark-bg; }
+    }
+	&.bright {
+		background: $white;
+		.divider span { background: $white; }
+	}
+	&.brand { 
+		background: $brand-color; 
+		.divider span { background: $brand-color; }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .dot {
 	display: block; display: inline-block; position: relative;

@@ -60,9 +60,23 @@
 	// @include all_inputs { background: $white; }
 	
 	textarea { background: $dark-bg; }
+	
+	.divider {
+		
+		span { background: $main-bg; }
+	}
+	hr {
+		display: block; position: relative;
+		margin: 10px 0; padding: 0;
+		height: 0;
+		border: none;
+		border-top: solid 1px #ccc;
+		border-bottom: solid 1px $white;
+	}
 
     &.dark {
         background: $dark-bg;
+		.divider span { background: $dark-bg; }
         .three-previews .preview { border-color: $main-border-color; }
 		input.half, textarea.half, textarea { background: $white; }
 		@include all_inputs {
@@ -71,10 +85,14 @@
     }
 	&.bright {
 		background: $white;
+		.divider span { background: $white; }
 		@include all_inputs { background: $main-bg; }
 		textarea { background: $dark-bg; }
 	}
-	&.brand { background: $brand-color; }
+	&.brand { 
+		background: $brand-color; 
+		.divider span { background: $brand-color; }
+	}
     &.blank { background: transparent; }
 
 	&.head {

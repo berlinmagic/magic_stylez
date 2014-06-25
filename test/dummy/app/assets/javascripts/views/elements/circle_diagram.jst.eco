@@ -1,0 +1,67 @@
+<div class="section head">
+  <div class="corset">
+    <h1>CSS Circle-Diagram</h1>
+  </div>
+</div>
+
+
+
+<div class="section">
+  <div class="corset tight">
+    
+    <div class="row">
+			<div class="col-sm-6">
+				<div class="circle-diagram" data-percent="87">
+					<div class="outer_half_one"></div>
+					<div class="outer_half_two"></div>
+					<div class="inner_half_one"></div>
+					<div class="inner_half_two"></div>
+					<div class="middle_full">87 %</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="circle-diagram dark" data-percent="63">
+					<div class="outer_half_one"></div>
+					<div class="outer_half_two"></div>
+					<div class="inner_half_one"></div>
+					<div class="inner_half_two"></div>
+					<div class="middle_full">63 %</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+    
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="corset tight">
+    
+    <div class="row">
+			<div class="col-sm-6">
+				<div class="circle-diagram responsive" data-percent="87">
+          <img src="<%= assetPath("magic/helper/blank_10.png") %>" class="placeholder-pic" />
+					<div class="outer_half_one"></div>
+					<div class="outer_half_two"></div>
+					<div class="inner_half_one"></div>
+					<div class="inner_half_two"></div>
+					<div class="middle_full">87 %</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="circle-diagram dark responsive" data-percent="63">
+				  <img src="<%= assetPath("magic/helper/blank_10.png") %>" class="placeholder-pic" />
+					<div class="outer_half_one"></div>
+					<div class="outer_half_two"></div>
+					<div class="inner_half_one"></div>
+					<div class="inner_half_two"></div>
+					<div class="middle_full">63 %</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+    
+  </div>
+</div>
+

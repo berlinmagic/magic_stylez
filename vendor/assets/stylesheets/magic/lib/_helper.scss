@@ -1,71 +1,20 @@
-// load bourbon sass helper
-@import "bourbon";
-// load twitter bootstrap
-@import "magic/lib/twbs";
-// load bourbon again, to overwriter twbs helpers
-@import "bourbon";
-
-// load some basic methods
-@import "magic/lib/cross_browser";
-@import "magic/lib/media_querries";
-// load style helper
-@import "magic/lib/animation";
-@import "magic/lib/text";
-@import "magic/lib/filter";
-@import "magic/lib/forms";
-
-// load effects
-@import "magic/effects/shadows";
-@import "magic/effects/reflections";
-
-// load icons
-@import "magic/icons/magicons";
-@import "magic/icons/orderlifticons";
-
-
-// load layout helper
-@import "magic/layout/section";
-@import "magic/layout/corset";
-// @import "magic/layout/tables";
-@import "magic/layout/fullpage_table";
-
-
-// load content helper
-@import "magic/content/banner";
-@import "magic/content/box";
-@import "magic/content/forms";
-@import "magic/content/header";
-@import "magic/content/helper";
-@import "magic/content/icons";
-@import "magic/content/panel";
-@import "magic/content/pix";
-
-
-@import "magic/layout/body";
-
-
-
-@import "magic/lists/nav";
-
-
-
-
-
-
-
-
-
-.btn {
-	@include border-radius(0);
-	&.btn-default, &.btn-primary, &.btn-success, &.btn-info, &.btn-warning, &.btn-danger {
-		@include box-shadow( inset 0 1px 0 0 rgba(255,255,255, .42));
-	}
+@mixin squareSize( $size ) {
+	width: #{ $size }px;
+	height: #{ $size }px;
 }
 
-
-
-
-
+@mixin horizontal-padding( $pad: 5px ) {
+	padding-left: $pad; padding-right: $pad;
+}
+@mixin vertical-padding( $pad: 5px ) {
+	padding-top: $pad; padding-bottom: $pad;
+}
+@mixin horizontal-margin( $pad: 5px ) {
+	margin-left: $pad; margin-right: $pad;
+}
+@mixin vertical-margin( $pad: 5px ) {
+	margin-top: $pad; margin-bottom: $pad;
+}
 
 
 

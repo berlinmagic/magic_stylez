@@ -4,4 +4,9 @@ class FrontController < ApplicationController
     Rails.logger.info "Front - Start"
   end
   
+  def templates
+    Rails.logger.info "Front - templates"
+    render "templates/#{params[:template]}", layout: "blank"
+  end
+  
 end

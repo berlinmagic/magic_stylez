@@ -23,14 +23,14 @@
 
 
 @mixin raised_shadow( $color, $times: 3, $horizontal: 0, $vertical: 10px, $blur: 10px, $size: -10px ) {
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
 }
 
 @mixin pseudo_raised_shadow($color,$times:3,$gap:10px,$radius:3px,$horizontal:0,$vertical:3px,$blur:7px,$size:0){
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	// z-index: 3;
 	&:before {
 		content: ""; display: block; position: absolute; width:auto;
@@ -46,8 +46,8 @@
 }
 
 @mixin lifted_shadow( $color, $times: 3, $horizontal: 0, $vertical: 15px, $blur: 10px, $size: 0 ) {
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	&:before, &:after {
 		content: ""; display: block; position: absolute;
 		bottom:15px;
@@ -67,8 +67,8 @@
 }
 
 @mixin perspective_shadow( $color, $times: 3, $degre: 30, $blur: 10px ) {
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	&:before, &:after {
 		content: ""; display: block; position: absolute;
 		background: transparent;
@@ -92,8 +92,8 @@
 }
 
 @mixin vertical_curves( $color, $times: 3, $horizontal: 0, $vertical: 0, $blur: 15px, $size: 0 ) {
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	&:before {
 		content: ""; display: block; position: absolute;
 		top: 10px; bottom: 10px;
@@ -105,8 +105,8 @@
 }
 
 @mixin horizontal_curves( $color, $times: 3, $horizontal: 0, $vertical: 0, $blur: 15px, $size: 0 ) {
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	&:before {
 		content: ""; display: block; position: absolute;
 		top: 0; bottom: 0;
@@ -118,8 +118,8 @@
 }
 
 @mixin vertical_shine( $color, $times: 1, $width: 3px, $blur: 10px, $size: 0 ) {
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	overflow: hidden;
 	&:before, &:after {
 		content: ""; display: block; position: absolute; z-index: 55;
@@ -139,8 +139,8 @@
 }
 
 @mixin horizontal_shine( $color, $times: 1, $width: 3px, $blur: 10px, $size: 0 ) {
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	overflow: hidden;
 	&:before, &:after {
 		content: ""; display: block; position: absolute; z-index: 55;
@@ -163,8 +163,8 @@
 	$that: "";
 	$horizontal: 0;
 	$vertical: 0;
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	&:before {
 		content:""; position:absolute; z-index: -2;
 		@if $position == top {
@@ -202,8 +202,8 @@
 	$that: "";
 	$horizontal: 0;
 	$vertical: 0;
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	overflow:hidden;
 	&:before {
 		content:""; position:absolute; z-index: 3;
@@ -241,8 +241,8 @@
 
 
 @mixin paper_shadow( $color, $times: 3 ) {
-	position: relative;
-	display: block;
+	// position: relative;
+	// display: block;
 	&:before {
 		content:""; position:absolute; z-index: -2;
 		// @include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);

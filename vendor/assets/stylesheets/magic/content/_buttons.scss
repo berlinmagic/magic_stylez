@@ -1,0 +1,296 @@
+.btn-group-block.input-group {
+	.btn {
+		text-align: left;
+		padding: 10px;
+		&.icn {
+			text-align: center;
+		}
+	}
+}
+
+.btn-group-block {
+	@include box-sizing(border-box);
+	display: table;
+    width: 100%;
+    margin: 0 0 10px;
+	text-decoration: none;
+    .btn {
+		display: table-cell;
+		width: auto;
+		width: 99%;
+		&.icn { width: 1%; }
+		border-collapse: separate;
+        border-spacing: 0;
+		@include border-radius(0);
+		&:first-child { @include border-left-radius(5px); }
+        &:last-child { @include border-right-radius(5px); }
+    }
+	.btn + .btn {
+		border-left: none;
+	}
+	&.half { width: 50%; margin-left: auto; margin-right: auto; }
+	&:hover { text-decoration: none !important; }
+}
+
+.btn-group-block {
+	@include box-sizing(border-box);
+	display: table;
+    width: 100%;
+    margin: 0 0 10px;
+	text-decoration: none;
+    .btn {
+		display: table-cell;
+		width: auto;
+		width: 95%;
+		&.btn-icn {
+			width: 5%;
+			font-size: 18px;
+			@include box-shadow( inset -1px 0 1px 0 rgba(255,255,255,.32) );
+			min-width: 42px;
+			max-width: 44px;
+			text-align: center;
+			@include horizontal-padding(5px);
+		}
+		border-collapse: separate;
+        border-spacing: 0;
+		@include border-radius(0);
+		
+		&:first-child { @include border-left-radius(5px); }
+        &:last-child { @include border-right-radius(5px); }
+    }
+	.btn + .btn {
+		border-left: none;
+	}
+	
+	&.lineless {
+		.btn {
+			border-left-width: 0;
+			border-right-width: 0;
+			@include box-shadow( none );
+			&:first-child { border-left-width: 0; }
+			&:last-child { border-right-width: 0; }
+		}
+	}
+	
+	&.half { width: 50%; margin-left: auto; margin-right: auto; }
+	&:hover { text-decoration: none !important; }
+}
+
+
+.btn-splited, .btn-divided {
+	display: table;
+    width: 100%;
+	margin: 0 0 10px; padding: 0;
+	& > * {
+		display: table-cell; position: relative;
+		padding: $padding-base-vertical $padding-base-horizontal;
+		font-size: inherit;
+		line-height: inherit;
+		text-shadow: inherit;
+		width: auto;
+		width: 95%;
+		@include border-left-radius(0);
+		vertical-align: middle;
+		&:first-child { @include border-left-radius($border-radius-base); }
+		&:last-child { @include border-right-radius($border-radius-base); }
+		&.icn { font-size: $font-size-base * 1.1;}
+	}
+	
+	&.btn-lg > * {
+		padding: $padding-large-vertical $padding-large-horizontal;
+		// font-size: $font-size-large;
+		// line-height: $line-height-large;
+		&:first-child { @include border-left-radius($border-radius-large); }
+		&:last-child { @include border-right-radius($border-radius-large); }
+		&.icn { font-size: $font-size-large * 1.1;}
+	}
+	&.btn-sm > * {
+		padding: $padding-small-vertical $padding-small-horizontal;
+		// font-size: $font-size-small;
+		// line-height: $line-height-small;
+		&:first-child { @include border-left-radius($border-radius-small); }
+		&:last-child { @include border-right-radius($border-radius-small); }
+		&.icn { font-size: $font-size-small * 1.1;}
+	}
+	&.btn-xs > * {
+		padding: $padding-xs-vertical $padding-xs-horizontal;
+		// font-size: $font-size-small;
+		// line-height: $line-height-small;
+		&:first-child { @include border-left-radius($border-radius-small); }
+		&:last-child { @include border-right-radius($border-radius-small); }
+		&.icn { font-size: $font-size-small * 1.1;}
+	}
+	
+	& > .icn {
+		width: 5%;
+		@include horizontal-padding(5px);
+		text-align: center;
+		min-width: 42px;
+		max-width: 44px;
+		// &, & > i {vertical-align: middle;}
+	}
+	
+}
+.btn-divided {
+	& > * {
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-right-color: inherit;
+		@include box-shadow( inset -1px 0 1px 0 rgba(255,255,255,.32) );
+		&:last-child {
+			@include box-shadow( none );
+			border-right: none;
+		}
+	}
+}
+
+// 
+//   Social - Buttons
+// 
+.btn-app, .btn-google, .btn-facebook, .btn-twitter, .btn-paypal,
+.btn-app-nice, .btn-google-nice, .btn-facebook-nice, .btn-twitter-nice, .btn-paypal-nice {
+    color: #fff;
+	vertical-align: middle;
+    &:hover, &:active { color: #fff; }
+}
+
+//.btn-socials {
+//	padding: 5px 22px !important;
+//}
+
+// Flat Colors
+$facebook-color: 	#3b5998;
+$google-color: 		#dd4b39;
+$twitter-color: 	#00aced;
+$paypal-color: 		#12398c;
+$paypal-color: 		#1784cb;
+// Gradient Colors
+$facebook-nice-top:       lighten($facebook-color, 7%);
+$facebook-nice-bottom:    darken($facebook-color, 7%);
+$google-nice-top:         lighten($google-color, 7%);
+$google-nice-bottom:      darken($google-color, 7%);
+$twitter-nice-top:        lighten($twitter-color, 7%);
+$twitter-nice-bottom:     darken($twitter-color, 7%);
+$paypal-nice-top:         #52b9f4;
+$paypal-nice-bottom:      darken(#1784cb, 5%);
+
+
+
+// Flat Buttons
+.btn-facebook {
+	background: $facebook-color;
+	text-shadow: 0 1px 0 darken($facebook-color, 20%);
+	border-color: darken($facebook-color, 10%);
+	&:active {
+		background: darken($facebook-color, 10%);
+	}
+	&:hover {
+		background: darken($facebook-color, 5%);
+		border-color: darken($facebook-color, 15%);
+	}
+}
+.btn-google {
+	background: $google-color;
+	text-shadow: 0 1px 0 darken($google-color, 20%);
+	border-color: darken($google-color, 10%);
+	&:active {
+		background: darken($google-color, 10%);
+	}
+	&:hover {
+		background: darken($google-color, 5%);
+		border-color: darken($google-color, 15%);
+	}
+}
+.btn-twitter {
+	background: $twitter-color;
+	text-shadow: 0 1px 0 darken($twitter-color, 20%);
+	border-color: darken($twitter-color, 10%);
+	&:active {
+		background: darken($twitter-color, 10%);
+	}
+	&:hover {
+		background: darken($twitter-color, 5%);
+		border-color: darken($twitter-color, 15%);
+	}
+}
+.btn-paypal {
+	background: $paypal-color;
+	text-shadow: 0 1px 0 darken($paypal-color, 20%);
+	border-color: darken($paypal-color, 10%);
+	&:active {
+		background: darken($paypal-color, 10%);
+	}
+	&:hover {
+		background: darken($paypal-color, 5%);
+		border-color: darken($paypal-color, 15%);
+	}
+}
+
+
+// Nice Buttons
+.btn-facebook-nice, .btn-google-nice, .btn-twitter-nice, .btn-paypal-nice {
+	color: #fff;
+	@include box-shadow( inset 0 1px 0 0 rgba(255,255,255,.42), 0 1px 1px 0 rgba(0,0,0,.42) );
+	&.btn-icn, & > .btn-icn {
+		@include box-shadow( inset 0 1px 0 0 rgba(255,255,255,.42), 0 1px 1px 0 rgba(0,0,0,.42), inset -1px 0 1px 0 rgba(255,255,255,.32) );
+	}
+	&:hover { color: #fff; }
+}
+
+.btn-facebook-nice, .btn-facebook-nice > .btn {
+	@include linear-gradient($facebook-nice-top, $facebook-nice-bottom);
+	text-shadow: 0 1px 0 darken($facebook-nice-bottom, 20%);
+	border-color: darken($facebook-nice-top, 10%);
+	&:active {
+		@include linear-gradient( darken($facebook-nice-top, 10%), darken($facebook-nice-bottom, 10%));
+	}
+	&:hover {
+		@include linear-gradient( darken($facebook-nice-top, 5%), darken($facebook-nice-bottom, 5%));
+	}
+}
+.btn-google-nice, .btn-google-nice > .btn {
+	@include linear-gradient($google-nice-top, $google-nice-bottom);
+	text-shadow: 0 1px 0 darken($google-nice-bottom, 20%);
+	border-color: darken($google-nice-top, 10%);
+	border-bottom-color: darken($google-nice-bottom, 5%);
+	&:active {
+		@include linear-gradient( darken($google-nice-top, 10%), darken($google-nice-bottom, 10%));
+	}
+	&:hover {
+		@include linear-gradient( darken($google-nice-top, 5%), darken($google-nice-bottom, 5%));
+	}
+}
+.btn-twitter-nice, .btn-twitter-nice > .btn {
+	@include linear-gradient($twitter-nice-top, $twitter-nice-bottom);
+	text-shadow: 0 1px 0 darken($twitter-nice-bottom, 20%);
+	border-color: darken($twitter-nice-top, 10%);
+	&:active {
+		@include linear-gradient( darken($twitter-nice-top, 10%), darken($twitter-nice-bottom, 10%));
+	}
+	&:hover {
+		@include linear-gradient( darken($twitter-nice-top, 5%), darken($twitter-nice-bottom, 5%));
+	}
+}
+.btn-paypal-nice, .btn-paypal-nice > .btn {
+	@include linear-gradient($paypal-nice-top, $paypal-nice-bottom);
+	text-shadow: 0 1px 0 darken($paypal-nice-bottom, 20%);
+	border-color: darken($paypal-nice-top, 20%);
+	&:active {
+		@include linear-gradient( darken($paypal-nice-top, 10%), darken($paypal-nice-bottom, 10%));
+	}
+	&:hover {
+		@include linear-gradient( darken($paypal-nice-top, 5%), darken($paypal-nice-bottom, 5%));
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+// some changes to twbs navbar
+
+// Basics of a navbar
+// $navbar-height:                    50px !default;
+// $navbar-margin-bottom:             $line-height-computed !default;
+// $navbar-border-radius:             $border-radius-base !default;
+// $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
+// $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+// $navbar-collapse-max-height:       340px !default;
+
+/*
+.navbar
+	.header
+		.navbar-brand
+	.navbar-collapse
+		
+
+*/
+.navbar {
+	
+	
+	
+	// default hight 50px
+	a.btn {
+		@include vertical-padding( $navbar-padding-vertical / 2 - 1 );
+		@include vertical-margin( $navbar-padding-vertical / 2 );
+	}
+	
+	
+		
+		
+		
+	
+	
+}
+
+@media (max-width: $grid-float-breakpoint) {
+	.navbar {
+		&.navbar-slidebar {
+			.navbar-collapse {
+				display: block; position: fixed;
+				@include transition (all 0.9s ease-in-out);
+				top: 0; right: auto; bottom: 0; left: 0;
+				background: #333;
+				@include transform( translateZ( 0 ) );
+				@include transform( translateX( -222px ) ); 
+				width: 220px;
+				max-height: none;
+				&.on { @include transform( translateX( 0 ) );  }
+			}
+			
+			&.fixed-top .navbar-collapse, &.navbar-fixed-top .navbar-collapse {
+				top: 50px;
+			}
+		}
+	}
+}

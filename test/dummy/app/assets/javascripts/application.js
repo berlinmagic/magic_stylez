@@ -13,4 +13,6 @@
 //= require jquery
 //= require_tree ./views
 //= require magic-stylez
+//= require assets
+//= require magic/render_eco
 //= require app

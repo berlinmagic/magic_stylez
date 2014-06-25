@@ -11,13 +11,7 @@
     App.Environment = "<%= Rails.env.to_s %>";
   </script>
 </head>
-<body>
-  <%= render "front/aside" %>
-  <div class="clearfix"></div>
-  <div id="app_content">
+<body class="blank">
     <%= yield %>
-  </div>
-  <div class="clearfix"></div>
-  
 </body>
 </html>

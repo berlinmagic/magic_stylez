@@ -1,9 +1,3 @@
 @mixin rotation( $rotate ) {
 	@include magic_prefixer(transform, rotate(#{ $rotate }deg));
 }
-
-
-@mixin squareSize( $size ) {
-	width: #{ $size }px;
-	height: #{ $size }px;
-}

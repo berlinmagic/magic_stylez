@@ -1,0 +1,106 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Splited and divided Buttons</h1>
+  </div>
+</div>
+
+
+
+<div class="section">
+  <div class="corset tight">
+    
+    
+    <div class="btn btn-success btn-lg btn-block btn-splited">
+      <div class="text">
+        .btn-splited
+      </div>
+      <div class="icn">
+        <i class="magicons-caret-right"></i>
+      </div>
+    </div>
+    
+    <div class="btn btn-default btn-lg btn-block btn-splited half">
+      <div class="icn">
+        <i class="icomoon-globe"></i>
+      </div>
+      <div class="text">
+        .btn-splited.half
+      </div>
+    </div>
+    
+    <div class="btn btn-primary btn-lg btn-block btn-divided">
+      <div class="icn">
+        <i class="icomoon-globe"></i>
+      </div>
+      <div class="text">
+        .btn-divided
+      </div>
+    </div>
+    
+    <div class="btn btn-warning btn-block btn-divided half">
+      <div class="icn">
+        <i class="icomoon-globe"></i>
+      </div>
+      <div class="text">
+        .btn-divided.half
+      </div>
+    </div>
+    
+    <div class="btn btn-danger btn-sm btn-divided">
+      <div class="icn">
+        <i class="icomoon-rocket"></i>
+      </div>
+      <div class="text">
+        .btn-divided
+      </div>
+      <div class="icn">
+        <i class="icomoon-rocket"></i>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="section head">
+  <div class="corset">
+    <h1>Social Buttons</h1>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="center_text">Flat</h3>
+        <hr/>
+        <% buttons = ["facebook", "google", "paypal", "twitter"]%>
+        <% for btn, i in buttons: %>
+          <div class="btn btn-<%= btn %> btn-lg btn-block btn-divided">
+            <div class="icn">
+              <i class="icomoon-<%= if btn == "google" then "googleplus" else btn %>"></i>
+            </div>
+            <div class="text">
+              .btn-<%= btn %>
+            </div>
+          </div>
+        <% end%>
+      </div>
+      <div class="col-md-6">
+        <h3 class="center_text">Nice</h3>
+        <hr/>
+        <% buttons = ["facebook", "google", "paypal", "twitter"]%>
+        <% for btn, i in buttons: %>
+          <div class="btn btn-<%= btn %>-nice btn-lg btn-block btn-divided">
+            <div class="icn">
+              <i class="icomoon-<%= if btn == "google" then "googleplus" else btn %>"></i>
+            </div>
+            <div class="text">
+              .btn-<%= btn %>-nice
+            </div>
+          </div>
+        <% end%>
+      </div>
+    </div>
+  </div>
+</div>
