@@ -10946,13 +10946,11 @@ form.corset label, .form label {
   .navbar.navbar-slidebar .navbar-collapse {
     display: block;
     position: fixed;
-    -webkit-transition: all 0.9s ease-in-out;
-            transition: all 0.9s ease-in-out;
     top: 0;
     right: auto;
     bottom: 0;
     left: 0;
-    background: #333;
+    background: #e5e5e5;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
             transform: translateZ(0);
@@ -10960,7 +10958,14 @@ form.corset label, .form label {
     -ms-transform: translateX(-222px);
             transform: translateX(-222px);
     width: 220px;
-    max-height: none; }
+    max-height: none;
+    overflow-y: scroll;
+    -webkit-transition: all 0.7s ease-in-out;
+            transition: all 0.7s ease-in-out; }
+    .navbar.navbar-slidebar .navbar-collapse .btn {
+      margin-left: 15px;
+      margin-right: 15px;
+      width: auto; }
     .navbar.navbar-slidebar .navbar-collapse.on {
       -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
@@ -11334,7 +11339,8 @@ body {
   left: 0;
   width: 220px;
   z-index: 99;
-  border-right: solid 1px #ccc; }
+  border-right: solid 1px #ccc;
+  overflow-y: scroll; }
   #aside:before {
     content: "";
     position: absolute;
