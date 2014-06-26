@@ -1,5 +1,6 @@
 // Core variables and mixins
-// @import "bootstrap/variables";
+@import "bootstrap/variables";
+// first import to be future save, than overwrite
 @import "magic/corporate/colors";
 @import "magic/corporate/fonts";
 @import "magic/corporate/typo";

@@ -1,0 +1,254 @@
+$lyt_border_color: $main-border-color;
+$lyt_background_color: #fff;
+$lyt_border_radius: 5px;
+
+.fancy_box, .topit, .layout-table, .layout-slider, .cell, .box, .inline_table, .layout-box, .fixed-table, .line {
+	display: block; position: relative;
+	margin: 0; padding: 0;
+	width: auto;
+	
+}
+
+
+
+.layout-table {
+	// @include raised_shadow( rgba(0, 0, 0, 0.01), 1 );
+	border: none;
+	background: transparent;
+	& > .cell, & > .box {
+		@include raised_shadow( rgba(0, 0, 0, 0.5), 1 );
+		background: #fff;
+		@include border-radius($lyt_border_radius);
+		border: solid 1px $lyt_border_color;
+		margin: 0 0 10px;
+		&.aside, &.small, &.tiny { width: auto; } 
+		&:first-child { @include border-radius($lyt_border_radius); }
+		&:last-child {  @include border-radius($lyt_border_radius); /*border: solid 1px $lyt_border_color;*/ }
+	}
+	&.blank {
+		& > .cell, & > .box {
+			background: transparent;
+			@include border-radius( 0 );
+			border: none;
+		}
+	}
+}
+
+.layout-slider {
+	z-index: 1;
+	overflow: hidden;
+	.layout-slider-oppener { display: inline-block; }
+	& > .cell, & > .box {
+		@include transition (all 0.3s ease-in-out);
+		&.aside { 
+			position: absolute;
+			top: 0; bottom: 0;
+			left: 0; right: auto;
+			width: 222px;
+			z-index: -3;
+			&.small { width: 182px; }
+			// z-index: 1;
+			&.right { left: auto; right: 0; }
+		}
+	}
+	&.open-aside {
+		z-index: 5;
+		&.right > .cell, &.right > .box {
+			margin-right: 220px;
+			margin-left: -220px;
+			z-index: -3;
+			&.main { @include single_curve( rgba(0, 0, 0, 0.5), 2, "right" ); z-index: auto; border-right: solid 1px $main-border-color;}
+		}
+		&.left > .cell, &.left > .box {
+			margin-left: 220px;
+			z-index: -3;
+			&.main { @include single_curve( rgba(0, 0, 0, 0.5), 2 ); z-index: auto; border-left: solid 1px $main-border-color;}
+		}
+	}
+}
+
+
+.layout-box {
+	&.multi, &.multi .line, & {
+		& > .cell, & > .box {
+			background: #fff;
+			&.aside { width: auto; } 
+			border-left: solid 1px $main-border-color;
+			@include border-radius( 0 );
+			&.aside.slide { 
+				position: absolute;
+				top: 0; bottom: 0;
+				left: 0; right: auto;
+				margin: 0 !important;
+				width: 222px;
+				z-index: -3;
+				&.small { width: 182px; }
+				// z-index: 1;
+				&.right { left: auto; right: 0; }
+			}
+		}
+		&:first-child {
+			& > .cell:last-child, & > .box:last-child { @include border-top-right-radius( 3px ); }
+			& > .cell:first-child, & > .box:first-child { @include border-top-left-radius( 3px ); }
+		}
+		&:last-child {
+			& > .cell:last-child, & > .box:last-child {   @include border-bottom-right-radius( 3px ); }
+			& > .cell:first-child, & > .box:first-child { @include border-bottom-left-radius( 3px ); }
+		}
+		&.open-aside {
+			z-index: 5;
+			&.right > .cell, &.right > .box {
+				left: -220px;
+				z-index: -3;
+				&.main { @include single_curve( rgba(0, 0, 0, 0.5), 2, "right" ); z-index: auto; border-right: solid 1px $main-border-color;}
+			}
+			&.left > .cell, &.left > .box {
+				margin-left: 220px;
+				z-index: -3;
+				&.main { @include single_curve( rgba(0, 0, 0, 0.5), 2 ); z-index: auto; border-left: solid 1px $main-border-color;}
+			}
+		}
+	}
+	.layout-box-oppener { display: inline-block; }
+	&.multi { overflow: hidden; }
+}
+
+
+@media only screen and (min-width: 760px) {
+	// Tablet (iPad .. etc.)
+	.layout-table, .layout-slider, .inline_table, .layout-box, .fixed-table {
+		display: table;
+		width: 100%;
+		&.fixed { table-layout: fixed; }
+		& > * { vertical-align: top; }
+		& > .cell, & > .box {
+			display: table-cell;
+			border-collapse: separate;
+			border-spacing: 0;
+			border: none;
+			&.aside { width: 220px; }
+			&.small { width: 180px; }
+			&.tiny { width: 122px; }
+			& > * { vertical-align: top; }
+		}
+	}
+	
+	
+	.layout-table, .layout-slider {
+		@include raised_shadow( rgba(0, 0, 0, 0.5), 1 );
+		margin: 0 0 10px;
+		border: solid 1px $lyt_border_color;
+		background: $lyt_background_color;
+		@include border-radius($lyt_border_radius);
+		& > .cell, & > .box {
+			@include raised_shadow( rgba(0, 0, 0, 0.00), 1 );
+			@include border-radius( 0 );
+			border: solid 1px $lyt_border_color;
+			background: $lyt_background_color;
+			&.aside.slide { top: auto; right: auto; bottom: auto; left: auto; }
+			&:first-child { @include border-top-left-radius( 3px );  @include border-bottom-left-radius( 3px ); }
+			&:last-child { @include border-top-right-radius( 3px ); @include border-bottom-right-radius( 3px ); border-right: none; }
+		}
+		&.fancy { margin-bottom: 170px; }
+		.layout-slider-oppener {
+			display: none; margin-right: 10px;
+			.closer { display: none; }
+			.opener { display: block; }
+			&.open {
+				.closer { display: block; }
+				.opener { display: none; }
+			}
+		}
+		&.blank {
+			@include raised_shadow( rgba(0, 0, 0, 0.00), 1 );
+			margin: 0 -20px; 
+			border-collapse: separate;
+			border-spacing: 20px;
+			border: none;
+			background: transparent;
+			@include border-radius(0);
+			& > .cell, & > .box, & > .cell:last-child, & > .box:last-child {
+				margin: 0;
+				border: none;
+				background: transparent;
+				@include border-radius(0);
+			}
+		}
+	}
+	
+	
+	
+	
+	.layout-box {
+	    @include raised_shadow( rgba(0, 0, 0, 0.5), 1 );
+        margin: 0 0 10px; 
+        background: #fff;
+        border: solid 1px $main-border-color;
+        @include border-radius(5px);
+        @include transition (all 0.3s ease-in-out);
+        & > .cell, & > .box {
+            @include transition (all 0.3s ease-in-out);
+            vertical-align: top;
+            width: auto;
+            border-left: solid 1px $main-border-color;
+            &:first-child { border-left: none; }
+            &.filterbar { background: #f6f6f6; }
+        }
+        &.fixed { table-layout:fixed; }
+        &:first-child {
+            .cell:first-child, .box:first-child { @include border-top-left-radius( 3px ); }
+            .cell:last-child, .box:last-child { @include border-top-right-radius( 3px ); }
+        }
+        &:last-child {
+            .cell:first-child, .box:first-child { @include border-bottom-left-radius( 3px ); }
+            .cell:last-child, .box:last-child { @include border-bottom-right-radius( 3px ); }
+        }
+        .layout-box-oppener {
+            display: none; margin-right: 10px;
+            padding: 4px 6px;
+            i { height: 20px; width: 20px; vertical-align: center; font-size: 20px; }
+            .closer { display: none; }
+            .opener { display: block; }
+            &.open {
+                .closer { display: block; }
+                .opener { display: none; }
+            }
+        }
+        &.multi{
+            display: block;
+            background: #fff;
+            border: solid 1px $main-border-color;
+            @include border-radius(5px);
+            .line {
+                display: table;
+                width: 100%;
+                @include transition (all 0.3s ease-in-out);
+                border-top: solid 1px $main-border-color;
+                &:first-child { border: none; }
+                & > .cell, & > .box {
+                    @include transition (all 0.3s ease-in-out 0.3s);
+                    display: table-cell;
+                    vertical-align: top;
+                    width: auto;
+                    border-left: solid 1px $main-border-color;
+                    &:first-child { border-left: none; }
+                }
+                &.fixed { table-layout:fixed; }
+                &:first-child {
+                    .cell:first-child, .box:first-child { @include border-top-left-radius( 3px ); }
+                    .cell:last-child, .box:last-child { @include border-top-right-radius( 3px ); }
+                }
+                &:last-child {
+                    .cell:first-child, .box:first-child { @include border-bottom-left-radius( 3px ); }
+                    .cell:last-child, .box:last-child { @include border-bottom-right-radius( 3px ); }
+                }
+            }
+        }
+    }
+
+	
+	
+	
+}
+
+

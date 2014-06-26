@@ -19,7 +19,8 @@ $stripe_color: $gray-light;
 	display: inline-block;
 	margin: 20px auto;
 	width: $circle_width; height: $circle_width;
-	border: solid 1px $stripe_color;
+	// border: solid 1px $stripe_color;
+	border: none;
 	@include border-radius( #{$circle_width * 3} );
 	background: $front_color;
 	

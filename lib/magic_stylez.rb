@@ -5,7 +5,6 @@ module MagicStylez
   class << self
     # Inspired by Kaminari
     def load!
-      require 'bootstrap-sass/sass_functions'
       if rails?
         register_rails_engine
       end
