@@ -49,15 +49,30 @@ $headings-color:          inherit !default;
 $btn-font-weight:                normal !default;
 
 
+$loud-factor: 1.25;
 
-p.loud {
-	@include sansCondensedThin;
-	font-size: 18px;
+h1.loud, .h1.loud { font-size: $font-size-h1 * $loud-factor; }
+h2.loud, .h2.loud { font-size: $font-size-h2 * $loud-factor; }
+h3.loud, .h3.loud { font-size: $font-size-h3 * $loud-factor; }
+h4.loud, .h4.loud { font-size: $font-size-h4 * $loud-factor; }
+h5.loud, .h5.loud { font-size: $font-size-h5 * $loud-factor; }
+h6.loud, .h6.loud { font-size: $font-size-h6 * $loud-factor; }
+
+
+div, ul, ol, li, p, span {
+	&.loud {
+		@include sansCondensedThin;
+		font-size: $font-size-base * $loud-factor;
+	}
+	&.highlight {
+		@include sansCondensedThin;
+		font-weight: 600;
+		font-size: $font-size-base * $loud-factor;
+	}
 }
-p.highlight {
-	@include sansCondensedThin;
-	font-weight: 600;
-	font-size: 18px;
+
+ul, ol, li, p, span, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	&.brand { color: $brand-color; }
 }
 
 

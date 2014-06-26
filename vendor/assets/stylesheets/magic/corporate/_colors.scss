@@ -11,18 +11,11 @@ $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 $gray-soft:              #f0f0f0 !default;
 $gray-softer:            #f9f9f9 !default;
 $white:                  #ffffff !default;
-// -------------------------
-// Brand colors
-// -------------------------
-$brand-primary:         #336699 !default;
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+
 // -------------------------
 // Accent colors
 // -------------------------
-$blue-soft:				#9dcfe1 !default;
+$blue-soft:             #9dcfe1 !default;
 $blue-lighter:          #d8e7ec !default;
 $blue-light:            #0099cc !default;
 $blue:                  #006699 !default;
@@ -34,7 +27,16 @@ $yellow:                #ffc40d !default;
 $orange:                #ff6600 !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
+$violett:               #ac4d83 !default;
 
+// -------------------------
+// Brand colors
+// -------------------------
+$brand-primary:         #336699 !default;   // twbs-default: #428bca
+$brand-success:         #006600 !default;   // twbs-default: #5cb85c
+$brand-info:            #0099cc !default;   // twbs-default: #5bc0de
+$brand-warning:         #f0ad4e !default;   // twbs-default: #f0ad4e
+$brand-danger:          #d9534f !default;   // twbs-default: #d9534f
 
 
 //== Scaffolding
