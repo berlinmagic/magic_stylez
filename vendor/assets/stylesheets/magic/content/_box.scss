@@ -1,5 +1,9 @@
-.box {
+.box, .box > .header, .box > .body, .box > .pic {
 	display: block; position: relative;
+	margin: 0; padding: 0;
+}
+
+.box {
 	margin: 0 0 20px; padding: 10px;
 	border: solid 1px #ccc;
 	@include border-radius(3px);
@@ -12,7 +16,7 @@
 	
 	
 	& > .pic {
-		padding: 0; margin: 0 10px 0 -100px;
+		margin: 0 10px 0 -100px;
 		width: 100px;
 		float: left;
 		border: solid 1px #ccc;
@@ -20,9 +24,14 @@
 	& > .header {
 		padding: 5px 10px 5px;
 		border-bottom: solid 1px #ccc;
-		color: #a0c775;
-		line-height: 30px;
-		font-size: 18px;
+		
+		&, h1, h2, h3, h4, h5, h6, p, span, .h1, .h2, .h3, .h4, .h5, .h6 {
+			margin: 0; padding: 0 5px 2px;
+			color: #a0c775;
+			line-height: 30px;
+			font-size: 18px;
+		}
+		
 		&.blank { border-bottom: solid 1px transparent; }
 		i, i:before {
 			color: #999;

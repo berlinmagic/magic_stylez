@@ -104,6 +104,7 @@ body {
 	// box-shadow: inset -2px 0 3px 0 #000;
 	border-right: solid 1px #ccc;
 	overflow-y: scroll;
+	.btn { width: 90%; margin: 0 auto; }
 }
 
 ul.list {
@@ -122,35 +123,7 @@ ul.list {
 
 
 
-.help_arrow {
-	// display: block;
-	position: relative;
-	z-index: 7;
-	&:before, &:after {
-		font-family: 'Gloria Hallelujah', cursive;
-		font-weight: 400;
-	}
-	&:before {
-		display: block; position: absolute; content: "";
-		padding: 0;
-		width: 50px; height: 50px;
-		bottom: 100%; left: 50%;
-		margin: 0 0 10px -25px;
-		background: transparent image-url("magic/arrows/arrow2-2.png") center center no-repeat;
-		background-size: contain;
-		@include rotation(-53);
-	}
-	&:after {
-		display: block; position: absolute; content: attr(data-intro);
-		padding: 0;
-		height: 30px; line-height: 30px;
-		bottom: 100%; left: 50%;
-		margin: 0 0 37px 30px;
-		color: #a0c775;
-		font-size: 28px; font-weight: 300;
-		text-shadow: 0 1px 1px #000;
-	}
-}
+
 
 
 

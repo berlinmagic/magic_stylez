@@ -1,0 +1,48 @@
+.divider {
+	display: block; position: relative;
+	background: inherit;
+	text-align: center;
+	& > * {
+		display: inline-block; position: relative;
+		margin: 0 auto; padding: 0 15px;
+		background: inherit;
+		z-index: 3;
+		&.white-bg { background: #fff; }
+	}
+	&:after {
+		display: block; position: absolute; content: "";
+		margin: -1px 0 0; padding: 0;
+		top: 50%; height: 0;
+		left: 0; right: 0;
+		border-top: solid 1px #ccc;
+		border-bottom: solid 1px $white;
+		z-index: 1;
+	}
+}
+
+.section {
+	.divider {
+		& > * { background: $main-bg; }
+	}
+	hr {
+		display: block; position: relative;
+		margin: 10px 0; padding: 0;
+		height: 0;
+		border: none;
+		border-top: solid 1px #ccc;
+		border-bottom: solid 1px $white;
+	}
+
+    &.dark {
+        background: $dark-bg;
+		.divider > * { background: $dark-bg; }
+    }
+	&.bright {
+		background: $white;
+		.divider > * { background: $white; }
+	}
+	&.brand { 
+		background: $brand-color; 
+		.divider > * { background: $brand-color; }
+	}
+}

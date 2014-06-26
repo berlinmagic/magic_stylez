@@ -1,0 +1,82 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Divider</h1>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset center_text">
+    <p class="loud press">Divider are a nice hr-like text divider:</p>
+    
+    <div class="divider press">
+      <span class="name">I'm a divider :)</span>
+    </div>
+    
+    <p class="loud press">There are many usecases for dividers</p>
+    
+    <div class="divider half press">
+      <span class="name">I'm a .half divider</span>
+    </div>
+    
+
+    
+  </div>
+</div>
+
+
+<div class="section head">
+  <div class="corset">
+    <h3>ie. divide Buttons:</h3>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset tight center_text">
+    
+    <div class="btn btn-facebook btn-lg btn-divided">
+      <div class="icn">
+        <i class="icomoon-facebook"></i>
+      </div>
+      <div class="text">
+        Sign in with Facebook
+      </div>
+    </div>
+    <br/>
+    <div class="divider">
+      <span>or</span>
+    </div>
+    <br/>
+    <div class="inpt-splited input-lg press">
+      <span class="icn"><i class="icomoon-mail2"></i></span>
+      <div class="inpt">
+        <input placeholder="Email" type="email" value="">
+      </div>
+    </div>
+    
+    <div class="inpt-splited input-lg press">
+      <span class="icn"><i class="icomoon-key"></i></span>
+      <div class="inpt">
+        <input placeholder="Password" type="password" value="">
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="section head">
+  <div class="corset">
+    <h3>Usage:</h3>
+  </div>
+</div>
+
+<div class="section shine-top">
+  <div class="corset">
+    <pre>
+      <code>
+  &lt;div class=&quot;divider&quot;&gt;<br/>    &lt;span&gt;or&lt;/span&gt;<br/>  &lt;/div&gt;
+      </code>
+    </pre>
+    <p class="loud"><strong>Parent box needs background!</strong></p>
+  </div>
+</div>

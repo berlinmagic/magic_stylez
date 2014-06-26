@@ -75,7 +75,7 @@
 .center_text { text-align: center !important; }
 .right_text { text-align: right !important; }
 
-
+.onTop { z-index: 15; }
 
 @each $size in 0, 5, 10, 15, 20, 30, 40, 50 {
     

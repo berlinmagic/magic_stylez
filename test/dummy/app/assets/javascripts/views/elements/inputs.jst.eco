@@ -1,0 +1,185 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Inputs</h1>
+  </div>
+</div>
+
+
+
+<div class="section">
+  <div class="corset tight">
+    
+    <div class="inpt-splited input-lg press">
+      <span class="icn"><i class="icomoon-mail2"></i></span>
+      <div class="inpt">
+        <input placeholder="E-Mail" type="email" value="">
+      </div>
+    </div>
+    
+    <div class="inpt-splited press">
+      <span class="icn"><i class="icomoon-mail2"></i></span>
+      <div class="inpt">
+        <input placeholder="E-Mail" type="email" value="">
+      </div>
+    </div>
+    
+    <div class="inpt-splited input-sm press">
+      <span class="icn"><i class="icomoon-mail2"></i></span>
+      <div class="inpt">
+        <input placeholder="E-Mail" type="email" value="">
+      </div>
+    </div>
+    
+    <div class="inpt-splited input-xs half press">
+      <span class="icn"><i class="icomoon-mail2"></i></span>
+      <div class="inpt">
+        <input placeholder="E-Mail" type="email" value="">
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="section shine-top">
+  <div class="corset">
+    <p class="loud">splited and divided input are nice little helper for inputs that contain an icon</p>
+    <p class="loud"><strong>Be carefull! .inpt-splited & .inpt-divided are always block elements.</strong></p>
+    <pre>
+      <code>
+  &lt;div class=&quot;inpt-splited press&quot;&gt;<br/>    &lt;span class=&quot;icn&quot;&gt;&lt;i class=&quot;icomoon-mail2&quot;&gt;&lt;/i&gt;&lt;/span&gt;<br/>    &lt;div class=&quot;inpt&quot;&gt;<br/>      &lt;input placeholder=&quot;E-Mail&quot; type=&quot;email&quot; value=&quot;&quot;&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;
+      </code>
+    </pre>
+    <ul class="arrow loud">
+      <li>tag of inner element doesn't matter</li>
+      <li>element conaining icon need class <strong>.icn</strong></li>
+      <li>element conaining input need class <strong>.inpt</strong></li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="section hard-top">
+  <div class="corset tight">
+    <div class="box">
+      <div class="header">
+        <h3>Some Form</h3>
+      </div>
+      <div class="body">
+        <form action="#" method="get" accept-charset="utf-8" class="form">
+          <div class="row">
+            <div class="col-sm-5 press">
+              <label>Text-Field</label>
+            </div>
+            <div class="col-sm-7 press">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5 press">
+              <label>check_switch</label>
+            </div>
+            <div class="col-sm-3 press">
+              <div class="check_switch">
+                <div class="switch_toggle"></div>
+              </div>
+            </div>
+            <div class="col-sm-4 press">
+              <div class="check">
+                <a href="#" class="checka"><i class="icon-ok"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5 press">
+              <label>Text-Field</label>
+            </div>
+            <div class="col-sm-7 press">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5 press">
+              <label>Text-Field</label>
+            </div>
+            <div class="col-sm-7 press">
+              <textarea class="form-control"></textarea>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-sm-4">
+              <button class="btn btn-success btn-splited" type="submit">
+                <span>Continue</span>
+                <span class="icn">→</span>
+              </button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-default btn-block" type="reset">
+                Reset
+              </button>
+            </div>
+            <div class="col-sm-4 press">
+              &nbsp;
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section shine-top shine-bottom">
+  <div class="corset tight">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="inpt-splited press">
+          <span class="icn"><i class="icomoon-mail2"></i></span>
+          <div class="inpt">
+            <input placeholder="Email" type="email" value="">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="inpt-splited press">
+          <span class="icn"><i class="icomoon-lock"></i></span>
+          <div class="inpt">
+            <input placeholder="Password" type="password" value="">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-success btn-splited" type="submit">
+          <span>Continue</span>
+          <span class="icn">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section warning">
+  <div class="corset">
+    <h2>Old style ... will be removed in next versions.</h2>
+    <p>Here is the old style icon-input helper:</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset tight">
+    
+    
+    <div class="icon_field fat mail">
+      <input class="form-control input-lg" id="user_email" name="user[email]" placeholder="E-Mail" type="email" value="">
+    </div>
+    
+    <br/>
+    
+    <div class="icon_field fat password press">
+      <input class="form-control input-lg" id="user_email" name="user[email]" placeholder="E-Mail" type="email" value="">
+    </div>
+    
+    
+  </div>
+</div>
+

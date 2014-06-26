@@ -1,6 +1,16 @@
 <div class="section head">
   <div class="corset">
-    <h1>magic-stylez</h1>
+    <div class="row">
+      <div class="col-sm-9">
+        <h1>magic-stylez</h1>
+      </div>
+      <div class="col-sm-3">
+        <a href="https://github.com/berlinmagic/magic_stylez/tree/master" target="_blank" class="btn btn-sm btn-default btn-divided pull-right">
+          <span class="icn"><i class="icomoon-github3"></i></span>
+          <span>SourceCode</span>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 

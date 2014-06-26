@@ -1,0 +1,33 @@
+.three-previews {
+    display: block; position: relative;
+	margin: 0 1%;
+	padding: 0;
+    .preview {
+        display: block; position: relative;
+        margin: 0 25%; min-height: 80px; z-index: 5; padding: 0;
+        // min-height: 50px;
+        background: #ccc;
+        // border: solid 3px #fff;
+		border: none;
+        border-bottom: 0;
+        @include box-sizing(border-box);
+		@include box-shadow( 0 10px 5px 3px rgba(0,0,0,.42) );
+		
+		img { width: 100%; }
+		
+		&:first-child, &:last-child {
+			margin: 0; min-height: 40px;
+			position: absolute; width: 45%; z-index: 1;
+			@include box-shadow( 0 10px 5px 3px rgba(0,0,0,.23) );
+		}
+		&:first-child { left: 0; bottom: 0; }
+		&:last-child { right: 0; bottom: 0; }
+    }
+	&.bordered {
+		border-bottom: solid 1px $main-border-color;
+		overflow: hidden;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+

@@ -1,0 +1,46 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Three Previews</h1>
+  </div>
+</div>
+
+<div class="section flat-bottom">
+  <div class="corset tight">
+    
+    <div class="three-previews">
+      
+      <div class="preview">
+        <img src="<%= assetPath("magic/bgs/seucide.jpg") %>" />
+      </div>
+      <div class="preview">
+        <img src="<%= assetPath("magic/bgs/hdr_landsberger.jpg") %>" />
+      </div>
+      <div class="preview">
+        <img src="<%= assetPath("magic/bgs/seucide.jpg") %>" />
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+
+<div class="section shine-top">
+  <div class="corset">
+    <ul class="arrows">
+      <li>Needs surrounding <em>.section.flat-bottom</em></li>
+      <li>Next .section should have class <em>.hard-top</em> or <em>.shine-top</em></li>
+      <li>All Images should have the same dimensions</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="section hard-top">
+  <div class="corset">
+    <pre>
+      <code>
+  &lt;div class=&quot;three-previews&quot;&gt;<br/>    &lt;div class=&quot;preview&quot;&gt;<br/>      &lt;img src=&quot;/images/image_1.jpg&quot; /&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class=&quot;preview&quot;&gt;<br/>      &lt;img src=&quot;/images/image_2.jpg&quot; /&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class=&quot;preview&quot;&gt;<br/>      &lt;img src=&quot;/images/image_3.jpg&quot; /&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;
+      </code>
+    </pre>
+  </div>
+</div>

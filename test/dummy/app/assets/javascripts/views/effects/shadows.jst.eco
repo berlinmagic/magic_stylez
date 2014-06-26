@@ -12,10 +12,10 @@
 
 			
 			<div class="box">
-		  <div class="head">
+		  <div class="header">
         <a name="all">All Samples</a>
 		  </div>
-		  <div class="inner">
+		  <div class="body onTop">
 		    
   			
 
@@ -124,10 +124,10 @@
 		
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="raised_shadow">Raised Shadow</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		
 		
@@ -254,10 +254,10 @@
 	
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="lifted_shadow">Lifted Shadow</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
 		
@@ -384,10 +384,10 @@
 
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="vertical_curves">Vertical Curves</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
 		
@@ -514,10 +514,10 @@
 
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="horizontal_curves">Horizontal Curves</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
 		
@@ -644,10 +644,10 @@
 
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="vertical_shine">Vertical Shine</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
 		
@@ -767,10 +767,10 @@
 
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="horizontal_shine">Horizontal Shine</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
 		
@@ -890,10 +890,10 @@
 
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="single_curve">Single Curve</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
 		
@@ -1027,10 +1027,10 @@
 
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="single_shine">Single Shine</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
 		
@@ -1164,10 +1164,10 @@
 
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="paper_shadow">Paper Shadow</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
 		
@@ -1267,10 +1267,10 @@
 
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="pseudo_raised_shadow">Pseudo Raised Shadow</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
 		
@@ -1411,10 +1411,10 @@
 
 	<div class="box">
 	
-	<div class="head">
+	<div class="header">
 		<a name="perspective_shadow">Perspective Shadow</a>
 	</div>
-	<div class="context" style="position: relative; z-index: 1">
+	<div class="body" style="position: relative; z-index: 1">
 		
 		<p class="warning">! <strong>Wrapper needs:</strong> "position: relative; z-index: 1" !</p>
 		

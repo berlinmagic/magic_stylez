@@ -14,23 +14,23 @@ loadCircles = ->
 
 navigate = ->
   path = window.location.hash.replace(/#/, "")
-  if path != "" and path != currentPath
-    $("#app_content").html( $(renderView( path )) )
-    lnk = $(".app_lnk[data-target='#{path}']").closest("li")
-    nav = lnk.closest(".nav_list")
-    nul = lnk.closest("ul")
-    nav.find("li.active").removeClass("active")
-    nav.find("li.current").removeClass("current")
-    if nav == nul
-      lnk.addClass("current")
+  if path != currentPath
+    if path != ""
+      $("#app_content").html( $(renderView( path )) )
     else
-      nul.closest("li").addClass("current")
-    lnk.addClass("active")
-    loadCircles()
-    currentPath = path
+      $("#app_content").html( $(renderView( "app/start" )) )
+  lnk = $(".app_lnk[data-target='#{path}']").closest("li")
+  nav = lnk.closest(".nav_list")
+  nul = lnk.closest("ul")
+  nav.find("li.active").removeClass("active")
+  nav.find("li.current").removeClass("current")
+  if nav == nul
+    lnk.addClass("current")
   else
-    console.log path, currentPath
-    $("#app_content").html( $(renderView( "app/start" )) )
+    nul.closest("li").addClass("current")
+  lnk.addClass("active")
+  loadCircles()
+  currentPath = path
     
   
 

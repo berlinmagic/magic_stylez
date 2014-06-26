@@ -1,99 +1,36 @@
-.btn-group-block.input-group {
-	.btn {
-		text-align: left;
-		padding: 10px;
-		&.icn {
-			text-align: center;
-		}
-	}
-}
-
-.btn-group-block {
-	@include box-sizing(border-box);
-	display: table;
-    width: 100%;
-    margin: 0 0 10px;
-	text-decoration: none;
-    .btn {
-		display: table-cell;
-		width: auto;
-		width: 99%;
-		&.icn { width: 1%; }
-		border-collapse: separate;
-        border-spacing: 0;
-		@include border-radius(0);
-		&:first-child { @include border-left-radius(5px); }
-        &:last-child { @include border-right-radius(5px); }
-    }
-	.btn + .btn {
-		border-left: none;
-	}
-	&.half { width: 50%; margin-left: auto; margin-right: auto; }
-	&:hover { text-decoration: none !important; }
-}
-
-.btn-group-block {
-	@include box-sizing(border-box);
-	display: table;
-    width: 100%;
-    margin: 0 0 10px;
-	text-decoration: none;
-    .btn {
-		display: table-cell;
-		width: auto;
-		width: 95%;
-		&.btn-icn {
-			width: 5%;
-			font-size: 18px;
-			@include box-shadow( inset -1px 0 1px 0 rgba(255,255,255,.32) );
-			min-width: 42px;
-			max-width: 44px;
-			text-align: center;
-			@include horizontal-padding(5px);
-		}
-		border-collapse: separate;
-        border-spacing: 0;
-		@include border-radius(0);
-		
-		&:first-child { @include border-left-radius(5px); }
-        &:last-child { @include border-right-radius(5px); }
-    }
-	.btn + .btn {
-		border-left: none;
-	}
-	
-	&.lineless {
-		.btn {
-			border-left-width: 0;
-			border-right-width: 0;
-			@include box-shadow( none );
-			&:first-child { border-left-width: 0; }
-			&:last-child { border-right-width: 0; }
-		}
-	}
-	
-	&.half { width: 50%; margin-left: auto; margin-right: auto; }
-	&:hover { text-decoration: none !important; }
+@mixin btn_icn_width( $lineHeight: 20px, $verticalPadding: 10px ) {
+	$wdth: 5 + $lineHeight + $verticalPadding * 2;
+	min-width: $wdth;
+	max-width: $wdth;
 }
 
 
 .btn-splited, .btn-divided {
 	display: table;
-    width: 100%;
-	margin: 0 0 10px; padding: 0;
+    width: auto;
+	width: 100%;
+	// margin: 0 0 10px; 
+	padding: 0;
 	& > * {
 		display: table-cell; position: relative;
 		padding: $padding-base-vertical $padding-base-horizontal;
 		font-size: inherit;
 		line-height: inherit;
 		text-shadow: inherit;
+		color: inherit;
 		width: auto;
-		width: 95%;
+		width: 98%;
 		@include border-left-radius(0);
 		vertical-align: middle;
 		&:first-child { @include border-left-radius($border-radius-base); }
 		&:last-child { @include border-right-radius($border-radius-base); }
-		&.icn { font-size: $font-size-base * 1.1;}
+		&.icn { 
+			width: 2%;
+			font-size: $font-size-base * 1.1;
+			@include horizontal-padding(2px);
+			text-align: center;
+			@include btn_icn_width( $line-height-computed, $padding-base-vertical );
+		}
 	}
 	
 	&.btn-lg > * {
@@ -102,7 +39,7 @@
 		// line-height: $line-height-large;
 		&:first-child { @include border-left-radius($border-radius-large); }
 		&:last-child { @include border-right-radius($border-radius-large); }
-		&.icn { font-size: $font-size-large * 1.1;}
+		&.icn { font-size: $font-size-large * 1.1; @include btn_icn_width($line-height-computed-lg, $padding-large-vertical);}
 	}
 	&.btn-sm > * {
 		padding: $padding-small-vertical $padding-small-horizontal;
@@ -110,7 +47,7 @@
 		// line-height: $line-height-small;
 		&:first-child { @include border-left-radius($border-radius-small); }
 		&:last-child { @include border-right-radius($border-radius-small); }
-		&.icn { font-size: $font-size-small * 1.1;}
+		&.icn { font-size: $font-size-small * 1.1; @include btn_icn_width($line-height-computed-sm, $padding-small-vertical);}
 	}
 	&.btn-xs > * {
 		padding: $padding-xs-vertical $padding-xs-horizontal;
@@ -118,16 +55,13 @@
 		// line-height: $line-height-small;
 		&:first-child { @include border-left-radius($border-radius-small); }
 		&:last-child { @include border-right-radius($border-radius-small); }
-		&.icn { font-size: $font-size-small * 1.1;}
+		&.icn { font-size: $font-size-small * 1.1; @include btn_icn_width($line-height-computed-xs, $padding-xs-vertical); }
 	}
 	
 	& > .icn {
-		width: 5%;
-		@include horizontal-padding(5px);
+		width: 2%;
+		@include horizontal-padding(2px);
 		text-align: center;
-		min-width: 42px;
-		max-width: 44px;
-		// &, & > i {vertical-align: middle;}
 	}
 	
 }
@@ -289,8 +223,63 @@ $paypal-nice-bottom:      darken(#1784cb, 5%);
 
 
 
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+// 
+//   D E P R E A C A T E D   . . .   will be removed soon !
+// 
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
 
+.btn-group-block.input-group {
+	.btn {
+		text-align: left;
+		padding: 10px;
+		&.icn {
+			text-align: center;
+		}
+	}
+}
 
-
-
+.btn-group-block {
+	@include box-sizing(border-box);
+	display: table;
+    width: 100%;
+    margin: 0 0 10px;
+	text-decoration: none;
+    .btn {
+		display: table-cell;
+		width: auto;
+		width: 95%;
+		&.btn-icn {
+			width: 5%;
+			font-size: 18px;
+			@include box-shadow( inset -1px 0 1px 0 rgba(255,255,255,.32) );
+			min-width: 42px;
+			max-width: 44px;
+			text-align: center;
+			@include horizontal-padding(5px);
+		}
+		border-collapse: separate;
+        border-spacing: 0;
+		@include border-radius(0);
+		
+		&:first-child { @include border-left-radius(5px); }
+        &:last-child { @include border-right-radius(5px); }
+    }
+	.btn + .btn {
+		border-left: none;
+	}
+	
+	&.lineless {
+		.btn {
+			border-left-width: 0;
+			border-right-width: 0;
+			@include box-shadow( none );
+			&:first-child { border-left-width: 0; }
+			&:last-child { border-right-width: 0; }
+		}
+	}
+	
+	&.half { width: 50%; margin-left: auto; margin-right: auto; }
+	&:hover { text-decoration: none !important; }
+}

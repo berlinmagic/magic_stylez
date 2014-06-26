@@ -1,0 +1,33 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Crossed Text</h1>
+  </div>
+</div>
+
+<div class="section fat">
+  <div class="corset">
+    
+    <h2>Write your layouts faster with the <span class="crossed" data-text="power">help</span> of magic_stylez.</h2>
+    
+  </div>
+</div>
+
+<div class="section head">
+  <div class="corset">
+    <h3>Usage:</h3>
+  </div>
+</div>
+
+
+
+
+<div class="section shine-top">
+  <div class="corset">
+    <pre>
+      <code>
+  &lt;span class=&quot;crossed&quot; data-text=&quot;power&quot;&gt;help&lt;/span&gt;
+      </code>
+    </pre>
+    <p class="loud"><strong>Absolute psitioned .. needs space!</strong></p>
+  </div>
+</div>

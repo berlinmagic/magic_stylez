@@ -1,0 +1,22 @@
+.crossed {
+	display: inline-block;
+	position: relative;
+	&:before, &:after {
+		display: block; position: absolute; content: "";
+		margin: 0; padding: 0;
+	}
+	&:before {
+		top: -10px; right: -10px; bottom: -6px; left: -8px;
+		background:transparent image-url('magic/helper/crossed.png') center center no-repeat;
+		background-size: contain;
+	}
+	&:after {
+		bottom: 100%;
+		left: 42%;
+		content: attr(data-text);
+		color: #369;
+		font-size: 90%;
+		@include handWrittenFont;
+		text-shadow: 0 1px 1px #fff;
+	}
+}

@@ -1,6 +1,6 @@
 <div class="section head">
   <div class="corset">
-    <h1>Arrow Hints</h1>
+    <h1>Arrow Infos</h1>
   </div>
 </div>
 
@@ -13,7 +13,7 @@
 <div class="section fat">
   <div class="corset center_text">
     
-    <button class="btn btn-success help_arrow" data-intro=".help_arrow">
+    <button class="btn btn-success help_arrow" data-text=".help_arrow">
       Some element
     </button>
     
@@ -27,7 +27,7 @@
     <p class="loud"><strong>Be carefull! Arrow and Hint are absolute positioned, so they may overlap other content.</strong></p>
     <pre>
       <code>
-    &lt;button class=&quot;btn btn-success help_arrow&quot; data-intro=&quot;Go baby Go!&quot;&gt;<br/>      Click Me<br/>    &lt;/button&gt;
+    &lt;button class=&quot;btn btn-success help_arrow&quot; data-text=&quot;Go baby Go!&quot;&gt;<br/>      Click Me<br/>    &lt;/button&gt;
       </code>
     </pre>
     
@@ -38,8 +38,8 @@
 <div class="section fat">
   <div class="corset">
     
-    <button class="btn btn-default help_arrow" data-intro="Here goes your info text.">
-      .btn.help_arrow[data-intro='Here goes your info text.']
+    <button class="btn btn-default help_arrow" data-text="Here goes your info text.">
+      .btn.help_arrow[data-text='Here goes your info text.']
     </button>
     
   </div>

@@ -40,12 +40,14 @@
 @import "magic/content/box";
 @import "magic/content/buttons";
 @import "magic/content/forms";
-@import "magic/content/helper";
 @import "magic/content/icons";
+@import "magic/content/inputs";
 @import "magic/content/navbar";
 @import "magic/content/panel";
 @import "magic/content/pix";
 
+
+@import "magic/helper/all";
 
 
 @import "magic/lists/nav";
