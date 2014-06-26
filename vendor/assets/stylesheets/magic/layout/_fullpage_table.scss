@@ -14,8 +14,6 @@ html, body, #body {
 		& > * {
 			display: block;
 			position: relative;
-			
-			
 		}
 	}
 }
@@ -38,7 +36,7 @@ html, body, #body {
 }
 
 
-.inline_table, .newsfeed {
+.inline_table {
 	display: table; position: relative;
 	padding: 0; margin: 0;
 	width: 100%;
@@ -48,8 +46,9 @@ html, body, #body {
 		&.top { vertical-align: top; }
 		&.middled { vertical-align: middle; }
 		&.bottom { vertical-align: bottom; }
-		&.aside {
-			width: 220px;
+		&.aside { width: 220px; }
+		@for $i from 1 through 12 {
+		  &.col-#{$i} { width: percentage(1 / 12 * $i); }
 		}
 	}
 	&.grid > * {
@@ -68,7 +67,7 @@ html, body, #body {
 @include responsiveStep-sm {
 	.fullpage-table {
 		height: 100%;
-		max-height: 800px;
+		&.max-size { max-height: 800px; }
 		display: table;
 		top: 0; left: 0;
 		// z-index: 1;
@@ -77,17 +76,10 @@ html, body, #body {
 			& > * {
 				display: table-cell;
 				vertical-align: middle;
-				// &.banner-box.responsive-hero > .corset { padding-bottom: 100px; }
-				.banner-footer { position: absolute; bottom: 0; left: 0; right: 0; }
-			}
-			& > .table-footer { 
-				height: 50px; line-height: 50px; background-color: #fff;
-				& > .corset { max-height: 50px; overflow: hidden;}
 			}
 			&.top, &.top > * { vertical-align: top; }
 			&.middle, &.middle > * { vertical-align: middle; }
 			&.bottom, &.bottom > * { vertical-align: bottom; }
-			
 		}
 		.fill { height: 100%; }
 	}
@@ -113,9 +105,17 @@ html, body, #body {
 		& > * {
 	        display: table-cell;
 	        border-collapse: separate;
-			&.feature-pic {
-				width: 140px;
-			}
+			&.aside { width: 220px; }
+			&.picture { width: 150px; }
+			&.ten {     width: 10%; }
+			&.twenty {  width: 20%; }
+			&.thirty {  width: 30%; }
+			&.fourty {  width: 40%; }
+			&.fivty {   width: 50%; }
+			&.sixty {   width: 60%; }
+			&.seventy { width: 70%; }
+			&.eighty {  width: 80%; }
+			&.ninety {  width: 90%; }
 			@for $i from 1 through 12 {
 			  &.col-#{$i} { width: percentage(1 / 12 * $i); }
 			}
@@ -125,6 +125,7 @@ html, body, #body {
 			&:first-child { padding-left: 0; }
 			&:last-child { padding-right: 0; }
 		}
+		&.middled > * { vertical-align: middle; }
 	}
 	
 	.fixed-table {
@@ -142,20 +143,12 @@ html, body, #body {
 @include responsiveStep-md {
 	.fixed-table {
 		&.boxed { max-width: 970px; } 
-		& > * {
-			// .header-text-home { padding: 0; }
-			.img-ipad-home { margin: 0 10%; }
-	    }
 	}
 }
 
 @include responsiveStep-lg {
 	.fixed-table {
 		&.boxed { max-width: 1170px; }
-		// & > * {
-		// 	.header-text-home { padding: 0; }
-		// 	.img-ipad-home { margin: 0 20%; }
-	    // }
 	}
 }
 
