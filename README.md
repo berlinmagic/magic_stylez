@@ -9,8 +9,30 @@
 - [bourbon](http://bourbon.io/)
 
 
+## Usage
 
-
+- add the gem 
+```ruby
+  gem "magic_stylez"
+```
+- run the generator
+```ruby
+  $ rails g magic_stylez:install
+```
+- add to stylesheets
+```sass
+  @import 'magic-stylez'; // import all
+  @import 'magic-min';    // import basic
+```
+```css
+  //= 'magic-stylez'; /* import all */
+  //= 'magic-min';    /* import basic */
+```
+- add to javascripts:
+```javascript
+  //= 'magic-stylez'; /* import all */
+  //= 'magic-min';    /* import basic */
+```
 
 
 

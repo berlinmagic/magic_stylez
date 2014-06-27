@@ -16,54 +16,82 @@
 
 
 <div class="section flatted">
-  <div class="corset">
+  <div class="corset tight">
     <p class="loud"><em>Some style helpers used in a lot of our apps.</em></p>
   </div>
 </div>
 
-<div class="section compact hard-top">
+<div class="section hard-top">
   <div class="corset center_text">
     <h2>Warning</h2>
-    <p class="loud">This Gem is still work in process, it is not used in a production app!</p>
+    <p class="loud">This Gem is still work in process!</p>
     <p class="loud">Its just the start to outsource my style framework (I mostly rebuild for every app).</p>
     <p class="loud">It is mostly driven by my own habits, so I don't know if its usefull for others.</p>
   </div>
 </div>
 
-<div class="section compact hard-top">
-  <div class="corset">
+<div class="section hard-top">
+  <div class="corset tight">
     <h3>Dependencies</h3>
-    <ul class="list">
-      <li><%= link_to "bootstrap-sass", "https://github.com/twbs/bootstrap-sass", target: "_blank" %></li>
-      <li><%= link_to "bourbon", "http://bourbon.io/", target: "_blank" %></li>
+    <ul class="list loud">
+      <li><a href="https://github.com/twbs/bootstrap-sass" target="_blank">bootstrap-sass</a></li>
+      <li><a href="http://bourbon.io/" target="_blank">bourbon</a></li>
     </ul>
+    <p>(both are allready included)</p>
   </div>
 </div>
 
-<div class="section compact">
-  <div class="corset">
+<div class="section hard-top">
+  <div class="corset tight">
+    <h3 class="loud">Usage</h3>
+    <hr/>
+    <p class="highlight"><i class="olicons-hide-filter"></i> add the gem to your applications gemfile</p>
+    <pre><code>gem "magic_stylez"</code></pre>
+    <br/>
+    <p class="highlight"><i class="olicons-hide-filter"></i> run the generator</p>
+    <pre><code>$ rails g magic_stylez:install</code></pre>
+    <br/>
+    <p class="highlight"><i class="olicons-hide-filter"></i> add to stylesheets</p>
+    <pre><code>SASS:
+  @import 'magic-stylez'; // import all
+  @import 'magic-min';    // import basic
+CSS:
+  //= 'magic-stylez'; /* import all */
+  //= 'magic-min';    /* import basic */</code></pre>
+    <br/>
+    <p class="highlight"><i class="olicons-hide-filter"></i> add to javascripts</p>
+    <pre><code>  //= 'magic-stylez'; /* import all */
+  //= 'magic-min';    /* import basic */</code></pre>
+  </div>
+</div>
+
+
+<div class="section hard-top">
+  <div class="corset tight">
     <h3>Thanks</h3>
     <p class="loud">
-      A lot of code for this gem is taken from <%= link_to "bootstrap-sass", "https://github.com/twbs/bootstrap-sass", target: "_blank" %>, 
-      so thank you guys for the great work.</br>
-      Same goes for <%= link_to "bourbon", "http://bourbon.io/", target: "_blank" %> thanks for a lightweight helper set.
+      A lot of code for this gem is taken from <a href="https://github.com/twbs/bootstrap-sass" target="_blank">bootstrap-sass</a>,
+      so thank you guys for the great work.
     </p>
-    <p class="loud">Also thanks to all the people, how share their knowlegde on <%= link_to "stackoverflow", "http://stackoverflow.com/", target: "_blank" %>.</p>
+    <p class="loud">
+      Same goes for <a href="http://bourbon.io/" target="_blank">bourbon</a> thanks for a lightweight helper set.
+    </p>
+    <p class="loud">Also thanks to all the people, how share their knowlegde on <a href="http://stackoverflow.com/" target="_blank">stackoverflow</a>.</p>
   </div>
 </div>
 
-<div class="section compact">
-  <div class="corset">
+<div class="section hard-top">
+  <div class="corset tight">
     <h3>Authors</h3>
     <ul class="list">
-      <li><%= link_to "Torsten Wetzel", "http://twetzel.github.io/", target: "_blank" %></li>
+      <li><a href="http://twetzel.github.io/" target="_blank">Torsten Wetzel</a></li>
       <li>many others ...</li>
     </ul>
   </div>
 </div>
 
-<div class="section compact">
-  <div class="corset">
+<div class="section hard-top">
+  <div class="corset tight">
     <h3>License</h3>
     <p class="loud">MIT-License</p>
   </div>
@@ -74,14 +102,8 @@
 
 
 
-<div class="section shine-top flat-bottom">
+<div class="section shine-top flatted">
   <div class="corset">
-    <p class="center_text">&copy; 2014 Torsten Wetzel (berlinmagic UG)</p>
+    <p class="center_text">© 2014 Torsten Wetzel (berlinmagic UG)</p>
   </div>
 </div>
-
-
-    
-
-
-

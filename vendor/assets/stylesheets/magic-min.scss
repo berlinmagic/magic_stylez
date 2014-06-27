@@ -1,0 +1,62 @@
+// load bourbon sass helper
+@import "bourbon";
+// load twitter bootstrap
+@import "magic/lib/twbs";
+// load bourbon again, to overwriter twbs helpers
+@import "bourbon";
+
+// load some basic methods
+@import "magic/lib/cross_browser";
+@import "magic/lib/media_querries";
+// load style helper
+@import "magic/lib/helper";
+@import "magic/lib/animation";
+@import "magic/lib/text";
+@import "magic/lib/filter";
+@import "magic/lib/forms";
+
+
+// load effects
+@import "magic/effects/shadows";  // (generates no code, when unused)
+// @import "magic/effects/reflections";
+
+// load icons
+// @import "magic/icons/icomoon";
+// @import "magic/icons/magicons";
+// @import "magic/icons/orderlifticons";
+
+
+// load layout helper
+@import "magic/layout/section";
+@import "magic/layout/corset";
+@import "magic/layout/fullpage_table";
+
+
+// load elements
+// @import "magic/elements/circle_diagram";
+
+// load content helper
+// @import "magic/content/banner";
+// @import "magic/content/box";
+// @import "magic/content/buttons";
+// @import "magic/content/forms";
+// @import "magic/content/helper";
+// @import "magic/content/icons";
+// @import "magic/content/inputs";
+// @import "magic/content/navbar";
+// @import "magic/content/panel";
+// @import "magic/content/pix";
+
+
+@import "magic/helper/divider";
+// @import "magic/helper/arrow_hints";
+// @import "magic/helper/crossed";
+// @import "magic/helper/dots";
+// @import "magic/helper/three_previews";
+
+
+// @import "magic/lists/nav";
+// @import "magic/content/header";
+// @import "magic/layout/body";
+
+

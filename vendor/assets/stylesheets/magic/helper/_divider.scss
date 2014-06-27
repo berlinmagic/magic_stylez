@@ -1,5 +1,7 @@
 .divider {
 	display: block; position: relative;
+	padding: 0;
+	// margin: floor($line-height-computed / 2) 0;
 	background: inherit;
 	text-align: center;
 	& > * {
@@ -11,42 +13,68 @@
 		&.dark { background: $dark-bg; }
 		&.main { background: $main-bg; }
 		&.soft { background: $main-bg; }
-		
 	}
 	&:after {
 		display: block; position: absolute; content: "";
 		margin: -1px 0 0; padding: 0;
 		top: 50%; height: 0;
 		left: 0; right: 0;
-		border-top: solid 1px #ccc;
-		border-bottom: solid 1px $white;
 		z-index: 1;
 	}
 }
 
+hr {
+	display: block; position: relative;
+	// margin: floor($line-height-computed / 2) 0;
+	padding: 0;
+	height: 0;
+	border: none;
+}
+
+hr, .divider { margin: $line-height-computed 0; }
+hr, .divider:after {
+	border-top: solid 1px $main-border-color;
+	border-bottom: solid 1px $white;
+}
+
+
 .section {
-	.divider {
-		& > * { background: $main-bg; }
-	}
-	hr {
-		display: block; position: relative;
-		margin: 10px 0; padding: 0;
-		height: 0;
-		border: none;
-		border-top: solid 1px #ccc;
+	
+	.divider & > * { background: $main-bg; }
+	hr, .divider:after {
+		border-top: solid 1px $main-border-color;
 		border-bottom: solid 1px $white;
 	}
+	
+	
 
     &.dark {
-        background: $dark-bg;
-		.divider > * { background: $dark-bg; }
-    }
+		.divider & > * { background: $dark-bg; }
+		hr, .divider:after {
+			border-top: solid 1px $gray;
+			border-bottom: solid 1px $white;
+		}
+	}
 	&.bright {
-		background: $white;
-		.divider > * { background: $white; }
+		.divider & > * { background: $bright-bg; }
+		hr, .divider:after {
+			border-top: solid 1px $main-border-color;
+			border-bottom: solid 1px $white;
+		}
 	}
-	&.brand { 
-		background: $brand-color; 
-		.divider > * { background: $brand-color; }
+	&.brand {
+		.divider & > * { background: $brand-bg; }
+		hr, .divider:after {
+			border-top: solid 1px $main-border-color;
+			border-bottom: solid 1px $white;
+		}
 	}
+	&.soft {
+		.divider & > * { background: $soft-bg; }
+		hr, .divider:after {
+			border-top: solid 1px $main-border-color;
+			border-bottom: solid 1px $white;
+		}
+	}
+	
 }

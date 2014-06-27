@@ -1,6 +1,13 @@
+// 
+//   Magic-Stylez - Colors
+// 
+//   if you like to change values, remove the '!default' flag!
+// 
+// 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap.
+// -------------------------
+// Gray colors
 // -------------------------
 $black:                  #1c1c1c !default;
 $gray-darker:            lighten(#000, 13.5%) !default; // #222
@@ -11,7 +18,6 @@ $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 $gray-soft:              #f0f0f0 !default;
 $gray-softer:            #f9f9f9 !default;
 $white:                  #ffffff !default;
-
 // -------------------------
 // Accent colors
 // -------------------------
@@ -28,10 +34,10 @@ $orange:                #ff6600 !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
 $violett:               #ac4d83 !default;
-
 // -------------------------
 // Brand colors
 // -------------------------
+$brand-color:           #a0c775 !default;
 $brand-primary:         #336699 !default;   // twbs-default: #428bca
 $brand-success:         #006600 !default;   // twbs-default: #5cb85c
 $brand-info:            #0099cc !default;   // twbs-default: #5bc0de
@@ -39,33 +45,32 @@ $brand-warning:         #f0ad4e !default;   // twbs-default: #f0ad4e
 $brand-danger:          #d9534f !default;   // twbs-default: #d9534f
 
 
-// M A G I C - S T Y L E Z
 
-//** Global Highlight color.
-// $main-active-color:     #a0c775;
-$brand-color:           #a0c775;
 
-//** Global Background colors.
-$main-bg:               darken(#fff, 10%) !default;
+
+// -------------------------
+// Global Background colors.
+// -------------------------
+$main-bg:               darken(#fff, 5%) !default; // result: #f2f2f2
+$body-bg:               $main-bg; //** Background color for `<body>`
 $dark-bg:               #e5e5e5 !default;
 $soft-bg:               #f8f8f8 !default;
 $blue-bg:               $blue-soft !default;
 $brand-bg:              $brand-color !default;
+$bright-bg:             $white !default;
 
 
-//** Global Border color.
+// -------------------------
+// Global Border color
+// -------------------------
 $main-border-color:     #ccc !default;
 
 
-
-// T W I T T E R - B O O T S T R A P
-
-//** Background color for `<body>`.
-$body-bg:               $main-bg;
-
+// -------------------------
+// Global Text colors
+// -------------------------
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
-
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
@@ -85,9 +90,9 @@ $component-active-bg:       $brand-primary !default;
 
 
 
-//== Buttons
-//
-
+// -------------------------
+// Buttons
+// -------------------------
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
@@ -115,8 +120,9 @@ $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
 $btn-link-disabled-color:        $gray-light !default;
 
 
-//== Social Buttons
-//
+// -------------------------
+// Social Buttons
+// -------------------------
 // Flat Colors
 $btn-facebook-color:              #fff !default;
 $btn-facebook-bg:                 #3b5998 !default;

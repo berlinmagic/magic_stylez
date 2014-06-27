@@ -109,3 +109,71 @@
     background-color: $color;
   }
 }
+
+
+
+@mixin sized-navbar( $navHeight: 50px ) {
+	$padHorizontal: floor(($navHeight - $line-height-computed) / 2);
+	$lineHeight: $navHeight - $padHorizontal * 2;
+	
+	height: $navHeight + 1;
+	min-height: $navHeight + 1;
+	
+	.navbar-brand {
+		padding: $padHorizontal $navbar-padding-horizontal;
+		line-height: $lineHeight;
+		height: $navHeight;
+	}
+	.navbar-header { height: #{$navHeight}; }
+	
+	.navbar-toggle {
+		@if ( 16px + 14 ) > ($navHeight - 5) {
+			margin: 4px 15px;
+			@include vertical-padding( $padHorizontal - 3px );
+			line-height: 16px;
+		} @else {
+			margin: #{$padHorizontal - 6px} 15px;
+			@include vertical-padding( 7px );
+			line-height: 16px;
+		}
+	}
+	
+	.navbar-nav {
+		// a:not(.btn) { }
+		& > li > a, & > a  {
+			padding: $padHorizontal $navbar-padding-horizontal;
+			line-height: $lineHeight;
+			
+			&.btn {
+				@if ($lineHeight + 10) > ($navHeight - 5) {
+					margin: 4px 5px;
+					@include vertical-padding( $padHorizontal - 5px );
+					line-height: $lineHeight;
+				} @else {
+					margin: #{$padHorizontal - 6px} 5px;
+					@include vertical-padding( 5px );
+					line-height: $lineHeight;
+					
+					@if ($lineHeight + 16) < ($navHeight - 5) {
+						&.btn-lg {
+							margin: #{$padHorizontal - 9px} 5px;
+							@include vertical-padding( 8px );
+						}
+					}
+					
+					&.btn-sm {
+						margin: #{$padHorizontal - 4px} 5px;
+						@include vertical-padding( 3px );
+					}
+					&.btn-xs {
+						margin: #{$padHorizontal - 2px} 5px;
+						@include vertical-padding( 1px );
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+

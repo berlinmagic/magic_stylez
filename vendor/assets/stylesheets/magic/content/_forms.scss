@@ -171,5 +171,30 @@ form.corset, .form {
 	}
 }
 
+.form-control + .form-control {
+	margin-top: 10px;
+}
+
+
+@include all_form_elements {
+	&.form-control.half { @include horizontal-margin( auto ); width: 50%; }
+}
+
+form, .form {
+	
+	@include all_form_elements {
+		&.form-control { margin-bottom: 10px; }
+	}
+	.btn-divided, .btn-splited, .btn-block { margin-bottom: 10px; }
+	
+	.row > * {
+		margin-bottom: 10px;
+		@include all_form_elements { &.form-control { margin-bottom: 0; } }
+		.btn-divided, .btn-splited, .btn-block { margin-bottom: 0; }
+	}
+	
+}
+
+
 
 

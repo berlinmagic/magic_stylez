@@ -4,7 +4,14 @@
   </div>
 </div>
 
-<div class="section flat-bottom">
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4>
+    <code>@import "magic/helper/three_previews";</code>
+  </div>
+</div>
+
+<div class="section hard-top flat-bottom">
   <div class="corset tight">
     
     <div class="three-previews">

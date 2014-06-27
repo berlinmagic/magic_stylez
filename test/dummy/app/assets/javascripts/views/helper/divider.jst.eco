@@ -4,7 +4,14 @@
   </div>
 </div>
 
-<div class="section">
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4>
+    <code>@import "magic/helper/divider";</code>
+  </div>
+</div>
+
+<div class="section hard-top">
   <div class="corset center_text">
     <p class="loud press">Divider are a nice hr-like text divider:</p>
     
@@ -30,6 +37,8 @@
   </div>
 </div>
 
+
+
 <div class="section">
   <div class="corset tight center_text">
     
@@ -41,19 +50,17 @@
         Sign in with Facebook
       </div>
     </div>
-    <br/>
     <div class="divider">
       <span>or</span>
     </div>
-    <br/>
-    <div class="inpt-splited input-lg press">
+    <div class="inpt-splited input-lg">
       <span class="icn"><i class="icomoon-mail2"></i></span>
       <div class="inpt">
         <input placeholder="Email" type="email" value="">
       </div>
     </div>
     
-    <div class="inpt-splited input-lg press">
+    <div class="inpt-splited input-lg">
       <span class="icn"><i class="icomoon-key"></i></span>
       <div class="inpt">
         <input placeholder="Password" type="password" value="">

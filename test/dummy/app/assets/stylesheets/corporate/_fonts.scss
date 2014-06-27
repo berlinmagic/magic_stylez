@@ -1,0 +1,157 @@
+// 
+//   Magic-Stylez - Fonts
+// 
+//   if you like to change values, remove the '!default' flag!
+// 
+// 
+//   F O N T S
+// 
+
+$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+
+// 
+//   webfonts
+// 
+
+// goolge
+	// $magicSans: "Open Sans", $sansFontFamily;
+	// $magicCondensedSans: "Open Sans Condensed", $sansFontFamily;
+	// $magicHandwritten: 'Satisfy', cursive;
+
+// typekit (Adobe)
+	// $magicSans: "Montserrat", $sansFontFamily;
+	// $magicCondensedSans: "Lato", $sansFontFamily;
+	// $magicHandwritten: "ff-market-web", cursive;
+
+$magicSans: 			$sansFontFamily;
+$magicCondensedSans: 	$sansFontFamily;
+$magicHandwritten: 		'Gloria Hallelujah', cursive;
+
+
+
+
+// Open Sans 
+.sans {
+	font-family: $magicSans;
+	font-weight: 400;
+	&.thin, .thin { font-weight: 300; }
+	&.regular, .regular { font-weight: 400; }
+	&.sbold, .sbold { font-weight: 600; }
+	&.bold, .bold { font-weight: 700; }
+	&.ebold, .ebold { font-weight: 800; }
+}
+@mixin sansThin {
+	// font-family: 'Open Sans', sans-serif;
+	font-family: $magicSans;
+	font-weight: 300;
+}
+@mixin sansRegular {
+	font-family: $magicSans;
+	font-weight: 400;
+}
+@mixin sansSemi {
+	font-family: $magicSans;
+	font-weight: 600;
+}
+@mixin sansBold {
+	font-family: $magicSans;
+	font-weight: 700;
+}
+
+
+// Open Sans Condensed 
+.sansCondensed {
+	font-family: $magicCondensedSans;
+	font-weight: 300;
+	&.thin, .thin { font-weight: 300; }
+	&.bold, .bold { font-weight: 700; }
+}
+@mixin sansCondensedThin {
+	font-family: $magicCondensedSans;
+	font-weight: 300;
+}
+@mixin sansCondensedBold {
+	font-family: $magicCondensedSans;
+	font-weight: 700;
+}
+
+
+// Specials
+.handWrittenFont {
+	font-family: $magicHandwritten;
+	font-weight: 400;
+}
+@mixin handWrittenFont {
+	font-family: $magicHandwritten;
+	font-weight: 400;
+}
+
+
+
+// variable
+$smallReadFont: $magicCondensedSans;
+$readFont: $magicSans;
+$bigFont: $magicSans;
+$dekoFont: $magicHandwritten;
+
+
+// mixin
+@mixin smallReadFont { font-family: $smallReadFont; }
+@mixin readFont { font-family: $readFont; }
+@mixin bigFont { font-family: $bigFont; }
+@mixin dekoFont { font-family: $dekoFont; }
+
+.smallReadFont { @include smallReadFont; }
+.readFont { @include readFont; }
+.bigFont { @include bigFont; }
+.dekoFont { @include dekoFont; }
+
+
+
+
+
+
+
+
+
+// C S S - F O N T S 
+
+@mixin eingabeText { font-family: $lucida-grande; }
+
+@mixin profileText {
+	font-family: $lucida-grande; 
+	color: #333;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+@mixin titelText { 
+	@include sansSemi;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@mixin subTextSmall { 
+	@include sansRegular;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+
+// ------------------------------- S C H R I F T G R O E S S E N -------------------------------
+
+$magicDefaultFontSize:    13px;
+$magicDefaultLineHight:   18px;
+
+
+@mixin magicDefaultFont {
+  @include readFont;
+  font-size: $magicDefaultFontSize;
+  line-height: $magicDefaultLineHight;
+} // ..
+
+
+

@@ -10,7 +10,7 @@
     width: auto;
 	width: 100%;
 	// margin: 0 0 10px; 
-	padding: 0;
+	margin: 0; padding: 0;
 	& > * {
 		display: table-cell; position: relative;
 		padding: $padding-base-vertical $padding-base-horizontal;
@@ -77,6 +77,15 @@
 		}
 	}
 }
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 10px;
+}
+.btn-splited + .btn-splited, .btn-splited + .btn-divided, .btn-divided + .btn-splited, .btn-divided + .btn-divided {
+  margin-top: 10px;
+}
+
 
 // 
 //   Social - Buttons
@@ -174,6 +183,21 @@ $paypal-nice-bottom:      darken(#1784cb, 5%);
   @include btn-with-gradient($btn-paypal-color, $paypal-gradient-top, $paypal-gradient-bottom, $btn-paypal-border);
 }
 
+.btn-link {
+  color: $link-color !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $link-hover-color !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    background-image: none;
+  }
+}
 
 
 

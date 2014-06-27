@@ -8,10 +8,11 @@
     z-index: 1;
 	font-size: $font-size-base;
 	.corset, .container { background: inherit; }
+	
     
-    h1, h2, h3, h4, h5, h6, p {
-        margin-bottom: 10px;
-    }
+    // h1, h2, h3, h4, h5, h6, p {
+    //     margin-bottom: 10px;
+    // }
     
     &.shine-top {
         overflow: hidden;
@@ -57,39 +58,24 @@
 	&.fatter { padding-top: 120px; padding-bottom: 120px; }
 	
     
-	// @include all_inputs { background: $white; }
+	@include all_form_elements { background: $white; }
 	
-	.divider {
-		
-		span { background: $main-bg; }
-	}
-	hr {
-		display: block; position: relative;
-		margin: 10px 0; padding: 0;
-		height: 0;
-		border: none;
-		border-top: solid 1px #ccc;
-		border-bottom: solid 1px $white;
-	}
-
     &.dark {
-        background: $dark-bg;
-		.divider span { background: $dark-bg; }
-        .three-previews .preview { border-color: $main-border-color; }
-		input.half, textarea.half, textarea { background: $white; }
-		@include all_inputs {
-			background: $white;
-		}
+		background: $dark-bg;
+		.three-previews .preview { border-color: $main-border-color; }
+		@include all_form_elements { background: $white; }
     }
 	&.bright {
-		background: $white;
-		.divider span { background: $white; }
-		@include all_inputs { background: $main-bg; }
-		textarea { background: $dark-bg; }
+		background: $bright-bg;
+		@include all_form_elements { background: $main-bg; }
 	}
 	&.brand { 
 		background: $brand-color; 
-		.divider span { background: $brand-color; }
+		@include all_form_elements { background: $white; }
+	}
+	&.soft { 
+		background: $soft-bg; 
+		@include all_form_elements { background: $white; }
 	}
     &.blank { background: transparent; }
 
@@ -106,6 +92,19 @@
 			small { color: #999; }
 		}
 	}
+	
+	
+	
+	
+	// kill margin of child elements, to avoid unwanted sizing
+	&, & > .corset, & > .container {
+		& > *, & > .row, & > .row > *, & > .row > * > * {
+			&:first-child { margin-top: 0; }
+			&:last-child { margin-bottom: 0; }
+		}
+	}
+	
+	
 }
 
 
@@ -122,8 +121,9 @@
 	
 	.section {
 		.half, .btn.half, input.half, select.half, textarea.half {
-		margin: 0 auto 10px;
-		width: 50%;
+			// margin: 0 auto 10px;
+			@include horizontal-margin( auto );
+			width: 50%;
 		}
 	}
 	
@@ -133,7 +133,8 @@
 	
 	.section {
 		.half, .btn.half, input.half, select.half, textarea.half {
-			margin: 0 auto 10px;
+			// margin: 0 auto 10px;
+			@include horizontal-margin( auto );
 			width: 40%;
 		}
 	}

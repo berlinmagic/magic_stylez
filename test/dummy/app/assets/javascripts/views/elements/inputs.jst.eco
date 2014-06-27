@@ -9,28 +9,28 @@
 <div class="section">
   <div class="corset tight">
     
-    <div class="inpt-splited input-lg press">
+    <div class="inpt-splited input-lg">
       <span class="icn"><i class="icomoon-mail2"></i></span>
       <div class="inpt">
         <input placeholder="E-Mail" type="email" value="">
       </div>
     </div>
     
-    <div class="inpt-splited press">
+    <div class="inpt-splited">
       <span class="icn"><i class="icomoon-mail2"></i></span>
       <div class="inpt">
         <input placeholder="E-Mail" type="email" value="">
       </div>
     </div>
     
-    <div class="inpt-splited input-sm press">
+    <div class="inpt-splited input-sm">
       <span class="icn"><i class="icomoon-mail2"></i></span>
       <div class="inpt">
         <input placeholder="E-Mail" type="email" value="">
       </div>
     </div>
     
-    <div class="inpt-splited input-xs half press">
+    <div class="inpt-splited input-xs half">
       <span class="icn"><i class="icomoon-mail2"></i></span>
       <div class="inpt">
         <input placeholder="E-Mail" type="email" value="">
@@ -133,7 +133,7 @@
   <div class="corset tight">
     <div class="row">
       <div class="col-sm-4">
-        <div class="inpt-splited press">
+        <div class="inpt-splited">
           <span class="icn"><i class="icomoon-mail2"></i></span>
           <div class="inpt">
             <input placeholder="Email" type="email" value="">
@@ -141,7 +141,7 @@
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="inpt-splited press">
+        <div class="inpt-splited">
           <span class="icn"><i class="icomoon-lock"></i></span>
           <div class="inpt">
             <input placeholder="Password" type="password" value="">

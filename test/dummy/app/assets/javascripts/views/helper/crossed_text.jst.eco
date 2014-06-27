@@ -4,7 +4,14 @@
   </div>
 </div>
 
-<div class="section fat">
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4>
+    <code>@import "magic/helper/crossed";</code>
+  </div>
+</div>
+
+<div class="section hard-top fat">
   <div class="corset">
     
     <h2>Write your layouts faster with the <span class="crossed" data-text="power">help</span> of magic_stylez.</h2>

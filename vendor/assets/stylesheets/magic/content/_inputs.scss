@@ -136,6 +136,10 @@ textarea.form-control {
   max-width: 100%;
 }
 
+.inpt-splited + .inpt-splited, .inpt-splited + .inpt-divided, .inpt-divided + .inpt-splited, .inpt-divided + .inpt-divided {
+	margin-top: 10px;
+}
+
 
 
 // Form control sizing
