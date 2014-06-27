@@ -13,24 +13,25 @@
 	.header
 		.navbar-brand
 	.navbar-collapse
-		
+		.nav.navbar-nav.navbar-left
+			li a
+		.nav.navbar-nav.navbar-right
+			li a
 
 */
 .navbar {
 	
-	
-	
-	// default hight 50px
-	a.btn {
-		@include vertical-padding( $navbar-padding-vertical / 2 - 1 );
-		@include vertical-margin( $navbar-padding-vertical / 2 );
-	}
-	
-	
-		
-		
-		
-	
+	// .navbar-nav {
+	// 	a:not(.btn) {
+	// 		
+	// 	}
+	// }
+	// 
+	// // default hight 50px
+	// a.btn {
+	// 	@include vertical-padding( $navbar-padding-vertical / 2 - 1 );
+	// 	@include vertical-margin( $navbar-padding-vertical / 2 );
+	// }
 	
 }
 

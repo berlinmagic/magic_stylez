@@ -39,19 +39,19 @@ $brand-warning:         #f0ad4e !default;   // twbs-default: #f0ad4e
 $brand-danger:          #d9534f !default;   // twbs-default: #d9534f
 
 
-//== Scaffolding
-//** Settings for some of the most global styles.
-
 // M A G I C - S T Y L E Z
-
-//** Global Background colors.
-$main-bg:               #f2f1f1 !default;
-$dark-bg:               #e5e5e5 !default;
-$blue-bg:               $blue-soft !default;
 
 //** Global Highlight color.
 // $main-active-color:     #a0c775;
 $brand-color:           #a0c775;
+
+//** Global Background colors.
+$main-bg:               #f2f1f1 !default;
+$dark-bg:               #e5e5e5 !default;
+$soft-bg:               #f8f8f8 !default;
+$blue-bg:               $blue-soft !default;
+$brand-bg:              $brand-color !default;
+
 
 //** Global Border color.
 $main-border-color:     #ccc !default;

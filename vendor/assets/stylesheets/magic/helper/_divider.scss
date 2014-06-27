@@ -7,7 +7,11 @@
 		margin: 0 auto; padding: 0 15px;
 		background: inherit;
 		z-index: 3;
-		&.white-bg { background: #fff; }
+		&.white { background: $white; }
+		&.dark { background: $dark-bg; }
+		&.main { background: $main-bg; }
+		&.soft { background: $main-bg; }
+		
 	}
 	&:after {
 		display: block; position: absolute; content: "";
