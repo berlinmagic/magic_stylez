@@ -46,7 +46,7 @@ $brand-danger:          #d9534f !default;   // twbs-default: #d9534f
 $brand-color:           #a0c775;
 
 //** Global Background colors.
-$main-bg:               #f2f1f1 !default;
+$main-bg:               darken(#fff, 10%) !default;
 $dark-bg:               #e5e5e5 !default;
 $soft-bg:               #f8f8f8 !default;
 $blue-bg:               $blue-soft !default;
@@ -113,6 +113,39 @@ $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
 
 $btn-link-disabled-color:        $gray-light !default;
+
+
+//== Social Buttons
+//
+// Flat Colors
+$btn-facebook-color:              #fff !default;
+$btn-facebook-bg:                 #3b5998 !default;
+$btn-facebook-border:             darken($btn-facebook-bg, 5%) !default;
+
+$btn-google-color:                #fff !default;
+$btn-google-bg:                   #dd4b39 !default;
+$btn-google-border:               darken($btn-google-bg, 5%) !default;
+
+$btn-paypal-color:                #fff !default;
+$btn-paypal-bg:                   #1784cb !default; // was #12398c
+$btn-paypal-border:               darken($btn-paypal-bg, 5%) !default;
+
+$btn-twitter-color:               #fff !default;
+$btn-twitter-bg:                  #00aced !default;
+$btn-twitter-border:              darken($btn-twitter-bg, 5%) !default;
+
+
+// Gradient Colors
+$facebook-gradient-top:           lighten($btn-facebook-bg, 7%);
+$facebook-gradient-bottom:        darken($btn-facebook-bg, 7%);
+$google-gradient-top:             lighten($btn-google-bg, 7%);
+$google-gradient-bottom:          darken($btn-google-bg, 7%);
+$twitter-gradient-top:            lighten($btn-twitter-bg, 7%);
+$twitter-gradient-bottom:         darken($btn-twitter-bg, 7%);
+$paypal-gradient-top:             #52b9f4;
+$paypal-gradient-bottom:          darken(#1784cb, 5%);
+
+
 
 
 //== Forms

@@ -1,24 +1,3 @@
-@mixin squareSize( $size ) {
-	width: #{ $size }px;
-	height: #{ $size }px;
-}
-
-@mixin horizontal-padding( $pad: 5px ) {
-	padding-left: $pad; padding-right: $pad;
-}
-@mixin vertical-padding( $pad: 5px ) {
-	padding-top: $pad; padding-bottom: $pad;
-}
-@mixin horizontal-margin( $pad: 5px ) {
-	margin-left: $pad; margin-right: $pad;
-}
-@mixin vertical-margin( $pad: 5px ) {
-	margin-top: $pad; margin-bottom: $pad;
-}
-
-
-
-
 // media max-width: 767px
 @include responsiveStep-xs-only {
 	.press-xs { margin-bottom:20px; }
