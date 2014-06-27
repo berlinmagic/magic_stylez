@@ -1,0 +1,111 @@
+@mixin squareSize( $size ) {
+	width: #{ $size }px;
+	height: #{ $size }px;
+}
+
+@mixin horizontal-padding( $pad: 5px ) {
+	padding-left: $pad; padding-right: $pad;
+}
+@mixin vertical-padding( $pad: 5px ) {
+	padding-top: $pad; padding-bottom: $pad;
+}
+@mixin horizontal-margin( $pad: 5px ) {
+	margin-left: $pad; margin-right: $pad;
+}
+@mixin vertical-margin( $pad: 5px ) {
+	margin-top: $pad; margin-bottom: $pad;
+}
+
+
+
+
+
+// Button helper from twbs ..changed
+@mixin btn-variant($color, $background, $border) {
+  color: $color !important;
+  background-color: $background !important;
+  border-color: $border !important;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color !important;
+    background-color: darken($background, 7%) !important;
+    border-color: darken($border, 12%) !important;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-color: darken($background, 10%) !important;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $background !important;
+      border-color: $border !important;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+
+// Button helper from twbs ..changed
+@mixin btn-with-gradient($color, $top-bg, $bottom-bg, $border) {
+  color: $color !important;
+  @include linear-gradient($top-bg, $bottom-bg);
+  border-color: $border !important;
+  text-shadow: 0 1px 0 darken($bottom-bg, 20%);
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color !important;
+    @include linear-gradient( darken($top-bg, 5%), darken($bottom-bg, 5%));
+    border-color: darken($border, 12%) !important;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    @include linear-gradient( darken($top-bg, 10%), darken($bottom-bg, 10%));
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      @include linear-gradient($top-bg, $bottom-bg);
+      border-color: $border !important;
+    }
+  }
+
+  .badge {
+    color: $bottom-bg;
+    background-color: $color;
+  }
+}
