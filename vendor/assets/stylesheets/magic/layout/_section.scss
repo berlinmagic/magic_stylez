@@ -98,7 +98,7 @@
 	
 	// kill margin of child elements, to avoid unwanted sizing
 	&, & > .corset, & > .container {
-		& > *, & > .row, & > .row > *, & > .row > * > *, .layout-table > .cell > *, .inline_table > .cell > * {
+		& > *, & > .row, & > .row > *, & > .row > * > *, & > .layout-table > * > *, & > .inline_table > * > * {
 			&:first-child { margin-top: 0; }
 			&:last-child { margin-bottom: 0; }
 		}
