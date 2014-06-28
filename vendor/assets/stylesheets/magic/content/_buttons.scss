@@ -144,6 +144,10 @@ $paypal-nice-bottom:      darken(#1784cb, 5%);
   @include btn-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 
+.btn-brand {
+  @include btn-variant($btn-brand-color, $btn-brand-bg, $btn-brand-border);
+}
+
 
 // Socials
 .btn-facebook {

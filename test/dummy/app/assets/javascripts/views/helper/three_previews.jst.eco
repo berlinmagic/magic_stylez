@@ -34,7 +34,7 @@
 <div class="section shine-top">
   <div class="corset">
     <ul class="arrows">
-      <li>Needs surrounding <em>.section.flat-bottom</em></li>
+      <li>Needs surrounding <em>.section.flat-bottom</em> and <em>.corset.tight</em></li>
       <li>Next .section should have class <em>.hard-top</em> or <em>.shine-top</em></li>
       <li>All Images should have the same dimensions</li>
     </ul>

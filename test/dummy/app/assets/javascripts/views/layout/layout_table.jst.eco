@@ -1,0 +1,132 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Layout Table</h1>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    
+    <div class="layout-table middled">
+      <div class="cell col-5">
+        <span class="loud">.layout-table.middled > .cell</span>
+      </div>
+      <div class="cell col-7">
+        <div class="box">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    
+    <div class="layout-table grid">
+      <div class="cell col-5">
+        <div class="pic">
+          <img src="<%= assetPath("magic/bgs/rain-flower.jpg") %>" />
+        </div>
+      </div>
+      <div class="cell col-7 top">
+        <span class="loud">.layout-table > .cell.top</span>
+        <br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. 
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    
+    <div class="layout-table grid">
+      <div class="cell col-7 middle">
+        <span class="loud">.layout-table > .cell.middle</span>
+        <br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. 
+      </div>
+      <div class="cell col-5">
+        <div class="pic">
+          <img src="<%= assetPath("magic/bgs/seucide.jpg") %>" />
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    
+    <div class="layout-table grid">
+      <div class="cell col-5">
+        <div class="pic">
+          <img src="<%= assetPath("magic/bgs/rain-flower.jpg") %>" />
+        </div>
+      </div>
+      <div class="cell col-7 bottom">
+        <span class="loud">.layout-table > .cell.bottom</span>
+        <br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. 
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="section shine-top">
+  <div class="corset">
+    <h2>Usage</h2>
+    <pre><code>    &lt;div class=&quot;layout-table middled&quot;&gt;<br/>      &lt;div class=&quot;cell col-5&quot;&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;cell col-7&quot;&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;</code></pre>
+    
+    <pre><code>    &lt;div class=&quot;layout-table grid&quot;&gt;<br/>      &lt;div class=&quot;cell col-4&quot;&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>      &lt;div class=&quot;cell col-8 bottom&quot;&gt;<br/>        ...<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;</code></pre>
+  </div>
+</div>
+
+<div class="section shine-top">
+  <div class="corset">
+    <div class="divider">
+      <span>with .grid</span>
+    </div>
+    <div class="layout-table grid">
+      <div class="cell col-6">
+        <span class="loud">.layout-table.grid > .cell</span>
+        <br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="cell col-6">
+        <span class="loud">.layout-table.grid > .cell</span>
+        <br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    <div class="divider">
+      <span>without .grid</span>
+    </div>
+    <div class="layout-table">
+      <div class="cell col-6">
+        <span class="loud">.layout-table > .cell</span>
+        <br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="cell col-6">
+        <span class="loud">.layout-table > .cell</span>
+        <br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    
+  </div>
+</div>
+

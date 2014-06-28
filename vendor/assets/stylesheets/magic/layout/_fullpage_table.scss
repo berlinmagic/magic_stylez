@@ -121,7 +121,7 @@ html, body, #body {
 			}
 	    }
 		&.grid > * {
-			padding: 0 10px;
+			padding: 0 #{$grid-gutter-width / 2};
 			&:first-child { padding-left: 0; }
 			&:last-child { padding-right: 0; }
 		}

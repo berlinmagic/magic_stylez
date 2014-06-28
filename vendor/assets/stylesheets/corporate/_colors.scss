@@ -119,6 +119,9 @@ $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
+$btn-brand-color:                #fff !default;
+$btn-brand-bg:                   $brand-color !default;
+$btn-brand-border:               darken($btn-brand-bg, 5%) !default;
 
 // -------------------------
 // Social Buttons
