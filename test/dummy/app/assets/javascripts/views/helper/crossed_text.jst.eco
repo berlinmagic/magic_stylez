@@ -19,22 +19,32 @@
   </div>
 </div>
 
-<div class="section head">
+
+
+<div class="section shine-top">
   <div class="corset">
-    <h3>Usage:</h3>
+    <h2>Usage:</h2>
+    <pre><code>
+  &lt;span class=&quot;crossed&quot; data-text=&quot;power&quot;&gt;help&lt;/span&gt;
+    </code></pre>
+    <p class="loud"><strong>Absolute positioned .. needs space!</strong></p>
   </div>
 </div>
 
 
 
-
-<div class="section shine-top">
+<div class="section hard-top fat">
   <div class="corset">
-    <pre>
-      <code>
-  &lt;span class=&quot;crossed&quot; data-text=&quot;power&quot;&gt;help&lt;/span&gt;
-      </code>
-    </pre>
-    <p class="loud"><strong>Absolute psitioned .. needs space!</strong></p>
+    <p class="loud">Allways provide enough space over the changed text</p>
+    <div class="divider">
+      <p>Good example:</p>
+    </div>
+    <br/>
+    <p class="loud">Hello <span class="crossed" data-text="You!">World</span> you look great today!</p>
+    <div class="divider">
+      <p>Bad example:</p>
+    </div>
+    <p class="loud">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <span class="crossed" data-text="consectetur">voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
   </div>
 </div>

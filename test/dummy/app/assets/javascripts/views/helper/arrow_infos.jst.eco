@@ -27,13 +27,12 @@
   <div class="corset">
     
     <p class="loud">Arrow Hints can be used on every element, just add class 'help_arrow' and data-intro attribute with your Hint text.</p>
-    <p class="loud"><strong>Be carefull! Arrow and Hint are absolute positioned, so they may overlap other content.</strong></p>
     <pre>
       <code>
     &lt;button class=&quot;btn btn-success help_arrow&quot; data-text=&quot;Go baby Go!&quot;&gt;<br/>      Click Me<br/>    &lt;/button&gt;
       </code>
     </pre>
-    
+    <p class="highlight">Be carefull! Arrow and Hint are absolute positioned, so they may overlap other content.</p>
   </div>
 </div>
 

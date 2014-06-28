@@ -4,13 +4,6 @@
   </div>
 </div>
 
-<div class="section dark flatted">
-  <div class="corset">
-    <h4>dependency: <small>(packable)</small></h4>
-    <code>@import "magic/icons/glyphicons";</code>
-  </div>
-</div>
-
 <div class="section hard-top">
   <div class="corset">
     

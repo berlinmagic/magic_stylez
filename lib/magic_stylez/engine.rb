@@ -7,10 +7,10 @@ module MagicStylez
       initializer "magic-stylez.assets.precompile" do |app|
         
         # compile pictures (this way also from vendor)
-        config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+        app.config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
         
         # compile fonts (this way also from vendor)
-        config.assets.precompile += %w(*.eot *.svg *.ttf *.woff)
+        app.config.assets.precompile += %w(*.eot *.svg *.ttf *.woff)
         
       end
     end

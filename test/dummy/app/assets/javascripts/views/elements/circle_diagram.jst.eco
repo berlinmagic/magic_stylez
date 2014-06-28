@@ -7,7 +7,16 @@
 <div class="section dark flatted">
   <div class="corset">
     <h4>dependency:</h4>
-    <code>@import "magic/elements/circle_diagram";</code>
+    <table class="table table-condensed">
+      <tr>
+        <th>sass</th>
+        <td><code>@import "magic/elements/circle_diagram";</code></td>
+      </tr>
+      <tr>
+        <th>js </th>
+        <td><code>//= magic/circle_diagram</code></td>
+      </tr>
+    </table>
   </div>
 </div>
 

@@ -9,7 +9,7 @@
 	.form-control {
 		position: relative;
 		@include border-radius(0);
-		margin: 0 0 -1px;
+		margin: 0 0 -1px !important;
 		padding: 10px;
 		font-size: 16px;
 		
@@ -145,6 +145,8 @@ form.corset, .form {
 
 
 
+
+
 .fullpage-table > .table-row > * {
 	.btn-group-block { margin: 0; }
 	.btn-group-block.dropdown-toggle, .btn-group-block.new_order_link {
@@ -173,6 +175,12 @@ form.corset, .form {
 
 .form-control + .form-control {
 	margin-top: 10px;
+}
+
+.inpt-group {
+	display: block; position: relative;
+	margin: 0 0 20px; padding: 0;
+	.form-control { margin-top: 0; margin-bottom: 0; }
 }
 
 
