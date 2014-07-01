@@ -39,3 +39,18 @@
 						-1px  0px #{$blur} #{$color}, 
 						 1px -1px #{$blur} #{$color};
 }
+
+@mixin text_tags {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6,
+	p, span, a {
+		@content;
+	}
+}
+@mixin text-tags {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6,
+	p, span, a {
+		@content;
+	}
+}

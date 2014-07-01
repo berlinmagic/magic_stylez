@@ -47,6 +47,55 @@ $border-radius-large:       6px !default;
 $border-radius-small:       3px !default;
 
 
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+//   Sections
+// 
+
+// Padding
+$section-padding:                    50px !default;
+$section-head-padding:               10px !default;
+$section-compact-padding:            10px !default;
+$section-flatted-padding:            30px !default;
+$section-fat-padding:                80px !default;
+$section-fatter-padding:             120px !default;
+
+
+
+// Colors
+$section-background:                 $main-bg !default;
+$section-input-bg:                   $white !default;
+
+$section-head-background:            #fff !default;
+$section-head-input-bg:              $main-bg !default;
+$section-head-color:                 $brand-color !default;
+$section-head-small-color:           $gray-light !default;
+
+$section-dark-background:            $dark-bg !default;
+$section-dark-input-bg:              $white !default;
+
+$section-bright-background:          $bright-bg !default;
+$section-bright-input-bg:            $main-bg !default;
+
+$section-brand-background:           $brand-bg !default;
+$section-brand-input-bg:             $white !default;
+
+$section-soft-background:            $soft-bg !default;
+$section-soft-input-bg:              $white !default;
+
+
+$section-head-line-height:           30px !default;
+$section-head-font-size:             20px !default;
+
+// Reset margin of first and last childs, so section controls spacing
+$section-reset-child-spacing:        true !default;
+$section-reset-row-child-spacing:    true !default;
+$section-reset-table-child-spacing:  true !default;
+
+
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+
+
+
 //** Width of the `border` for generating carets that indicator dropdowns.
 $caret-width-base:          4px !default;
 //** Carets increase slightly in size for larger components.

@@ -5,7 +5,7 @@
 
 .box {
 	margin: 0 0 20px; padding: 10px;
-	border: solid 1px #ccc;
+	border: solid 1px $main-border-color;
 	@include border-radius(3px);
 	text-align: left;
 	background: #fff;
@@ -19,16 +19,16 @@
 		margin: 0 10px 0 -100px;
 		width: 100px;
 		float: left;
-		border: solid 1px #ccc;
+		border: solid 1px $main-border-color;
 	}
 	& > .header {
 		padding: 5px 10px 5px;
-		border-bottom: solid 1px #ccc;
+		border-bottom: solid 1px $main-border-color;
 		
 		&, h1, h2, h3, h4, h5, h6, p, span, .h1, .h2, .h3, .h4, .h5, .h6 {
 			margin: 0; padding: 0 5px 2px;
-			color: #a0c775;
-			line-height: 30px;
+			color: $brand-color;
+			line-height: 27px;
 			font-size: 18px;
 		}
 		
