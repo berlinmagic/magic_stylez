@@ -6,7 +6,7 @@
 		@include handWrittenFont;
 	}
 	&:before {
-		display: block; position: absolute; content: "";
+		display: none; position: absolute; content: "";
 		padding: 0;
 		width: 50px; height: 50px;
 		bottom: 100%; left: 50%;
@@ -16,7 +16,7 @@
 		@include rotation(-53);
 	}
 	&:after {
-		display: block; position: absolute; content: attr(data-text);
+		display: none; position: absolute; content: attr(data-text);
 		padding: 0;
 		height: 30px; line-height: 30px;
 		bottom: 100%; left: 50%;
@@ -25,4 +25,11 @@
 		font-size: 28px; font-weight: 300;
 		text-shadow: 0 1px 1px #000;
 	}
+}
+
+@include responsiveStep-sm {
+    .help_arrow {
+        &:before { display: block; }
+        &:after { display: block; }
+    }
 }

@@ -18,3 +18,7 @@ $ ->
   $("body").on "click", ".hide_da_notice", ->
     $("body").toggleClass("with_important_notice")
     false
+
+  $("body").on "click", ".get_some_borders", ->
+    $("#nav-aside").toggleClass("bordered")
+    false

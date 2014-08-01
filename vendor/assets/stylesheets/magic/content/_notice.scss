@@ -1,3 +1,4 @@
+// Important Notice shown on top of page
 .important_notice {
 	display: block; position: fixed;
 	top: $important-notice-top; bottom: $important-notice-bottom;
@@ -27,17 +28,48 @@
 	}
 }
 
+// Important Notice shown on top of page
+.application_notice {
+	position: fixed;
+	top: $application-notice-top; left: $application-notice-gap; right: $application-notice-gap;
+	z-index: $zindex-application-notice;
+}
+
+
 body, #body, #container, .main-content, .main_content {
+    
+    &.fixed-nav-xs { .application_notice { top: $application-notice-top + $navbar-height-xs; } }
+    &.fixed-nav-sm { .application_notice { top: $application-notice-top + $navbar-height-sm; } }
+    &.fixed-nav    { .application_notice { top: $application-notice-top + $navbar-height; } }
+    &.fixed-nav-lg { .application_notice { top: $application-notice-top + $navbar-height-lg; } }
+    &.fixed-nav-xl { .application_notice { top: $application-notice-top + $navbar-height-xl; } }
     
     &.with_important_notice {
         
         padding-top: $important-notice-height;
         
-        &.fixed-nav-xs { padding-top: $important-notice-height + $navbar-height-xs; }
-    	&.fixed-nav-sm { padding-top: $important-notice-height + $navbar-height-sm; }
-    	&.fixed-nav    { padding-top: $important-notice-height + $navbar-height; }
-    	&.fixed-nav-lg { padding-top: $important-notice-height + $navbar-height-lg; }
-    	&.fixed-nav-xl { padding-top: $important-notice-height + $navbar-height-xl; }
+        .application_notice { top: $application-notice-top + $important-notice-height; }
+        
+        &.fixed-nav-xs { 
+            padding-top: $important-notice-height + $navbar-height-xs;
+            .application_notice { top: $application-notice-top + $important-notice-height + $navbar-height-xs; }
+        }
+    	&.fixed-nav-sm { 
+    	    padding-top: $important-notice-height + $navbar-height-sm; 
+    	    .application_notice { top: $application-notice-top + $important-notice-height + $navbar-height-sm; }
+    	}
+    	&.fixed-nav    { 
+    	    padding-top: $important-notice-height + $navbar-height; 
+    	    .application_notice { top: $application-notice-top + $important-notice-height + $navbar-height; }
+    	}
+    	&.fixed-nav-lg { 
+    	    padding-top: $important-notice-height + $navbar-height-lg;
+    	    .application_notice { top: $application-notice-top + $important-notice-height + $navbar-height-lg; }
+    	}
+    	&.fixed-nav-xl { 
+    	    padding-top: $important-notice-height + $navbar-height-xl; 
+    	    .application_notice { top: $application-notice-top + $important-notice-height + $navbar-height-xl; }
+    	}
     	
     	.fixed-top, .navbar-fixed-top { top: $important-notice-height; }
         

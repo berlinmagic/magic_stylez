@@ -134,15 +134,16 @@ $input-height-xs:                (floor($font-size-small * $line-height-small) +
 //
 // Note: These variables are not generated into the Customizer.
 
-$zindex-navbar:            1000 !default;
-$zindex-dropdown:          1000 !default;
-$zindex-popover:           1060 !default;
-$zindex-tooltip:           1070 !default;
-$zindex-navbar-fixed:      1030 !default;
-$zindex-aside-nav:         1030 !default;
-$zindex-important-notice:  1020 !default;
-$zindex-modal-background:  1040 !default;
-$zindex-modal:             1050 !default;
+$zindex-navbar:             1000 !default;
+$zindex-dropdown:           1000 !default;
+$zindex-popover:            1060 !default;
+$zindex-tooltip:            1070 !default;
+$zindex-navbar-fixed:       1030 !default;
+$zindex-aside-nav:          1030 !default;
+$zindex-important-notice:   1020 !default;
+$zindex-application-notice: 1030 !default;
+$zindex-modal-background:   1040 !default;
+$zindex-modal:              1050 !default;
 
 
 //== Media queries breakpoints
@@ -219,6 +220,13 @@ $container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
 $container-lg:                 $container-large-desktop !default;
 
 
+
+
+//== Application Notice
+//
+//##
+$application-notice-top:                10px !default;
+$application-notice-gap:                10% !default;
 
 
 //== Important Notice

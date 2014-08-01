@@ -37,7 +37,11 @@ navigate = ->
 $ ->
 
   $("body").on "click", ".hide_da_notice", ->
-    $("body").removeClass("with_important_notice")
+    $("body").toggleClass("with_important_notice")
+    false
+
+  $("body").on "click", ".get_some_borders", ->
+    $("#nav-aside").toggleClass("bordered")
     false
 
   $("body").on "click", ".lst_lnk", ->
