@@ -9449,7 +9449,7 @@ html, body, #body {
 
   body.with_aside_nav {
     padding-left: 50px; }
-    body.with_aside_nav #flash_msg {
+    body.with_aside_nav .application_notice {
       margin-left: 50px; }
     body.with_aside_nav .fixed-top, body.with_aside_nav .navbar-fixed-top {
       left: 50px; }
@@ -9480,7 +9480,7 @@ html, body, #body {
   padding: 10px 0; }
 
 .banner-box.responsive-hero {
-  padding: 10px; }
+  padding: 0; }
   .banner-box.responsive-hero > .corset, .banner-box.responsive-hero > .container {
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -9579,6 +9579,8 @@ html, body, #body {
     padding-left: 110px; }
   .box.no-press {
     margin: 0; }
+  .box.blur {
+    background: rgba(255, 255, 255, 0.42); }
   .box > .pic {
     margin: 0 10px 0 -100px;
     width: 100px;
@@ -11276,18 +11278,47 @@ body.fixed-nav-xl, #body.fixed-nav-xl, #container.fixed-nav-xl, .main-content.fi
       color: white;
       text-shadow: 0 0 3px #801d0f; }
 
+.application_notice {
+  position: fixed;
+  top: 10px;
+  left: 10%;
+  right: 10%;
+  z-index: 1030; }
+
+body.fixed-nav-xs .application_notice, #body.fixed-nav-xs .application_notice, #container.fixed-nav-xs .application_notice, .main-content.fixed-nav-xs .application_notice, .main_content.fixed-nav-xs .application_notice {
+  top: 40px; }
+body.fixed-nav-sm .application_notice, #body.fixed-nav-sm .application_notice, #container.fixed-nav-sm .application_notice, .main-content.fixed-nav-sm .application_notice, .main_content.fixed-nav-sm .application_notice {
+  top: 50px; }
+body.fixed-nav .application_notice, #body.fixed-nav .application_notice, #container.fixed-nav .application_notice, .main-content.fixed-nav .application_notice, .main_content.fixed-nav .application_notice {
+  top: 60px; }
+body.fixed-nav-lg .application_notice, #body.fixed-nav-lg .application_notice, #container.fixed-nav-lg .application_notice, .main-content.fixed-nav-lg .application_notice, .main_content.fixed-nav-lg .application_notice {
+  top: 70px; }
+body.fixed-nav-xl .application_notice, #body.fixed-nav-xl .application_notice, #container.fixed-nav-xl .application_notice, .main-content.fixed-nav-xl .application_notice, .main_content.fixed-nav-xl .application_notice {
+  top: 90px; }
 body.with_important_notice, #body.with_important_notice, #container.with_important_notice, .main-content.with_important_notice, .main_content.with_important_notice {
   padding-top: 30px; }
+  body.with_important_notice .application_notice, #body.with_important_notice .application_notice, #container.with_important_notice .application_notice, .main-content.with_important_notice .application_notice, .main_content.with_important_notice .application_notice {
+    top: 40px; }
   body.with_important_notice.fixed-nav-xs, #body.with_important_notice.fixed-nav-xs, #container.with_important_notice.fixed-nav-xs, .main-content.with_important_notice.fixed-nav-xs, .main_content.with_important_notice.fixed-nav-xs {
     padding-top: 60px; }
+    body.with_important_notice.fixed-nav-xs .application_notice, #body.with_important_notice.fixed-nav-xs .application_notice, #container.with_important_notice.fixed-nav-xs .application_notice, .main-content.with_important_notice.fixed-nav-xs .application_notice, .main_content.with_important_notice.fixed-nav-xs .application_notice {
+      top: 70px; }
   body.with_important_notice.fixed-nav-sm, #body.with_important_notice.fixed-nav-sm, #container.with_important_notice.fixed-nav-sm, .main-content.with_important_notice.fixed-nav-sm, .main_content.with_important_notice.fixed-nav-sm {
     padding-top: 70px; }
+    body.with_important_notice.fixed-nav-sm .application_notice, #body.with_important_notice.fixed-nav-sm .application_notice, #container.with_important_notice.fixed-nav-sm .application_notice, .main-content.with_important_notice.fixed-nav-sm .application_notice, .main_content.with_important_notice.fixed-nav-sm .application_notice {
+      top: 80px; }
   body.with_important_notice.fixed-nav, #body.with_important_notice.fixed-nav, #container.with_important_notice.fixed-nav, .main-content.with_important_notice.fixed-nav, .main_content.with_important_notice.fixed-nav {
     padding-top: 80px; }
+    body.with_important_notice.fixed-nav .application_notice, #body.with_important_notice.fixed-nav .application_notice, #container.with_important_notice.fixed-nav .application_notice, .main-content.with_important_notice.fixed-nav .application_notice, .main_content.with_important_notice.fixed-nav .application_notice {
+      top: 90px; }
   body.with_important_notice.fixed-nav-lg, #body.with_important_notice.fixed-nav-lg, #container.with_important_notice.fixed-nav-lg, .main-content.with_important_notice.fixed-nav-lg, .main_content.with_important_notice.fixed-nav-lg {
     padding-top: 90px; }
+    body.with_important_notice.fixed-nav-lg .application_notice, #body.with_important_notice.fixed-nav-lg .application_notice, #container.with_important_notice.fixed-nav-lg .application_notice, .main-content.with_important_notice.fixed-nav-lg .application_notice, .main_content.with_important_notice.fixed-nav-lg .application_notice {
+      top: 100px; }
   body.with_important_notice.fixed-nav-xl, #body.with_important_notice.fixed-nav-xl, #container.with_important_notice.fixed-nav-xl, .main-content.with_important_notice.fixed-nav-xl, .main_content.with_important_notice.fixed-nav-xl {
     padding-top: 110px; }
+    body.with_important_notice.fixed-nav-xl .application_notice, #body.with_important_notice.fixed-nav-xl .application_notice, #container.with_important_notice.fixed-nav-xl .application_notice, .main-content.with_important_notice.fixed-nav-xl .application_notice, .main_content.with_important_notice.fixed-nav-xl .application_notice {
+      top: 120px; }
   body.with_important_notice .fixed-top, body.with_important_notice .navbar-fixed-top, #body.with_important_notice .fixed-top, #body.with_important_notice .navbar-fixed-top, #container.with_important_notice .fixed-top, #container.with_important_notice .navbar-fixed-top, .main-content.with_important_notice .fixed-top, .main-content.with_important_notice .navbar-fixed-top, .main_content.with_important_notice .fixed-top, .main_content.with_important_notice .navbar-fixed-top {
     top: 30px; }
 
@@ -11411,7 +11442,7 @@ body.with_important_notice, #body.with_important_notice, #container.with_importa
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400; }
   .help_arrow:before {
-    display: block;
+    display: none;
     position: absolute;
     content: "";
     padding: 0;
@@ -11427,7 +11458,7 @@ body.with_important_notice, #body.with_important_notice, #container.with_importa
     -ms-transform: rotate(-53deg);
     transform: rotate(-53deg); }
   .help_arrow:after {
-    display: block;
+    display: none;
     position: absolute;
     content: attr(data-text);
     padding: 0;
@@ -11441,6 +11472,11 @@ body.with_important_notice, #body.with_important_notice, #container.with_importa
     font-weight: 300;
     text-shadow: 0 1px 1px #000; }
 
+@media only screen and (min-width: 768px) {
+  .help_arrow:before {
+    display: block; }
+  .help_arrow:after {
+    display: block; } }
 .crossed {
   display: inline-block;
   position: relative; }
