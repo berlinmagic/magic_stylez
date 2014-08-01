@@ -49,3 +49,13 @@
 	@include spezial_radius( #{percentage($first)} / #{percentage($second)} );
 }
 
+
+@mixin gpu_render {
+	// old style (bourbon)
+	// @include transform( translateZ( 0 ) );
+	// twbs
+	// @include translate3d(0, 0, 0);
+	// bourbon
+	@include transform(translate3d(0,0,0));
+}
+

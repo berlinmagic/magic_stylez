@@ -1,0 +1,5 @@
+<iframe src="<%= "#{rootPath()}aside-nav" %>" name="SELFHTML_in_a_box" id="mainFrame">
+  <p>Sorry, your Browser doesn't like Frames.
+  But we would need an iframe to show the template stuff
+  <a href="/aside-nav">Aside Nav</a></p>
+</iframe>

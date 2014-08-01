@@ -1,0 +1,79 @@
+.important_notice {
+	display: block; position: fixed;
+	top: $important-notice-top; bottom: $important-notice-bottom;
+	left:0; right:0;
+	line-height: $important-notice-height; height: $important-notice-height; max-height: $important-notice-height;
+	padding: 0;
+	z-index: $zindex-important-notice;
+	text-align: center;
+	background: $important-notice-bg;
+	color: $important-notice-color;
+	font-weight: $important-notice-font-weight;
+	font-size: $important-notice-font-size;
+	a { 
+	    font-weight: $important-notice-link-weight; 
+	    color: $important-notice-link-color;
+	    text-shadow: 0 0 3px darken($important-notice-bg, 20%); 
+	}
+	&.warning, .development {
+		background: $important-notice-warning-bg;
+		color: $important-notice-warning-color;
+		a { color: $important-notice-warning-link-color; text-shadow: 0 0 3px darken($important-notice-warning-bg, 20%); }
+	}
+	&.alert, .staging {
+		background: $important-notice-alert-bg;
+		color: $important-notice-alert-color;
+		a { color: $important-notice-alert-link-color; text-shadow: 0 0 3px darken($important-notice-alert-bg, 20%); }
+	}
+}
+
+body, #body, #container, .main-content, .main_content {
+    
+    &.with_important_notice {
+        
+        padding-top: $important-notice-height;
+        
+        &.fixed-nav-xs { padding-top: $important-notice-height + $navbar-height-xs; }
+    	&.fixed-nav-sm { padding-top: $important-notice-height + $navbar-height-sm; }
+    	&.fixed-nav    { padding-top: $important-notice-height + $navbar-height; }
+    	&.fixed-nav-lg { padding-top: $important-notice-height + $navbar-height-lg; }
+    	&.fixed-nav-xl { padding-top: $important-notice-height + $navbar-height-xl; }
+    	
+    	.fixed-top, .navbar-fixed-top { top: $important-notice-height; }
+        
+    }
+	
+}
+
+
+
+@include responsiveStep-sm {
+    
+    body, #body, #container, .main-content, .main_content {
+        &.with_important_notice {
+            
+            #nav-aside { top: $important-notice-height; }
+            
+        }
+    }
+    
+}
+@media (max-width: $grid-float-breakpoint) {
+    
+    body, #body, #container, .main-content, .main_content {
+        &.with_important_notice {
+            
+            .navbar.navbar-slidebar {
+                &.fixed-top, &.navbar-fixed-top {
+    				.navbar-collapse { top: $important-notice-height + $navbar-height; }
+    				&.navbar-xs { .navbar-collapse { top: $important-notice-height + $navbar-height-xs; } }
+    				&.navbar-sm { .navbar-collapse { top: $important-notice-height + $navbar-height-sm; } }
+    				&.navbar-lg { .navbar-collapse { top: $important-notice-height + $navbar-height-lg; } }
+    				&.navbar-xl { .navbar-collapse { top: $important-notice-height + $navbar-height-xl; } }
+    			}
+            }
+            
+        }
+    }
+    
+}

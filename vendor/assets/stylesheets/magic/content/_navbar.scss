@@ -1,7 +1,12 @@
 // some changes to twbs navbar
 
 // Basics of a navbar
+// $navbar-height-xs:                 30px !default;
+// $navbar-height-sm:                 40px !default;
 // $navbar-height:                    50px !default;
+// $navbar-height-lg:                 60px !default;
+// $navbar-height-xl:                 80px !default;
+// 
 // $navbar-margin-bottom:             $line-height-computed !default;
 // $navbar-border-radius:             $border-radius-base !default;
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
@@ -44,54 +49,56 @@
 	.corset, .container { background: inherit; }
 	.navbar-collapse { background: inherit; }
 	
-	// default hight 50px
-	.navbar-nav {
-		background: inherit;
-		// a:not(.btn) { }
-		& > li > a, & > a {
-			padding: 15px 10px;
-			line-height: 20px;
-			
-			&.btn {
-				margin: 9px 5px;
-				@include vertical-padding( 5px );
-				line-height: 20px;
-				&.btn-sm {
-					margin: 11px 5px;
-					@include vertical-padding( 3px );
-				}
-				&.btn-xs {
-					margin: 13px 5px;
-					@include vertical-padding( 1px );
-				}
-				&.btn-lg {
-					margin: 6px 5px;
-					@include vertical-padding( 8px );
-				}
-			}
-		}
-		
-	}
+	// // default hight 50px
+	// .navbar-nav {
+	// 	background: inherit;
+	// 	// a:not(.btn) { }
+	// 	& > li > a, & > a {
+	// 		padding: 15px 10px;
+	// 		line-height: 20px;
+	// 		
+	// 		&.btn {
+	// 			margin: 9px 5px;
+	// 			@include vertical-padding( 5px );
+	// 			line-height: 20px;
+	// 			&.btn-sm {
+	// 				margin: 11px 5px;
+	// 				@include vertical-padding( 3px );
+	// 			}
+	// 			&.btn-xs {
+	// 				margin: 13px 5px;
+	// 				@include vertical-padding( 1px );
+	// 			}
+	// 			&.btn-lg {
+	// 				margin: 6px 5px;
+	// 				@include vertical-padding( 8px );
+	// 			}
+	// 		}
+	// 	}
+	// 	
+	// }
+	
+	@include sized-navbar( $navbar-height );
 	
 	@media (max-width: $grid-float-breakpoint-max) {
 		.corset .navbar-collapse { @include horizontal-margin( -10px ); }
 	}
 	
-	&.navbar-xs { @include sized-navbar( 30px ); }
-	&.navbar-sm { @include sized-navbar( 40px ); }
-	&.navbar-lg { @include sized-navbar( 60px ); }
-	&.navbar-xl { @include sized-navbar( 80px ); }
+	&.navbar-xs { @include sized-navbar( $navbar-height-xs ); }
+	&.navbar-sm { @include sized-navbar( $navbar-height-sm ); }
+	&.navbar-lg { @include sized-navbar( $navbar-height-lg ); }
+	&.navbar-xl { @include sized-navbar( $navbar-height-xl ); }
 	
 }
 
 
 body, #body, #container, .main-content, .main_content {
 	
-	&.fixed-nav-xs { padding: 30px 0 0; }
-	&.fixed-nav-sm { padding: 40px 0 0; }
-	&.fixed-nav    { padding: 50px 0 0; }
-	&.fixed-nav-lg { padding: 60px 0 0; }
-	&.fixed-nav-xl { padding: 80px 0 0; }
+	&.fixed-nav-xs { padding-top: $navbar-height-xs; }
+	&.fixed-nav-sm { padding-top: $navbar-height-sm; }
+	&.fixed-nav    { padding-top: $navbar-height; }
+	&.fixed-nav-lg { padding-top: $navbar-height-lg; }
+	&.fixed-nav-xl { padding-top: $navbar-height-xl; }
 	
 }
 
@@ -116,12 +123,12 @@ body, #body, #container, .main-content, .main_content {
 				&.on { @include transform( translateX( 0 ) );  }
 			}
 			
-			&.fixed-top .navbar-collapse, &.navbar-fixed-top .navbar-collapse {
-				top: 50px;
-				&.navbar-xs { top: 30px; }
-				&.navbar-sm { top: 40px; }
-				&.navbar-lg { top: 60px; }
-				&.navbar-xl { top: 80px; }
+			&.fixed-top, &.navbar-fixed-top {
+				.navbar-collapse { top: $navbar-height; }
+				&.navbar-xs { .navbar-collapse { top: $navbar-height-xs; } }
+				&.navbar-sm { .navbar-collapse { top: $navbar-height-sm; } }
+				&.navbar-lg { .navbar-collapse { top: $navbar-height-lg; } }
+				&.navbar-xl { .navbar-collapse { top: $navbar-height-xl; } }
 			}
 		}
 	}

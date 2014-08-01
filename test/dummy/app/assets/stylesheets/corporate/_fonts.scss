@@ -95,6 +95,7 @@ $magicHandwritten: 		'Gloria Hallelujah', cursive;
 $smallReadFont: $magicCondensedSans;
 $readFont: $magicSans;
 $bigFont: $magicSans;
+$alternateBigFont: $magicSans;
 $dekoFont: $magicHandwritten;
 
 
@@ -102,12 +103,15 @@ $dekoFont: $magicHandwritten;
 @mixin smallReadFont { font-family: $smallReadFont; }
 @mixin readFont { font-family: $readFont; }
 @mixin bigFont { font-family: $bigFont; }
+@mixin alternateBigFont { font-family: $alternateBigFont; }
 @mixin dekoFont { font-family: $dekoFont; }
 
 .smallReadFont { @include smallReadFont; }
 .readFont { @include readFont; }
 .bigFont { @include bigFont; }
+.alternateBigFont { @include alternateBigFont; }
 .dekoFont { @include dekoFont; }
+
 
 
 

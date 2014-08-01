@@ -139,6 +139,8 @@ $zindex-dropdown:          1000 !default;
 $zindex-popover:           1060 !default;
 $zindex-tooltip:           1070 !default;
 $zindex-navbar-fixed:      1030 !default;
+$zindex-aside-nav:         1030 !default;
+$zindex-important-notice:  1020 !default;
 $zindex-modal-background:  1040 !default;
 $zindex-modal:             1050 !default;
 
@@ -217,12 +219,55 @@ $container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
 $container-lg:                 $container-large-desktop !default;
 
 
+
+
+//== Important Notice
+//
+//##
+$important-notice-height:               30px !default;
+
+$important-notice-top:                  0px !default;
+$important-notice-bottom:               auto !default;
+
+$important-notice-font-size:            16px !default;
+$important-notice-font-weight:          300 !default;
+$important-notice-link-weight:          600 !default;
+
+$important-notice-bg:                   #e5e5e5 !default;
+$important-notice-color:                #333 !default;
+$important-notice-link-color:           $important-notice-color !default;
+
+$important-notice-warning-bg:           #e3d396 !default;
+$important-notice-warning-color:        #cc3300 !default;
+$important-notice-warning-link-color:   $important-notice-warning-color !default;
+
+$important-notice-alert-bg:             #db321a !default;
+$important-notice-alert-color:          #fff !default;
+$important-notice-alert-link-color:     $important-notice-alert-color !default;
+
+
+//== Aside-Navigation
+//
+//##
+$aside-nav-width:                    50px !default;
+$aside-nav-btn-height:               50px !default;
+$aside-nav-avatar-height:            60px !default;
+
+$aside-nav-background:               #e1e1e1 !default;
+$aside-nav-border-color:             #cccccc !default;
+
+
 //== Navbar
 //
 //##
 
 // Basics of a navbar
+$navbar-height-xs:                 30px !default;
+$navbar-height-sm:                 40px !default;
 $navbar-height:                    50px !default;
+$navbar-height-lg:                 60px !default;
+$navbar-height-xl:                 80px !default;
+
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;

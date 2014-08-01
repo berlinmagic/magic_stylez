@@ -36,6 +36,10 @@ navigate = ->
 
 $ ->
 
+  $("body").on "click", ".hide_da_notice", ->
+    $("body").removeClass("with_important_notice")
+    false
+
   $("body").on "click", ".lst_lnk", ->
     # nav = $(@).closest(".nav")
     nav = $(@).closest(".nav_list")

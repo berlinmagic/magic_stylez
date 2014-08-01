@@ -2,15 +2,15 @@
 
 html, body {
 	width: 100%; height: 100%; position: relative;
-	margin: 0; padding: 0;
 	background: #f3f2f2;
 }
 body {
 	position: relative;
-	padding: 0 0 0 220px;
 	&.blank {
-		margin: 0; padding: 0;
 		background: #fff;
+	}
+	&.main_template {
+	    padding: 0 0 0 220px;
 	}
 }
 
@@ -91,6 +91,17 @@ body {
 	// 	padding: 10px 0;
 	// }
 	// .banner-footer { background: rgba(0,0,0,.23); }
+	
+	// http://lorempixel.com/g/1200/500/nature/
+	
+	&.lorempixel {
+		background-color: rgba(255,255,255,.50);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: image-url('http://lorempixel.com/g/1200/500/nature/');
+	}
+	
 }
 
 
