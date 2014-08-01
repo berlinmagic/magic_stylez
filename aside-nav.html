@@ -13,14 +13,29 @@
     App.Environment = "production";
   </script>
 </head>
-<body class="blank">
-  <div id="fixed_nav" class="navbar navbar-default navbar-fixed-top navbar-xl" role="navigation">
+<body class="with_aside_nav with_important_notice fixed-nav-lg">
+  
+  <div class="important_notice development">
+    <div class="row">
+      <div class="col-xs-2" style="font-size: 24px;">
+        <i class="magicons-info-round"></i>
+      </div>
+      <div class="col-xs-8">
+        Diese Seite ist nur eine Demo, bitte nutzen Sie:&nbsp; <a href="http://berlinmagic.github.io/magic_stylez/">magic_stylez</a>
+      </div>
+      <div class="col-xs-2" style="font-size: 24px;">
+        <i class="magicons-info-round"></i>
+      </div>
+    </div>
+  </div>
+  
+  <div id="fixed_nav" class="navbar navbar-default navbar-fixed-top navbar-lg navbar-slidebar" role="navigation">
     <div class="corset">
     
   
   
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#front-main-nav-colapse">
+        <button type="button" class="navbar-toggle slidebar-toggle" data-target="#front-main-nav-colapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -30,33 +45,100 @@
       </div>
       <div class="collapse navbar-collapse" id="front-main-nav-colapse">
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a class="btn btn-success" href="#">Jobs</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                Hallo <b class="caret"></b>
+                Dropdown <b class="caret"></b>
 </a>              <ul class="dropdown-menu">
                   <li><a href="#">Link 1</a></li>
                   <li><a href="#">Link 2</a></li>
                   <li><a href="#">Link 3</a></li>
               </ul>
           </li>
+          <li><a class="btn btn-success" href="#">Button</a></li>
         </ul>
       </div>
     
     </div>
   </div>
 
-  <div class="main_content fixed-nav-xl">
+  <div id="nav-aside" class="fixed-left">
+    <div class="inner-aside">
+    
+      <div class="aside-btn user-pic">
+        <img alt="User Picture" src="http://lorempixel.com/g/50/60/people/" />
+      </div>
+    
+      <a class="aside-btn" href="#" title="Dashboard">
+        <i class='glyphicon glyphicon-home'></i>
+      </a>    
+      <a class="aside-btn active" href="#" title="Settings">
+        <i class='glyphicon glyphicon-cog'></i>
+      </a>    
+      <a class="aside-btn" href="#" title="Inbox">
+        <i class='glyphicon glyphicon-inbox'></i>
+      </a> 
+      <a class="aside-btn" href="#" title="Pictures">
+        <i class='glyphicon glyphicon-picture'></i>
+      </a> 
+    
+    </div>
+  </div>
+
+
+
+
+<div class="fullpage-table" id="banner-one">
+      <div class="table-row">
+        <div class="banner-box responsive-hero with-footer with-header fill lorempixel" style="background-image: url('http://lorempixel.com/g/1200/500/nature/')">
+          <div class="banner-header">
+            <div class="corset">
+              <h1 class="loud">Responsive Aside-Nav</h1>
+            </div>
+          </div>
+      
+          <div class="banner-content">
+            <div class="corset">
+              <p class="loud">This is a fullpage-table, it allways uses fullpage-height<br/>(if content fits in).</p>
+            </div>
+          </div>
+      
+          <div class="banner-footer" id="sign_up_banner">
+            <div class="corset">
+              <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                  <!--<a href="#" class="btn btn-success btn-block btn-lg">Sign up now</a>-->
+                  <button class="btn btn-success btn-block help_arrow hide_da_notice" data-text="Turn off notice!">
+                    Click Me
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+
+  <div class="main_content">
+    
+    
+    
+    
+    
   
-    <div class="section brand">
+    <div class="section dark">
       <div class="corset">
-        <h1>usual twbs header plus some improvements</h1>
+        <h1>Responsive Slidebar</h1>
         <br/>
-        <p class="loud">just niced up button alignment (no <em>.navbar-btn</em> needed) .. add sizes: <em>.navbar-xs, .navbar-sm, .navbar-lg, .navbar-xl</em></p>
+        <p class="loud">
+          Turns the usual twbs <em>navbar-collapse</em> into a nice slidebar. .. try it out:<br/>
+          make your screen smaller than 768px and press the header-toggle
+        </p>
         <br/>
         <h4>dependency:</h4> 
         <code>@import "magic/content/navbar";</code>
@@ -152,7 +234,6 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </div>
-
   
   </div>
 </body>
