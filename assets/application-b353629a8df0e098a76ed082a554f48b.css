@@ -11265,16 +11265,16 @@ body.fixed-nav-xl, #body.fixed-nav-xl, #container.fixed-nav-xl, .main-content.fi
     font-weight: 600;
     color: #333333;
     text-shadow: 0 0 3px #b2b2b2; }
-  .important_notice.warning, .important_notice .development {
+  .important_notice.warning {
     background: #e3d396;
     color: #cc3300; }
-    .important_notice.warning a, .important_notice .development a {
+    .important_notice.warning a {
       color: #cc3300;
       text-shadow: 0 0 3px #ceb145; }
-  .important_notice.alert, .important_notice .staging {
+  .important_notice.danger {
     background: #db321a;
     color: white; }
-    .important_notice.alert a, .important_notice .staging a {
+    .important_notice.danger a {
       color: white;
       text-shadow: 0 0 3px #801d0f; }
 
@@ -11827,6 +11827,47 @@ hr, .divider:after {
     top: 7px;
     line-height: 20px;
     font-size: 16px; }
+
+.nav_list.flat {
+  list-style: none;
+  background: transparent; }
+  .nav_list.flat li {
+    border-bottom: solid 1px #cccccc;
+    background: transparent; }
+    .nav_list.flat li a {
+      background: transparent;
+      padding: 11px 10px;
+      line-height: 20px;
+      color: #333;
+      font-weight: 300; }
+    .nav_list.flat li .sub_nav {
+      -webkit-box-shadow: none;
+      -ms-box-shadow: none;
+      -o-box-shadow: none;
+      box-shadow: none;
+      background: #e5e5e5;
+      border-top: solid 1px #cccccc;
+      display: none; }
+      .nav_list.flat li .sub_nav:before, .nav_list.flat li .sub_nav:after {
+        display: none; }
+      .nav_list.flat li .sub_nav li {
+        background: transparent; }
+        .nav_list.flat li .sub_nav li:last-child {
+          border-bottom: 0; }
+        .nav_list.flat li .sub_nav li a {
+          background: transparent;
+          padding: 6px 20px; }
+        .nav_list.flat li .sub_nav li.active a {
+          background: #fff; }
+    .nav_list.flat li.current > a {
+      color: #333;
+      font-weight: bold; }
+    .nav_list.flat li.current .sub_nav {
+      display: block; }
+    .nav_list.flat li.active > a {
+      background: #fff;
+      color: #a0c775;
+      font-weight: bold; }
 
 html, body {
   width: 100%;
