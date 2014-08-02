@@ -16,12 +16,12 @@
 	    color: $important-notice-link-color;
 	    text-shadow: 0 0 3px darken($important-notice-bg, 20%); 
 	}
-	&.warning, .development {
+	&.warning {
 		background: $important-notice-warning-bg;
 		color: $important-notice-warning-color;
 		a { color: $important-notice-warning-link-color; text-shadow: 0 0 3px darken($important-notice-warning-bg, 20%); }
 	}
-	&.alert, .staging {
+	&.danger {
 		background: $important-notice-alert-bg;
 		color: $important-notice-alert-color;
 		a { color: $important-notice-alert-link-color; text-shadow: 0 0 3px darken($important-notice-alert-bg, 20%); }

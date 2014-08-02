@@ -208,3 +208,40 @@
     }
     
 }
+
+.nav_list.flat {
+	list-style: none;
+	background: transparent;
+	li {
+		border-bottom: solid 1px $main-border-color;
+		background: transparent;
+		a {
+			background: transparent;
+			padding: 11px 10px;
+			line-height: 20px;
+			color: #333;
+			font-weight: 300;
+		}
+		.sub_nav {
+			&:before, &:after { display: none; }
+			@include box-shadow( none );
+			background: $dark-bg;
+			border-top: solid 1px $main-border-color;
+			display: none;
+			li {
+				&:last-child { border-bottom: 0; }
+				background: transparent;
+				a {
+					background: transparent;
+					padding: 6px 20px;
+				}
+				&.active a { background: #fff; }
+			}
+		}
+		&.current {
+			& > a { color: #333; font-weight: bold; }
+			.sub_nav { display: block; }
+		}
+		&.active > a { background: #fff; color: $brand-color; font-weight: bold; }
+	}
+}
