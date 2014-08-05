@@ -264,6 +264,18 @@ $aside-nav-avatar-height:            60px !default;
 $aside-nav-background:               #e1e1e1 !default;
 $aside-nav-border-color:             #cccccc !default;
 
+$aside-nav-btn-font-size:            22px !default;
+$aside-nav-btn-color:                #555 !default;
+$aside-nav-btn-text-shadow:          "0 1px 0 rgba( 255,255,255,.42 )" !default;
+
+$aside-nav-btn-color-hover:          $brand-color !default;
+$aside-nav-btn-bg-hover:             transparent !default;
+$aside-nav-btn-text-shadow-hover:    "0 1px 0 rgba( 255,255,255,.42 )" !default;
+
+$aside-nav-btn-color-active:         #fff !default;
+$aside-nav-btn-bg-active:            $brand-color !default;
+$aside-nav-btn-text-shadow-active:   "0 1px 2px rgba( 0,0,0,.42 )" !default;
+
 
 //== Navbar
 //
