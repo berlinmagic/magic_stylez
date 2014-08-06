@@ -8,16 +8,16 @@
 	$input-height: $input-height + 1;
 	&#{$parent} > * { height: $input-height; }
 	&#{$parent} > .icn {
+                @include padding($padding-vertical 2px);
 		height: $input-height;
 		max-height: $input-height;
 		font-size: $font-size * 1.2;
-		padding: $padding-vertical 2px;
 		line-height: floor(($font-size * $line-height));
 		@include inpt_icn_width( ($font-size * $line-height), $padding-base-vertical );
 	}
 	&#{$parent} > .inpt > input {
+            @include padding($padding-vertical $padding-horizontal $padding-vertical 5px);
 		height: $input-height;
-	    padding: $padding-vertical $padding-horizontal $padding-vertical 5px;
 	    font-size: $font-size;
 	    line-height: $line-height;
 	    border-radius: $border-radius;
@@ -49,8 +49,9 @@
 	@include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 	
 	& > * {
+                @include padding(0);
+                @include margin(0);
 		display: table-cell; position: relative;
-		padding: 0; margin: 0;
 		
 		height: $input-height-base + 1;
 		font-size: inherit;
@@ -72,10 +73,10 @@
 		
 		&.inpt {
 			input, label, textarea {
+                                @include margin(0);
+                                @include size(100% $input-height-base + 1);
 				display: block; position: relative;
 				padding: $padding-base-vertical $padding-base-horizontal $padding-base-vertical 5px;
-				margin: 0;
-				height: $input-height-base + 1;
 				@include box-sizing(border-box);
 				border: none;
 				@include box-shadow( none );
@@ -85,10 +86,10 @@
 		}
 		
 		&.icn { 
+                        @include padding($padding-base-vertical 2px);
 			width: 2%;
 			font-size: $font-size-base * 1.2;
 			line-height: $line-height-computed;
-			padding: $padding-base-vertical 2px;
 			text-align: center;
 			color: lighten($input-color, 20%);
 			@include inpt_icn_width( $line-height-computed, $padding-base-vertical );

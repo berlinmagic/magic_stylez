@@ -1,21 +1,24 @@
 // ### Nav-List ( ul / ol )
 .nav_list {
+    @include margin(0);
+    @include padding(0);
     display: block; position: relative;
     list-style: none;
-    margin: 0; padding: 0;
     background: $white;
     
     li {
+        @include margin(0);
+        @include padding(0);
         display: block; position: relative;
         list-style: none;
-        margin: 0; padding: 0;
         border: none;
         // border-top: solid 1px $white;
         border-bottom: solid 1px $gray-light;
         
         a, span.lst_lnk {
+            @include margin(0);
+            @include padding(5px 10px);
             display: block; position: relative;
-            margin: 0; padding: 5px 10px;
             @include sansCondensedBold;
             line-height: 30px;
             font-size: 14px;
@@ -23,12 +26,12 @@
             color: $gray;
             background: transparent;
             .label {
+                @include padding(0);
+                @include margin(null null null 10px);
                 font-size: inherit;
                 line-height: inherit;
                 @include border-radius( 10px );
-                padding: 0;
 				width: 30px;
-                margin-left: 10px;
                 text-align: center;
                 // background: $gray-light;
 				background: transparent;
@@ -41,8 +44,9 @@
         }
         
         .sub_nav {
+            @include margin(0);
+            @include padding(0);
             display: block; position: relative;
-            margin: 0; padding: 0;
             list-style: none;
             display: none;
             // @include box-shadow( 
@@ -54,8 +58,9 @@
 			// ####
 			overflow: hidden;
 			&:before, &:after {
+                                @include margin(0);
+                                @include padding(0);
 				display: block; position: absolute; content: "";
-				margin: 0; padding: 0;
 				z-index: 3;
 			}
 			&:before {
@@ -74,7 +79,7 @@
                 // &:first-child { border-top: solid 1px $gray-light; }
                 
                 a, span.lst_lnk {
-                    padding: 5px 10px;
+                    @include padding(5px 10px);
                     line-height: 20px;
                     font-size: 14px;
 
@@ -182,18 +187,15 @@
     
     
     &.scroll {
-        position: fixed;
-        // width: 138px;
-        top: 60px;
+        @include position(fixed, 60px null null null);
     }
     
     &.arrow li {
         a {
-            padding-right: 30px;
+            @include padding(null 30px null null);
             &:after {
+                @include position(absolute, 12px 5px null null);
                 display: block;
-                position: absolute;
-                top: 12px; right: 5px;
                 line-height: 30px;
                 content: "\f23b";
                 font-family: magiconsregular;
@@ -216,8 +218,8 @@
 		border-bottom: solid 1px $main-border-color;
 		background: transparent;
 		a {
+                        @include padding(11px 10px);
 			background: transparent;
-			padding: 11px 10px;
 			line-height: 20px;
 			color: #333;
 			font-weight: 300;
@@ -232,8 +234,8 @@
 				&:last-child { border-bottom: 0; }
 				background: transparent;
 				a {
+                                        @include padding(6px 20px);
 					background: transparent;
-					padding: 6px 20px;
 				}
 				&.active a { background: #fff; }
 			}

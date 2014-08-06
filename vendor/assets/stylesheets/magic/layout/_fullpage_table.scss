@@ -22,11 +22,13 @@ html, body, #body {
 
 
 .fixed-table, .layout-table, .inline_table {
+    @include padding(0);
+    @include margin(0);
     display: block; position: relative;
-	padding: 0; margin: 0;
     & > * {
+        @include padding(0);
+        @include margin(0);
         display: block; position: relative;
-        padding: 0; margin: 0;
         vertical-align: top;
 		&.top { vertical-align: top; }
 		&.middle { vertical-align: middle; }
@@ -37,8 +39,9 @@ html, body, #body {
 
 
 .inline_table {
+        @include padding(0);
+        @include margin(0);
 	display: table; position: relative;
-	padding: 0; margin: 0;
 	width: 100%;
 	& > * {
 		display: table-cell;
@@ -90,9 +93,9 @@ html, body, #body {
 		& > .tr, & > .row, & > .table-row {
 			display: table-row;
 			& > .td, & > .th, & > .cell {
+                                @include padding(10px);
 				display: table-cell;
 				vertical-align: middle;
-				padding: 10px;
 				&.top { vertical-align: top; }
 				&.bottom { vertical-align: bottom; }
 			}

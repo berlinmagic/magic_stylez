@@ -6,11 +6,12 @@
 
 
 .btn-splited, .btn-divided {
+        @include margin(0);
+        @include padding(0);
 	display: table;
     width: auto;
 	width: 100%;
 	// margin: 0 0 10px; 
-	margin: 0; padding: 0;
 	& > * {
 		display: table-cell; position: relative;
 		padding: $padding-base-vertical $padding-base-horizontal;
@@ -80,10 +81,10 @@
 
 // Vertically space out multiple block buttons
 .btn-block + .btn-block {
-  margin-top: 10px;
+  @include margin(10px null null null);
 }
 .btn-splited + .btn-splited, .btn-splited + .btn-divided, .btn-divided + .btn-splited, .btn-divided + .btn-divided {
-  margin-top: 10px;
+  @include margin(10px null null null);
 }
 
 
