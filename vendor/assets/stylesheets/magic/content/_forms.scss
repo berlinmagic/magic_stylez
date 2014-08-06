@@ -8,23 +8,25 @@
 	h2 { margin: 0 0 15px; }
 	.form-control {
 		position: relative;
-		@include border-radius(0);
-		margin: 0 0 -1px !important;
-		padding: 10px;
-		font-size: 16px;
-		
-		
-		
-		height: auto;
-		&:first-child { @include border-top-radius(3px); }
-		&:last-child { @include border-bottom-radius(3px); margin: 0 0 20px; }
-		@include placeholder {
-			color: #ccc;
-		}
-		&:focus, &:active { z-index: 99; }
+		@include placeholder { color: #ccc; }
+	}
+	.btn:last-child {
+	    margin: 20px 0 0;
 	}
 }
 
+.inpt-group {
+	display: block; position: relative;
+	margin: 0 0 20px; padding: 0;
+	.form-control {
+	    position: relative;
+	    margin: 0 0 -1px !important;
+	    @include border-radius(0);
+	    &:first-child { @include border-top-radius($input-border-radius); }
+		&:last-child { @include border-bottom-radius($input-border-radius); margin: 0; }
+		&:focus, &:active { z-index: 99; }
+	}
+}
 
 
 // for checkbox and radio fields
@@ -177,11 +179,7 @@ form.corset, .form {
 	margin-top: 10px;
 }
 
-.inpt-group {
-	display: block; position: relative;
-	margin: 0 0 20px; padding: 0;
-	.form-control { margin-top: 0; margin-bottom: 0; }
-}
+
 
 
 @include all_form_elements {
