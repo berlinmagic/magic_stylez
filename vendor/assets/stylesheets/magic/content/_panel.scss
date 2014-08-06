@@ -1,6 +1,6 @@
 .panel-task {
 	.panel-heading {
-		padding: 0;
+                @include padding(0);
 		overflow: hidden;
 		@include border-radius(0);
 		background: #fff;
@@ -22,7 +22,7 @@
 				font-size: 24px;
 			}
 			.cell.text {
-				padding: 0 20px;
+                                @include padding(0 20px);
 				text-align: left;
 			}
 			.cell.state-icon { color: #fff; }

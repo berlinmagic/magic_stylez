@@ -15,9 +15,11 @@
     &.shine-top {
         overflow: hidden;
         &:before {
-            display: block; position: absolute; content: ""; z-index: 11;
-            margin: 0; padding: 0;
-            bottom: 100%; left: 10%; right: 10%; height: 100px;
+            @include padding(0);
+            @include margin(0);
+            @include position(absolute, null 10% 100% 10%);
+            display: block; content: ""; z-index: 11;
+            height: 100px;
             @include spezial_radius( 500px / 20px );
             @include box-shadow( 0 5px 20px 0 rgba(0,0,0,.23) );
         }
@@ -25,9 +27,11 @@
     &.shine-bottom {
         overflow: hidden;
         &:after {
-            display: block; position: absolute; content: ""; z-index: 11;
-            margin: 0; padding: 0;
-            top: 100%; left: 10%; right: 10%; height: 100px;
+            @include padding(0);
+            @include margin(0);
+            @include position(absolute, 100% 10% null 10%);
+            display: block; content: ""; z-index: 11;
+            height: 100px;
             @include spezial_radius( 500px / 20px );
             @include box-shadow( 0 -5px 20px 0 rgba(0,0,0,.23) );
         }

@@ -8,20 +8,17 @@
 
 
 .reflection {
+        @include position(absolute, 100% 0 null 0);
+        @include margin(4px 0 0);
 	display: block;
-	position: absolute;
 	
 	background: inherit;
 	border: inherit;
 	@include box-shadow( inherit );
-	@include border-radius( inherit );
-	
+	@include border-radius( inherit );	
 	z-index: -1;
-	margin: 4px 0 0;
-	top: 100%;
 	// height: 50%;
 	height: 130px;
-	left: 0; right: 0;
 	// -moz-transform: scaleY(-1);
 	// -webkit-transform: scaleY(-1);
 	// -ms-transform: scaleY(-1);
@@ -33,11 +30,9 @@
 	filter: blur(2px);
 	opacity: .50;
 	&:after {
+                @include position(absolute, -5px -5px 0 -5px);
 		display: block;
-		position: absolute;
 		content: "";
-		top: -5px; bottom: 0;
-		left: -5px; right: -5px;
 		z-index: 3;
 		@include linear-gradient(
 										270deg, 

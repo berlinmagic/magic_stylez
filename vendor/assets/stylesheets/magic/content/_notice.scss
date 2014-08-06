@@ -1,10 +1,9 @@
 // Important Notice shown on top of page
 .important_notice {
-	display: block; position: fixed;
-	top: $important-notice-top; bottom: $important-notice-bottom;
-	left:0; right:0;
+        @include position(fixed, $important-notice-top 0 $important-notice-bottom 0);
+        @include padding(0);
+	display: block;
 	line-height: $important-notice-height; height: $important-notice-height; max-height: $important-notice-height;
-	padding: 0;
 	z-index: $zindex-important-notice;
 	text-align: center;
 	background: $important-notice-bg;
@@ -30,8 +29,7 @@
 
 // Important Notice shown on top of page
 .application_notice {
-	position: fixed;
-	top: $application-notice-top; left: $application-notice-gap; right: $application-notice-gap;
+        @include position(fixed, $application-notice-top $application-notice-gap null $application-notice-gap);
 	z-index: $zindex-application-notice;
 }
 

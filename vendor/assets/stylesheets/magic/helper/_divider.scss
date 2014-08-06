@@ -1,12 +1,13 @@
 .divider {
+        @include padding(0);
 	display: block; position: relative;
-	padding: 0;
 	// margin: floor($line-height-computed / 2) 0;
 	background: inherit;
 	text-align: center;
 	& > * {
+                @include margin(0 auto);
+                @include padding(0 15px);
 		display: inline-block; position: relative;
-		margin: 0 auto; padding: 0 15px;
 		background: inherit;
 		z-index: 3;
 		&.white { background: $white; }
@@ -15,23 +16,24 @@
 		&.soft { background: $main-bg; }
 	}
 	&:after {
-		display: block; position: absolute; content: "";
-		margin: -1px 0 0; padding: 0;
-		top: 50%; height: 0;
-		left: 0; right: 0;
+                @include position(absolute, 50% 0 null 0);
+                @include margin(-1px 0 0);
+                @include padding(0);
+		display: block; content: "";
+		height: 0;
 		z-index: 1;
 	}
 }
 
 hr {
+        @include padding(0);
 	display: block; position: relative;
 	// margin: floor($line-height-computed / 2) 0;
-	padding: 0;
 	height: 0;
 	border: none;
 }
 
-hr, .divider { margin: $line-height-computed 0; }
+hr, .divider { @include margin($line-height-computed 0); }
 hr, .divider:after {
 	border-top: solid 1px $main-border-color;
 	border-bottom: solid 1px $white;

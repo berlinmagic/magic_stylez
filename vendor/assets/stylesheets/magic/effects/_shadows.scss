@@ -33,11 +33,8 @@
 	// display: block;
 	// z-index: 3;
 	&:before {
-		content: ""; display: block; position: absolute; width:auto;
-		top: 0;
-		right: #{$gap};
-		left: #{$gap};
-		bottom: 0;
+                @include position(absolute, 0 #{$gap} 0 #{$gap});
+		content: ""; display: block; width:auto;
 		border: solid 1px #ccc;
 		@include border-radius( #{$radius} );
 		@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
@@ -49,10 +46,9 @@
 	// position: relative;
 	// display: block;
 	&:before, &:after {
-		content: ""; display: block; position: absolute;
-		bottom:15px;
-		width:50%;
-		height:20%;
+                @include size(50% 20%);
+                @include position(absolute, null null 15px null);
+		content: ""; display: block;
 		z-index: -2;
 		@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
 	}
@@ -70,11 +66,9 @@
 	// position: relative;
 	// display: block;
 	&:before, &:after {
-		content: ""; display: block; position: absolute;
+                @include position(absolute, nunll 20px 5px 80px);
+		content: ""; display: block;
 		background: transparent;
-		left: 80px;
-		bottom:5px;
-		right:20px;
 		height:35%;
 		z-index: -2;
 		@include make_shadows(-80px, 0, $blur, 0, $color, $times);
@@ -95,9 +89,8 @@
 	// position: relative;
 	// display: block;
 	&:before {
-		content: ""; display: block; position: absolute;
-		top: 10px; bottom: 10px;
-		left: 0; right: 0;
+                @include position(absolute, 10px 0 10px 0);
+		content: ""; display: block;
 		z-index: -2;
 		@include elipse( 10, 100 );
 		@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);
@@ -108,9 +101,8 @@
 	// position: relative;
 	// display: block;
 	&:before {
-		content: ""; display: block; position: absolute;
-		top: 0; bottom: 0;
-		left: 10px; right: 10px;
+                @include position(absolute, 10px 0 10px 0);
+		content: ""; display: block;
 		z-index: -2;
 		@include elipse( 100, 10 );
 		@include make_shadows($horizontal, $vertical, $blur, $size, $color, $times);

@@ -1,32 +1,35 @@
 .box, .box > .header, .box > .body, .box > .pic {
+        @include padding(0);
+        @include margin(0);
 	display: block; position: relative;
-	margin: 0; padding: 0;
 }
 
 .box {
-	margin: 0 0 20px; padding: 10px;
+        @include margin(0 0 20px);
+        @include padding(10px);
 	border: solid 1px $main-border-color;
 	@include border-radius(3px);
 	text-align: left;
 	background: #fff;
 	
 	&.shadow { @include box-shadow( 0 3px 3px 0 rgba(0, 0, 0, 0.20) ); }
-	&.left-pic { padding-left: 110px; }
-	&.no-press { margin: 0; }
+	&.left-pic { @include padding(null null null 110px); }
+	&.no-press { @include margin(0); }
 	&.blur { background: rgba(255,255,255,.42); }
 	
 	& > .pic {
-		margin: 0 10px 0 -100px;
+                @include margin(0 10px 0 -100px);
 		width: 100px;
 		float: left;
 		border: solid 1px $main-border-color;
 	}
 	& > .header {
-		padding: 5px 10px 5px;
+                @include padding(5px 10px 5px);
 		border-bottom: solid 1px $main-border-color;
 		
 		&, h1, h2, h3, h4, h5, h6, p, span, .h1, .h2, .h3, .h4, .h5, .h6 {
-			margin: 0; padding: 0 5px 2px;
+                        @include margin(0);
+                        @include padding(0 5px 2px);
 			color: $brand-color;
 			line-height: 27px;
 			font-size: 18px;
@@ -35,13 +38,13 @@
 		&.blank { border-bottom: solid 1px transparent; }
 		i, i:before {
 			color: #999;
-			margin-right: 2px;
+                        @include margin(null 2px null null);
 		}
 	}
 	.pic + .header { padding-left: 0; margin-left: 10px; }
 	
 	& > .body {
-		padding: 10px 10px 5px;
+                @include padding(10px 10px 5px);
 	}
 }
 

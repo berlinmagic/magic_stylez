@@ -10,15 +10,16 @@ $stripe_color: $gray-light;
 .inner_half_one, .inner_half_two, 
 .outer_half_one, .outer_half_two, 
 .middle_full {
+        @include margin(0);
+        @include padding(0);
 	display: block; position: relative;
-	margin: 0; padding: 0;
 }
 
 
 .circle-diagram {
+        @include margin(20px auto);
+        @include size($circle_width $circle_width);
 	display: inline-block;
-	margin: 20px auto;
-	width: $circle_width; height: $circle_width;
 	// border: solid 1px $stripe_color;
 	border: none;
 	@include border-radius( #{$circle_width * 3} );
@@ -122,8 +123,9 @@ $stripe_color: $gray-light;
 .inner_half_one, .inner_half_two, 
 .outer_half_one, .outer_half_two, 
 .middle_full {
+        @include margin(0);
+        @include padding(0);
 	display: block; position: relative;
-	margin: 0; padding: 0;
 }
 
 

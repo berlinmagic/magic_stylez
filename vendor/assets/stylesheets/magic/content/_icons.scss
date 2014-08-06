@@ -1,17 +1,17 @@
 .feature-icon {
-	margin: 0 auto;
+        @include margin(0 auto);
+        @include size($that_size $that_size);
 	$that_size: 90px;
-	width: $that_size; height: $that_size;
 	@include border-radius($that_size);
 	border: solid 5px transparentize($orange, 0.5);
-	img { max-width: 80%; margin: 10%; }
+	img { @include margin(10%); max-width: 80%; }
 	i {
-		display:block; position: absolute;
-		top: -1px; right: -4px;
+                @include position(absolute, -1px -4px null null);
+                @include size(24px 24px);
+		display:block;
 		background: $orange;
 		color: #fff;
 		@include border-radius(20px);
-		width: 24px; height: 24px;
 		line-height: 24px;
 		font-size: 18px;
 	}

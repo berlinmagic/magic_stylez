@@ -1,7 +1,8 @@
 .pic, .pic-list, .pic-list > li, .pic-list > li > *, .pic-list .pic, 
 .pic-list .facts, .pic-list .facts .head, .pic-list .facts .body {
+        @include margin(0);
+        @include padding(0);
 	display: block; position: relative;
-	margin: 0; padding: 0;
 }
 
 .pic {
@@ -22,12 +23,12 @@
 .pic-list {
 	list-style: none;
 	& > li {
-		margin: 0;
+                @include margin(0);
 		border: none;
 		border-bottom: solid 1px $main-border-color;
 		&:last-child { border-bottom: none; }
 		& > * {
-			padding: 5px 0;
+                        @include padding(5px 0);
 			@include clearfix;
 			.pic  {
 				width: 50px;
@@ -39,7 +40,7 @@
 				}
 			}
 			.facts {
-				padding: 5px 0;
+                                @include padding(5px 0);
 				margin-left: 60px;
 				.head {
 					line-height: 20px;
