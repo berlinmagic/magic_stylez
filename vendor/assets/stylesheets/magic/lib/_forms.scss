@@ -38,5 +38,6 @@
 	select,
 	textarea,
 	.select2-container,
-	.token-input-list { @content; }
+	.token-input-list,
+	.inpt-splited { @content; }
 }
