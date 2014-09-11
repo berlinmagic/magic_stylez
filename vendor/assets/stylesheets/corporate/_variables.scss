@@ -288,6 +288,12 @@ $navbar-height:                    50px !default;
 $navbar-height-lg:                 60px !default;
 $navbar-height-xl:                 80px !default;
 
+$subnav-height:                    40px !default;
+$subnav-background:                #069 !default;
+$subnav-color:                     #fff !default;
+$subnav-hover-color:               #ccc !default;
+$subnav-active-color:              #aaa !default;
+
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;

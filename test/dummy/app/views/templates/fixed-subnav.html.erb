@@ -1,0 +1,61 @@
+<body class="blank fixed-nav-xl fixed-sub-nav">
+  <div id="fixed_nav" class="navbar navbar-default navbar-fixed-top navbar-xl" role="navigation">
+    <div class="corset">
+    
+  
+  
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#front-main-nav-colapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to "Magic-Stylez", "#", class: "navbar-brand" %>
+      </div>
+      <div class="collapse navbar-collapse" id="front-main-nav-colapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><%= link_to "Jobs", "#" %></li>
+          <li><%= link_to "Jobs", "#" %></li>
+          <li><%= link_to "Jobs", "#", class: "btn btn-success" %></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+              <%= link_to "#", class: "dropdown-toggle", data: {toggle: "dropdown"} do %>
+                Hallo <b class="caret"></b>
+              <% end %>
+              <ul class="dropdown-menu">
+                  <li><%= link_to "Link 1", "#" %></li>
+                  <li><%= link_to "Link 2", "#" %></li>
+                  <li><%= link_to "Link 3", "#" %></li>
+              </ul>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+        <ul class="nav navbar-nav navbar-sub-nav">
+          <li><%= link_to "Jobs", "#" %></li>
+          <li><%= link_to "Jobs", "#" %></li>
+        </ul>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="main_content">
+  
+    <div class="section brand">
+      <div class="corset">
+        <h1>usual twbs header plus some improvements</h1>
+        <br/>
+        <p class="loud">just niced up button alignment (no <em>.navbar-btn</em> needed) .. add sizes: <em>.navbar-xs, .navbar-sm, .navbar-lg, .navbar-xl</em></p>
+        <br/>
+        <h4>dependency:</h4> 
+        <code>@import "magic/content/navbar";</code>
+      </div>
+    </div>
+  
+    <%= render "templates/lorem" %>
+
+  
+  </div>
+</body>

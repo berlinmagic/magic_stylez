@@ -7,6 +7,10 @@
 // $navbar-height-lg:                 60px !default;
 // $navbar-height-xl:                 80px !default;
 // 
+// $subnav-height:                    50px !default;
+// $subnav-background:                #069 !default;
+// $subnav-color:                     #fff !default;
+// 
 // $navbar-margin-bottom:             $line-height-computed !default;
 // $navbar-border-radius:             $border-radius-base !default;
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
@@ -92,6 +96,11 @@
 }
 
 
+
+
+
+
+
 body, #body, #container, .main-content, .main_content {
 	
 	&.fixed-nav-xs { padding-top: $navbar-height-xs; }
@@ -133,3 +142,92 @@ body, #body, #container, .main-content, .main_content {
 		}
 	}
 }
+
+.nav.navbar-nav.navbar-sub-nav {
+    display: block;
+    float: none;
+}
+
+
+@mixin calculate_subnav_position( $that-header-height: 50px ) {
+    &.fixed-sub-nav { padding-top: $subnav-height + $that-header-height; }
+	.nav.navbar-nav.navbar-sub-nav { top: $that-header-height; }
+}
+
+@include responsiveStep-sm {
+    
+    .nav.navbar-nav.navbar-sub-nav {
+        $padHorizontal: floor(($subnav-height - $line-height-computed) / 2);
+        $lineHeight: $subnav-height - $padHorizontal * 2;
+        
+        height:     $subnav-height;
+        min-height: $subnav-height;
+        
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 100%;
+        margin-top: 1px;
+        
+        background: $subnav-background;
+        
+        &, & > li, & > li > a { color: $subnav-color; }
+        & > li > a:hover { color: $subnav-hover-color; }
+        & > li > a:active { color: $subnav-active-color; }
+        
+        
+        // a:not(.btn) { }
+		& > li > a, & > a  {
+			padding: $padHorizontal $navbar-padding-horizontal;
+			line-height: $lineHeight;
+			
+			&.btn {
+				@if ($lineHeight + 10) > ($subnav-height - 5) {
+					margin: 4px 5px;
+					@include vertical-padding( $padHorizontal - 5px );
+					line-height: $lineHeight;
+				} @else {
+					margin: #{$padHorizontal - 6px} 5px;
+					@include vertical-padding( 5px );
+					line-height: $lineHeight;
+					
+					@if ($lineHeight + 16) < ($subnav-height - 5) {
+						&.btn-lg {
+							margin: #{$padHorizontal - 9px} 5px;
+							@include vertical-padding( 8px );
+						}
+					}
+					
+					&.btn-sm {
+						margin: #{$padHorizontal - 4px} 5px;
+						@include vertical-padding( 3px );
+					}
+					&.btn-xs {
+						margin: #{$padHorizontal - 2px} 5px;
+						@include vertical-padding( 1px );
+					}
+					
+				}
+			}
+		}
+        
+    }
+    
+	body, #body, #container, .main-content, .main_content {
+	    
+	    &.fixed-nav-xs { @include calculate_subnav_position( $navbar-height-xs ); }
+    	&.fixed-nav-sm { @include calculate_subnav_position( $navbar-height-sm ); }
+    	&.fixed-nav    { @include calculate_subnav_position( $navbar-height ); }
+    	&.fixed-nav-lg { @include calculate_subnav_position( $navbar-height-lg ); }
+    	&.fixed-nav-xl { @include calculate_subnav_position( $navbar-height-xl ); }
+	    
+    }
+    
+    .corset .nav.navbar-nav.navbar-sub-nav { @include horizontal-padding( 5% ); }
+    
+}
+
+@include responsiveStep-lg {
+    .corset .nav.navbar-nav.navbar-sub-nav { @include horizontal-padding( 10% ); }
+}
+

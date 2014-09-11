@@ -1,6 +1,6 @@
 class FrontController < ApplicationController
   
-  TEMPLATES = %w(responsive-slidebar fixed-header aside-nav)
+  TEMPLATES = %w(slidebar-header slidebar-subnav fixed-header aside-nav fixed-subnav)
   
   def start
     Rails.logger.info "Front - Start"

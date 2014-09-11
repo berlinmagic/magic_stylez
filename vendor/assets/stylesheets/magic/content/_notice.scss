@@ -35,6 +35,15 @@
 	z-index: $zindex-application-notice;
 }
 
+@mixin calculate_notice_top( $that-header-height: 50px ) {
+    padding-top: $important-notice-height + $that-header-height;
+    .application_notice { top: $application-notice-top + $important-notice-height + $that-header-height; }
+    &.fixed-sub-nav {
+        padding-top: $important-notice-height + $that-header-height + $subnav-height;
+        .application_notice { top: $application-notice-top + $important-notice-height + $that-header-height + $subnav-height; }
+    }
+}
+
 
 body, #body, #container, .main-content, .main_content {
     
@@ -50,26 +59,11 @@ body, #body, #container, .main-content, .main_content {
         
         .application_notice { top: $application-notice-top + $important-notice-height; }
         
-        &.fixed-nav-xs { 
-            padding-top: $important-notice-height + $navbar-height-xs;
-            .application_notice { top: $application-notice-top + $important-notice-height + $navbar-height-xs; }
-        }
-    	&.fixed-nav-sm { 
-    	    padding-top: $important-notice-height + $navbar-height-sm; 
-    	    .application_notice { top: $application-notice-top + $important-notice-height + $navbar-height-sm; }
-    	}
-    	&.fixed-nav    { 
-    	    padding-top: $important-notice-height + $navbar-height; 
-    	    .application_notice { top: $application-notice-top + $important-notice-height + $navbar-height; }
-    	}
-    	&.fixed-nav-lg { 
-    	    padding-top: $important-notice-height + $navbar-height-lg;
-    	    .application_notice { top: $application-notice-top + $important-notice-height + $navbar-height-lg; }
-    	}
-    	&.fixed-nav-xl { 
-    	    padding-top: $important-notice-height + $navbar-height-xl; 
-    	    .application_notice { top: $application-notice-top + $important-notice-height + $navbar-height-xl; }
-    	}
+        &.fixed-nav-xs { @include calculate_notice_top( $navbar-height-xs ); }
+    	&.fixed-nav-sm { @include calculate_notice_top( $navbar-height-sm ); }
+    	&.fixed-nav    { @include calculate_notice_top( $navbar-height ); }
+    	&.fixed-nav-lg { @include calculate_notice_top( $navbar-height-lg ); }
+    	&.fixed-nav-xl { @include calculate_notice_top( $navbar-height-xl ); }
     	
     	.fixed-top, .navbar-fixed-top { top: $important-notice-height; }
         

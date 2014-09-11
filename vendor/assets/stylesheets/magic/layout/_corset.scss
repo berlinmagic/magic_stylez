@@ -30,7 +30,7 @@
     // min-width: 320px;
 }
 
-@media only screen and (min-width: 760px) {
+@include responsiveStep-sm {
 	
 	.corset {
 		&, &.tight, &.extra-tight, &.ultra-tight, &.full {
@@ -45,7 +45,7 @@
 	
 }
 
-@media only screen and (min-width: 1200px) {
+@include responsiveStep-lg {
 	
 	.corset {
 		width: 80% !important;
