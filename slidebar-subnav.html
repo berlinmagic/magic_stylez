@@ -13,14 +13,14 @@
     App.Environment = "production";
   </script>
 </head>
-<body class="blank fixed-nav-xl">
-  <div id="fixed_nav" class="navbar navbar-default navbar-fixed-top navbar-xl" role="navigation">
+<body class="blank fixed-nav fixed-sub-nav">
+  <div id="fixed_nav" class="navbar navbar-default navbar-fixed-top navbar-slidebar" role="navigation">
     <div class="corset">
     
   
   
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#front-main-nav-colapse">
+        <button type="button" class="navbar-toggle slidebar-toggle" data-target="#front-main-nav-colapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -30,20 +30,26 @@
       </div>
       <div class="collapse navbar-collapse" id="front-main-nav-colapse">
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a class="btn btn-success" href="#">Jobs</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                Hallo <b class="caret"></b>
+                Dropdown <b class="caret"></b>
 </a>              <ul class="dropdown-menu">
                   <li><a href="#">Link 1</a></li>
                   <li><a href="#">Link 2</a></li>
                   <li><a href="#">Link 3</a></li>
               </ul>
           </li>
+          <li><a class="btn btn-success" href="#">Button</a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <ul class="nav navbar-nav navbar-sub-nav">
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Jobs</a></li>
         </ul>
       </div>
     
@@ -54,12 +60,21 @@
   
     <div class="section brand">
       <div class="corset">
-        <h1>usual twbs header plus some improvements</h1>
+        <h1>Responsive Slidebar</h1>
         <br/>
-        <p class="loud">just niced up button alignment (no <em>.navbar-btn</em> needed) .. add sizes: <em>.navbar-xs, .navbar-sm, .navbar-lg, .navbar-xl</em></p>
+        <p class="loud">
+          Turns the usual twbs <em>navbar-collapse</em> into a nice slidebar. .. try it out:<br/>
+          make your screen smaller than 768px and press the header-toggle
+        </p>
         <br/>
         <h4>dependency:</h4> 
         <code>@import "magic/content/navbar";</code>
+        <br/>
+        <br/>
+        <br/>
+        <div class="h3 center_text">
+          <i class="magicons-arrow-right"></i> &nbsp; Smaller your screen to see the Slidebar !! &nbsp; <i class="magicons-arrow-left"></i>
+        </div>
       </div>
     </div>
   
@@ -152,7 +167,6 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </div>
-
   
   </div>
 </body>
