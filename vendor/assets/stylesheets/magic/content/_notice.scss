@@ -38,10 +38,10 @@
 @mixin calculate_notice_top( $that-header-height: 50px ) {
     padding-top: $important-notice-height + $that-header-height;
     .application_notice { top: $application-notice-top + $important-notice-height + $that-header-height; }
-    &.fixed-sub-nav {
-        padding-top: $important-notice-height + $that-header-height + $subnav-height;
-        .application_notice { top: $application-notice-top + $important-notice-height + $that-header-height + $subnav-height; }
-    }
+    // &.fixed-sub-nav {
+    //     padding-top: $important-notice-height + $that-header-height + $subnav-height;
+    //     .application_notice { top: $application-notice-top + $important-notice-height + $that-header-height + $subnav-height; }
+    // }
 }
 
 
@@ -79,6 +79,18 @@ body, #body, #container, .main-content, .main_content {
         &.with_important_notice {
             
             #nav-aside { top: $important-notice-height; }
+            
+            &.fixed-nav-xs.fixed-sub-nav { @include calculate_notice_top( $navbar-height-xs + $subnav-height );  }
+        	&.fixed-nav-sm.fixed-sub-nav { @include calculate_notice_top( $navbar-height-sm + $subnav-height );  }
+        	&.fixed-nav.fixed-sub-nav { @include calculate_notice_top( $navbar-height + $subnav-height );  }
+        	&.fixed-nav-lg.fixed-sub-nav { @include calculate_notice_top( $navbar-height-lg + $subnav-height );  }
+        	&.fixed-nav-xl.fixed-sub-nav { @include calculate_notice_top( $navbar-height-xl + $subnav-height );  }
+            
+            &.fixed-nav-xs .nav.navbar-nav.navbar-sub-nav { top: $important-notice-height + $navbar-height-xs; }
+        	&.fixed-nav-sm .nav.navbar-nav.navbar-sub-nav { top: $important-notice-height + $navbar-height-sm; }
+        	&.fixed-nav    .nav.navbar-nav.navbar-sub-nav { top: $important-notice-height + $navbar-height; }
+        	&.fixed-nav-lg .nav.navbar-nav.navbar-sub-nav { top: $important-notice-height + $navbar-height-lg; }
+        	&.fixed-nav-xl .nav.navbar-nav.navbar-sub-nav { top: $important-notice-height + $navbar-height-xl; }
             
         }
     }

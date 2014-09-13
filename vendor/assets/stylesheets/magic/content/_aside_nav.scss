@@ -120,11 +120,11 @@
 			padding-left: $aside-nav-width;
 			
 			.application_notice { margin-left: $aside-nav-width; }
-			.fixed-top, .navbar-fixed-top { left: $aside-nav-width; }
+			.fixed-top, .navbar-fixed-top, .nav.navbar-nav.navbar-sub-nav { left: $aside-nav-width; }
 			
 			&.aside_next_header {
 				#nav-aside { top: 0; }
-				.fixed-top, .navbar-fixed-top { left: $aside-nav-width; }
+				.fixed-top, .navbar-fixed-top, .nav.navbar-nav.navbar-sub-nav { left: $aside-nav-width; }
 			}
 			
 			&.aside_under_header {
