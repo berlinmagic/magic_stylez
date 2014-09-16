@@ -14,7 +14,7 @@
 <div class="section hard-top">
   <div class="corset tight">
     
-    <div class="input-group labeled">
+    <div class="input-group labeled press">
       <div class="input-group-addon">
         <input id="that_check_box" name="user[remember_me]" type="checkbox" value="1"> 
       </div>
@@ -23,12 +23,21 @@
       </label>
     </div>
     
-    <div class="input-group">
+    <div class="input-group press">
       <div class="input-group-addon">
         <input id="that_check_box2" name="user[remember_me]" type="checkbox" value="1"> 
       </div>
       <label for="that_check_box2" class="form-control">
         This is a input-group
+      </label>
+    </div>
+    
+    <div class="input-group labeled flat press">
+      <div class="input-group-addon">
+        <input id="that_check_box3" name="user[remember_me]" type="checkbox" value="1"> 
+      </div>
+      <label for="that_check_box3" class="form-control">
+        This is a input-group .labeled .flat
       </label>
     </div>
     

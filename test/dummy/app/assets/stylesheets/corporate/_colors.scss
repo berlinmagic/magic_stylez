@@ -43,8 +43,12 @@ $brand-success:         #006600 !default;   // twbs-default: #5cb85c
 $brand-info:            #0099cc !default;   // twbs-default: #5bc0de
 $brand-warning:         #f0ad4e !default;   // twbs-default: #f0ad4e
 $brand-danger:          #d9534f !default;   // twbs-default: #d9534f
-
-
+// -------------------------
+// Custom colors
+// -------------------------
+$brand-one:             #ff00cc !default;
+$brand-two:             #00ffcc !default;
+$brand-three:           #cc6699 !default;
 
 
 
@@ -122,6 +126,21 @@ $btn-link-disabled-color:        $gray-light !default;
 $btn-brand-color:                #fff !default;
 $btn-brand-bg:                   $brand-color !default;
 $btn-brand-border:               darken($btn-brand-bg, 5%) !default;
+
+// Custom - Buttons
+$btn-one-color:                  #fff !default;
+$btn-one-bg:                     $brand-one !default;
+$btn-one-border:                 darken($btn-one-bg, 5%) !default;
+
+$btn-two-color:                  #fff !default;
+$btn-two-bg:                     $brand-two !default;
+$btn-two-border:                 darken($btn-two-bg, 5%) !default;
+
+$btn-three-color:                #fff !default;
+$btn-three-bg:                   $brand-three !default;
+$btn-three-border:               darken($btn-three-bg, 5%) !default;
+
+
 
 // -------------------------
 // Social Buttons

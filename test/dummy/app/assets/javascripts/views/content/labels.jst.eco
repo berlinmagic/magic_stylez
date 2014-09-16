@@ -1,0 +1,48 @@
+<div class="section flat-bottom hard-top">
+  <div class="corset">
+    <h2>Available Colors</h2>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    <div class="row">
+      <% dflt_btns = ["default", "success", "primary", "info", "warning", "danger"] %>
+      <% brnd_btns = ["brand"] %>
+      <% cstm_btns = ["one", "two", "three"] %>
+      
+      <% buttons = { default: dflt_btns, brand: brnd_btns, custom: cstm_btns } %>
+      <div class="col-md-6">
+        <h4 class="center_text">Flat</h4>
+        <% for key, value of buttons: %>
+          <hr/>
+          <h5 class="center_text"><%= key %></h5>
+          <% for btn, i in value: %>
+            <p class="loud">
+              Some text .. 
+              <span class="label label-<%= btn %>">.label-<%= btn %></span>
+            </p>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="col-md-6">
+        <h4 class="center_text">Blank</h4>
+        <% for key, value of buttons: %>
+          <hr/>
+          <h5 class="center_text"><%= key %></h5>
+          <% for btn, i in value: %>
+            <p class="loud">
+              Some text .. 
+              <span class="label label-<%= btn %> label-blank">.label-<%= btn %> + .label-blank</span>
+            </p>
+          <% end %>
+        <% end %>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>

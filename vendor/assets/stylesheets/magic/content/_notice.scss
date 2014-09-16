@@ -86,11 +86,11 @@ body, #body, #container, .main-content, .main_content {
         	&.fixed-nav-lg.fixed-sub-nav { @include calculate_notice_top( $navbar-height-lg + $subnav-height );  }
         	&.fixed-nav-xl.fixed-sub-nav { @include calculate_notice_top( $navbar-height-xl + $subnav-height );  }
             
-            &.fixed-nav-xs .nav.navbar-nav.navbar-sub-nav { top: $important-notice-height + $navbar-height-xs; }
-        	&.fixed-nav-sm .nav.navbar-nav.navbar-sub-nav { top: $important-notice-height + $navbar-height-sm; }
-        	&.fixed-nav    .nav.navbar-nav.navbar-sub-nav { top: $important-notice-height + $navbar-height; }
-        	&.fixed-nav-lg .nav.navbar-nav.navbar-sub-nav { top: $important-notice-height + $navbar-height-lg; }
-        	&.fixed-nav-xl .nav.navbar-nav.navbar-sub-nav { top: $important-notice-height + $navbar-height-xl; }
+            &.fixed-nav-xs .navbar-sub-nav { top: $important-notice-height + $navbar-height-xs; }
+        	&.fixed-nav-sm .navbar-sub-nav { top: $important-notice-height + $navbar-height-sm; }
+        	&.fixed-nav    .navbar-sub-nav { top: $important-notice-height + $navbar-height; }
+        	&.fixed-nav-lg .navbar-sub-nav { top: $important-notice-height + $navbar-height-lg; }
+        	&.fixed-nav-xl .navbar-sub-nav { top: $important-notice-height + $navbar-height-xl; }
             
         }
     }

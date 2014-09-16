@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # get 'templates/:template' => 'front#templates'
   # get 'templates' => 'front#templates'
   
+  get "cache_pages" => 'front#cache'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

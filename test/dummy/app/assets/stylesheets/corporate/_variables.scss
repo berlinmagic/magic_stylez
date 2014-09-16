@@ -453,19 +453,17 @@ $popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%
 //== Labels
 //
 //##
-
-//** Default label background color
 $label-default-bg:            $gray-light !default;
-//** Primary label background color
 $label-primary-bg:            $brand-primary !default;
-//** Success label background color
 $label-success-bg:            $brand-success !default;
-//** Info label background color
 $label-info-bg:               $brand-info !default;
-//** Warning label background color
 $label-warning-bg:            $brand-warning !default;
-//** Danger label background color
 $label-danger-bg:             $brand-danger !default;
+
+$label-brand-bg:              $brand-color !default;
+$label-one-bg:                $brand-one !default;
+$label-two-bg:                $brand-two !default;
+$label-three-bg:              $brand-three !default;
 
 //** Default label text color
 $label-color:                 #fff !default;

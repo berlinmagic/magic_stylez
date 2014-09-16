@@ -46,6 +46,7 @@
 		text-align: left;
 		@include box-shadow( none );
 	}
+	&.flat .input-group-addon { @include horizontal-padding(0); }
 }
 
 

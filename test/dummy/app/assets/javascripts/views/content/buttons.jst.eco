@@ -7,7 +7,8 @@
 <div class="section dark flatted">
   <div class="corset">
     <h4>dependency:</h4> 
-    <code>@import "magic/content/buttons";</code>
+    <code>@import "magic/content/buttons";</code><br/>
+    <code>@import "magic/content/buttons_nice";</code>
   </div>
 </div>
 
@@ -24,7 +25,24 @@
       </div>
     </div>
     
+    <div class="btn btn-success btn-blank btn-lg btn-splited">
+      <div class="text">
+        .btn-splited.btn-blank
+      </div>
+      <div class="icn">
+        <i class="magicons-caret-right"></i>
+      </div>
+    </div>
+    
     <div class="btn btn-default btn-lg btn-block btn-splited half">
+      <div class="icn">
+        <i class="olicons-message-full"></i>
+      </div>
+      <div class="text">
+        .btn-splited.half
+      </div>
+    </div>
+    <div class="btn btn-default btn-blank btn-lg btn-block btn-splited half">
       <div class="icn">
         <i class="olicons-message-full"></i>
       </div>
@@ -41,6 +59,14 @@
         .btn-divided
       </div>
     </div>
+    <div class="btn btn-primary btn-blank btn-lg btn-block btn-divided">
+      <div class="icn">
+        <i class="olicons-overview"></i>
+      </div>
+      <div class="text">
+        .btn-divided.btn-blank
+      </div>
+    </div>
     
     <div class="btn btn-warning btn-block btn-divided half">
       <div class="icn">
@@ -52,6 +78,18 @@
     </div>
     
     <div class="btn btn-danger btn-sm btn-divided">
+      <div class="icn">
+        <i class="olicons-contact-data"></i>
+      </div>
+      <div class="text">
+        .btn-divided
+      </div>
+      <div class="icn">
+        <i class="olicons-male"></i>
+      </div>
+    </div>
+    
+    <div class="btn btn-danger btn-blank btn-sm btn-divided">
       <div class="icn">
         <i class="olicons-contact-data"></i>
       </div>
@@ -134,3 +172,63 @@
     <p class="loud">tag of inner element doesn't matter just the element conaining the icon need class <strong>.icn</strong></p>
   </div>
 </div>
+
+<div class="section flat-bottom hard-top">
+  <div class="corset">
+    <h2>Available Colors</h2>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    <div class="row">
+      <% dflt_btns = ["default", "success", "primary", "info", "warning", "danger"] %>
+      <% scl_btns = ["facebook", "google", "paypal", "twitter"] %>
+      <% brnd_btns = ["brand"] %>
+      <% cstm_btns = ["one", "two", "three"] %>
+      
+      <% buttons = { default: dflt_btns, socials: scl_btns, brand: brnd_btns, custom: cstm_btns } %>
+      <div class="col-md-4">
+        <h4 class="center_text">Flat</h4>
+        <% for key, value of buttons: %>
+          <hr/>
+          <h5 class="center_text"><%= key %></h5>
+          <% for btn, i in value: %>
+            <div class="btn btn-<%= btn %> btn-lg btn-block">
+              .btn-<%= btn %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="col-md-4">
+        <h4 class="center_text">Blank</h4>
+        <% for key, value of buttons: %>
+          <hr/>
+          <h5 class="center_text"><%= key %></h5>
+          <% for btn, i in value: %>
+            <div class="btn btn-<%= btn %> btn-blank btn-lg btn-block">
+              .btn-<%= btn %> + .btn-blank
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+      
+      <div class="col-md-4">
+        <h4 class="center_text">Nice</h4>
+        <% for key, value of buttons: %>
+          <hr/>
+          <h5 class="center_text"><%= key %></h5>
+          <% for btn, i in value: %>
+            <div class="btn btn-<%= btn %>-nice btn-lg btn-block">
+              .btn-<%= btn %>-nice
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>

@@ -64,6 +64,81 @@
   }
 }
 
+// Button helper for blank buttons
+@mixin btn-blank-variant( $color, $border, $badge-color: #fff ) {
+  color: $color !important;
+  background-color: transparent !important;
+  border-color: $border !important;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: darken($color, 12%) !important;
+    background-color: transparent !important;
+    border-color: darken($border, 12%) !important;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-color: transparent !important;
+    border-color: darken($border, 10%) !important;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: lighten($color, 10%) !important;
+      background-color: transparent !important;
+      border-color: lighten($border, 10%) !important;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: $color;
+  }
+}
+
+// Labels
+// -------------------------
+@mixin label-variant( $background, $color: $label-color, $color-hover: $label-link-hover-color ) {
+  background-color: $background;
+  color: $color;
+  &[href] {
+    &:hover,
+    &:focus {
+        color: $label-link-hover-color;
+        background-color: darken($background, 10%);
+    }
+  }
+}
+
+@mixin label-blank-variant( $color ) {
+  background-color: transparent;
+  color: $color;
+  border: solid 1px $color;
+  &[href] {
+    &:hover,
+    &:focus {
+        color: darken($color, 10%);
+        border: solid 1px darken($color, 10%);
+        background-color: transparent;
+    }
+  }
+}
+
+
 
 // Button helper from twbs ..changed
 @mixin btn-with-gradient($color, $top-bg, $bottom-bg, $border) {
@@ -108,6 +183,9 @@
     color: $bottom-bg;
     background-color: $color;
   }
+}
+@mixin default-btn-with-gradient($color, $bg, $border) {
+    @include btn-with-gradient($color, lighten($bg, 7%), darken($bg, 7%), $border);
 }
 
 

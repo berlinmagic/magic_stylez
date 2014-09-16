@@ -95,7 +95,7 @@
 	
 }
 
-
+.navbar.navbar-fixed-top { margin: 0; }
 
 
 
@@ -155,6 +155,19 @@ body, #body, #container, .main-content, .main_content {
 }
 
 @include responsiveStep-sm {
+    
+    .navbar-bordered {
+        & > .navbar-nav.navbar-left, & > .navbar-nav.navbar-right {
+            & > li + & > li {
+                border-left: solid 1px $main-border-color;
+            }
+        }
+    }
+    .navbar-header + .navbar-collapse {
+        &.navbar-bordered, .navbar-bordered {
+            & > .nav.navbar-nav.navbar-left > li { border-left: solid 1px $main-border-color; }
+        }
+    }
     
     .navbar-sub-nav {
         $padHorizontal: floor(($subnav-height - $line-height-computed) / 2);
