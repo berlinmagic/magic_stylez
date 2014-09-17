@@ -19,7 +19,7 @@ class FrontController < ApplicationController
     directory = "#{Rails.root}/public/html/"
     TEMPLATES.each do |tmpl|
       File.open(File.join(directory, "#{tmpl}.html"), 'w') do |f|
-        f.puts render_to_string("templates/slidebar-header", layout: "blank")
+        f.puts render_to_string("templates/#{tmpl}", layout: "blank")
       end
     end
     File.open(File.join(directory, "index.html"), 'w') do |f|
