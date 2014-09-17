@@ -179,6 +179,8 @@ body, #body, #container, .main-content, .main_content {
         height:     $subnav-height;
         min-height: $subnav-height;
         
+        & > .corset { height: $subnav-height; }
+        
         position: fixed;
         left: 0;
         right: 0;
