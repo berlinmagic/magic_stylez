@@ -193,7 +193,7 @@ body, #body, #container, .main-content, .main_content {
         // a:not(.btn) { }
         
         
-        &, & > .nav.navbar-nav {
+        &, & > .nav.navbar-nav, & > .corset > .nav.navbar-nav, & > .container > .nav.navbar-nav {
             list-style: none;
             
             &, & > li, & > li > a { color: $subnav-color; }
@@ -261,7 +261,7 @@ body, #body, #container, .main-content, .main_content {
 	    
     }
     
-    .corset .navbar-sub-nav { @include horizontal-padding( 5% ); }
+    // .corset .navbar-sub-nav { @include horizontal-padding( 5% ); }
     
     .navbar.navbar-fixed-top {
         .navbar-collapse {
@@ -274,7 +274,10 @@ body, #body, #container, .main-content, .main_content {
     
 }
 
-@include responsiveStep-lg {
-    .corset .navbar-sub-nav { @include horizontal-padding( 10% ); }
+@include responsiveStep-xs-only {
+    .navbar-sub-nav > .corset, .navbar-sub-nav > .container { width: auto !important; padding: 0 !important; margin: 0 !important; }
 }
 
+// @include responsiveStep-lg {
+//     // .corset .navbar-sub-nav { @include horizontal-padding( 10% ); }
+// }
