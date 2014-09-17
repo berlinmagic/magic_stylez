@@ -12,7 +12,7 @@
     App.Environment = "production";
   </script>
 </head>
-<body class="blank fixed-nav">
+<body class="blank fixed-nav fixed-sub-nav">
   <div id="fixed_nav" class="navbar navbar-default navbar-fixed-top navbar-slidebar" role="navigation">
     <div class="corset">
     
@@ -27,7 +27,7 @@
         </button>
         <a class="navbar-brand" href="#">Magic-Stylez</a>
       </div>
-      <div class="collapse navbar-collapse" id="front-main-nav-colapse">
+      <div class="collapse navbar-collapse navbar-bordered" id="front-main-nav-colapse">
         <ul class="nav navbar-nav navbar-left">
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
@@ -45,6 +45,30 @@
           </li>
           <li><a class="btn btn-success" href="#">Button</a></li>
         </ul>
+        <div class="clearfix"></div>
+        <div class="navbar-sub-nav">
+          <div class="corset">
+            
+          
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Dropdown <b class="caret"></b>
+</a>                <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a class="btn btn-success" href="#">Button</a></li>
+          </ul>
+          <div class="clearfix"></div>
+          </div>
+        </div>
       </div>
     
     </div>
