@@ -10930,7 +10930,10 @@ html, body, #body {
     position: relative;
     margin: 0 0 -1px !important;
     -o-border-radius: 0;
-    border-radius: 0; }
+    border-radius: 0;
+    text-align: left !important;
+    height: 34px !important;
+    padding: 6px 12px !important; }
     .inpt-group .form-control:first-child {
       border-top-left-radius: 4px;
       border-top-right-radius: 4px; }
@@ -10952,11 +10955,13 @@ html, body, #body {
   margin-bottom: 0;
   border-color: transparent;
   background: none;
-  text-align: left;
+  text-align: left !important;
   -webkit-box-shadow: none;
   -ms-box-shadow: none;
   -o-box-shadow: none;
-  box-shadow: none; }
+  box-shadow: none;
+  height: 34px !important;
+  padding: 6px 12px !important; }
 .input-group.labeled.flat .input-group-addon {
   padding-left: 0;
   padding-right: 0; }
@@ -11703,6 +11708,9 @@ textarea.input-xs,
 select[multiple].input-xs {
   height: auto; }
 
+.label {
+  font-weight: normal; }
+
 .label-default {
   background-color: #999999;
   color: white; }
@@ -12106,36 +12114,36 @@ body.fixed-nav-xl, #body.fixed-nav-xl, #container.fixed-nav-xl, .main-content.fi
     top: 100%;
     margin-top: 1px;
     background: #006699; }
-    .navbar-sub-nav, .navbar-sub-nav > .nav.navbar-nav {
+    .navbar-sub-nav, .navbar-sub-nav > .nav.navbar-nav, .navbar-sub-nav > .corset > .nav.navbar-nav, .navbar-sub-nav > .container > .nav.navbar-nav {
       list-style: none; }
-      .navbar-sub-nav, .navbar-sub-nav > li, .navbar-sub-nav > li > a, .navbar-sub-nav > .nav.navbar-nav, .navbar-sub-nav > .nav.navbar-nav > li, .navbar-sub-nav > .nav.navbar-nav > li > a {
+      .navbar-sub-nav, .navbar-sub-nav > li, .navbar-sub-nav > li > a, .navbar-sub-nav > .nav.navbar-nav, .navbar-sub-nav > .nav.navbar-nav > li, .navbar-sub-nav > .nav.navbar-nav > li > a, .navbar-sub-nav > .corset > .nav.navbar-nav, .navbar-sub-nav > .corset > .nav.navbar-nav > li, .navbar-sub-nav > .corset > .nav.navbar-nav > li > a, .navbar-sub-nav > .container > .nav.navbar-nav, .navbar-sub-nav > .container > .nav.navbar-nav > li, .navbar-sub-nav > .container > .nav.navbar-nav > li > a {
         color: white; }
-      .navbar-sub-nav > li > a:hover, .navbar-sub-nav > .nav.navbar-nav > li > a:hover {
+      .navbar-sub-nav > li > a:hover, .navbar-sub-nav > .nav.navbar-nav > li > a:hover, .navbar-sub-nav > .corset > .nav.navbar-nav > li > a:hover, .navbar-sub-nav > .container > .nav.navbar-nav > li > a:hover {
         color: #cccccc; }
-      .navbar-sub-nav > li > a:active, .navbar-sub-nav > .nav.navbar-nav > li > a:active {
+      .navbar-sub-nav > li > a:active, .navbar-sub-nav > .nav.navbar-nav > li > a:active, .navbar-sub-nav > .corset > .nav.navbar-nav > li > a:active, .navbar-sub-nav > .container > .nav.navbar-nav > li > a:active {
         color: #aaaaaa; }
-      .navbar-sub-nav > li, .navbar-sub-nav > .nav.navbar-nav > li {
+      .navbar-sub-nav > li, .navbar-sub-nav > .nav.navbar-nav > li, .navbar-sub-nav > .corset > .nav.navbar-nav > li, .navbar-sub-nav > .container > .nav.navbar-nav > li {
         float: left;
         position: relative;
         display: block; }
-      .navbar-sub-nav > .open > a, .navbar-sub-nav > .nav.navbar-nav > .open > a {
+      .navbar-sub-nav > .open > a, .navbar-sub-nav > .nav.navbar-nav > .open > a, .navbar-sub-nav > .corset > .nav.navbar-nav > .open > a, .navbar-sub-nav > .container > .nav.navbar-nav > .open > a {
         background: #005580;
         color: #fff; }
-      .navbar-sub-nav > li > a, .navbar-sub-nav > a, .navbar-sub-nav > .nav.navbar-nav > li > a, .navbar-sub-nav > .nav.navbar-nav > a {
+      .navbar-sub-nav > li > a, .navbar-sub-nav > a, .navbar-sub-nav > .nav.navbar-nav > li > a, .navbar-sub-nav > .nav.navbar-nav > a, .navbar-sub-nav > .corset > .nav.navbar-nav > li > a, .navbar-sub-nav > .corset > .nav.navbar-nav > a, .navbar-sub-nav > .container > .nav.navbar-nav > li > a, .navbar-sub-nav > .container > .nav.navbar-nav > a {
         display: block;
         position: relative;
         padding: 10px 15px;
         line-height: 20px; }
-        .navbar-sub-nav > li > a.btn, .navbar-sub-nav > a.btn, .navbar-sub-nav > .nav.navbar-nav > li > a.btn, .navbar-sub-nav > .nav.navbar-nav > a.btn {
+        .navbar-sub-nav > li > a.btn, .navbar-sub-nav > a.btn, .navbar-sub-nav > .nav.navbar-nav > li > a.btn, .navbar-sub-nav > .nav.navbar-nav > a.btn, .navbar-sub-nav > .corset > .nav.navbar-nav > li > a.btn, .navbar-sub-nav > .corset > .nav.navbar-nav > a.btn, .navbar-sub-nav > .container > .nav.navbar-nav > li > a.btn, .navbar-sub-nav > .container > .nav.navbar-nav > a.btn {
           margin: 4px 5px;
           padding-top: 5px;
           padding-bottom: 5px;
           line-height: 20px; }
-          .navbar-sub-nav > li > a.btn.btn-sm, .navbar-sub-nav > li.btn-group-sm > a.btn, .navbar-sub-nav > a.btn.btn-sm, .btn-group-sm.navbar-sub-nav > a.btn, .navbar-sub-nav > .nav.navbar-nav > li > a.btn.btn-sm, .navbar-sub-nav > .nav.navbar-nav > li.btn-group-sm > a.btn, .navbar-sub-nav > .nav.navbar-nav > a.btn.btn-sm, .navbar-sub-nav > .btn-group-sm.nav.navbar-nav > a.btn {
+          .navbar-sub-nav > li > a.btn.btn-sm, .navbar-sub-nav > li.btn-group-sm > a.btn, .navbar-sub-nav > a.btn.btn-sm, .btn-group-sm.navbar-sub-nav > a.btn, .navbar-sub-nav > .nav.navbar-nav > li > a.btn.btn-sm, .navbar-sub-nav > .nav.navbar-nav > li.btn-group-sm > a.btn, .navbar-sub-nav > .nav.navbar-nav > a.btn.btn-sm, .navbar-sub-nav > .btn-group-sm.nav.navbar-nav > a.btn, .navbar-sub-nav > .corset > .nav.navbar-nav > li > a.btn.btn-sm, .navbar-sub-nav > .corset > .nav.navbar-nav > li.btn-group-sm > a.btn, .navbar-sub-nav > .corset > .nav.navbar-nav > a.btn.btn-sm, .navbar-sub-nav > .corset > .btn-group-sm.nav.navbar-nav > a.btn, .navbar-sub-nav > .container > .nav.navbar-nav > li > a.btn.btn-sm, .navbar-sub-nav > .container > .nav.navbar-nav > li.btn-group-sm > a.btn, .navbar-sub-nav > .container > .nav.navbar-nav > a.btn.btn-sm, .navbar-sub-nav > .container > .btn-group-sm.nav.navbar-nav > a.btn {
             margin: 6px 5px;
             padding-top: 3px;
             padding-bottom: 3px; }
-          .navbar-sub-nav > li > a.btn.btn-xs, .navbar-sub-nav > li.btn-group-xs > a.btn, .navbar-sub-nav > a.btn.btn-xs, .btn-group-xs.navbar-sub-nav > a.btn, .navbar-sub-nav > .nav.navbar-nav > li > a.btn.btn-xs, .navbar-sub-nav > .nav.navbar-nav > li.btn-group-xs > a.btn, .navbar-sub-nav > .nav.navbar-nav > a.btn.btn-xs, .navbar-sub-nav > .btn-group-xs.nav.navbar-nav > a.btn {
+          .navbar-sub-nav > li > a.btn.btn-xs, .navbar-sub-nav > li.btn-group-xs > a.btn, .navbar-sub-nav > a.btn.btn-xs, .btn-group-xs.navbar-sub-nav > a.btn, .navbar-sub-nav > .nav.navbar-nav > li > a.btn.btn-xs, .navbar-sub-nav > .nav.navbar-nav > li.btn-group-xs > a.btn, .navbar-sub-nav > .nav.navbar-nav > a.btn.btn-xs, .navbar-sub-nav > .btn-group-xs.nav.navbar-nav > a.btn, .navbar-sub-nav > .corset > .nav.navbar-nav > li > a.btn.btn-xs, .navbar-sub-nav > .corset > .nav.navbar-nav > li.btn-group-xs > a.btn, .navbar-sub-nav > .corset > .nav.navbar-nav > a.btn.btn-xs, .navbar-sub-nav > .corset > .btn-group-xs.nav.navbar-nav > a.btn, .navbar-sub-nav > .container > .nav.navbar-nav > li > a.btn.btn-xs, .navbar-sub-nav > .container > .nav.navbar-nav > li.btn-group-xs > a.btn, .navbar-sub-nav > .container > .nav.navbar-nav > a.btn.btn-xs, .navbar-sub-nav > .container > .btn-group-xs.nav.navbar-nav > a.btn {
             margin: 8px 5px;
             padding-top: 1px;
             padding-bottom: 1px; }
@@ -12161,10 +12169,6 @@ body.fixed-nav-xl, #body.fixed-nav-xl, #container.fixed-nav-xl, .main-content.fi
   body.fixed-nav-xl .navbar-sub-nav, #body.fixed-nav-xl .navbar-sub-nav, #container.fixed-nav-xl .navbar-sub-nav, .main-content.fixed-nav-xl .navbar-sub-nav, .main_content.fixed-nav-xl .navbar-sub-nav {
     top: 80px; }
 
-  .corset .navbar-sub-nav {
-    padding-left: 5%;
-    padding-right: 5%; }
-
   .navbar.navbar-fixed-top .navbar-collapse .nav.navbar-nav.navbar-left {
     margin-left: -15px; }
   .navbar.navbar-fixed-top .navbar-collapse .nav.navbar-nav.navbar-right {
@@ -12173,10 +12177,11 @@ body.fixed-nav-xl, #body.fixed-nav-xl, #container.fixed-nav-xl, .main-content.fi
     margin-left: -15px; }
   .navbar.navbar-fixed-top .navbar-header + .navbar-collapse > .nav.navbar-nav.navbar-left {
     margin-left: 0; } }
-@media only screen and (min-width: 1200px) {
-  .corset .navbar-sub-nav {
-    padding-left: 10%;
-    padding-right: 10%; } }
+@media only screen and (max-width: 767px) {
+  .navbar-sub-nav > .corset, .navbar-sub-nav > .container {
+    width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important; } }
 .important_notice {
   display: block;
   position: fixed;
