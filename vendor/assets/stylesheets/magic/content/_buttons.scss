@@ -4,6 +4,13 @@
 	max-width: $wdth;
 }
 
+.btn-xl, .btn-group-xl > .btn {
+    padding: 12px 20px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: round($border-radius-large * 1.2);
+}
+
 
 .btn-splited, .btn-divided {
 	display: table;
@@ -105,35 +112,42 @@
 .btn-default {
   @include btn-variant($btn-default-color, $btn-default-bg, $btn-default-border);
   &.btn-blank { @include btn-blank-variant($btn-default-color, $btn-default-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-default-color, $btn-default-bg, $btn-default-border ); }
 }
 .btn-primary {
   @include btn-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
   &.btn-blank { @include btn-blank-variant($btn-primary-bg, $btn-primary-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-primary-color, $btn-primary-bg, $btn-primary-border ); }
 }
 // Success appears as green
 .btn-success {
   @include btn-variant($btn-success-color, $btn-success-bg, $btn-success-border);
   &.btn-blank { @include btn-blank-variant($btn-success-bg, $btn-success-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-success-color, $btn-success-bg, $btn-success-border ); }
 }
 // Info appears as blue-green
 .btn-info {
   @include btn-variant($btn-info-color, $btn-info-bg, $btn-info-border);
   &.btn-blank { @include btn-blank-variant($btn-info-bg, $btn-info-border, #444); }
+  &.btn-blur { @include btn-blur-variant( $btn-info-color, $btn-info-bg, $btn-info-border ); }
 }
 // Warning appears as orange
 .btn-warning {
   @include btn-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
   &.btn-blank { @include btn-blank-variant($btn-warning-bg, $btn-warning-border, #444); }
+  &.btn-blur { @include btn-blur-variant( $btn-warning-color, $btn-warning-bg, $btn-warning-border ); }
 }
 // Danger and error appear as red
 .btn-danger {
   @include btn-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
   &.btn-blank { @include btn-blank-variant($btn-danger-bg, $btn-danger-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-danger-color, $btn-danger-bg, $btn-danger-border ); }
 }
 
 .btn-brand {
   @include btn-variant($btn-brand-color, $btn-brand-bg, $btn-brand-border);
   &.btn-blank { @include btn-blank-variant($btn-brand-bg, $btn-brand-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-brand-color, $btn-brand-bg, $btn-brand-border ); }
 }
 
 
@@ -142,34 +156,41 @@
 .btn-facebook {
   @include btn-variant($btn-facebook-color, $btn-facebook-bg, $btn-facebook-border);
   &.btn-blank { @include btn-blank-variant($btn-facebook-bg, $btn-facebook-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-facebook-color, $btn-facebook-bg, $btn-facebook-border ); }
 }
 .btn-google {
   @include btn-variant($btn-google-color, $btn-google-bg, $btn-google-border);
   &.btn-blank { @include btn-blank-variant($btn-google-bg, $btn-google-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-google-color, $btn-google-bg, $btn-google-border ); }
 }
 .btn-twitter {
   @include btn-variant($btn-twitter-color, $btn-twitter-bg, $btn-twitter-border);
   &.btn-blank { @include btn-blank-variant($btn-twitter-bg, $btn-twitter-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-twitter-color, $btn-twitter-bg, $btn-twitter-border ); }
 }
 .btn-paypal {
   @include btn-variant($btn-paypal-color, $btn-paypal-bg, $btn-paypal-border);
   &.btn-blank { @include btn-blank-variant($btn-paypal-bg, $btn-paypal-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-paypal-color, $btn-paypal-bg, $btn-paypal-border ); }
 }
 
 
 .btn-one {
   @include btn-variant($btn-one-color, $btn-one-bg, $btn-one-border);
   &.btn-blank { @include btn-blank-variant($btn-one-bg, $btn-one-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-one-color, $btn-one-bg, $btn-one-border ); }
 }
 
 .btn-two {
   @include btn-variant($btn-two-color, $btn-two-bg, $btn-two-border);
   &.btn-blank { @include btn-blank-variant($btn-two-bg, $btn-two-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-two-color, $btn-two-bg, $btn-two-border ); }
 }
 
 .btn-three {
   @include btn-variant($btn-three-color, $btn-three-bg, $btn-three-border);
   &.btn-blank { @include btn-blank-variant($btn-three-bg, $btn-three-border, #fff); }
+  &.btn-blur { @include btn-blur-variant( $btn-three-color, $btn-three-bg, $btn-three-border ); }
 }
 
 
@@ -194,6 +215,31 @@
   }
 }
 
+
+.btn-round {
+    @include horizontal-padding( 18px );
+    -webkit-border-radius: 100px !important;
+       -moz-border-radius: 100px !important;
+        -ms-border-radius: 100px !important;
+         -o-border-radius: 100px !important;
+            border-radius: 100px !important;
+    &.btn-xs { @include horizontal-padding( 12px ); }
+    &.btn-sm { @include horizontal-padding( 15px ); }
+    &.btn-lg { @include horizontal-padding( 23px ); }
+    &.btn-xl { @include horizontal-padding( 30px ); }
+}
+
+.btn-borderless {
+    border: none !important;
+}
+
+.btn-width {
+    @include horizontal-padding( 30px );
+    &.btn-xs { @include horizontal-padding( 10px ); }
+    &.btn-sm { @include horizontal-padding( 20px ); }
+    &.btn-lg { @include horizontal-padding( 40px ); }
+    &.btn-xl { @include horizontal-padding( 50px ); }
+}
 
 
 

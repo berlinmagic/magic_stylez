@@ -188,7 +188,7 @@
       <% cstm_btns = ["one", "two", "three"] %>
       
       <% buttons = { default: dflt_btns, socials: scl_btns, brand: brnd_btns, custom: cstm_btns } %>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <h4 class="center_text">Flat</h4>
         <% for key, value of buttons: %>
           <hr/>
@@ -200,7 +200,7 @@
           <% end %>
         <% end %>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <h4 class="center_text">Blank</h4>
         <% for key, value of buttons: %>
           <hr/>
@@ -213,7 +213,20 @@
         <% end %>
       </div>
       
-      <div class="col-md-4">
+      <div class="col-md-3">
+        <h4 class="center_text">Blur</h4>
+        <% for key, value of buttons: %>
+          <hr/>
+          <h5 class="center_text"><%= key %></h5>
+          <% for btn, i in value: %>
+            <div class="btn btn-<%= btn %> btn-blur btn-lg btn-block">
+              .btn-<%= btn %> + .btn-blur
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+      
+      <div class="col-md-3">
         <h4 class="center_text">Nice</h4>
         <% for key, value of buttons: %>
           <hr/>
@@ -226,6 +239,31 @@
         <% end %>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    <h2>Special Classes:</h2>
+    <% btns = ["btn-xs", "btn-sm", "", "btn-lg", "btn-xl"] %>
+    <h4>Round</h4>
+    <% for btn in btns: %>
+      <button class="btn btn-success btn-round <%= btn %>">
+        .btn-round + .<%= btn %>
+      </button>
+    <% end %>
+    <h4>Borderless</h4>
+    <% for btn in btns: %>
+      <button class="btn btn-success btn-borderless btn-blur <%= btn %>">
+        .btn-borderless + .<%= btn %>
+      </button>
+    <% end %>
+    <h4>Width</h4>
+    <% for btn in btns: %>
+      <button class="btn btn-primary btn-width <%= btn %>">
+        .btn-width + .<%= btn %>
+      </button>
+    <% end %>
   </div>
 </div>
 

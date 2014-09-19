@@ -6,6 +6,19 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+  <%# ===   Site - Icon   === #%>
+  <link href="<%= asset_path("ico/favicon.ico") %>" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="<%= asset_path("ico/favicon.png") %>" rel="shortcut icon" type="image/png" />
+  <%# iPad 3 Retina Display #%>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"href="<%= asset_path("ico/apple-touch-icon-144x144-precomposed.png") %>" />
+  <%# iPhone 4 Retina display #%>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"href="<%= asset_path("ico/apple-touch-icon-114x114-precomposed.png") %>" />
+  <%# iPad non-Retina display #%>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"href="<%= asset_path("ico/apple-touch-icon-72x72-precomposed.png") %>" />
+  <%# Non-Retina iPhone, iPod Touch, Android 2.1+ #%>
+  <link rel="apple-touch-icon-precomposed" href="<%= asset_path("ico/apple-touch-icon-57x57-precomposed.png") %>" />
+  <%# Nokia #%>
+  <link rel="apple-touch-icon" href="<%= asset_path("ico/apple-touch-icon.png") %>" />
   <script type="text/javascript" charset="utf-8">
     App = {};
     App.Environment = "<%= Rails.env.to_s %>";

@@ -82,6 +82,15 @@ $section-brand-input-bg:             $white !default;
 $section-soft-background:            $soft-bg !default;
 $section-soft-input-bg:              $white !default;
 
+$section-one-background:             $brand-one-bg !default;
+$section-one-input-bg:               $white !default;
+
+$section-two-background:             $brand-two-bg !default;
+$section-two-input-bg:               $white !default;
+
+$section-three-background:           $brand-three-bg !default;
+$section-three-input-bg:             $white !default;
+
 
 $section-head-line-height:           30px !default;
 $section-head-font-size:             20px !default;
@@ -756,3 +765,4 @@ $hr-border:                   $gray-lighter !default;
 
 //** Horizontal offset for forms and lists.
 $component-offset-horizontal: 180px !default;
+

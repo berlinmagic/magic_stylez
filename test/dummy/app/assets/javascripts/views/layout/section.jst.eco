@@ -39,12 +39,38 @@
     <h4>.brand</h4>
   </div>
 </div>
+<div class="section one">
+  <div class="corset">
+    <h4>.one</h4>
+  </div>
+</div>
+<div class="section two">
+  <div class="corset">
+    <h4>.two</h4>
+  </div>
+</div>
+<div class="section three">
+  <div class="corset">
+    <h4>.three</h4>
+  </div>
+</div>
 <div class="section blank">
   <div class="corset">
     <h4>.blank</h4>
   </div>
 </div>
 
+
+<div class="section bright speech">
+  <div class="corset">
+    <h4>.bright + .speech</h4>
+  </div>
+</div>
+<div class="section brand speech">
+  <div class="corset">
+    <h4>.brand + .speech</h4>
+  </div>
+</div>
 
 
 

@@ -4,15 +4,18 @@
     padding: $section-padding 0;
     // background: $white;
     text-align: center;
-    z-index: 1;
+    
 	font-size: $font-size-base;
 	.corset, .container { background: inherit; }
 	
+    
+    &.z, &.zindex, &.z-index { z-index: 1; }
     
 	// 
 	//   Sections with shine
 	// 
     &.shine-top {
+        z-index: 1;
         overflow: hidden;
         &:before {
             display: block; position: absolute; content: ""; z-index: 11;
@@ -23,6 +26,7 @@
         }
     }
     &.shine-bottom {
+        z-index: 1;
         overflow: hidden;
         &:after {
             display: block; position: absolute; content: ""; z-index: 11;
@@ -60,7 +64,6 @@
 	&.dotted-top, &.dotted-bottom {
 		@include box-shadow( inset 0 1px 1px 0 rgba(255,255,255,.75), 0 1px 1px 0 rgba(255,255,255,.75) );
 	}
-    
 	
 	// 
 	//   Section Sizes
@@ -100,6 +103,19 @@
 		@include all_form_elements { background: $section-soft-input-bg; }
 	}
     &.blank { background: transparent; }
+    
+    &.one { 
+		background: $section-one-background; 
+		@include all_form_elements { background: $section-one-input-bg; }
+	}
+	&.two { 
+		background: $section-two-background; 
+		@include all_form_elements { background: $section-two-input-bg; }
+	}
+	&.three { 
+		background: $section-three-background; 
+		@include all_form_elements { background: $section-three-input-bg; }
+	}
 
 	&.head {
 		z-index: 2;
@@ -116,6 +132,38 @@
 		@include all_form_elements { background: $section-head-input-bg; }
 	}
 	
+	
+	&.speech {
+        &:after {
+            display: block; position: absolute; content: "";
+            margin: 0; padding: 0;
+            width: 0; height: 0;
+            border: solid 10px transparent;
+            border-right:  solid 10px $section-background;
+            border-bottom: solid 10px $section-background;
+            bottom: -8px;
+            left: 50%;
+            margin-left: -8px;
+            @include rotation( 45 );
+            z-index: 99;
+        }
+        &.dark:after {
+            border-right:  solid 10px $section-dark-background;
+            border-bottom: solid 10px $section-dark-background;
+        }
+        &.bright:after {
+            border-right:  solid 10px $section-bright-background;
+            border-bottom: solid 10px $section-bright-background;
+        }
+        &.brand:after {
+            border-right:  solid 10px $section-brand-background;
+            border-bottom: solid 10px $section-brand-background;
+        }
+        &.soft:after {
+            border-right:  solid 10px $section-soft-background;
+            border-bottom: solid 10px $section-soft-background;
+        }
+    }
 	
 	
 }

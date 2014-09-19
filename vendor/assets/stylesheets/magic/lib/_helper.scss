@@ -110,6 +110,11 @@
   }
 }
 
+@mixin btn-blur-variant($color, $background, $border) {
+    @include btn-variant( $color, transparentize($background, .6), transparentize($border, .6) );
+}
+
+
 // Labels
 // -------------------------
 @mixin label-variant( $background, $color: $label-color, $color-hover: $label-link-hover-color ) {

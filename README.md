@@ -34,6 +34,16 @@
   //= 'magic-min';    /* import basic */
 ```
 
+## NEW*
+
+- **magic-styles update generator**
+- in the process I often add new variables to the corporate files
+(*what causes "Missing variable!" when you update to new version*)
+- this generator adds all new variables without touching your settings
+```ruby
+$ rails g magic_stylez:update
+```
+
 
 
 ### Thanks
