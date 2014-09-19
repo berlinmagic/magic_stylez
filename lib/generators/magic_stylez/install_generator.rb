@@ -3,6 +3,7 @@ module MagicStylez
   module Generators
     class InstallGenerator < ::Rails::Generators::Base
       include Thor::Actions
+      require "magic_stylez/version"
       
       desc "Creates a corporate folder to customize magic-stylez."
       
