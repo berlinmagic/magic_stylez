@@ -44,6 +44,11 @@
 $ rails g magic_stylez:update
 ```
 
+#### Changes when update to <small>0.0.0.55</small>:</h4>
+- *corporate/typo* is removed!
+- *corporate/fonts* doesn't contain css anymore, just variables
+With Version **0.0.0.55** I merged *corporate/typo* into *corporate/fonts* (they where so similar). I also removed all css from *corporate/fonts*, because it causes trouble with update generator (and also is not a variable).
+
 
 
 ### Thanks

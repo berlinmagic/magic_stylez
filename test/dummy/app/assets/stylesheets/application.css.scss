@@ -10,7 +10,7 @@ body {
 		background: #fff;
 	}
 	&.main_template {
-	    padding: 0 0 0 220px;
+	    padding: 40px 0 0 0;
 	}
 }
 
@@ -28,6 +28,66 @@ body {
 	
 	
 }
+
+
+#aside {
+	// @mixin single_shine( $color, $times: 3, $position: right, $width: 5px, $blur: 5px, $size: 0, $corner: 100 )
+	display: block; position: fixed;
+	top: 40px; right: auto; bottom: 0; left: 0;
+	width: 220px;
+	z-index: 99999;
+	background: #e5e5e5;
+	// box-shadow: inset -2px 0 3px 0 #000;
+	border-right: solid 1px #ccc;
+	overflow-y: scroll;
+	.btn { width: 90%; margin: 0 auto; }
+	@include transform( translateZ( 0 ) );
+    @include transform( translateX( -222px ) ); 
+    @include transition (all 0.5s ease-in-out);
+}
+
+
+
+#mobile_header {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    height: 40px; line-height: 40px;
+    z-index: 999999;
+    @include linear-gradient( #222, #111 );
+    color: #ccc;
+    text-shadow: 0 1px 1px #000;
+    i, i:before { font-size: 24px; line-height: 40px;}
+    text-decoration: none;
+}
+
+body.aside-on {
+    #aside { @include transform( translateX( 0 ) ); }
+    #mobile_header { color: #069; }
+}
+
+
+@include responsiveStep-sm {
+    
+    body {
+    	&.main_template {
+    	    padding: 0 0 0 220px;
+    	}
+    }
+    
+    #aside {
+        @include single_shine( rgba(0,0,0,.23), 1, right, 10px );
+        display: block; position: fixed;
+        top: 0;
+        @include transform( translateX( 0 ) );
+    }
+    
+    #mobile_header {
+        display: none;
+    }
+}
+
+
+
 
 .check_switch {
 	display: block; position: relative; margin: 0; padding: 0;
@@ -105,18 +165,8 @@ body {
 }
 
 
-#aside {
-	// @mixin single_shine( $color, $times: 3, $position: right, $width: 5px, $blur: 5px, $size: 0, $corner: 100 )
-	@include single_shine( rgba(0,0,0,.23), 1, right, 10px );
-	display: block; position: fixed;
-	top: 0; right: auto; bottom: 0; left: 0;
-	width: 220px;
-	z-index: 99;
-	// box-shadow: inset -2px 0 3px 0 #000;
-	border-right: solid 1px #ccc;
-	overflow-y: scroll;
-	.btn { width: 90%; margin: 0 auto; }
-}
+
+
 
 ul.list {
 	display: block; position: relative;

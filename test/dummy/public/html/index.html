@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8" />
   <title>Magic-Stylez</title>
-  <link href="//berlinmagic.github.io/magic_stylez/assets/application-ef333a7bb827c0fd71107737d7faa101.css" media="all" rel="stylesheet" />
-  <script src="//berlinmagic.github.io/magic_stylez/assets/application-ebb0e3d77a8bf5e1035379b7e53b8023.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link href="//berlinmagic.github.io/magic_stylez/assets/application-12830c6ac7643ebdf44bcc14c1cc31f4.css" media="all" rel="stylesheet" />
+  <script src="//berlinmagic.github.io/magic_stylez/assets/application-b98c80dd9c6251a3604503083de5ae19.js"></script>
   <meta content="authenticity_token" name="csrf-param" />
-<meta content="KmqKWQjWhpVkFcmeqxz/68ezzbMF/ggaa7IAMUfgkP0=" name="csrf-token" />
+<meta content="txTtp+28PvfPT1b/DHXUvHmIXVtMBciKw3krvzJZJiM=" name="csrf-token" />
   <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
   <link href="//berlinmagic.github.io/magic_stylez/assets/ico/favicon-f1706407301f788c54691b6995f60a8f.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
   <link href="//berlinmagic.github.io/magic_stylez/assets/ico/favicon-f34b54df445838a4f6bdac98bd904570.png" rel="shortcut icon" type="image/png" />
@@ -20,6 +24,17 @@
   </script>
 </head>
 <body class="main_template">
+  <a href="#" id="mobile_header" class="inline_table center_text">
+    <div class="cell icn col-1 middle">
+      <i class="olicons-show-sb"></i>
+    </div>
+    <div class="cell col-10 middle">
+      <span id="current-view-name">Magic-Stylez</span>
+    </div>
+    <div class="cell icn col-1 middle">
+      <i class="olicons-show-sb"></i>
+    </div>
+  </a>
   <div id="aside">
   <div class="aside-content">
     <ul class="nav_list flat">
@@ -92,10 +107,10 @@
     <div class="section head">
   <div class="corset">
     <div class="row">
-      <div class="col-sm-9">
+      <div class="col-sm-9 col-xs-6">
         <h1>magic-stylez</h1>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 col-xs-6">
         <a href="https://github.com/berlinmagic/magic_stylez/tree/master" target="_blank" class="btn btn-sm btn-default btn-divided pull-right">
           <span class="icn"><i class="icomoon-github3"></i></span>
           <span>SourceCode</span>
@@ -166,6 +181,14 @@ CSS:
     <p class="loud"><i class="olicons-hide-filter"></i> what causes "Missing variable!" when you update to new version</p>
     <p class="loud"><i class="olicons-hide-filter"></i> this generator adds all new variables without touching your settings</p>
     <pre><code>$ rails g magic_stylez:update</code></pre>
+    <br/>
+    <br/>
+    <h4>Changes when update to <small>0.0.0.55</small>:</h4>
+    <ul>
+      <li><em>corporate/typo</em> is removed!</li>
+      <li><em>corporate/fonts</em> doesn't contain css, just variables</li>
+    </ul>
+    <p>With Version <strong>0.0.0.55</strong> I merged <em>corporate/typo</em> into <em>corporate/fonts</em> (they where so similar). I also removed all css from <em>corporate/fonts</em>, because it causes trouble with update generator (and also is not a variable).</p>
   </div>
 </div>
 

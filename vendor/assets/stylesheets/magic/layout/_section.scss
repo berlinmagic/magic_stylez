@@ -163,6 +163,19 @@
             border-right:  solid 10px $section-soft-background;
             border-bottom: solid 10px $section-soft-background;
         }
+        
+        &.one:after {
+            border-right:  solid 10px $section-one-background;
+            border-bottom: solid 10px $section-one-background;
+        }
+        &.two:after {
+            border-right:  solid 10px $section-two-background;
+            border-bottom: solid 10px $section-two-background;
+        }
+        &.three:after {
+            border-right:  solid 10px $section-three-background;
+            border-bottom: solid 10px $section-three-background;
+        }
     }
 	
 	

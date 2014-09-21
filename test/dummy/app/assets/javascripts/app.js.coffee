@@ -29,12 +29,17 @@ navigate = ->
   else
     nul.closest("li").addClass("current")
   lnk.addClass("active")
+  $("body").removeClass("aside-on")
   loadCircles()
+  $("#current-view-name").text( lnk.text() )
   currentPath = path
     
   
 
 $ ->
+  $("body").on "click", "#mobile_header", ->
+    $("body").toggleClass("aside-on")
+    false
 
   $("body").on "click", ".hide_da_notice", ->
     $("body").toggleClass("with_important_notice")

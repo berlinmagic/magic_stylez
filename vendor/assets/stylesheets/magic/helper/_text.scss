@@ -1,0 +1,68 @@
+.smallReadFont { @include smallReadFont; }
+.readFont { @include readFont; }
+.bigFont { @include bigFont; }
+.alternateBigFont { @include alternateBigFont; }
+.dekoFont { @include dekoFont; }
+
+// Open Sans 
+.sans {
+	font-family: $magicSans;
+	font-weight: $magicSans-font-weight-regular;
+	&.thin, .thin { font-weight: $magicSans-font-weight-thin; }
+	&.regular, .regular { font-weight: $magicSans-font-weight-regular; }
+	&.sbold, .sbold { font-weight: $magicSans-font-weight-semi; }
+	&.bold, .bold { font-weight: $magicSans-font-weight-bold; }
+	&.ebold, .ebold { font-weight: $magicSans-font-weight-extra; }
+}
+
+// Open Sans Condensed 
+.sansCondensed {
+	font-family: $magicCondensedSans;
+	font-weight: $magicCondensedSans-font-weight-regular;
+	&.thin, .thin { font-weight: $magicCondensedSans-font-weight-thin; }
+	&.bold, .bold { font-weight: $magicCondensedSans-font-weight-bold; }
+}
+
+// Specials
+.handWrittenFont {
+	font-family: $magicHandwritten;
+	font-weight: $magicHandwritten-font-weight;
+}
+
+// L O U D - T E X T
+h1.loud, .h1.loud { font-size: ceil($font-size-h1 * $loud-factor); }
+h2.loud, .h2.loud { font-size: ceil($font-size-h2 * $loud-factor); }
+h3.loud, .h3.loud { font-size: ceil($font-size-h3 * $loud-factor); }
+h4.loud, .h4.loud { font-size: ceil($font-size-h4 * $loud-factor); }
+h5.loud, .h5.loud { font-size: ceil($font-size-h5 * $loud-factor); }
+h6.loud, .h6.loud { font-size: ceil($font-size-h6 * $loud-factor); }
+
+h1.louder, .h1.louder { font-size: ceil($font-size-h1 * $louder-factor); }
+h2.louder, .h2.louder { font-size: ceil($font-size-h2 * $louder-factor); }
+h3.louder, .h3.louder { font-size: ceil($font-size-h3 * $louder-factor); }
+h4.louder, .h4.louder { font-size: ceil($font-size-h4 * $louder-factor); }
+h5.louder, .h5.louder { font-size: ceil($font-size-h5 * $louder-factor); }
+h6.louder, .h6.louder { font-size: ceil($font-size-h6 * $louder-factor); }
+
+
+div, ul, ol, li, p, span {
+	&.loud {
+		@include sansCondensedThin;
+		font-size: ceil($font-size-base * $loud-factor);
+	}
+	&.louder {
+		@include sansCondensedThin;
+		font-size: ceil($font-size-base * $louder-factor);
+	}
+	&.highlight {
+		@include sansCondensedThin;
+		font-weight: 600;
+		font-size: ceil($font-size-base * $loud-factor);
+	}
+	&.bold { font-weight: bold; }
+	&.thin { font-weight: 200; }
+}
+
+ul, ol, li, p, span, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	&.brand { color: $brand-color; }
+}

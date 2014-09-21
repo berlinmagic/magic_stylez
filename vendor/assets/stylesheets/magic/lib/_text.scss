@@ -1,3 +1,50 @@
+// mixin
+@mixin smallReadFont { font-family: $smallReadFont; }
+@mixin readFont { font-family: $readFont; }
+@mixin bigFont { font-family: $bigFont; }
+@mixin alternateBigFont { font-family: $alternateBigFont; }
+@mixin dekoFont { font-family: $dekoFont; }
+@mixin magicDefaultFont {
+  @include readFont;
+  font-size: $magicDefaultFontSize;
+  line-height: $magicDefaultLineHight;
+}
+@mixin sansThin {
+	// font-family: 'Open Sans', sans-serif;
+	font-family: $magicSans;
+	font-weight: $magicSans-font-weight-thin;
+}
+@mixin sansRegular {
+	font-family: $magicSans;
+	font-weight: $magicSans-font-weight-regular;
+}
+@mixin sansSemi {
+	font-family: $magicSans;
+	font-weight: $magicSans-font-weight-semi;
+}
+@mixin sansBold {
+	font-family: $magicSans;
+	font-weight: $magicSans-font-weight-bold;
+}
+@mixin sansExtra {
+	font-family: $magicSans;
+	font-weight: $magicSans-font-weight-extra;
+}
+@mixin sansCondensedThin {
+	font-family: $magicCondensedSans;
+	font-weight: $magicCondensedSans-font-weight-thin;
+}
+@mixin sansCondensedBold {
+	font-family: $magicCondensedSans;
+	font-weight: $magicCondensedSans-font-weight-bold;
+}
+
+@mixin handWrittenFont {
+	font-family: $magicHandwritten;
+	font-weight: $magicHandwritten-font-weight;
+}
+
+
 @mixin no_wrap {
 	text-overflow: ellipsis;
 	white-space: nowrap;

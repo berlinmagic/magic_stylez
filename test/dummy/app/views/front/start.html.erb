@@ -1,10 +1,10 @@
 <div class="section head">
   <div class="corset">
     <div class="row">
-      <div class="col-sm-9">
+      <div class="col-sm-9 col-xs-6">
         <h1>magic-stylez</h1>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 col-xs-6">
         <a href="https://github.com/berlinmagic/magic_stylez/tree/master" target="_blank" class="btn btn-sm btn-default btn-divided pull-right">
           <span class="icn"><i class="icomoon-github3"></i></span>
           <span>SourceCode</span>
@@ -75,6 +75,14 @@ CSS:
     <p class="loud"><i class="olicons-hide-filter"></i> what causes "Missing variable!" when you update to new version</p>
     <p class="loud"><i class="olicons-hide-filter"></i> this generator adds all new variables without touching your settings</p>
     <pre><code>$ rails g magic_stylez:update</code></pre>
+    <br/>
+    <br/>
+    <h4>Changes when update to <small>0.0.0.55</small>:</h4>
+    <ul>
+      <li><em>corporate/typo</em> is removed!</li>
+      <li><em>corporate/fonts</em> doesn't contain css, just variables</li>
+    </ul>
+    <p>With Version <strong>0.0.0.55</strong> I merged <em>corporate/typo</em> into <em>corporate/fonts</em> (they where so similar). I also removed all css from <em>corporate/fonts</em>, because it causes trouble with update generator (and also is not a variable).</p>
   </div>
 </div>
 

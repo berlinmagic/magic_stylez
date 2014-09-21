@@ -1,159 +1,120 @@
 // 
 //   Magic-Stylez - Fonts
 // 
-//   if you like to change values, remove the '!default' flag!
-// 
-// 
-//   F O N T S
-// 
-
-$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
-$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
-
-
 // 
 //   webfonts
 // 
-
 // goolge
-	// $magicSans: "Open Sans", $sansFontFamily;
-	// $magicCondensedSans: "Open Sans Condensed", $sansFontFamily;
-	// $magicHandwritten: 'Satisfy', cursive;
-
+// $magicSans: "Open Sans", $sansFontFamily;
+// $magicCondensedSans: "Open Sans Condensed", $sansFontFamily;
+// $magicHandwritten: 'Satisfy', cursive;
+// 
 // typekit (Adobe)
-	// $magicSans: "Montserrat", $sansFontFamily;
-	// $magicCondensedSans: "Lato", $sansFontFamily;
-	// $magicHandwritten: "ff-market-web", cursive;
+// $magicSans: "Montserrat", $sansFontFamily;
+// $magicCondensedSans: "Lato", $sansFontFamily;
+// $magicHandwritten: "ff-market-web", cursive;
 
-$magicSans: 			$sansFontFamily;
-$magicCondensedSans: 	$sansFontFamily;
-$magicHandwritten: 		'Gloria Hallelujah', cursive;
+// 
+//   F O N T S
+// 
+$sansFontFamily:            "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serifFontFamily:           Georgia, "Times New Roman", Times, serif !default;
+$monoFontFamily:            Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
-
-
-
-// Open Sans 
-.sans {
-	font-family: $magicSans;
-	font-weight: 400;
-	&.thin, .thin { font-weight: 300; }
-	&.regular, .regular { font-weight: 400; }
-	&.sbold, .sbold { font-weight: 600; }
-	&.bold, .bold { font-weight: 700; }
-	&.ebold, .ebold { font-weight: 800; }
-}
-@mixin sansThin {
-	// font-family: 'Open Sans', sans-serif;
-	font-family: $magicSans;
-	font-weight: 300;
-}
-@mixin sansRegular {
-	font-family: $magicSans;
-	font-weight: 400;
-}
-@mixin sansSemi {
-	font-family: $magicSans;
-	font-weight: 600;
-}
-@mixin sansBold {
-	font-family: $magicSans;
-	font-weight: 700;
-}
-
-
-// Open Sans Condensed 
-.sansCondensed {
-	font-family: $magicCondensedSans;
-	font-weight: 300;
-	&.thin, .thin { font-weight: 300; }
-	&.bold, .bold { font-weight: 700; }
-}
-@mixin sansCondensedThin {
-	font-family: $magicCondensedSans;
-	font-weight: 300;
-}
-@mixin sansCondensedBold {
-	font-family: $magicCondensedSans;
-	font-weight: 700;
-}
-
-
-// Specials
-.handWrittenFont {
-	font-family: $magicHandwritten;
-	font-weight: 400;
-}
-@mixin handWrittenFont {
-	font-family: $magicHandwritten;
-	font-weight: 400;
-}
-
-
+$magicSans:                 $sansFontFamily !default;
+$magicCondensedSans:        $sansFontFamily !default;
+$magicHandwritten:          'Gloria Hallelujah', cursive !default;
 
 // variable
-$smallReadFont: $magicCondensedSans;
-$readFont: $magicSans;
-$bigFont: $magicSans;
-$alternateBigFont: $magicSans;
-$dekoFont: $magicHandwritten;
+$smallReadFont:             $magicCondensedSans     !default;
+$readFont:                  $magicSans              !default;
+$bigFont:                   $magicSans              !default;
+$alternateBigFont:          $magicSans              !default;
+$dekoFont:                  $magicHandwritten       !default;
 
 
-// mixin
-@mixin smallReadFont { font-family: $smallReadFont; }
-@mixin readFont { font-family: $readFont; }
-@mixin bigFont { font-family: $bigFont; }
-@mixin alternateBigFont { font-family: $alternateBigFont; }
-@mixin dekoFont { font-family: $dekoFont; }
-
-.smallReadFont { @include smallReadFont; }
-.readFont { @include readFont; }
-.bigFont { @include bigFont; }
-.alternateBigFont { @include alternateBigFont; }
-.dekoFont { @include dekoFont; }
+$font-family-sans-serif:    $readFont               !default;
+$font-family-serif:         $serifFontFamily        !default;
+$font-family-base:          $smallReadFont          !default;
+$font-family-monospace:     $monoFontFamily         !default;
+$font-family-handwriten:    $magicHandwritten       !default;
 
 
+// Short-Forms
+$font-family-sans:          $font-family-sans-serif !default;
+$font-family-mono:          $font-family-monospace !default;
+$font-family-hand:          $font-family-handwriten !default;
+$font-family-sm:            $smallReadFont !default;
+$font-family-lg:            $bigFont !default;
+
+// $headings-font-family:    inherit !default;
+$headings-font-family:      $bigFont !default;
+
+
+// 
+//   F O N T - S I Z E S
+// 
+$font-size-base:            15px !default;
+$font-size-large:           ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:           ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:              floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:              floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:              ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:              ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:              $font-size-base !default;
+$font-size-h6:              ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$magicDefaultFontSize:      13px !default;
+$magicDefaultLineHight:     18px !default;
+
+$loud-factor:               1.25 !default;
+$louder-factor:             1.75 !default;
+
+
+
+// 
+//   L I N E - H E I G H T S
+// 
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:          1.428571429 !default; // 20/14
+$line-height-large:         1.33 !default;
+$line-height-small:         1.5 !default;
+
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:      floor(($font-size-base * $line-height-base)) !default;   // ~20px
+$line-height-computed-lg:   floor(($font-size-large * $line-height-large)) !default; // ~20px
+$line-height-computed-sm:   floor(($font-size-small * $line-height-small)) !default; // ~20px
+$line-height-computed-xs:   floor(($font-size-small * $line-height-small)) !default; // ~20px
+//== Headings
+$headings-line-height:      1.1 !default;
+
+
+
+// 
+//   F O N T - W E I G H T S
+// 
+$font-weight-bold:                          600 !default;
+$font-weight-thin:                          200 !default;
+//== Headings
+$headings-font-weight:                      500 !default;
+//== Buttons
+$btn-font-weight:                           normal !default;
+
+$magicSans-font-weight-thin:                300 !default;
+$magicSans-font-weight-regular:             400 !default;
+$magicSans-font-weight-semi:                600 !default;
+$magicSans-font-weight-bold:                700 !default;
+$magicSans-font-weight-extra:               800 !default;
+
+$magicCondensedSans-font-weight-thin:       300 !default;
+$magicCondensedSans-font-weight-regular:    400 !default;
+$magicCondensedSans-font-weight-bold:       700 !default;
+
+$magicHandwritten-font-weight:              400 !default;
 
 
 
 
 
-
-
-
-// C S S - F O N T S 
-
-@mixin eingabeText { font-family: $lucida-grande; }
-
-@mixin profileText {
-	font-family: $lucida-grande; 
-	color: #333;
-	font-size: 12px;
-	line-height: 20px;
-}
-
-@mixin titelText { 
-	@include sansSemi;
-	font-size: 14px;
-	line-height: 20px;
-}
-
-@mixin subTextSmall { 
-	@include sansRegular;
-	font-size: 12px;
-	line-height: 20px;
-}
-
-
-// ------------------------------- S C H R I F T G R O E S S E N -------------------------------
-
-$magicDefaultFontSize:    13px;
-$magicDefaultLineHight:   18px;
-
-
-@mixin magicDefaultFont {
-  @include readFont;
-  font-size: $magicDefaultFontSize;
-  line-height: $magicDefaultLineHight;
-} // ..
 

@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8" />
   <title>Magic-Stylez</title>
+  <%# ===   App-View   === #%>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <%# ===   iOS-App-View   === #%>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -25,6 +31,17 @@
   </script>
 </head>
 <body class="main_template">
+  <a href="#" id="mobile_header" class="inline_table center_text">
+    <div class="cell icn col-1 middle">
+      <i class="olicons-show-sb"></i>
+    </div>
+    <div class="cell col-10 middle">
+      <span id="current-view-name">Magic-Stylez</span>
+    </div>
+    <div class="cell icn col-1 middle">
+      <i class="olicons-show-sb"></i>
+    </div>
+  </a>
   <%= render "front/aside" %>
   <div class="clearfix"></div>
   <div id="app_content">
