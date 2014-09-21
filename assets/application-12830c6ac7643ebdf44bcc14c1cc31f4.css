@@ -1,79 +1,3 @@
-.sans {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400; }
-  .sans.thin, .sans .thin {
-    font-weight: 300; }
-  .sans.regular, .sans .regular {
-    font-weight: 400; }
-  .sans.sbold, .sans .sbold {
-    font-weight: 600; }
-  .sans.bold, .sans .bold {
-    font-weight: 700; }
-  .sans.ebold, .sans .ebold {
-    font-weight: 800; }
-
-.sansCondensed {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300; }
-  .sansCondensed.thin, .sansCondensed .thin {
-    font-weight: 300; }
-  .sansCondensed.bold, .sansCondensed .bold {
-    font-weight: 700; }
-
-.handWrittenFont {
-  font-family: "Gloria Hallelujah", cursive;
-  font-weight: 400; }
-
-.smallReadFont {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.readFont {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.bigFont {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.alternateBigFont {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.dekoFont {
-  font-family: "Gloria Hallelujah", cursive; }
-
-h1.loud, .h1.loud {
-  font-size: 45px; }
-
-h2.loud, .h2.loud {
-  font-size: 38px; }
-
-h3.loud, .h3.loud {
-  font-size: 30px; }
-
-h4.loud, .h4.loud {
-  font-size: 23px; }
-
-h5.loud, .h5.loud {
-  font-size: 18px; }
-
-h6.loud, .h6.loud {
-  font-size: 15px; }
-
-div.loud, ul.loud, ol.loud, li.loud, p.loud, span.loud {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 18px; }
-div.highlight, ul.highlight, ol.highlight, li.highlight, p.highlight, span.highlight {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-weight: 600;
-  font-size: 18px; }
-div.bold, ul.bold, ol.bold, li.bold, p.bold, span.bold {
-  font-weight: bold; }
-div.thin, ul.thin, ol.thin, li.thin, p.thin, span.thin {
-  font-weight: 200; }
-
-ul.brand, ol.brand, li.brand, p.brand, span.brand, h1.brand, .h1.brand, h2.brand, .h2.brand, h3.brand, .h3.brand, h4.brand, .h4.brand, h5.brand, .h5.brand, h6.brand, .h6.brand {
-  color: #a0c775; }
-
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -1038,7 +962,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
@@ -8949,6 +8873,15 @@ ul.icons {
   .section.speech.soft:after {
     border-right: solid 10px #f8f8f8;
     border-bottom: solid 10px #f8f8f8; }
+  .section.speech.one:after {
+    border-right: solid 10px #ff00cc;
+    border-bottom: solid 10px #ff00cc; }
+  .section.speech.two:after {
+    border-right: solid 10px #00ffcc;
+    border-bottom: solid 10px #00ffcc; }
+  .section.speech.three:after {
+    border-right: solid 10px #cc6699;
+    border-bottom: solid 10px #cc6699; }
 
 @media only screen and (min-width: 760px) {
   .section .half, .section .btn.half, .section input.half, .section select.half, .section textarea.half {
@@ -13244,7 +13177,7 @@ body {
   body.blank {
     background: #fff; }
   body.main_template {
-    padding: 0 0 0 220px; }
+    padding: 40px 0 0 0; }
 
 #app_content {
   display: block;
@@ -13252,6 +13185,86 @@ body {
   width: 100%;
   height: 100%; }
 
+#aside {
+  display: block;
+  position: fixed;
+  top: 40px;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  width: 220px;
+  z-index: 99999;
+  background: #e5e5e5;
+  border-right: solid 1px #ccc;
+  overflow-y: scroll;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateX(-222px);
+  -ms-transform: translateX(-222px);
+  transform: translateX(-222px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  #aside .btn {
+    width: 90%;
+    margin: 0 auto; }
+
+#mobile_header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  z-index: 999999;
+  background-color: #222222;
+  background-image: -webkit-linear-gradient(#222222, #111111);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#111111));
+  background-image: linear-gradient(#222222, #111111);
+  color: #ccc;
+  text-shadow: 0 1px 1px #000;
+  text-decoration: none; }
+  #mobile_header i, #mobile_header i:before {
+    font-size: 24px;
+    line-height: 40px; }
+
+body.aside-on #aside {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0); }
+body.aside-on #mobile_header {
+  color: #069; }
+
+@media only screen and (min-width: 768px) {
+  body.main_template {
+    padding: 0 0 0 220px; }
+
+  #aside {
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    top: 0;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+    #aside:before {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      top: 5px;
+      bottom: 5px;
+      width: 100px;
+      right: -100px;
+      -o-border-radius: 5000% / 10000%;
+      border-radius: 5000% / 10000%;
+      background: transparent;
+      -webkit-box-shadow: -10px 0 5px 0 rgba(0, 0, 0, 0.23);
+      -ms-box-shadow: -10px 0 5px 0 rgba(0, 0, 0, 0.23);
+      -o-box-shadow: -10px 0 5px 0 rgba(0, 0, 0, 0.23);
+      box-shadow: -10px 0 5px 0 rgba(0, 0, 0, 0.23); }
+
+  #mobile_header {
+    display: none; } }
 .check_switch {
   display: block;
   position: relative;
@@ -13328,37 +13341,6 @@ body {
   -webkit-background-size: cover cover;
           background-size: cover;
   background-image: url(http://lorempixel.com/g/1200/500/nature/); }
-
-#aside {
-  overflow: hidden;
-  display: block;
-  position: fixed;
-  top: 0;
-  right: auto;
-  bottom: 0;
-  left: 0;
-  width: 220px;
-  z-index: 99;
-  border-right: solid 1px #ccc;
-  overflow-y: scroll; }
-  #aside:before {
-    content: "";
-    position: absolute;
-    z-index: 3;
-    top: 5px;
-    bottom: 5px;
-    width: 100px;
-    right: -100px;
-    -o-border-radius: 5000% / 10000%;
-    border-radius: 5000% / 10000%;
-    background: transparent;
-    -webkit-box-shadow: -10px 0 5px 0 rgba(0, 0, 0, 0.23);
-    -ms-box-shadow: -10px 0 5px 0 rgba(0, 0, 0, 0.23);
-    -o-box-shadow: -10px 0 5px 0 rgba(0, 0, 0, 0.23);
-    box-shadow: -10px 0 5px 0 rgba(0, 0, 0, 0.23); }
-  #aside .btn {
-    width: 90%;
-    margin: 0 auto; }
 
 ul.list {
   display: block;
