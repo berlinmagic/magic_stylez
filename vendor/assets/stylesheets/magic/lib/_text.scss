@@ -44,12 +44,22 @@
 	font-weight: $magicHandwritten-font-weight;
 }
 
+@mixin sans-thin { @include sansThin; }
+@mixin sans-regular { @include sansRegular; }
+@mixin sans-semi { @include sansSemi; }
+@mixin sans-bold { @include sansBold; }
+@mixin sans-extra { @include sansExtra; }
+@mixin sans-condensed-thin { @include sansCondensedThin; }
+@mixin sans-condensed-bold { @include sansCondensedBold; }
+@mixin handwritten-font { @include handWrittenFont; }
+
 
 @mixin no_wrap {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
+@mixin no-wrap { @include no_wrap; }
 
 @mixin antialiased_text {
 	// make icons and fonts thinner in webkit (white icons on dark background)
