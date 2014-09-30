@@ -76,6 +76,13 @@ body, #body, #container, .main-content, .main_content {
 @include responsiveStep-sm {
     
     body, #body, #container, .main-content, .main_content {
+        
+        &.fixed-nav-xs.fixed-sub-nav { .application_notice { top: $application-notice-top + $subnav-height + $navbar-height-xs; }  }
+        &.fixed-nav-sm.fixed-sub-nav { .application_notice { top: $application-notice-top + $subnav-height + $navbar-height-sm; }  }
+        &.fixed-nav.fixed-sub-nav {    .application_notice { top: $application-notice-top + $subnav-height + $navbar-height; }     }
+        &.fixed-nav-lg.fixed-sub-nav { .application_notice { top: $application-notice-top + $subnav-height + $navbar-height-lg; }  }
+        &.fixed-nav-xl.fixed-sub-nav { .application_notice { top: $application-notice-top + $subnav-height + $navbar-height-xl; }  }
+        
         &.with_important_notice {
             
             #nav-aside { top: $important-notice-height; }
