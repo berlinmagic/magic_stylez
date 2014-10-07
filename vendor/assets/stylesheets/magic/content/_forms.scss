@@ -34,11 +34,11 @@
 
 // for checkbox and radio fields
 .input-group.labeled {
-	.input-group-addon {
+	& > .input-group-addon {
 		border-color: transparent;
 		background: none;
 	}
-	label {
+	& > label, & > .field_with_errors > label {
 		position: relative;
 		z-index: 2;
 		float: left;
@@ -48,10 +48,11 @@
 		background: none;
 		text-align: left !important;
 		@include box-shadow( none );
-		height: $input-height-base !important; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+		height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
         padding: $padding-base-vertical $padding-base-horizontal !important;
 	}
-	&.flat .input-group-addon { @include horizontal-padding(0); }
+	& > .field_with_errors > label { color: $red; }
+	&.flat > .input-group-addon { @include horizontal-padding(0); }
 }
 
 
