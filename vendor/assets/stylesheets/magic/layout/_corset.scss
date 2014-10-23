@@ -10,16 +10,12 @@
 	&.left { text-align: left; }
 	&.right { text-align: right; }
 
-	&.full {
-		margin: 0 40px !important;
-	}
-
-    &.tight, &.extra-tight, &.ultra-tight {
-        // margin: 0 15%;
-        // width: 90%; 
-		margin: 0 30px !important;
-		// max-width: 1000px;
-    }
+	&.full { margin: 0 10px !important; }
+    
+    &.tight { margin: 0 30px !important; }
+    &.extra-tight { margin: 0 40px !important; }
+    &.ultra-tight { margin: 0 50px !important; }
+    
 	.presenter {
 		min-height: 50px;
 		overflow: hidden;

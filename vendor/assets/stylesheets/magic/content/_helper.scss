@@ -7,25 +7,25 @@
 // media min-width: 768px and max-width: 991px
 @include responsiveStep-sm-only {
 	.press-sm { margin-bottom:20px; }
-	.hide-sm { display: none; }
+	.hide-sm { display: none !important; }
 }
 
 // media min-width: 992px and max-width: 1199px
 @include responsiveStep-md-only {
 	.press-md { margin-bottom:20px; }
-	.hide-md { display: none; }
+	.hide-md { display: none !important; }
 }
 
 // media min-width: 1200px and max-width: 1599px
 @include responsiveStep-lg-only {
 	.press-lg { margin-bottom:20px; }
-	.hide-lg { display: none; }
+	.hide-lg { display: none !important; }
 }
 
 // media min-width: 1600px
 @include responsiveStep-xl {
 	.press-xl { margin-bottom:20px; }
-	.hide-xl { display: none; }
+	.hide-xl { display: none !important; }
 }
 
 
