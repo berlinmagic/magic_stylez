@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <link href="//berlinmagic.github.io/magic_stylez/assets/application-12830c6ac7643ebdf44bcc14c1cc31f4.css" media="all" rel="stylesheet" />
-  <script src="//berlinmagic.github.io/magic_stylez/assets/application-b98c80dd9c6251a3604503083de5ae19.js"></script>
+  <link href="//berlinmagic.github.io/magic_stylez/assets/application-788d9ed1d184bbb91db637ecb8449a19.css" media="all" rel="stylesheet" />
+  <script src="//berlinmagic.github.io/magic_stylez/assets/application-c3b7957e5f540e923812984c19ad6a8d.js"></script>
   <meta content="authenticity_token" name="csrf-param" />
-<meta content="txTtp+28PvfPT1b/DHXUvHmIXVtMBciKw3krvzJZJiM=" name="csrf-token" />
+<meta content="ejY5unK2faEpuNt0ZxLzOSrMpPGXx4NredOdpigf1jw=" name="csrf-token" />
   <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
   <link href="//berlinmagic.github.io/magic_stylez/assets/ico/favicon-f1706407301f788c54691b6995f60a8f.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
   <link href="//berlinmagic.github.io/magic_stylez/assets/ico/favicon-f34b54df445838a4f6bdac98bd904570.png" rel="shortcut icon" type="image/png" />
@@ -76,6 +76,7 @@
           </li>
           <li><a class="lst_lnk" href="#">Layout</a>
             <ul class="sub_nav">
+                  <li><a class="app_lnk lst_lnk" data-target="layout/at_first" href="#">Introduction</a></li>
                   <li><a class="app_lnk lst_lnk" data-target="layout/corset" href="#">Corset</a></li>
                   <li><a class="app_lnk lst_lnk" data-target="layout/fullpage_table" href="#">Fullpage Table</a></li>
                   <li><a class="app_lnk lst_lnk" data-target="layout/layout_table" href="#">Layout Table</a></li>
@@ -174,7 +175,10 @@ CSS:
 
 <div class="section hard-top">
   <div class="corset tight">
-    <h2 class="loud">NEW*</h2>
+    <h2 class="loud">NEWs</h2>
+    <hr/>
+    <p class="loud"><i class="olicons-hide-filter"></i> <em>rail-ujs.js</em> file optimized for splitted and divided buttons</p>
+    <pre><code>//= require magic/ext/rails-ujs</code></pre>
     <hr/>
     <p class="highlight"><i class="olicons-hide-filter"></i> magic-styles update generator</p>
     <p class="loud"><i class="olicons-hide-filter"></i> in the process I often add new variables to the corporate files</p>
@@ -183,12 +187,39 @@ CSS:
     <pre><code>$ rails g magic_stylez:update</code></pre>
     <br/>
     <br/>
+    <h4>Changes when update to <small>0.0.0.67</small>:</h4>
+    <ul>
+      <li>changed some names in <em>corporate/varriables</em>!</li>
+    </ul>
+    <p>
+      With Version <strong>0.0.0.67</strong> Sections have more bootstrap like name, like <code>.section.section-xs</code> instead of <code>.section.compact</code>.
+      <br/>
+      Also some variables changed, so <code>$section-flatted-padding</code> becomes <code>$section-sm-padding</code>.
+      <br/>
+      <br/>
+      If you update to <strong>>= 0.0.0.67</strong> be sure to run: $ <code>rails g magic_stylez:update</code> !!!
+    </p>
+    <hr/>
     <h4>Changes when update to <small>0.0.0.55</small>:</h4>
     <ul>
       <li><em>corporate/typo</em> is removed!</li>
       <li><em>corporate/fonts</em> doesn't contain css, just variables</li>
     </ul>
     <p>With Version <strong>0.0.0.55</strong> I merged <em>corporate/typo</em> into <em>corporate/fonts</em> (they where so similar). I also removed all css from <em>corporate/fonts</em>, because it causes trouble with update generator (and also is not a variable).</p>
+  </div>
+</div>
+
+
+<div class="section hard-top">
+  <div class="corset tight">
+    <h3 class="loud">On to / To Do</h3>
+    <hr/>
+    <p class="highlight"><i class="icomoon-checkbox-unchecked"></i> update gem to work with new bootstrap structure (<em>outside vendor folder</em>)</p>
+    <p class="loud"><i class="icomoon-checkbox-unchecked"></i> small paralax plugin to fix fixed-background problem on chrome</p>
+    <p class="loud"><i class="icomoon-checkbox-unchecked"></i> optimize code, variables</p>
+    <p class="loud"><i class="icomoon-checkbox-unchecked"></i> clean up unused or double csss</p>
+    <p class="loud"><i class="icomoon-checkbox-unchecked"></i> learn english :)</p>
+    <p class="loud"><i class="icomoon-checkbox-unchecked"></i> improve documentation</p>
   </div>
 </div>
 
