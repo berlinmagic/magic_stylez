@@ -10,7 +10,8 @@
 #fixed_nav {
 	position: fixed;
 	// let graphic card render header:
-	@include transform( translateZ( 0 ) );
+	// @include transform( translateZ( 0 ) );
+	@include gpu_render;
 	top: 0; left: 0; right: 0;
 	@include border-radius(0);
 	z-index: 999;
@@ -131,7 +132,8 @@
 //## Aside-Navigation
 #nav-aside {
 	display: block; position: fixed;
-	@include transform( translateZ( 0 ) );
+	// @include transform( translateZ( 0 ) );
+	@include gpu_render;
 	margin: 0; padding: 0;
 	
 	right: 0; left: 0; bottom: 0;

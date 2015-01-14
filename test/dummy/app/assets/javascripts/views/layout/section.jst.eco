@@ -87,6 +87,129 @@
 </div>
 
 
+
+<div class="section black">
+  <div class="corset">
+    <h4>.black</h4>
+  </div>
+</div>
+<div class="section rotated top-left bright">
+  <div class="corset">
+    <h4>.rotated.top-left</h4>
+    <div class="well">
+      <strong>Caution!</strong> rotated sections need the following css:
+      <br/>
+      <code>html, body { overflow-x: hidden; }</code>
+    </div>
+  </div>
+</div>
+<div class="section black">
+  <div class="corset">
+    <h4>.black</h4>
+  </div>
+</div>
+
+<div class="section rotated top-right bright">
+  <div class="corset">
+    <h4>.rotated.top-right </h4>
+    <div class="well">
+      <strong>Caution!</strong> rotated sections need the following css:
+      <br/>
+      <code>html, body { overflow-x: hidden; }</code>
+    </div>
+  </div>
+</div>
+
+<div class="section black">
+  <div class="corset">
+    <h4>.black</h4>
+  </div>
+</div>
+<div class="section rotated bottom-left bright">
+  <div class="corset">
+    <h4>.rotated.bottom-left</h4>
+    <div class="well">
+      <strong>Caution!</strong> rotated sections need the following css:
+      <br/>
+      <code>html, body { overflow-x: hidden; }</code>
+    </div>
+  </div>
+</div>
+<div class="section black">
+  <div class="corset">
+    <h4>.black</h4>
+  </div>
+</div>
+
+<div class="section rotated bottom-right bright">
+  <div class="corset">
+    <h4>.rotated.bottom-right</h4>
+    <div class="well">
+      <strong>Caution!</strong> rotated sections need the following css:
+      <br/>
+      <code>html, body { overflow-x: hidden; }</code>
+    </div>
+  </div>
+</div>
+
+<div class="section black">
+  <div class="corset">
+    <h4>.black</h4>
+  </div>
+</div>
+<div class="section rotated both-left bright">
+  <div class="corset">
+    <h4>.rotated.both-left</h4>
+    <div class="well">
+      <strong>Caution!</strong> rotated sections need the following css:
+      <br/>
+      <code>html, body { overflow-x: hidden; }</code>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+<div class="section image">
+  <div class="corset">
+    <h4>.image</h4>
+    <br/>
+    <br/>
+    <p>with pictures makes more sensce ...</p>
+  </div>
+</div>
+
+<div class="section rotated both-right brand">
+  <div class="corset">
+    <h4>.rotated.both-right</h4>
+    <div class="well">
+      <strong>Caution!</strong> rotated sections need the following css:
+      <br/>
+      <code>html, body { overflow-x: hidden; }</code>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+<div class="section image fixed">
+  <div class="corset">
+    <h4>.image.fixed</h4>
+    <br/>
+    <p>with pictures makes more sensce ...</p>
+    <br/><br/><br/>
+    <br/><br/><br/>
+    <br/><br/><br/>
+  </div>
+</div>
+
+<div class="section black">
+  <div class="corset">
+    <h4>.black</h4>
+  </div>
+</div>
+<div class="section black">
+  <div class="corset">
+    <h4>.black</h4>
+  </div>
+</div>
+
 <div class="section">
   <div class="corset">
     <h2>Sizes:</h2>
@@ -105,24 +228,29 @@
           <td>50px</td>
         </tr>
         <tr>
-          <th>.compact</th>
+          <th>.section-xs<br/>.sctn-xs<br/><span class="text-muted" title="depreacated!">.compact</span></th>
           <td>10px</td>
           <td>10px</td>
         </tr>
         <tr>
-          <th>.fat</th>
+          <th>.section-sm<br/>.sctn-sm<br/><span class="text-muted" title="depreacated!">.flatted</span></th>
+          <td>30px</td>
+          <td>30px</td>
+        </tr>
+        <tr>
+          <th>.section-lg<br/>.sctn-lg<br/><span class="text-muted" title="depreacated!">.fat</span></th>
           <td>80px</td>
           <td>80px</td>
         </tr>
         <tr>
-          <th>.fatter</th>
+          <th>.section-xl<br/>.sctn-xl<br/><span class="text-muted" title="depreacated!">.fatter</span></th>
           <td>120px</td>
           <td>120px</td>
         </tr>
         <tr>
-          <th>.flatted</th>
-          <td>30px</td>
-          <td>30px</td>
+          <th>.section-xxl<br/>.sctn-xxl</th>
+          <td>200px</td>
+          <td>200px</td>
         </tr>
         <tr>
           <th>.flat</th>
@@ -141,5 +269,16 @@
         </tr>
       </tbody>
     </table>
+  </div>
+</div>
+
+<div class="section black">
+  <div class="corset">
+    <h4>.black</h4>
+  </div>
+</div>
+<div class="section black">
+  <div class="corset">
+    <h4>.black</h4>
   </div>
 </div>

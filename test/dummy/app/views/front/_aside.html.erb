@@ -18,7 +18,7 @@
             <ul class="sub_nav">
               <% sub.each do |lnk, path| %>
                 <% unless Rails.env.production? && %w(reflections slide_boxes).include?( lnk.to_s ) %>
-                  <li><%= link_to lnk.titleize, "#", class: "app_lnk lst_lnk", data: {target: path} %></li>
+                  <li><%= link_to lnk == "at_first" ? "Introduction" : lnk.titleize, "#", class: "app_lnk lst_lnk", data: {target: path} %></li>
                 <% end %>
               <% end %>
             </ul>

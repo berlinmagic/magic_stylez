@@ -11,6 +11,24 @@
     
     &.z, &.zindex, &.z-index { z-index: 1; }
     
+    
+    &.image {
+        &.fixed { background-attachment: fixed; /* position: static; */ z-index: 88; }
+        
+        background-color: transparent;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('http://lorempixel.com/g/1200/500/nature/');
+		
+		// &.fixed { 
+		//     background: transparent image-url('magic/bgs/hdr_landsberger.jpg') no-repeat center center fixed; 
+		//     background-size: cover; 
+		// }
+		
+		.corset, .container { background: transparent; }
+    }
+    
 	// 
 	//   Sections with shine
 	// 
@@ -68,11 +86,12 @@
 	// 
 	//   Section Sizes
 	// 
-	&.compact { padding-top: $section-compact-padding; padding-bottom: $section-compact-padding; }
-	&.flatted, &.tight { padding-top: $section-flatted-padding; padding-bottom: $section-flatted-padding; }
+	&.section-xs, &.sctn-xs, &.compact { padding-top: $section-xs-padding; padding-bottom: $section-xs-padding; }
+	&.section-sm, &.sctn-sm, &.flatted, &.tight { padding-top: $section-sm-padding; padding-bottom: $section-sm-padding; }
 	
-	&.fat { padding-top: $section-fat-padding; padding-bottom: $section-fat-padding; }
-	&.fatter { padding-top: $section-fatter-padding; padding-bottom: $section-fatter-padding; }
+	&.section-lg, &.sctn-lg, &.fat { padding-top: $section-lg-padding; padding-bottom: $section-lg-padding; }
+	&.section-xl, &.sctn-xl, &.fatter { padding-top: $section-xl-padding; padding-bottom: $section-xl-padding; }
+	&.section-xxl, &.sctn-xxl { padding-top: $section-xxl-padding; padding-bottom: $section-xxl-padding; }
 	
 	&.flat { padding-top: 0; padding-bottom: 0; }
 	&.flat-top { padding-top: 0; }
@@ -87,6 +106,12 @@
 	
     &.dark {
 		background: $section-dark-background;
+		.three-previews .preview { border-color: $main-border-color; }
+		@include all_form_elements { background: $section-dark-input-bg; }
+    }
+    &.black {
+		background: #333;
+		color: #fff;
 		.three-previews .preview { border-color: $main-border-color; }
 		@include all_form_elements { background: $section-dark-input-bg; }
     }
@@ -116,7 +141,10 @@
 		background: $section-three-background; 
 		@include all_form_elements { background: $section-three-input-bg; }
 	}
-
+    
+    // 
+	//   Header Section
+	// 
 	&.head {
 		z-index: 2;
 		background: $section-head-background;
@@ -132,7 +160,9 @@
 		@include all_form_elements { background: $section-head-input-bg; }
 	}
 	
-	
+	// 
+	//   Speech Section
+	// 
 	&.speech {
         &:after {
             display: block; position: absolute; content: "";
@@ -178,6 +208,50 @@
         }
     }
 	
+	
+	// 
+	//   Rotated Sections
+	// 
+	&.rotated {
+	    z-index: 99;
+	    &:after, &:before {
+            display: none; position: absolute; content: "";
+            margin: 0; padding: 0;
+            height: $section-padding * 1.4;
+            left: -10%; right: -10%;
+            z-index: -1;
+            background: inherit;
+        }
+        &:before { top: -1 * $section-padding / 2; }
+        &:after { bottom: -1 * $section-padding / 2; }
+        
+        &.top-left, &.top-right, &.both-left, &.both-right {
+            &:before { display: block; }
+        }
+        &.bottom-left, &.bottom-right, &.both-left, &.both-right {
+            &:after { display: block; }
+        }
+        
+        
+        &.top-left, &.both-left {
+            &:before { @include rotation( 2 ); }
+        }
+        &.top-right, &.both-right {
+            &:before { @include rotation( -2 ); }
+        }
+        &.bottom-left, &.both-left {
+            &:after { @include rotation( 2 ); }
+        }
+        &.bottom-right, &.both-right {
+            &:after { @include rotation( -2 ); }
+        }
+        
+        
+        
+        // &.top-right:before { @include rotation( -2 ); }
+        // &.bottom-right:after { @include rotation( -2 ); }
+        
+	}
 	
 }
 

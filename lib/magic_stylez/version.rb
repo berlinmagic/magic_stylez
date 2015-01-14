@@ -1,3 +1,3 @@
 module MagicStylez
-  VERSION = "0.0.0.64"
+  VERSION = "0.0.0.67"
 end

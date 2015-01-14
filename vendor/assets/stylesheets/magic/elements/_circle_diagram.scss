@@ -110,7 +110,7 @@ $stripe_color: $gray-light;
 
 $circle_width:  1;
 $stripe_border: .01;
-$stripe_width:  .03;
+$stripe_width:  .05;
 
 $front_color: $white;
 $stripe_color: $gray-light;
@@ -172,9 +172,9 @@ $stripe_color: $gray-light;
 		top: percentage($pos); left: percentage($pos);
 		@include border-radius( 1000px );
 		width: percentage($width); height: percentage($width);
-		line-height: percentage($width);
+		line-height: 100%;
 		text-align: center;
-		font-size: percentage($width / 4);
+		font-size: ($width / 4);
 		font-weight: bold;
 		text-shadow: 0 1px 2px #000;
 		color: #999;

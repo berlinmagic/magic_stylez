@@ -1,0 +1,61 @@
+<div class="section head">
+  <div class="corset">
+    <h1>How to use Magic-Styles for Layouts</h1>
+  </div>
+</div>
+<div class="section">
+  <div class="corset">
+    <p class="loud">Magic-Styles uses 2 main elements for layouts, <em>.section</em> and <em>.corset</em></p>
+    <pre><code>
+      &lt;div class="section .."&gt;
+        &lt;div class="corset .."&gt;
+          .. your section content goes here ...
+        &lt;/div&gt;
+      &lt;/div&gt;
+    </code></pre>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset">
+    <h2>.section</h2>
+    <p class="loud">
+      Sections are the vertical spacer for content <em>(use different classes to change behavior)</em>
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset">
+    <h2>.corset</h2>
+    <p class="loud">
+      Corsets are the horizontal spacer for content <em>(use different classes to change behavior)</em>
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset">
+    <h2>.fullpage-table</h2>
+    <p class="loud">
+      Fullpage-Tables are always fullscreen elements, great for landing pages with fullpage banner
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset">
+    <h2>.layout-table</h2>
+    <p class="loud">
+      They are like <em>row</em>s but with vertical alliment.
+      <br/>
+      So content can be allways middled .. or .. boxes they allways have the same height
+    </p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    <br/>
+  </div>
+</div>

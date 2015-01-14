@@ -16,3 +16,5 @@
 //= require assets
 //= require magic/render_eco
 //= require app
+//- require_self
+

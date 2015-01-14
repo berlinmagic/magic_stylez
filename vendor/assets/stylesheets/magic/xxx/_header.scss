@@ -254,7 +254,8 @@
 	height: 50px;
 	z-index: 23;
 	background: #fff;
-	@include transform( translateZ( 0 ) );
+	// @include transform( translateZ( 0 ) );
+	@include gpu_render;
 	.navbar-toggle { float: left; border: solid 1px transparent; }
 	.nav.navbar-nav {
 		li {

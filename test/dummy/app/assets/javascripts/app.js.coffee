@@ -10,6 +10,54 @@ loadCircles = ->
   else if $('.circle-diagram').length > 0
     window.circleDiagram = new CircleDiagram( circle: $('.circle-diagram') )
 
+build_paralax = (el) ->
+  console.log "build_paralax", el
+  ## Create the background image holder ##
+  el.prepend("<div class='px_bg_holder'></div>")
+  el.find(".px_bg_holder").css(
+    "background-image" : el.css("background-image")
+    "background-position" : "center center"
+    "background-repeat" : "no-repeat"
+    "background-size" : "cover"
+    "position" : "absolute"
+    "height" : $(window).height()
+    "width" : $(window).width()
+  )
+  ## We will remove the background at all ##
+  el.css("background","none")
+  el.css("overflow","hidden")
+  
+  $("body").scroll ->
+    console.log "Scrolling"
+    # bg_pos = $("#app_content").offset().top + el.offset().top;
+    console.log if el.hasClass("responsive-hero") then el.closest(".fullpage-table").position().top else el.position().top
+    bg_pos = ($("#app_content").offset().top + if el.hasClass("responsive-hero") then el.closest(".fullpage-table").position().top else el.position().top)
+    console.log "bg_pos #{ bg_pos }"
+    if bg_pos < $(window).height()
+      bg_pos = bg_pos - (bg_pos / 10)
+    
+    el.find(".px_bg_holder").css(
+      "top" : "#{ bg_pos * -1 }px"
+    )
+  $(window).resize ->
+    $(".px_bg_holder").css(
+      "height" : $(window).height()
+      "width" : $(window).width()
+    )
+
+
+load_paralax = ->
+  if $(".section.image.fixed").length > 0
+    $(".section.image.fixed").each ->
+      build_paralax( $(@) )
+
+  if $(".responsive-hero.fixed-bg").length > 0
+    $(".responsive-hero.fixed-bg").each ->
+      build_paralax( $(@) )
+
+
+
+
 
 
 navigate = ->
@@ -31,12 +79,27 @@ navigate = ->
   lnk.addClass("active")
   $("body").removeClass("aside-on")
   loadCircles()
+  load_paralax()
   $("#current-view-name").text( lnk.text() )
   currentPath = path
     
   
 
 $ ->
+
+  navigate()
+  
+  $(document).scroll ->
+    console.log "window SCROLL"
+  
+  $("body").scroll ->
+    console.log "app_content SCROLL"
+
+  $("#main_template").scroll ->
+    console.log "main_template SCROLL"
+
+
+
   $("body").on "click", "#mobile_header", ->
     $("body").toggleClass("aside-on")
     false

@@ -122,14 +122,18 @@ body, #body, #container, .main-content, .main_content {
 				top: 0; right: auto; bottom: 0; left: 0;
 				margin: 0;
 				background: $dark-bg;
-				@include transform( translateZ( 0 ) );
-				@include transform( translateX( -222px ) ); 
+				// @include transform( translateZ( 0 ) );
+				// @include transform( translateX( -222px ) ); 
+				@include transform( translate(-222px,0) );
 				width: 220px;
 				max-height: none;
 				overflow-y: scroll;
 				@include transition (all 0.7s ease-in-out);
 				.btn { @include horizontal-margin( 15px ); width: auto; }
-				&.on { @include transform( translateX( 0 ) );  }
+				&.on { 
+				    // @include transform( translateX( 0 ) );
+				    @include transform( translate(0,0) );
+				}
 			}
 			
 			&.fixed-top, &.navbar-fixed-top {

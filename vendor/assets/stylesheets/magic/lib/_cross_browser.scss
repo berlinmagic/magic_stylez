@@ -56,6 +56,8 @@
 	// twbs
 	// @include translate3d(0, 0, 0);
 	// bourbon
+	// there is a chrome bug with that ... http://codepen.io/herzflimmern/blog/chrome-bug-with-fixed-background-and-translate3d
 	@include transform(translate3d(0,0,0));
+	// @include transform( translate(0,0) );
 }
 
