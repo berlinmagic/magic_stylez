@@ -64,7 +64,8 @@ module MagicStylez
           target = IO.readlines("#{::Rails.root}/app/assets/stylesheets/corporate/#{this}").map(&:chomp)
           # ---
           diffrents = source - target
-          diffrents.reject! { |stl| stl.match(/^(?!\/\/.*).*\$([a-zA-Z0-9\-\_]*):.*$/) && target.find_index{ |x| x.match(/^(?!\/\/.*).*\$#{ stl.match(/^(?!\/\/.*).*\$([a-zA-Z0-9\-\_]*):.*$/) }:.*$/) } }
+          
+          diffrents.reject! { |stl| stl.match(/^(?!\/\/.*).*\$([a-zA-Z0-9\-\_]*):.*$/) && target.index{ |x| x.match(/^(?!\/\/.*).*\$#{ stl.match(/^(?!\/\/.*).*\$([a-zA-Z0-9\-\_]*):.*$/)[1] }:.*$/) } }
           diffrents = diffrents.map{ |d| "/* #{ (source.index(d) + 1).to_s.rjust(4) } */   #{d}" }
           additional = ""
           if diffrents.any?
