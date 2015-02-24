@@ -17,6 +17,7 @@
 
 
 // load effects
+// @import "magic/effects/noise";
 @import "magic/effects/shadows";  // (generates no code, when unused)
 // @import "magic/effects/reflections";
 
@@ -38,19 +39,23 @@
 // load elements
 // @import "magic/elements/circle_diagram";
 
+
 // load content helper
 // @import "magic/content/aside_nav";
 // @import "magic/content/banner";
 // @import "magic/content/box";
 // @import "magic/content/buttons";
+// @import "magic/content/buttons_nice";
 // @import "magic/content/forms";
 // @import "magic/content/helper";
 // @import "magic/content/icons";
 // @import "magic/content/inputs";
+// @import "magic/content/labels";
 // @import "magic/content/navbar";
 // @import "magic/content/notice";
 // @import "magic/content/panel";
 // @import "magic/content/pix";
+// @import "magic/content/tables";
 
 
 @import "magic/helper/divider";

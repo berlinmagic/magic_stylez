@@ -1,0 +1,57 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Text Helper</h1>
+  </div>
+</div>
+
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4>
+    <code>&middot; &middot; &middot; (always included)</code>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset tight">
+    
+    <h3>Sizes:</h3>
+    
+    <p>Paragraph .. Just a usual p tag</p>
+    
+    <p class="loud">Paragraph .loud</p>
+    
+    <p class="louder">Paragraph .louder</p>
+    
+    <p class="lead">Paragraph .lead</p>
+    
+    <p class="highlight">Paragraph .highlight</p>
+    
+    
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="corset tight">
+    
+    <h3>Styles:</h3>
+    
+    <p>Paragraph .. Just a usual p tag</p>
+    
+    <p class="thin">Paragraph .thin</p>
+    
+    <p class="bold">Paragraph .bold</p>
+    
+    <hr/>
+    
+    <p class="sans">Paragraph .sans</p>
+    <p class="sans thin">Paragraph .sans.thin</p>
+    <p class="sans regular">Paragraph .sans.regular</p>
+    <p class="sans semi">Paragraph .sans.semi</p>
+    <p class="sans bold">Paragraph .sans.bold</p>
+    <p class="sans extra">Paragraph .sans.extra</p>
+    
+    <p class="highlight">.sans .. Needs external fonts! ie: Open-Sans</p>
+    
+  </div>
+</div>

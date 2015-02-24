@@ -1,0 +1,54 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Noise</h1>
+  </div>
+</div>
+
+
+<div class="section brand noise">
+  <div class="corset blank">
+    <p class="loud">.section .brand .noise</p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</div>
+
+<div class="section brand">
+  <div class="corset blank">
+    <p class="loud">.section .brand</p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</div>
+
+
+<div class="section brand blur">
+  <div class="corset blank">
+    <p class="loud">.section .brand .blur</p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</div>
+
+<div class="section image noise">
+  <div class="corset blank">
+    <br/>
+    <h2 class="loud red no-press">.section .image .noise</h2>
+    <br/>
+  </div>
+</div>
+
+<div class="section image">
+  <div class="corset blank">
+    <br/>
+    <h2 class="loud red no-press">.section .image</h2>
+    <br/>
+  </div>
+</div>
+
+<div class="section image blur">
+  <div class="corset blank">
+    <br/>
+    <h2 class="loud red no-press">.section .image .blur</h2>
+    <br/>
+  </div>
+</div>
+
+

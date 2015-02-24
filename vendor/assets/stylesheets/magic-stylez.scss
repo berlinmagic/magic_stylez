@@ -16,6 +16,7 @@
 @import "magic/lib/forms";
 
 // load effects
+@import "magic/effects/noise";
 @import "magic/effects/shadows";
 @import "magic/effects/reflections";
 
@@ -53,6 +54,7 @@
 @import "magic/content/notice";
 @import "magic/content/panel";
 @import "magic/content/pix";
+@import "magic/content/tables";
 
 
 @import "magic/helper/all";

@@ -1,0 +1,152 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Text Helper</h1>
+  </div>
+</div>
+
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4>
+    <code>&middot; &middot; &middot; (always included)</code>
+  </div>
+</div>
+
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    
+    <h3>Media Querries</h3>
+    <pre>
+    <code>
+  @include responsiveStep-xs { /* min 490px */ }
+
+  @include responsiveStep-sm { /* min 768px */ }
+
+  @include responsiveStep-md { /* min 992px */ }
+
+  @include responsiveStep-lg { /* min 1200px */ }
+
+  @include responsiveStep-xl { /* min 1600px */ }
+
+  @include responsiveStep-xxl { /* min 2000px */ }</code>
+    </pre>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    
+    <h3>Media Querries (only)</h3>
+    <pre>
+    <code>
+  @include responsiveStep-xs-only { /* max 767px */ }
+
+  @include responsiveStep-sm-only { /* min 768px . max 991px */ }
+
+  @include responsiveStep-md-only { /* min 992px . max 1199px */ }
+
+  @include responsiveStep-lg-only { /* min 1200px . max 1599px */ }
+
+  @include responsiveStep-xl-only { /* min 1600px . max 1999px */ }</code>
+    </pre>
+  </div>
+</div>
+
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    
+    <p>
+      <code>@include gpu_render;</code>
+      => Render via GPU (for better scrolling performance)
+    </p>
+    
+    <p>
+      <code>@include no_wrap;</code>
+      => No (word) wrapping for texts
+    </p>
+    
+    <p>
+      <code>@include antialiased_text;</code>
+      => Antialized text (for white texts and icons)
+    </p>
+    
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    
+    
+    <p>
+      <code>@include square-size( 2em );</code>
+      => width: 2em; height: 2em;
+    </p>
+    
+    <p>
+      <code>@include squareSize( 12 );</code>
+      => width: 12px; height: 12px;
+    </p>
+    
+    <p>
+      <code>@include horizontal-padding( 5px );</code>
+      => padding-left: 5px; padding-right: 5px;
+    </p>
+    
+    <p>
+      <code>@include vertical-padding( 5px );</code>
+      => padding-top: 5px; padding-bottom: 5px;
+    </p>
+    
+    <p>
+      <code>@include horizontal-margin( 5px );</code>
+      => margin-left: 5px; margin-right: 5px;
+    </p>
+    
+    <p>
+      <code>@include vertical-margin( 5px );</code>
+      => margin-top: 5px; margin-bottom: 5px;
+    </p>
+    
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    
+    <p>
+      <code>@include rotation( 45 );</code>
+      => ratote 45°
+    </p>
+    
+    
+    
+  </div>
+</div>
+
+
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    
+    <p>
+      <code>@include black_and_white_img;</code>
+      => grayscale image
+    </p>
+    
+    <p>
+      <code>@include blur-filter( 2px );</code>
+      => BLUR for images and containers
+    </p>
+    
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset tight">
+    
+    <br/>
+    
+  </div>
+</div>
+

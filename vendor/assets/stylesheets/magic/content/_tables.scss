@@ -1,0 +1,22 @@
+table.table {
+    
+    &.table-middled tr {
+        th, td { 
+            vertical-align: middle;
+            & > * { vertical-align: middle; }
+        }
+    }
+    &.table-left tr {
+        th, td { text-align: left; }
+    }
+    &.table-bg tr {
+        &:nth-child(even) > td { background: #fff; }
+    }
+    &.table-lg tr {
+        th, td { padding: 14px 8px; }
+    }
+    &.table-xl tr {
+        th, td { padding: 20px 8px; }
+    }
+    
+}

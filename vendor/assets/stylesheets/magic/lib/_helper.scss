@@ -3,6 +3,11 @@
 	height: #{ $size }px;
 }
 
+@mixin square-size( $size ) {
+	width: $size;
+	height: $size;
+}
+
 @mixin horizontal-padding( $pad: 5px ) {
 	padding-left: $pad; padding-right: $pad;
 }
