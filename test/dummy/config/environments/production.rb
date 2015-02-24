@@ -14,6 +14,8 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
   
+  config.secret_key_base = "182af0fa132b185514bef41962cc2b9306b6d91586ee811d04df7674aea4b45434dfa16a96afe0eb3bede4e5268af75e3d35f9cf376433af325a43841466fb3c"
+  
   
   config.assets.prefix = "/assets"
   config.action_controller.asset_host = "//berlinmagic.github.io/magic_stylez"
