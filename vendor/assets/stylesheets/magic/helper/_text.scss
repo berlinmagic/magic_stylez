@@ -66,3 +66,12 @@ div, ul, ol, li, p, span {
 ul, ol, li, p, span, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	&.brand { color: $brand-color; }
 }
+
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
+    &.press { margin-bottom: 20px; }
+    &.press-half { margin-bottom: 10px; }
+    &.no-press { margin: 0; }
+}
+
