@@ -33,6 +33,26 @@
         .corset, .container { background: transparent; }
     }
     
+    
+    // 
+	//   Header Section
+	// 
+	&.head {
+		z-index: 2;
+		background: $section-head-background;
+		padding: $section-head-padding 0;
+		h1, h2, .h1, .h2 {
+			margin: 0; padding: 0;
+			line-height: $section-head-line-height;
+			font-size: $section-head-font-size;
+			color: $brand-color;
+			text-align: left;
+			small { color: $section-head-small-color; }
+		}
+		@include all_form_elements { background: $section-head-input-bg; }
+	}
+	
+    
 	// 
 	//   Sections with shine
 	// 
@@ -146,23 +166,6 @@
 		@include all_form_elements { background: $section-three-input-bg; }
 	}
     
-    // 
-	//   Header Section
-	// 
-	&.head {
-		z-index: 2;
-		background: $section-head-background;
-		padding: $section-head-padding 0;
-		h1, h2, .h1, .h2 {
-			margin: 0; padding: 0;
-			line-height: $section-head-line-height;
-			font-size: $section-head-font-size;
-			color: $brand-color;
-			text-align: left;
-			small { color: $section-head-small-color; }
-		}
-		@include all_form_elements { background: $section-head-input-bg; }
-	}
 	
 	// 
 	//   Speech Section
