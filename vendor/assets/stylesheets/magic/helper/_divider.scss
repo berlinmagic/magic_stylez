@@ -1,41 +1,57 @@
 .divider {
-	display: block; position: relative;
+    display: block; position: relative;
 	padding: 0;
-	// margin: floor($line-height-computed / 2) 0;
-	background: inherit;
-	text-align: center;
-	& > * {
-		display: inline-block; position: relative;
-		margin: 0 auto; padding: 0 15px;
-		background: inherit;
-		z-index: 3;
-		&.white { background: $white; }
-		&.dark { background: $dark-bg; }
-		&.main { background: $main-bg; }
-		&.soft { background: $main-bg; }
-	}
-	&:after {
-		display: block; position: absolute; content: "";
-		margin: -1px 0 0; padding: 0;
-		top: 50%; height: 0;
-		left: 0; right: 0;
-		z-index: 1;
-	}
+    overflow: hidden;
+    text-align: center;
+    &, & > * { background: transparent; }
+    & > * {
+        display: block; display: inline-block; position: relative;
+        margin: 0 auto; padding: 0 $divider-horizontal-spacing;
+        
+        &:before, &:after {
+            display: block; position: absolute; content: "";
+            margin: 0 auto; padding: 0;
+            top: 50%;
+            width: 750px; // make it big to fill big screens as well
+        }
+        &:before { left: 100%; }
+        &:after { right: 100%; }
+    }
 }
 
 hr {
 	display: block; position: relative;
-	// margin: floor($line-height-computed / 2) 0;
-	padding: 0;
+	margin: 0; padding: 0;
 	height: 0;
-	border: none;
 }
 
-hr, .divider { margin: $line-height-computed 0; }
-hr, .divider:after {
-	border-top: solid 1px $main-border-color;
-	border-bottom: solid 1px $white;
+
+// margin
+hr, .divider { @include vertical-margin( $divider-vertical-spacing ); }
+
+// line-colors
+hr, .divider > *:before, .divider > *:after {
+    border: none;
+	border-top: solid 1px $divider-top-color;
+	border-bottom: solid 1px $divider-bottom-color;
 }
+
+// sizes
+hr, .divider {
+    
+    &.half, &.tight { @include horizontal-margin( auto ); }
+    &.half { width: 50%; }
+    &.tight { width: 80%; }
+    
+    &.no-press { margin: 0; }
+    &.no-press-top, &.no-top-press { margin-top: 0; }
+    &.no-press-top, &.no-top-press { margin-bottom: 0; }
+    
+    &.half-press, &.press-half { @include vertical-margin( $divider-vertical-spacing / 2 ); }
+    
+    
+}
+
 
 
 .section {

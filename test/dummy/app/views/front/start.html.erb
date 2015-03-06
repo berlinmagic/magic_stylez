@@ -80,6 +80,23 @@ CSS:
     <pre><code>$ rails g magic_stylez:update</code></pre>
     <br/>
     <br/>
+    <h4>Changes when update to <small>0.0.0.78</small>:</h4>
+    <ul>
+      <li>add divider variables in <em>corporate/varriables</em>!</li>
+    </ul>
+    <p>
+      Dividers are completely rewritten and now have transparent backgrounds, so you can place them on any element.
+      <br/>
+      Also some variables added:
+    </p>
+    <ul>
+      <li><code>$divider-horizontal-spacing</code>, <code>$divider-vertical-spacing</code> => spacing</li>
+      <li><code>$divider-top-color</code>, <code>$divider-bottom-color</code> => line-colors for <em>.divider</em> and <em>hr</em></li>
+    </ul>
+    <p>
+      If you update to <strong>>= 0.0.0.78</strong> be sure to run: $ <code>rails g magic_stylez:update</code> !!!
+    </p>
+    <hr/>
     <h4>Changes when update to <small>0.0.0.67</small>:</h4>
     <ul>
       <li>changed some names in <em>corporate/varriables</em>!</li>
@@ -108,6 +125,7 @@ CSS:
     <h3 class="loud">On to / To Do</h3>
     <hr/>
     <p class="highlight"><i class="icomoon-checkbox-unchecked"></i> update gem to work with new bootstrap structure (<em>outside vendor folder</em>)</p>
+    <p class="loud"><i class="icomoon-checkbox-unchecked"></i> npm & bower compatiblity</p>
     <p class="loud"><i class="icomoon-checkbox-unchecked"></i> small paralax plugin to fix fixed-background problem on chrome</p>
     <p class="loud"><i class="icomoon-checkbox-unchecked"></i> optimize code, variables</p>
     <p class="loud"><i class="icomoon-checkbox-unchecked"></i> clean up unused or double csss</p>

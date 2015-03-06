@@ -15,16 +15,21 @@
   <div class="corset center_text">
     <p class="loud press">Divider are a nice hr-like text divider:</p>
     
-    <div class="divider press">
+    <div class="divider">
       <span class="name">I'm a divider :)</span>
     </div>
     
-    <p class="loud press">There are many usecases for dividers</p>
+    <p class="loud">There are many usecases for dividers</p>
     
-    <div class="divider half press">
+    <div class="divider half">
       <span class="name">I'm a .half divider</span>
     </div>
     
+    <p class="loud">There are many usecases for dividers</p>
+    
+    <div class="divider tight">
+      <span class="name">I'm a .tight divider</span>
+    </div>
 
     
   </div>
@@ -67,6 +72,10 @@
       </div>
     </div>
     
+    <div class="divider tight">
+      <span class="name">isn't it nice</span>
+    </div>
+    
   </div>
 </div>
 
@@ -79,11 +88,139 @@
 
 <div class="section shine-top">
   <div class="corset">
+    <p>In HTML</p>
     <pre>
       <code>
   &lt;div class=&quot;divider&quot;&gt;<br/>    &lt;span&gt;or&lt;/span&gt;<br/>  &lt;/div&gt;
+  
+  - or -
+  
+  &lt;div class=&quot;divider&quot;&gt;<br/>    &lt;h2&gt;Huge Divider&lt;/h2&gt;<br/>  &lt;/div&gt;
+  
+  ( all text ellements: h1 h2 h3 h4 h5 h6 p span ... )
       </code>
     </pre>
-    <p class="loud"><strong>Parent box needs background!</strong></p>
+    <br/>
+    <p>Change colors depending on parent <small>SASS</small></p>
+    <pre>
+      <code>
+  .your-colored-parent {
+    hr, .divider > *:before, .divider > *:after {
+      border-top: solid 1px rgba(0,0,0,.23);
+      border-bottom: solid 1px rgba(255,255,255,.42);
+    }
+    .divider > * { color: red; }
+  }
+      </code>
+    </pre>
+    <br/>
+    <br/>
+    <p class="loud crossed" data-text="Not needed for v0.0.0.78 upwards">Parent box needs background!</p>
+    
+  </div>
+</div>
+
+<div class="section bright">
+  <div class="corset">
+    <h3>It is transparent! so background doesn't matter <small>after v.0.0.0.78</small></h3>
+  </div>
+</div>
+
+<div class="section dark">
+  <div class="corset">
+    <h4>.dark</h4>
+    <div class="divider tight">
+      <span>.divider.tight <small>span</small></span>
+    </div>
+    <div class="divider">
+      <h3>.divider <small>h3</small></h3>
+    </div>
+    <div class="divider half">
+      <p class="lead">.divider.half <small>p.lead</small></p>
+    </div>
+  </div>
+</div>
+<div class="section bright">
+  <div class="corset">
+    <h4>.bright</h4>
+    <div class="divider tight">
+      <span>.divider.tight <small>span</small></span>
+    </div>
+    <div class="divider">
+      <h3>.divider <small>h3</small></h3>
+    </div>
+    <div class="divider half">
+      <p class="lead">.divider.half <small>p.lead</small></p>
+    </div>
+  </div>
+</div>
+<div class="section brand">
+  <div class="corset">
+    <h4>.brand</h4>
+    <div class="divider tight">
+      <span>.divider.tight <small>span</small></span>
+    </div>
+    <div class="divider">
+      <h3>.divider <small>h3</small></h3>
+    </div>
+    <div class="divider half">
+      <p class="lead">.divider.half <small>p.lead</small></p>
+    </div>
+  </div>
+</div>
+<div class="section one">
+  <div class="corset">
+    <h4>.one</h4>
+    <div class="divider tight">
+      <span>.divider.tight <small>span</small></span>
+    </div>
+    <div class="divider">
+      <h3>.divider <small>h3</small></h3>
+    </div>
+    <div class="divider half">
+      <p class="lead">.divider.half <small>p.lead</small></p>
+    </div>
+  </div>
+</div>
+<div class="section two">
+  <div class="corset">
+    <h4>.two</h4>
+    <div class="divider tight">
+      <span>.divider.tight <small>span</small></span>
+    </div>
+    <div class="divider">
+      <h3>.divider <small>h3</small></h3>
+    </div>
+    <div class="divider half">
+      <p class="lead">.divider.half <small>p.lead</small></p>
+    </div>
+  </div>
+</div>
+<div class="section three">
+  <div class="corset">
+    <h4>.three</h4>
+    <div class="divider tight">
+      <span>.divider.tight <small>span</small></span>
+    </div>
+    <div class="divider">
+      <h3>.divider <small>h3</small></h3>
+    </div>
+    <div class="divider half">
+      <p class="lead">.divider.half <small>p.lead</small></p>
+    </div>
+  </div>
+</div>
+<div class="section blank">
+  <div class="corset">
+    <h4>.blank</h4>
+    <div class="divider tight">
+      <span>.divider.tight <small>span</small></span>
+    </div>
+    <div class="divider">
+      <h3>.divider <small>h3</small></h3>
+    </div>
+    <div class="divider half">
+      <p class="lead">.divider.half <small>p.lead</small></p>
+    </div>
   </div>
 </div>

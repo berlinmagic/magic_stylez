@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <link href="//berlinmagic.github.io/magic_stylez/assets/application-9408a16d119be79c9a4a47898b04dbe8.css" media="all" rel="stylesheet" />
-  <script src="//berlinmagic.github.io/magic_stylez/assets/application-330744bbd1448ba07f0ba8f2234916b8.js"></script>
+  <link href="//berlinmagic.github.io/magic_stylez/assets/application-054f69d51cbc524a78885a902ecbec30.css" media="all" rel="stylesheet" />
+  <script src="//berlinmagic.github.io/magic_stylez/assets/application-31a5146a73f26bc3449bb52eba4c89f2.js"></script>
   <meta content="authenticity_token" name="csrf-param" />
-<meta content="lRlmtexXyyHQntHOnexYTD29DqOzeRvtH8/DhTrbqHg=" name="csrf-token" />
+<meta content="dE8f09ah8NHH2L12Dt3l6c112i2pWIF159rfTLS/zNA=" name="csrf-token" />
   <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
   <link href="//berlinmagic.github.io/magic_stylez/assets/ico/favicon-f1706407301f788c54691b6995f60a8f.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
   <link href="//berlinmagic.github.io/magic_stylez/assets/ico/favicon-f34b54df445838a4f6bdac98bd904570.png" rel="shortcut icon" type="image/png" />
@@ -190,6 +190,23 @@ CSS:
     <pre><code>$ rails g magic_stylez:update</code></pre>
     <br/>
     <br/>
+    <h4>Changes when update to <small>0.0.0.78</small>:</h4>
+    <ul>
+      <li>add divider variables in <em>corporate/varriables</em>!</li>
+    </ul>
+    <p>
+      Dividers are completely rewritten and now have transparent backgrounds, so you can place them on any element.
+      <br/>
+      Also some variables added:
+    </p>
+    <ul>
+      <li><code>$divider-horizontal-spacing</code>, <code>$divider-vertical-spacing</code> => spacing</li>
+      <li><code>$divider-top-color</code>, <code>$divider-bottom-color</code> => line-colors for <em>.divider</em> and <em>hr</em></li>
+    </ul>
+    <p>
+      If you update to <strong>>= 0.0.0.78</strong> be sure to run: $ <code>rails g magic_stylez:update</code> !!!
+    </p>
+    <hr/>
     <h4>Changes when update to <small>0.0.0.67</small>:</h4>
     <ul>
       <li>changed some names in <em>corporate/varriables</em>!</li>
@@ -218,6 +235,7 @@ CSS:
     <h3 class="loud">On to / To Do</h3>
     <hr/>
     <p class="highlight"><i class="icomoon-checkbox-unchecked"></i> update gem to work with new bootstrap structure (<em>outside vendor folder</em>)</p>
+    <p class="loud"><i class="icomoon-checkbox-unchecked"></i> npm & bower compatiblity</p>
     <p class="loud"><i class="icomoon-checkbox-unchecked"></i> small paralax plugin to fix fixed-background problem on chrome</p>
     <p class="loud"><i class="icomoon-checkbox-unchecked"></i> optimize code, variables</p>
     <p class="loud"><i class="icomoon-checkbox-unchecked"></i> clean up unused or double csss</p>

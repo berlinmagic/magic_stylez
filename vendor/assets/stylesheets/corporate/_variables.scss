@@ -232,6 +232,17 @@ $container-lg:                 $container-large-desktop !default;
 
 
 
+
+//== Divider
+//
+// -----|< - >|your text|< - >|------
+$divider-horizontal-spacing:            20px !default;
+// for .divider and hr elements
+$divider-vertical-spacing:              $line-height-computed !default;
+$divider-top-color:                     rgba(0,0,0,.23) !default;
+$divider-bottom-color:                  rgba(255,255,255,.65) !default;
+
+
 //== Application Notice
 //
 //##

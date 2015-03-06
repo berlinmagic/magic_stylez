@@ -782,3 +782,20 @@ $component-offset-horizontal: 180px !default;
 // # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
 
+
+
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+// magic_styles v-0.0.0.78 additional variables (2015-03-06 11:41)
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+// line  |   style
+/*  236 */   //== Divider
+/*  238 */   // -----|< - >|your text|< - >|------
+/*  239 */   $divider-horizontal-spacing:            20px !default;
+/*  240 */   // for .divider and hr elements
+/*  241 */   $divider-vertical-spacing:              $line-height-computed !default;
+/*  242 */   $divider-top-color:                     rgba(0,0,0,.23) !default;
+/*  243 */   $divider-bottom-color:                  rgba(255,255,255,.65) !default;
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+
