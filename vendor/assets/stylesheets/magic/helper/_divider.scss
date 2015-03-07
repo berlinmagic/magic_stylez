@@ -5,17 +5,23 @@
     text-align: center;
     &, & > * { background: transparent; }
     & > * {
-        display: block; display: inline-block; position: relative;
-        margin: 0 auto; padding: 0 $divider-horizontal-spacing;
-        
+        position: relative;
+        margin: 0 auto;
+        // do not disturb button padding
+        &:not(.btn) { padding: 0; }
+        &:not(.btn-divided), &:not(.btn-splited) { display: block; display: inline-block; }
+        &.btn-divided, &.btn-splited {
+            max-width: 50%;
+            margin: 0 auto;
+        }
         &:before, &:after {
             display: block; position: absolute; content: "";
-            margin: 0 auto; padding: 0;
+            margin: 0; padding: 0;
             top: 50%;
             width: 750px; // make it big to fill big screens as well
         }
-        &:before { left: 100%; }
-        &:after { right: 100%; }
+        &:before { left: 100%; margin-left: $divider-horizontal-spacing; }
+        &:after { right: 100%; margin-right: $divider-horizontal-spacing; }
     }
 }
 

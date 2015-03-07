@@ -122,6 +122,41 @@
 
 <div class="section bright">
   <div class="corset">
+    <h3>Content element doesn't matter .. also buttons are fine <small>after v.0.0.0.79</small></h3>
+  </div>
+</div>
+<div class="section">
+  <div class="corset">
+    <div class="divider tight">
+      <button class="btn btn-success">save</button>
+    </div>
+    <div class="divider tight">
+      <button class="btn btn-default btn-blank btn-xs">show more ..</button>
+    </div>
+    <div class="divider">
+      <button class="btn btn-primary btn-blur btn-lg btn-width">Big Fat Button!</button>
+    </div>
+    <div class="divider">
+        <div class="btn btn-success btn-lg btn-splited">
+          <span>.btn-splited</span>
+          <span class="icn">
+            <i class="magicons-caret-right"></i>
+          </span>
+        </div>
+    </div>
+    <div class="divider tight">
+        <div class="btn btn-danger btn-blank btn-sm btn-divided">
+          <span>.btn-divided</span>
+          <span class="icn">
+            <i class="magicons-caret-right"></i>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="section bright">
+  <div class="corset">
     <h3>It is transparent! so background doesn't matter <small>after v.0.0.0.78</small></h3>
   </div>
 </div>
