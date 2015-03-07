@@ -13093,23 +13093,30 @@ table.table.table-xl tr th, table.table.table-xl tr td {
   .divider, .divider > * {
     background: transparent; }
   .divider > * {
-    display: block;
-    display: inline-block;
     position: relative;
-    margin: 0 auto;
-    padding: 0 20px; }
+    margin: 0 auto; }
+    .divider > *:not(.btn) {
+      padding: 0; }
+    .divider > *:not(.btn-divided), .divider > *:not(.btn-splited) {
+      display: block;
+      display: inline-block; }
+    .divider > *.btn-divided, .divider > *.btn-splited {
+      max-width: 50%;
+      margin: 0 auto; }
     .divider > *:before, .divider > *:after {
       display: block;
       position: absolute;
       content: "";
-      margin: 0 auto;
+      margin: 0;
       padding: 0;
       top: 50%;
       width: 750px; }
     .divider > *:before {
-      left: 100%; }
+      left: 100%;
+      margin-left: 20px; }
     .divider > *:after {
-      right: 100%; }
+      right: 100%;
+      margin-right: 20px; }
 
 hr {
   display: block;
@@ -13459,7 +13466,6 @@ body.main_template {
   padding: 40px 0 0 0; }
 
 #app_content {
-  display: block;
   display: block;
   position: relative;
   width: 100%;
