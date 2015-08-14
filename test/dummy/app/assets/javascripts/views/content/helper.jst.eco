@@ -1,0 +1,155 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Content-Helper</h1>
+  </div>
+</div>
+
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4> 
+    <code>@import "magic/content/helper";</code>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">
+    
+    <h2>Colors:</h2>
+    
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Color</th>
+          <th>Background</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for clr in ["black", "gray-darker", "gray-dark", "gray", "gray-light", "gray-lighter", "gray-soft", "gray-softer", "white"]: %>
+        <tr>
+          <td class="<%= clr %>">.<%= clr %></td>
+          <td class="bg-<%= clr %>">.bg-<%= clr %></td>
+        </tr>
+        <% end %>
+        <% for clr in ["blue-soft", "blue-lighter", "blue-light", "blue", "blue-dark", "red", "red-dark", "yellow", "orange", "pink", "purple", "violett"]: %>
+        <tr>
+          <td class="<%= clr %>">.<%= clr %></td>
+          <td class="bg-<%= clr %>">.bg-<%= clr %></td>
+        </tr>
+        <% end %>
+        <% for clr in ["brand-color", "brand-primary", "brand-success", "brand-info", "brand-warning", "brand-danger", "brand-one", "brand-two", "brand-three"]: %>
+        <tr>
+          <td class="<%= clr %>">.<%= clr %></td>
+          <td class="bg-<%= clr %>">.bg-<%= clr %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+    
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">
+    
+    <h2>Distance-Helper:</h2>
+    
+    <p>
+      <code>.press</code>
+      => Margin-Bottom: 20px
+    </p>
+    <p>
+      <code>.half-press / .press-half</code>
+      => Margin-Bottom: 10px
+    </p>
+    <br/>
+    <p>
+      <code>.no-press</code>
+      => Margin-Bottom: 0
+    </p>
+    <p>
+      <code>.col-press</code>
+      => Margin-Bottom: 30px
+    </p>
+    <br/>
+    <p>
+      <code>.press-top</code>
+      => Margin-Top: 20px
+    </p>
+    <p>
+      <code>.press-left</code>
+      => Margin-Left: 20px
+    </p>
+    <p>
+      <code>.press-right</code>
+      => Margin-Right: 20px
+    </p>
+    <br/>
+    <p>
+      <code>.no-press-top</code>
+      => Margin-Top: 0
+    </p>
+    <p>
+      <code>.no-press-left</code>
+      => Margin-Left: 0
+    </p>
+    <p>
+      <code>.no-press-right</code>
+      => Margin-Right: 0
+    </p>
+    
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">
+    
+    <h2>Size-Helper:</h2>
+    
+    <br/>
+    
+    <h4>Padding <small>steps: 0, 5, 10, 15, 20, 30, 40, 50</small></h4>
+    
+    <p>
+      <code>.padding_5</code>
+      => Padding of 5px
+    </p>
+    <p>
+      <code>.v_padding_20</code>
+      => Vertical-Padding of 20px
+    </p>
+    <p>
+      <code>.h_padding_10</code>
+      => Horizonbtal-Padding of 10px
+    </p>
+    
+    <br/>
+    
+    <h4>Margin <small>steps: 0, 5, 10, 15, 20, 30, 40, 50</small></h4>
+    
+    <p>
+      <code>.margin_5</code>
+      => Margin of 5px
+    </p>
+    <p>
+      <code>.v_margin_20</code>
+      => Vertical-Margin of 20px
+    </p>
+    <p>
+      <code>.h_margin_10</code>
+      => Horizonbtal-Margin of 10px
+    </p>
+    <br/>
+    <p>
+      <code>.r_40</code>
+      => Right-Margin of 40px
+    </p>
+    <p>
+      <code>.l_50</code>
+      => Left-Margin of 50px
+    </p>
+    
+  </div>
+</div>
+
+
+

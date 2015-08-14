@@ -280,28 +280,28 @@
 		
 		
 		// kill margin of child elements, to avoid unwanted sizing
-		&, & > .corset, & > .container {
-			@if $section-reset-child-spacing == true {
-				& > * {
-					&:first-child { margin-top: 0; }
-					&:last-child { margin-bottom: 0; }
-				}
-			}
-			@if $section-reset-row-child-spacing == true {
-				& > *, & > .row, & > .row > *, & > .row > * > * {
-					&:first-child { margin-top: 0; }
-					&:last-child { margin-bottom: 0; }
-				}
-				& > .row:first-child > * { margin-top: 0; padding-top: 0; }
-				& > .row:last-child > * { margin-bottom: 0; padding-bottom: 0; }
-			}
-			@if $section-reset-table-child-spacing == true {
-				& > .layout-table > * > *, & > .inline_table > * > * {
-					&:first-child { margin-top: 0; }
-					&:last-child { margin-bottom: 0; }
-				}
-			}
-		}
+		// &, & > .corset, & > .container {
+		// 	@if $section-reset-child-spacing == true {
+		// 		& > * {
+		// 			&:first-child { margin-top: 0; }
+		// 			&:last-child { margin-bottom: 0; }
+		// 		}
+		// 	}
+		// 	@if $section-reset-row-child-spacing == true {
+		// 		& > *, & > .row, & > .row > *, & > .row > * > * {
+		// 			&:first-child { margin-top: 0; }
+		// 			&:last-child { margin-bottom: 0; }
+		// 		}
+		// 		& > .row:first-child > * { margin-top: 0; padding-top: 0; }
+		// 		& > .row:last-child > * { margin-bottom: 0; padding-bottom: 0; }
+		// 	}
+		// 	@if $section-reset-table-child-spacing == true {
+		// 		& > .layout-table > * > *, & > .inline_table > * > * {
+		// 			&:first-child { margin-top: 0; }
+		// 			&:last-child { margin-bottom: 0; }
+		// 		}
+		// 	}
+		// }
 		
 		
 	}

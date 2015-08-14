@@ -71,6 +71,11 @@
       => Antialized text (for white texts and icons)
     </p>
     
+    <p>
+      <code>@include mobile_app_improvements;</code>
+      => Antialized text (for white texts and icons)
+    </p>
+    
   </div>
 </div>
 

@@ -41,6 +41,7 @@ body {
 	
 }
 
+.testtestest { display: block; position: relative; }
 
 #aside {
 	// @mixin single_shine( $color, $times: 3, $position: right, $width: 5px, $blur: 5px, $size: 0, $corner: 100 )
@@ -332,6 +333,20 @@ ul.list {
 		}
 	}
 }
+
+
+// text-helper-samples
+
+.text_outline_sample {
+    @include text_outline( #000, 1px );
+}
+.colored_inset_font_sample {
+    @include colored_inset_font( rgba(255,255,255,90), rgba(0,0,0,.50) );
+}
+.inset_font_sample {
+    @include inset_font( 90, 50);
+}
+
 
 
 

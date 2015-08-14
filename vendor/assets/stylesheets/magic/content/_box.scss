@@ -15,6 +15,8 @@
 	&.no-press { margin: 0; }
 	&.blur { background: rgba(255,255,255,.42); }
 	
+	img { max-width: 100%; }
+	
 	& > .pic {
 		margin: 0 10px 0 -100px;
 		width: 100px;
@@ -41,10 +43,220 @@
 	.pic + .header { padding-left: 0; margin-left: 10px; }
 	
 	& > .body {
-		padding: 10px 10px 5px;
+		padding: 10px;
 	}
-}
 
+
+	&.sign {
+		padding: 50px 50px 20px;
+		margin: 0 auto;
+		max-width: 800px;
+		text-align: center;
+		@include box-shadow(  0 5px 5px 0 rgba(0,0,0,.2) );
+	    h1 { text-shadow: none; }
+	    h2 { font-weight: normal; }
+	    p, address {
+	        display: block; position: relative;
+            margin-bottom: 20px;
+            font-style: normal;
+            line-height: 20px;
+            color: #aaa;
+	    }
+		.screw {
+			display: block; position: absolute;
+			@include squareSize(40);
+			background: #ccc;
+			background-color: transparent;
+    		// background-image: image-url('abstandhalter.png');
+    		background-position: center center;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+			@include box-shadow( inset 0 0 0 1px #ddd, inset 0 0 0 2px #aaa, inset 0 0 0 3px #ddd, inset 0 0 0 4px #aaa, inset 0 0 0 5px #ddd, inset 0 0 0 6px #aaa);
+			@include border-radius(100px);
+			&.tl { top: 10px; left: 10px; }
+			&.tr { top: 10px; right: 10px; }
+			&.bl { bottom: 10px; left: 10px; }
+			&.br { bottom: 10px; right: 10px; }
+		}
+		& > .body {
+		    padding: 20px 50px;
+		    margin: 0 auto;
+		    max-width: 550px;
+		}
+	}
+	&.paper {
+		padding: 70px 60px 80px 80px;
+		min-height: 650px;
+		h1 {
+		    font-size: 24px; 
+		    font-weight: 600; 
+		    text-align: center; 
+		    margin: 0 0 50px; 
+		    &:before, &:after {
+		        content: " - ";
+		    }
+		}
+		h2 {
+			margin: 50px 0 10px;
+			font-size: 18px;
+			font-weight: 600; 
+		}
+		h3 { font-size: 20px; }
+		h4 { font-size: 18px; }
+		& > *:first-child { margin-top: 0; }
+	}
+	
+	&.booking {
+	    padding: 0;
+	    .header {
+	        padding: 10px;
+	        background: #ebf5f6;
+	        color: $brand-color;
+	        .numbers {
+	            display: block; position: relative;
+	            float: right;
+	            & > * {
+	                display: block; display: inline-block; position: relative;
+	                width: 30px; height: 30px; line-height: 28px;
+	                text-align: center;
+	                border: solid 1px #fff;
+	                @include border-radius( 30px );
+	                font-size: 16px;
+	                margin: 0 5px;
+	            }
+	            &.two > .one, &.three > .one, &.three > .two, &.four > .one, &.four > .two, &.four > .three {
+	                &:before {
+	                    display: block; position: absolute;
+	                    top: 0; right: 0; bottom: 0; left: 0;
+	                    background: #fff;
+	                    content: "\e625";
+	                    font-family: 'icomoon';
+	                    color: $brand-color;
+	                    @include border-radius( 30px );
+	                    font-size: 26px;
+	                    line-height: 30px;
+	                }
+	            }
+	        }
+	    }
+	    .subheader {
+	        padding: 5px 10px;
+	        font-weight: bold;
+	    }
+	    .body {
+	        &.big { padding: 30px; }
+	        &.hard-top { border-top: 1px solid $main-border-color; }
+	        &.tight { padding: 4px; }
+	        &.total_amount {
+	            padding: 10px;
+	            .overview_calc {
+	                border-top: 1px solid rgba(255,255,255,.55);
+	                border-bottom: 1px solid $main-border-color;
+	                &:first-child { border-top: none; }
+	                &:last-child { border-bottom: none; }
+	                padding: 5px;
+	                .brand { color: $brand-color; text-shadow: 0 1px 0 #fff; font-weight: normal; }
+	            }
+	        }
+	    }
+	    form.form {
+	        hr, .divider:after {
+                border-top: solid 1px $main-border-color;
+                border-bottom: solid 1px white;
+            }
+	    }
+	    .dark-body {
+	        padding: 5px 0;
+	        background: #f4f4f4;
+	        border-top: solid 1px $main-border-color;
+	        border-bottom: solid 1px $main-border-color;
+	        & > .row {
+	            @include horizontal-margin( 0 );
+	            margin-bottom: 1px;
+	            padding: 3px 0;
+	        }
+	        .row + .row {
+	            @include box-shadow( 0 -11px 0px -10px #ccc );
+	        }
+	    }
+	}
+	
+	&.product {
+	    text-align: center;
+	    .product-name {
+	        font-size: 20px;
+	        font-weight: bold;
+	        line-height: 26px;
+	        color: #222;
+	    }
+	    .product-facts {
+	        font-size: 14px;
+	        font-weight: normal;
+	        line-height: 18px;
+	        color: #777;
+	    }
+	}
+	
+	&.blank { background: transparent; }
+	
+	&.setting {
+	    padding: 0;
+	    
+	    .header {
+	        padding: 5px 10px;
+	        margin: 0;
+	        line-height: 30px;
+	        font-size: 16px;
+	        font-weight: 400;
+	        background: #e5e5e5;
+	        color: #333;
+	        i, i:before { color: transparentize($blue, 0.5); font-size: 16px; }
+	        h1, h2, h3 {
+	            color: #333;
+	            font-size: 22px;
+	        }
+	        p {
+	            font-size: 13px;
+	            color: #777;
+	        }
+	    }
+	    .sub-header {
+	        padding: 10px;
+	        background: #f4f4f4;
+	    }
+	    .body {
+	        padding: 10px;
+	        &.flat-top { padding-top: 0; }
+	        &.fat { padding: 20px; }
+	        & > *:last-child { margin-bottom: 0 !important; }
+	    }
+	    
+	    table.table {
+	        th, td { vertical-align: middle; }
+	    }
+	}
+	
+	.header {
+	    .btn.pull-right + .btn.pull-right { margin-right: 10px; }
+	}
+	.footer {
+	    border-top: solid 1px #cccccc;
+	    padding: 10px;
+	    .btn { margin-top: 0; margin-bottom: 0; }
+	    .row > *, .row > * { margin-bottom: 0; }
+	}
+	
+	.preview_pic {
+	    margin: -10px -10px 10px -10px;
+	    padding: 20px;
+	    color: #fff;
+	}
+	
+	&.press {
+	    margin-bottom: 20px !important;
+	}
+	
+}
 
 
 

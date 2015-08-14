@@ -35,19 +35,19 @@
 }
 
 
-.press { margin-bottom: 20px; }
-.half-press, .press-half { margin-bottom: 10px; }
-.no-press { margin-bottom: 0; }
-.col-press { margin-bottom: 30px; }
+.press { margin-bottom: 20px !important; }
+.half-press, .press-half { margin-bottom: 10px !important; }
+.no-press { margin-bottom: 0 !important; }
+.col-press { margin-bottom: 30px !important; }
 
-.press-top { margin-top: 20px; }
-.press-left { margin-left: 20px; }
-.press-right { margin-right: 20px; }
+.press-top { margin-top: 20px !important; }
+.press-left { margin-left: 20px !important; }
+.press-right { margin-right: 20px !important; }
 
 
-.no-press-top { margin-top: 0; }
-.no-press-left { margin-left: 0; }
-.no-press-right { margin-right: 0; }
+.no-press-top { margin-top: 0 !important; }
+.no-press-left { margin-left: 0 !important; }
+.no-press-right { margin-right: 0 !important; }
 
 
 

@@ -1,0 +1,96 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Boxes</h1>
+  </div>
+</div>
+
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4> 
+    <code>@import "magic/content/banner";</code>
+  </div>
+</div>
+
+<div class="section hard-top">
+  
+  <div class="banner-box responsive-hero with-footer with-header fill   berlin">
+    <div class="banner-header brand-color-text">
+      <div class="corset">
+        <h1>.banner-box / .responsive-hero .. .berlin</h1>
+      </div>
+    </div>
+  
+    <div class="banner-content">
+      <div class="corset">
+        <p class="loud">This is a banner-box or responsive-hero box for big content .. can contain .banner-conter, .banner-header and banner-footer.</p>
+      </div>
+    </div>
+  
+    <div class="banner-footer" id="sign_up_banner">
+      <div class="corset">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+            <!--<a href="#" class="btn btn-success btn-block btn-lg">Sign up now</a>-->
+            <button class="btn btn-success btn-block help_arrow" data-text="Go click me!">
+              Click Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+</div>
+
+<div class="section hard-top">
+  
+  <div class="banner-box responsive-hero blue-bg white-text">
+    <div class="banner-header">
+      <div class="corset">
+        <h1>.banner-box / .responsive-hero .. .berlin</h1>
+      </div>
+    </div>
+  
+    <div class="banner-content">
+      <div class="corset">
+        <p class="loud">This is a banner-box or responsive-hero box for big content .. can contain .banner-conter, .banner-header and banner-footer.</p>
+      </div>
+    </div>
+  
+    <div class="banner-footer" id="sign_up_banner">
+      <div class="corset">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+            <!--<a href="#" class="btn btn-success btn-block btn-lg">Sign up now</a>-->
+            <button class="btn btn-success btn-block help_arrow" data-text="Go click me!">
+              Click Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+</div>
+
+<div class="section hard-top">
+  
+  <div class="banner-box responsive-hero brand-two-bg gray-text">
+    
+    <div class="banner-content">
+      <div class="corset">
+        <p class="loud">This is a banner-box or responsive-hero box for big content .. can contain .banner-conter, .banner-header and banner-footer.</p>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="section hard-top">
+  
+  
+  
+</div>

@@ -22,8 +22,146 @@
       <div class="body">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
+      <div class="footer">
+        <button class="btn btn-success btn-blank">
+          continue
+        </button>
+        <button class="btn btn-default btn-blank">
+          cancel
+        </button>
+      </div>
     </div>
     
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">
+    
+    <div class="row">
+      <% for x in ["", "blank", "shadow"]: %>
+        <div class="col-sm-4">
+          <div class="box <%= x %>">
+            <div class="header">
+              <h2>Box.<%= x %></h2>
+            </div>
+            <div class="body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="footer">
+              Box-Footer
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    
+    <br/>
+    
+    <div class="row">
+      <% for x in ["blur", "setting", "booking"]: %>
+        <div class="col-sm-4">
+          <div class="box <%= x %>">
+            <div class="header">
+              <h2>Box.<%= x %></h2>
+            </div>
+            <div class="body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="footer">
+              Box-Footer
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    
+    
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">    
+    
+    <div class="row">
+      <% for x in [1..3]: %>
+        <div class="col-sm-4">
+          <div class="box product">
+            <div class="body">
+              <img class="responsive" src="http://lorempixel.com/400/300/technics/<%= x %>" alt="White 43">
+              <div class="clearfix"></div>
+              <div class="product-name">
+                Product <%= x %>
+              </div>
+              <div class="product-facts">
+                some details you should know
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">
+    
+    <div class="box sign">
+      <div class="header">
+        <h2>Box.sign</h2>
+      </div>
+      <div class="body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="footer">
+        Box-Footer
+      </div>
+    </div>
+    
+    <br/>
+    <br/>
+    
+    <div class="box sign">
+          <div class="screw tl"></div>
+          <div class="screw tr"></div>
+          <div class="screw bl"></div>
+          <div class="screw br"></div>
+          <div class="body">
+        
+            <div class="corset">
+              <h1>- Headline -</h1>
+              <br>
+              <br>
+              <h3>More Info</h3>
+              <br/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <br>
+              <br>
+              <h2 class="brand">www.example.com</h2>
+            </div>
+          </div>
+        </div>
+    
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">
+    
+    <div class="box paper">
+      <div class="header">
+        <h2>Box.paper</h2>
+      </div>
+      <div class="body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="footer">
+        Box-Footer
+      </div>
+    </div>
     
   </div>
 </div>

@@ -11,7 +11,58 @@
   </div>
 </div>
 
-<div class="section">
+
+<div class="section hard-top">
+  <div class="corset tight">
+    
+    <h3>SASS-Helper:</h3>
+    
+    <p>
+      <code>@include text_tags { ... };</code> 
+      => h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a { ... }
+    </p>
+    <p>
+      <code>@include text-tags { ... };</code> 
+      => h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, span, a { ... }
+    </p>
+    
+    <br/>
+    
+    <p>
+      <code>@include text_outline( $color, $blur );</code><br/>
+      i.e.: <i><code class="brand">@include text_outline( #000, 1px );</code></i>
+      <br/>
+      <div class="box bg-gray-lighter">
+        <span class="text_outline_sample loud yellow">text_outline sample</span>
+      </div>
+    </p>
+    
+    <p>
+      <code>@include colored_inset_font( $white, $black );</code><br/>
+      i.e.: <i><code class="brand">@include colored_inset_font( rgba(255,255,255,90), rgba(0,0,0,.50) );</code></i>
+      <br/>
+      <div class="box bg-gray-lighter">
+        <span class="colored_inset_font_sample loud yellow">colored_inset_font sample</span>
+      </div>
+    </p>
+    
+    <p>
+      <code>@include inset_font( $white, $black );</code><br/>
+      i.e.: <i><code class="brand">@include inset_font( 90, 50);</code></i>
+      <br/>
+      <div class="box bg-gray-lighter">
+        <span class="inset_font_sample loud yellow">inset_font sample</span>
+      </div>
+    </p>
+    
+    
+    
+  </div>
+</div>
+
+
+
+<div class="section hard-top">
   <div class="corset tight">
     
     <h3>Sizes:</h3>
@@ -31,7 +82,7 @@
 </div>
 
 
-<div class="section">
+<div class="section hard-top">
   <div class="corset tight">
     
     <h3>Styles:</h3>
@@ -42,7 +93,7 @@
     
     <p class="bold">Paragraph .bold</p>
     
-    <hr/>
+    <br/>
     
     <p class="sans">Paragraph .sans</p>
     <p class="sans thin">Paragraph .sans.thin</p>

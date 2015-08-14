@@ -1,17 +1,56 @@
+$appColorz: (
+    brand-color: $brand-color,
+    brand-one: $brand-one,
+    brand-two: $brand-two,
+    brand-three: $brand-three,
+    brand-primary: $brand-primary,
+    brand-success: $brand-success,
+    brand-info: $brand-info,
+    brand-warning: $brand-warning,
+    brand-danger: $brand-danger,
+    
+    black: $black,
+    gray-darker: $gray-darker,
+    gray-dark: $gray-dark,
+    gray: $gray,
+    gray-light: $gray-light,
+    gray-lighter: $gray-lighter,
+    gray-soft: $gray-soft,
+    gray-softer: $gray-softer,
+    white: $white,
+    
+    blue-soft: $blue-soft,
+    blue-lighter: $blue-lighter,
+    blue-light: $blue-light,
+    blue: $blue,
+    blue-dark: $blue-dark,
+    green: $green,
+    red: $red,
+    red-dark: $red-dark,
+    yellow: $yellow,
+    orange: $orange,
+    pink: $pink,
+    purple: $purple,
+    violett: $violett
+);
+
 //## Header / Banner
 .banner-footer, .banner-header 
 {
 	display: block; position: relative;
 	margin: 0; padding: 0;
+	& > .corset { background: transparent; }
 }
 
 
-.banner-box.press {
-	margin: 0; padding: 10px 0;
-}
-
-.banner-box.responsive-hero {
+.banner-box, .responsive-hero {
+    position: relative;
 	padding: 0;
+	
+	&.press {
+	    margin: 0; padding: 10px 0;
+	}
+	
 	& > .corset, & > .container {
 		padding-top: 20px; padding-bottom: 20px;
 		&.compact { padding-top: 0; padding-bottom: 0; }
@@ -38,16 +77,27 @@
 	}
 	&.fixed-bg { background-attachment:fixed; }
 	
-	.banner-footer { 
-		padding: 10px 0;
-		background-color: rgba(255,255,255,.30);
-		z-index: 15; 
-	}
-	.banner-header { 
-		padding: 10px 0;
+	.banner-header, .banner-footer { 
+		padding: 20px 0;
 		background-color: rgba(255,255,255,.30);
 		z-index: 15;
 	}
+	
+	@each $clrName, $clrValue in $appColorz {
+	    &.#{$clrName}-bg, .#{$clrName}-bg, 
+	    &.bg-#{$clrName}, .bg-#{$clrName} {
+	        background: #{ $clrValue };
+	    }
+	    &.#{$clrName}-text, .#{$clrName}-text, 
+	    &.text-#{$clrName}, .text-#{$clrName} {
+	        color: #{ $clrValue };
+	    }
+	}
+	
+	.banner-content {
+	    padding: 50px 0;
+	}
+	
 	
 	img { max-width: 100%; }
 }
@@ -74,22 +124,22 @@
 
 // more than 768px
 @include responsiveStep-sm {
-	.banner-box.responsive-hero {
+	.banner-box, .responsive-hero {
 		.layout-table > .cell {
 			&.postits { width: 40%; }
 			&.ipad { width: 40%; }
 			&.coffee { width: 20%; }
 		}
-		.banner-footer { 
-			position: absolute; 
-			bottom: 0; left: 0; right: 0;
-		}
-		.banner-header { 
-			position: absolute; 
-			top: 0; left: 0; right: 0;
-		}
-		&.with-footer { padding-bottom: 100px !important; }
-		&.with-header { padding-top: 100px !important; }
+		// .banner-footer { 
+		// 	position: absolute; 
+		// 	bottom: 0; left: 0; right: 0;
+		// }
+		// .banner-header { 
+		// 	position: absolute; 
+		// 	top: 0; left: 0; right: 0;
+		// }
+		// &.with-footer { padding-bottom: 100px !important; }
+		// &.with-header { padding-top: 100px !important; }
 	}
 }
 
