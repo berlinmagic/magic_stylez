@@ -73,76 +73,17 @@
 }
 
 
+// App colors ... lib/colors
 // -------------------------
-// Text colors
+// Background and Text colors
 // -------------------------
-.black { color: $black; }
-.gray-darker { color: $gray-darker; }
-.gray-dark { color: $gray-dark; }
-.gray { color: $gray; }
-.gray-light { color: $gray-light; }
-.gray-lighter { color: $gray-lighter; }
-.gray-soft { color: $gray-soft; }
-.gray-softer { color: $gray-softer; }
-.white { color: $white; }
-
-.blue-soft { color: $blue-soft; }
-.blue-lighter { color: $blue-lighter; }
-.blue-light { color: $blue-light; }
-.blue { color: $blue; }
-.blue-dark { color: $blue-dark; }
-.red { color: $red; }
-.red-dark { color: $red-dark; }
-.yellow { color: $yellow; }
-.orange { color: $orange; }
-.pink { color: $pink; }
-.purple { color: $purple; }
-.violett { color: $violett; }
-
-.brand-color { color: $brand-color; }
-.brand-primary { color: $brand-primary; }
-.brand-success { color: $brand-success; }
-.brand-info { color: $brand-info; }
-.brand-warning { color: $brand-warning; }
-.brand-danger { color: $brand-danger; }
-.brand-one { color: $brand-one; }
-.brand-two { color: $brand-two; }
-.brand-three { color: $brand-three; }
-
-
-// -------------------------
-// Background colors
-// -------------------------
-.bg-black { background: $black; }
-.bg-gray-darker { background: $gray-darker; }
-.bg-gray-dark { background: $gray-dark; }
-.bg-gray { background: $gray; }
-.bg-gray-light { background: $gray-light; }
-.bg-gray-lighter { background: $gray-lighter; }
-.bg-gray-soft { background: $gray-soft; }
-.bg-gray-softer { background: $gray-softer; }
-.bg-white { background: $white; }
-
-.bg-blue-soft { background: $blue-soft; }
-.bg-blue-lighter { background: $blue-lighter; }
-.bg-blue-light { background: $blue-light; }
-.bg-blue { background: $blue; }
-.bg-blue-dark { background: $blue-dark; }
-.bg-red { background: $red; }
-.bg-red-dark { background: $red-dark; }
-.bg-yellow { background: $yellow; }
-.bg-orange { background: $orange; }
-.bg-pink { background: $pink; }
-.bg-purple { background: $purple; }
-.bg-violett { background: $violett; }
-
-.bg-brand-color { background: $brand-color; }
-.bg-brand-primary { background: $brand-primary; }
-.bg-brand-success { background: $brand-success; }
-.bg-brand-info { background: $brand-info; }
-.bg-brand-warning { background: $brand-warning; }
-.bg-brand-danger { background: $brand-danger; }
-.bg-brand-one { background: $brand-one; }
-.bg-brand-two { background: $brand-two; }
-.bg-brand-three { background: $brand-three; }
+@each $clrName, $clrValue in $appColorz {
+    .#{$clrName}-bg, .bg-#{$clrName} {
+        background: #{ $clrValue };
+    }
+    .#{$clrName}-text, .text-#{$clrName}, .txt-#{$clrName}, .#{$clrName}-txt, 
+    .clr-#{$clrName}, .#{$clrName}-clr, .color-#{$clrName}, .#{$clrName}-color {
+        color: #{ $clrValue };
+    }
+}
 

@@ -15,6 +15,16 @@
   <div class="corset">
     
     <h2>Colors:</h2>
+    <p>
+      All text colors are usable as:
+      <br/>
+      <code>.color-name-clr</code> /<small>or</small>/ <code>.color-name-color</code> /<small>or</small>/ <code>.color-name-txt</code> /<small>or</small>/ <code>.color-name-text</code> /<small>or</small>/ <br/>
+      <code>.clr-color-name</code> /<small>or</small>/ <code>.color-color-name</code> /<small>or</small>/ <code>.txt-color-name</code> /<small>or</small>/ <code>.text-color-name</code>
+      <br/>
+      All background colors are usable as:
+      <br/>
+      <code>.color-name-bg</code> /<small>or</small>/ <code>.bg-color-name</code>
+    </p>
     
     <table class="table table-condensed">
       <thead>
@@ -26,20 +36,20 @@
       <tbody>
         <% for clr in ["black", "gray-darker", "gray-dark", "gray", "gray-light", "gray-lighter", "gray-soft", "gray-softer", "white"]: %>
         <tr>
-          <td class="<%= clr %>">.<%= clr %></td>
-          <td class="bg-<%= clr %>">.bg-<%= clr %></td>
+          <td class="<%= clr %>-text">.clr-<%= clr %> &nbsp;<span class="clr-gray">/</span>&nbsp; .<%= clr %>-clr</td>
+          <td class="bg-<%= clr %>">.bg-<%= clr %> &nbsp;<span class="clr-gray">/</span>&nbsp; .<%= clr %>-bg</td>
         </tr>
         <% end %>
         <% for clr in ["blue-soft", "blue-lighter", "blue-light", "blue", "blue-dark", "red", "red-dark", "yellow", "orange", "pink", "purple", "violett"]: %>
         <tr>
-          <td class="<%= clr %>">.<%= clr %></td>
-          <td class="bg-<%= clr %>">.bg-<%= clr %></td>
+          <td class="<%= clr %>-text">.clr-<%= clr %> &nbsp;<span class="clr-gray">/</span>&nbsp; .<%= clr %>-clr</td>
+          <td class="bg-<%= clr %>">.bg-<%= clr %> &nbsp;<span class="clr-gray">/</span>&nbsp; .<%= clr %>-bg</td>
         </tr>
         <% end %>
-        <% for clr in ["brand-color", "brand-primary", "brand-success", "brand-info", "brand-warning", "brand-danger", "brand-one", "brand-two", "brand-three"]: %>
+        <% for clr in ["brand-color", "brand-primary", "brand-success", "brand-info", "brand-warning", "brand-danger", "brand-one", "brand-two", "brand-three", "brand", "primary", "success", "info", "warning", "danger", "one", "two", "three"]: %>
         <tr>
-          <td class="<%= clr %>">.<%= clr %></td>
-          <td class="bg-<%= clr %>">.bg-<%= clr %></td>
+          <td class="<%= clr %>-text">.clr-<%= clr %> &nbsp;<span class="clr-gray">/</span>&nbsp; .<%= clr %>-clr</td>
+          <td class="bg-<%= clr %>">.bg-<%= clr %> &nbsp;<span class="clr-gray">/</span>&nbsp; .<%= clr %>-bg</td>
         </tr>
         <% end %>
       </tbody>
