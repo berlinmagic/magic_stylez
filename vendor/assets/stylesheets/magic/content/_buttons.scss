@@ -67,9 +67,9 @@
 		padding: $padding-xs-vertical $padding-xs-horizontal;
 		// font-size: $font-size-small;
 		// line-height: $line-height-small;
-		&:first-child { @include border-left-radius($border-radius-small); }
-		&:last-child { @include border-right-radius($border-radius-small); }
-		&.icn { font-size: $font-size-small * 1.1; @include btn_icn_width($line-height-computed-xs, $padding-xs-vertical); }
+		&:first-child { @include border-left-radius($border-radius-xs); }
+		&:last-child { @include border-right-radius($border-radius-xs); }
+		&.icn { font-size: $font-size-xs * 1.1; @include btn_icn_width($line-height-computed-xs, $padding-xs-vertical); }
 	}
 	
 	& > .icn {

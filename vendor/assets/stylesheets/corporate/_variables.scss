@@ -138,8 +138,8 @@ $input-height-base:              ($line-height-computed + ($padding-base-vertica
 $input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
 //** Small `.form-control` height
 $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
-$input-height-xs:                (floor($font-size-small * $line-height-small) + ($padding-xs-vertical * 2) + 2) !default;
-$input-height-xl:                (ceil($font-size-xl * $line-height-xl) + ($padding-large-xl * 2) + 2) !default;
+$input-height-xs:                (floor($font-size-xs * $line-height-xs) + ($padding-xs-vertical * 2) + 2) !default;
+$input-height-xl:                (ceil($font-size-xl * $line-height-xl) + ($padding-xl-vertical * 2) + 2) !default;
 
 
 
