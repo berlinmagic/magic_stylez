@@ -129,16 +129,6 @@
 }
 
 
-
-.btn-xl, .btn-group-xl > .btn {
-    padding: 12px 20px;
-    font-size: 24px;
-    line-height: 1.33;
-    border-radius: round($border-radius-large * 1.2);
-}
-
-
-
 // Reset height for `textarea`s
 textarea.form-control {
   height: auto;
