@@ -5,10 +5,10 @@
 }
 
 .btn-xl, .btn-group-xl > .btn {
-    padding: 12px 20px;
-    font-size: 24px;
-    line-height: 1.33;
-    border-radius: round($border-radius-large * 1.2);
+    padding: $padding-xl-vertical $padding-xl-horizontal;
+    font-size: $font-size-xl;
+    line-height: $line-height-xl;
+    border-radius: $border-radius-xl;
 }
 
 
@@ -39,7 +39,14 @@
 			@include btn_icn_width( $line-height-computed, $padding-base-vertical );
 		}
 	}
-	
+	&.btn-xl > * {
+		padding: $padding-xl-vertical $padding-xl-horizontal;
+		font-size: $font-size-xl;
+        line-height: $line-height-xl;
+		&:first-child { @include border-left-radius( $border-radius-xl ); }
+		&:last-child { @include border-right-radius( $border-radius-xl ); }
+		&.icn { font-size: $font-size-xl * 1.1; @include btn_icn_width($line-height-computed-xl, $padding-xl-vertical);}
+	}
 	&.btn-lg > * {
 		padding: $padding-large-vertical $padding-large-horizontal;
 		// font-size: $font-size-large;

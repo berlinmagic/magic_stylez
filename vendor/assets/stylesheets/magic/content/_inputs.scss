@@ -96,11 +96,13 @@
 	}
 	
 	// Make inputs at least the height of their button counterpart (base line-height + padding + border)
-	@include inpt-sizing('.input-xs', $input-height-xs, $padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+	@include inpt-sizing('.input-xs', $input-height-xs, $padding-xs-vertical, $padding-xs-horizontal, $font-size-xs, $line-height-xs, $border-radius-xs);
 
 	@include inpt-sizing('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
 
 	@include inpt-sizing('.input-lg', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+	
+	@include inpt-sizing('.input-xl', $input-height-xl, $padding-xl-vertical, $padding-xl-horizontal, $font-size-xl, $line-height-xl, $border-radius-xl);
   
   
 
@@ -128,6 +130,15 @@
 
 
 
+.btn-xl, .btn-group-xl > .btn {
+    padding: 12px 20px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: round($border-radius-large * 1.2);
+}
+
+
+
 // Reset height for `textarea`s
 textarea.form-control {
   height: auto;
@@ -147,7 +158,8 @@ textarea.form-control {
 // Build on `.form-control` with modifier classes to decrease or increase the
 // height and font-size of form controls.
 
-@include input-size('.input-xs', $input-height-xs, $padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+@include input-size('.input-xs', $input-height-xs, $padding-xs-vertical, $padding-xs-horizontal, $font-size-xs, $line-height-xs, $border-radius-xs);
+@include input-size('.input-xl', $input-height-xl, $padding-xl-vertical, $padding-xl-horizontal, $font-size-xl, $line-height-xl, $border-radius-xl);
 
 
 
