@@ -51,7 +51,7 @@ hr, .divider {
     
     &.no-press { margin: 0; }
     &.no-press-top, &.no-top-press { margin-top: 0; }
-    &.no-press-top, &.no-top-press { margin-bottom: 0; }
+    &.no-press-bottom, &.no-bottom-press { margin-bottom: 0; }
     
     &.half-press, &.press-half { @include vertical-margin( $divider-vertical-spacing / 2 ); }
     

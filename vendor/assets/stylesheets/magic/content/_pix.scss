@@ -28,9 +28,10 @@
 		&:last-child { border-bottom: none; }
 		& > * {
 			padding: 5px 0;
+			$pic_size: $line-height-computed * 2 + 10;
 			@include clearfix;
 			.pic  {
-				width: 50px;
+				width: $pic_size;
 				border: solid 1px $main-border-color;
 				float: left;
 				img {
@@ -40,15 +41,15 @@
 			}
 			.facts {
 				padding: 5px 0;
-				margin-left: 60px;
+				margin-left: $pic_size + 10;
 				.head {
-					line-height: 20px;
-					font-size: 13px;
+					line-height: $line-height-computed;
+					font-size: $font-size-small;
 					font-weight: bold;
 				}
 				.body {
-					line-height: 20px;
-					// font-size: 15px;
+					line-height: $line-height-computed;
+					font-size: $font-size-base;
 					font-weight: normal;
 				}
 			}

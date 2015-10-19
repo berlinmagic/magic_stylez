@@ -41,7 +41,7 @@ $lyt_border_radius: 5px;
 .layout-table, .layout-slider {
 	@include raised_shadow( rgba(0, 0, 0, 0.5), 1 );
     display: table;
-    margin: 0 0 10px;
+    margin: 0 0 $general-vertical-spacing-half;
     border: solid 1px $main-border-color;
     background: #fff;
     @include border-radius(5px);
@@ -146,7 +146,7 @@ $lyt_border_radius: 5px;
 		border: solid 1px $main-border-color;
 		@include border-radius(3px);
 		background: #fff;
-		margin: 0 0 10px;
+		margin: 0 0 $general-vertical-spacing-half;
 		padding: 5px;
 		@include box-sizing(border-box);
 		text-align: left;
@@ -196,7 +196,7 @@ $lyt_border_radius: 5px;
 .layout-box {
     @include raised_shadow( rgba(0, 0, 0, 0.5), 1 );
     display: table; 
-    margin: 0 0 10px; 
+    margin: 0 0 $general-vertical-spacing-half; 
     background: #fff;
     border: solid 1px $main-border-color;
     @include border-radius(5px);
@@ -317,7 +317,7 @@ $lyt_border_radius: 5px;
             @include border-radius(5px);
             border: solid 1px $main-border-color;
             width: auto;
-            margin: 0 0 10px;
+            margin: 0 0 $general-vertical-spacing-half;
             &.aside, &.small, &.tiny { width: auto; } 
         }
         & > .cell, & > .box, & > .cell + .cell, & > .box + .box {

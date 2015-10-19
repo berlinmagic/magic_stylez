@@ -20,7 +20,7 @@ $lyt_border_radius: 5px;
 		background: #fff;
 		@include border-radius($lyt_border_radius);
 		border: solid 1px $lyt_border_color;
-		margin: 0 0 10px;
+		margin: 0 0 $general-vertical-spacing-half;
 		&.aside, &.small, &.tiny { width: auto; } 
 		&:first-child { @include border-radius($lyt_border_radius); }
 		&:last-child {  @include border-radius($lyt_border_radius); /*border: solid 1px $lyt_border_color;*/ }
@@ -136,7 +136,7 @@ $lyt_border_radius: 5px;
 	
 	.layout-table, .layout-slider {
 		@include raised_shadow( rgba(0, 0, 0, 0.5), 1 );
-		margin: 0 0 10px;
+		margin: 0 0 $general-vertical-spacing-half;
 		border: solid 1px $lyt_border_color;
 		background: $lyt_background_color;
 		@include border-radius($lyt_border_radius);
@@ -181,7 +181,7 @@ $lyt_border_radius: 5px;
 	
 	.layout-box {
 	    @include raised_shadow( rgba(0, 0, 0, 0.5), 1 );
-        margin: 0 0 10px; 
+        margin: 0 0 $general-vertical-spacing-half; 
         background: #fff;
         border: solid 1px $main-border-color;
         @include border-radius(5px);

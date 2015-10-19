@@ -1,0 +1,104 @@
+<div class="section head">
+  <div class="corset tight">
+    <h2 class="loud">ChangeLog</h2>
+    
+  </div>
+</div>
+
+<div class="section sctn-sm hard-bottom">
+  <div class="corset tight">
+    <p class="loud">I try to this allways up to date .. but sometimes important changes may not be in here so allways do <code>$ rails g magic_stylez:update</code> when update.</p>
+    
+  </div>
+</div>
+
+<br/>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.88</h4>
+    <p>Changed lots of font-sizes and line-heights to use variables instead of fixed values.</p>
+    <p>
+      - removed configurations: <code>$magicDefaultLineHight</code> and <code>$magicDefaultFontSize</code>!!!
+    </p>
+    <p>
+      + added configurations: <code>$general-vertical-spacing</code> and <code>$general-vertical-spacing-half</code> for genrell bottom margin and <code>.press</code> class.
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.83</h4>
+    <p>
+      Text-Colors now only usable as:
+      <br/>
+      <code>.color-name-clr</code> /<small>or</small>/ <code>.color-name-color</code> /<small>or</small>/ <code>.color-name-txt</code> /<small>or</small>/ <code>.color-name-text</code> /<small>or</small>/ <br/>
+      <code>.clr-color-name</code> /<small>or</small>/ <code>.color-color-name</code> /<small>or</small>/ <code>.txt-color-name</code> /<small>or</small>/ <code>.text-color-name</code>
+    </p>
+    <p>
+      Old style: <code>.color-name</code> is removed !!!
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.78</h4>
+    <ul>
+      <li>add divider variables in <em>corporate/varriables</em>!</li>
+    </ul>
+    <p>
+      Dividers are completely rewritten and now have transparent backgrounds, so you can place them on any element.
+      <br/>
+      Also some variables added:
+    </p>
+    <ul>
+      <li><code>$divider-horizontal-spacing</code>, <code>$divider-vertical-spacing</code> => spacing</li>
+      <li><code>$divider-top-color</code>, <code>$divider-bottom-color</code> => line-colors for <em>.divider</em> and <em>hr</em></li>
+    </ul>
+    <p>
+      If you update to <strong>>= 0.0.0.78</strong> be sure to run: $ <code>rails g magic_stylez:update</code> !!!
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.67</h4>
+    <ul>
+      <li>changed some names in <em>corporate/varriables</em>!</li>
+    </ul>
+    <p>
+      With Version <strong>0.0.0.67</strong> Sections have more bootstrap like name, like <code>.section.section-xs</code> instead of <code>.section.compact</code>.
+      <br/>
+      Also some variables changed, so <code>$section-flatted-padding</code> becomes <code>$section-sm-padding</code>.
+      <br/>
+      <br/>
+      If you update to <strong>>= 0.0.0.67</strong> be sure to run: $ <code>rails g magic_stylez:update</code> !!!
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.55</h4>
+    <ul>
+      <li><em>corporate/typo</em> is removed!</li>
+      <li><em>corporate/fonts</em> doesn't contain css, just variables</li>
+    </ul>
+    <p>With Version <strong>0.0.0.55</strong> I merged <em>corporate/typo</em> into <em>corporate/fonts</em> (they where so similar). I also removed all css from <em>corporate/fonts</em>, because it causes trouble with update generator (and also is not a variable).</p>
+  </div>
+</div>
+
+<br/>
+
+<div class="section hard-top">
+  <div class="corset tight">
+    <p class="highlight"><i class="olicons-hide-filter"></i> magic-styles update generator</p>
+    <p class="loud"><i class="olicons-hide-filter"></i> in the process I often add new variables to the corporate files</p>
+    <p class="loud"><i class="olicons-hide-filter"></i> what causes "Missing variable!" when you update to new version</p>
+    <p class="loud"><i class="olicons-hide-filter"></i> this generator adds all new variables without touching your settings</p>
+    <pre><code>$ rails g magic_stylez:update</code></pre>
+  </div>
+</div>

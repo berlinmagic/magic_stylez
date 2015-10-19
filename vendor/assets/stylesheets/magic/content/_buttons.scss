@@ -272,7 +272,7 @@
 	@include box-sizing(border-box);
 	display: table;
     width: 100%;
-    margin: 0 0 10px;
+    margin: 0 0 $general-vertical-spacing-half;
 	text-decoration: none;
     .btn {
 		display: table-cell;

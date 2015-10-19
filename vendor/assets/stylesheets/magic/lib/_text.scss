@@ -6,8 +6,8 @@
 @mixin dekoFont { font-family: $dekoFont; }
 @mixin magicDefaultFont {
   @include readFont;
-  font-size: $magicDefaultFontSize;
-  line-height: $magicDefaultLineHight;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
 }
 @mixin sansThin {
 	// font-family: 'Open Sans', sans-serif;

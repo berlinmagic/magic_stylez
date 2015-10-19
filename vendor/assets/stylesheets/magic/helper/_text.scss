@@ -70,8 +70,8 @@ ul, ol, li, p, span, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
-    &.press { margin-bottom: 20px; }
-    &.press-half, &.half-press { margin-bottom: 10px; }
+    &.press { margin-bottom: $general-vertical-spacing; }
+    &.press-half, &.half-press { margin-bottom: $general-vertical-spacing-half; }
     &.no-press { margin: 0; }
 }
 

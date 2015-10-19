@@ -799,3 +799,24 @@ $component-offset-horizontal: 180px !default;
 // # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
 
+
+
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+// magic_styles v-0.0.0.87 additional variables (2015-10-19 09:27)
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+// line  |   style
+/*   36 */   $padding-xl-vertical:       15px !default;
+/*   37 */   $padding-xl-horizontal:     22px !default;
+/*   49 */   $border-radius-xl:          8px !default;
+/*   52 */   $border-radius-xs:          3px !default;
+/*   56 */   // press
+/*   57 */   $general-vertical-spacing:      $line-height-computed !default; // .press .. and so on
+/*   58 */   $general-vertical-spacing-half: ceil($line-height-computed / 2) !default; // .press .. and so on
+/*  149 */   $input-height-xl:                (ceil($font-size-xl * $line-height-xl) + ($padding-xl-vertical * 2) + 2) !default;
+/*  250 */   //== Divider
+/*  252 */   // -----|< - >|your text|< - >|------
+/*  254 */   // for .divider and hr elements
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+

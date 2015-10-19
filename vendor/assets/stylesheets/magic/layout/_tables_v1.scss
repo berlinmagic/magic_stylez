@@ -149,7 +149,7 @@ table.layout {
 .layout-table, .layout-slider {
 	@include raised_shadow( rgba(0, 0, 0, 0.5), 1 );
     display: table; position: relative;
-    margin: 0 0 10px; padding: 0;
+    margin: 0 0 $general-vertical-spacing-half; padding: 0;
     border: solid 1px #ccc;
     background: #fff;
     @include border-radius(5px);
@@ -229,9 +229,6 @@ table.layout {
 			margin: 0;
 			@include border-radius( 0 );
 			@include box-sizing(border-box);
-			height: 30px;
-			line-height: 20px;
-			padding: 4px 10px;
 			width: 100%;
 			border: solid 1px $gray-light;
 			border-right: none;
@@ -251,7 +248,7 @@ table.layout {
 .layout-box {
     @include raised_shadow( rgba(0, 0, 0, 0.5), 1 );
     display: table; position: relative;
-    margin: 0 0 10px; padding: 0;
+    margin: 0 0 $general-vertical-spacing-half; padding: 0;
     background: #fff;
     border: solid 1px #ccc;
     @include border-radius(5px);

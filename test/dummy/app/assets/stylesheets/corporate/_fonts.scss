@@ -118,3 +118,18 @@ $magicHandwritten-font-weight:              400 !default;
 
 
 
+
+
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+// magic_styles v-0.0.0.87 additional variables (2015-10-19 09:27)
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+// line  |   style
+/*   58 */   $font-size-xl:              ceil(($font-size-base * 1.5)) !default; // ~22px
+/*   61 */   $font-size-xs:              ceil(($font-size-base * 0.75)) !default; // ~10px
+/*   80 */   $line-height-xl:            1.2 !default;
+/*   83 */   $line-height-xs:            1.5 !default;
+/*   87 */   $line-height-computed-xl:   floor(($font-size-xl * $line-height-xl)) !default; // ~20px
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+

@@ -4,7 +4,7 @@
 }
 
 .box {
-	margin: 0 0 20px; padding: 10px;
+	margin: 0 0 $general-vertical-spacing; padding: 10px;
 	border: solid 1px $main-border-color;
 	@include border-radius(3px);
 	text-align: left;
@@ -30,8 +30,8 @@
 		&, h1, h2, h3, h4, h5, h6, p, span, .h1, .h2, .h3, .h4, .h5, .h6 {
 			margin: 0; padding: 0 5px 2px;
 			color: $brand-color;
-			line-height: 27px;
-			font-size: 18px;
+			line-height: $line-height-large;
+			font-size: $font-size-large;
 		}
 		
 		&.blank { border-bottom: solid 1px transparent; }
@@ -57,9 +57,9 @@
 	    h2 { font-weight: normal; }
 	    p, address {
 	        display: block; position: relative;
-            margin-bottom: 20px;
+            margin-bottom: $line-height-computed;
             font-style: normal;
-            line-height: 20px;
+            line-height: $line-height-base;
             color: #aaa;
 	    }
 		.screw {
@@ -88,7 +88,7 @@
 		padding: 70px 60px 80px 80px;
 		min-height: 650px;
 		h1 {
-		    font-size: 24px; 
+		    font-size: $font-size-xl; 
 		    font-weight: 600; 
 		    text-align: center; 
 		    margin: 0 0 50px; 
@@ -98,11 +98,11 @@
 		}
 		h2 {
 			margin: 50px 0 10px;
-			font-size: 18px;
+			font-size: $font-size-large;
 			font-weight: 600; 
 		}
-		h3 { font-size: 20px; }
-		h4 { font-size: 18px; }
+		h3 { font-size: $font-size-xl; }
+		h4 { font-size: $font-size-large; }
 		& > *:first-child { margin-top: 0; }
 	}
 	
@@ -184,13 +184,13 @@
 	&.product {
 	    text-align: center;
 	    .product-name {
-	        font-size: 20px;
+	        font-size: $font-size-large;
 	        font-weight: bold;
 	        line-height: 26px;
 	        color: #222;
 	    }
 	    .product-facts {
-	        font-size: 14px;
+	        font-size: $font-size-small;
 	        font-weight: normal;
 	        line-height: 18px;
 	        color: #777;
@@ -205,18 +205,18 @@
 	    .header {
 	        padding: 5px 10px;
 	        margin: 0;
-	        line-height: 30px;
-	        font-size: 16px;
+	        line-height: $line-height-computed-lg;
+	        font-size: $font-size-large;
 	        font-weight: 400;
 	        background: #e5e5e5;
 	        color: #333;
-	        i, i:before { color: transparentize($blue, 0.5); font-size: 16px; }
+	        i, i:before { color: transparentize($blue, 0.5); font-size: $font-size-large; }
 	        h1, h2, h3 {
 	            color: #333;
-	            font-size: 22px;
+	            font-size: $font-size-xl;
 	        }
 	        p {
-	            font-size: 13px;
+	            font-size: $font-size-base;
 	            color: #777;
 	        }
 	    }
@@ -253,7 +253,7 @@
 	}
 	
 	&.press {
-	    margin-bottom: 20px !important;
+	    margin-bottom: $line-height-computed !important;
 	}
 	
 }
@@ -264,7 +264,7 @@
 
 .list-box {
 	display: table; position: relative;
-	margin: 0 0 10px; padding: 5px 0;
+	margin: 0 0 $general-vertical-spacing-half; padding: 5px 0;
 	background-color: #fff;
 	width: 100%;
 	border-spacing: 10px 0;
@@ -322,20 +322,20 @@
 	.feature-heading {
 		font-size: 35px;
 		line-height: 40px;
-		margin: 0 0 20px;
+		margin: 0 0 $general-vertical-spacing;
 		text-shadow: 0 1px 0 #fff;
 	}
 	p.loud, p.highlight { font-size: 24px; }
 	p.highlight { font-style: italic; color: #555; }
 	&.ready {
 		.feature-icon {
-			margin: 0 auto 20px;
+			margin: 0 auto $general-vertical-spacing;
 			border: solid 5px transparentize($brand-color, 0.5);
 			i { background: $brand-color; }
 		}
 	}
 	&.pending {
-		.feature-heading { font-size: 25px; margin: 0 0 10px; }
+		.feature-heading { font-size: 25px; margin: 0 0 $general-vertical-spacing-half; }
 		p.loud, p.highlight { font-size: 15px; }
 	}
 }

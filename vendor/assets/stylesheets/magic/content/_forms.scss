@@ -17,7 +17,7 @@
 
 .inpt-group {
 	display: block; position: relative;
-	margin: 0 0 20px; padding: 0;
+	margin: 0 0 $general-vertical-spacing; padding: 0;
 	.form-control {
 	    position: relative;
 	    margin: 0 0 -1px !important;
@@ -97,7 +97,7 @@ form.corset, .form {
 		color: #aaa;
 		text-shadow: 0 1px 1px #fff;
 		font-family: 'Glyphicons Halflings'; font-weight: normal;  font-style: normal; 
-		font-size: 14px;
+		font-size: $font-size-base;
 	}
 	// input {
 	// 	display: block; position: relative;
@@ -116,7 +116,7 @@ form.corset, .form {
 	        height: 42px;
 	        font-size: 18px;
 			@include placeholder {
-				font-size: 18px;
+				font-size: $font-size-large;
 				color: rgba(0,0,0,.20);
 			}
 			@include border-radius(0);
@@ -127,7 +127,7 @@ form.corset, .form {
 			width: 30px; line-height: 44px;
 			content: "\f021";
 			text-shadow: 0 1px 0 rgba(0,0,0,.01);
-			font-size: 18px;
+			font-size: $font-size-large;
 		}
 	}
 	// glyphicons
@@ -195,12 +195,12 @@ form.corset, .form {
 form, .form {
 	
 	@include all_form_elements {
-		&.form-control { margin-bottom: 10px; }
+		&.form-control { margin-bottom: $general-vertical-spacing-half; }
 	}
-	.btn-divided, .btn-splited, .btn-block { margin-bottom: 10px; }
+	.btn-divided, .btn-splited, .btn-block { margin-bottom: $general-vertical-spacing-half; }
 	
 	.row > * {
-		margin-bottom: 10px;
+		margin-bottom: $general-vertical-spacing-half;
 		@include all_form_elements { &.form-control { margin-bottom: 0; } }
 		.btn-divided, .btn-splited, .btn-block { margin-bottom: 0; }
 	}

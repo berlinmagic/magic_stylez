@@ -10,9 +10,9 @@
 		top: -1px; right: -4px;
 		background: $orange;
 		color: #fff;
-		@include border-radius(20px);
-		width: 24px; height: 24px;
-		line-height: 24px;
-		font-size: 18px;
+		@include border-radius($line-height-computed-lg);
+		width: $line-height-computed-lg; height: $line-height-computed-lg;
+		line-height: $line-height-computed-lg;
+		font-size: $font-size-large;
 	}
 }

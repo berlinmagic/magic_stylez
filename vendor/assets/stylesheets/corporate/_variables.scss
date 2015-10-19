@@ -52,6 +52,13 @@ $border-radius-small:       3px !default;
 $border-radius-xs:          3px !default;
 
 
+
+// press
+$general-vertical-spacing:      $line-height-computed !default; // .press .. and so on
+$general-vertical-spacing-half: ceil($line-height-computed / 2) !default; // .press .. and so on
+
+
+
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
 //   Sections
 // 
@@ -245,7 +252,7 @@ $container-lg:                 $container-large-desktop !default;
 // -----|< - >|your text|< - >|------
 $divider-horizontal-spacing:            20px !default;
 // for .divider and hr elements
-$divider-vertical-spacing:              $line-height-computed !default;
+$divider-vertical-spacing:              $general-vertical-spacing !default;
 $divider-top-color:                     rgba(0,0,0,.23) !default;
 $divider-bottom-color:                  rgba(255,255,255,.65) !default;
 
