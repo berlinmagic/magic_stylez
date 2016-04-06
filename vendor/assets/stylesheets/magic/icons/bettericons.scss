@@ -25,44 +25,44 @@ $bettericons-class-name: "bettericon";
 
 
 
-[class^="#{$bettericons-class-name}-"]:before,
-[class*=" #{$bettericons-class-name}-"]:before {
-  font-family: 'betterwork-icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.4em; // make them bigger
-  display: block;
-  position: relative;
-  // top: 0; right: 0; bottom: 0; left: 0;
-  text-decoration: inherit;
-  vertical-align: middle;
-  line-height: .9em;
-  color: inherit;
-  
-  // make icons thinner in webkit (white icons on dark background)
-  text-shadow: 0 0 0 rgba(0,0,0,.01);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility;
-  
-  outline: none;
-  border: none;
-}
-
-
-
-// i {
-//     /* use !important to prevent issues with browser extensions that change fonts */
-//     font-family: 'betterwork-icons' !important;
-//     speak: none;
-//     font-style: normal;
-//     font-weight: normal;
-//     font-variant: normal;
-//     text-transform: none;
-//     line-height: 1;
-//     /* Better Font Rendering =========== */
-//     -webkit-font-smoothing: antialiased;
-//     -moz-osx-font-smoothing: grayscale;
+// [class^="#{$bettericons-class-name}-"]:before,
+// [class*=" #{$bettericons-class-name}-"]:before {
+//   font-family: 'betterwork-icons';
+//   font-weight: normal;
+//   font-style: normal;
+//   font-size: 1.4em; // make them bigger
+//   display: block;
+//   position: relative;
+//   // top: 0; right: 0; bottom: 0; left: 0;
+//   text-decoration: inherit;
+//   vertical-align: middle;
+//   line-height: .9em;
+//   color: inherit;
+//   
+//   // make icons thinner in webkit (white icons on dark background)
+//   text-shadow: 0 0 0 rgba(0,0,0,.01);
+//   -webkit-font-smoothing: antialiased;
+//   text-rendering: optimizelegibility;
+//   
+//   outline: none;
+//   border: none;
 // }
+
+
+
+[class^="#{$bettericons-class-name}-"], [class*=" #{$bettericons-class-name}-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'betterwork-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 
 
