@@ -16,6 +16,15 @@
 
 <div class="section sctn-sm">
   <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.89</h4>
+    <p>
+      + added iconset: <code>bettericons</code>
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
     <h4><small>Version</small> 0.0.0.88</h4>
     <p>Changed lots of font-sizes and line-heights to use variables instead of fixed values.</p>
     <p>

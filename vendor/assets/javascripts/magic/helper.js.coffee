@@ -1,8 +1,13 @@
 @to_currency = ( number ) ->
   unless isNaN number
-    (Math.round( parseFloat( number ) * 100 ) / 100).toFixed(2)
+    nmbr = (Math.round( parseFloat( number ) * 100 ) / 100).toFixed(2)
   else
-    (0).toFixed(2)
+    nmbr = (0).toFixed(2)
+  if nmbr >= 1000.0
+    end = "#{nmbr}".split(".")[1]
+    "#{(parseInt(nmbr) / 1000).toFixed(3)},#{end}"
+  else
+    "#{nmbr}".replace(/\./, ",")
 
 @to_euro = (number) ->
   "#{to_currency(number)} €"

@@ -1,0 +1,31 @@
+<div class="section head">
+  <div class="corset">
+    <h1>BetterWork Icons</h1>
+  </div>
+</div>
+
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency: <small>(packable)</small> .. <small>GEM >= "0.0.0.89"</small></h4>
+    <code>@import "magic/icons/bettericons";</code>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">
+    
+    <% for icon, i in bettericons: %>
+    
+      <div class="icon_sample">
+				<div class="sample_icon">
+					<i class="bettericon-<%= icon %>"></i>
+				</div>
+				<div class="sample_name">
+					<%= icon %>
+				</div>
+			</div>
+    
+    <% end%>
+    
+  </div>
+</div>

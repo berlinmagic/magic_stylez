@@ -17,27 +17,27 @@
 // 
 //   F O N T S
 // 
-$sansFontFamily:            "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily:           Georgia, "Times New Roman", Times, serif !default;
-$monoFontFamily:            Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$sansFontFamily:            "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:           Georgia, "Times New Roman", Times, serif;
+$monoFontFamily:            Monaco, Menlo, Consolas, "Courier New", monospace;
 
-$magicSans:                 $sansFontFamily !default;
-$magicCondensedSans:        $sansFontFamily !default;
-$magicHandwritten:          'Gloria Hallelujah', cursive !default;
+$magicSans:                 $sansFontFamily;
+$magicCondensedSans:        $sansFontFamily;
+$magicHandwritten:          'Gloria Hallelujah', cursive;
 
 // variable
-$smallReadFont:             $magicCondensedSans     !default;
-$readFont:                  $magicSans              !default;
-$bigFont:                   $magicSans              !default;
-$alternateBigFont:          $magicSans              !default;
-$dekoFont:                  $magicHandwritten       !default;
+$smallReadFont:             $sansFontFamily;
+$readFont:                  $sansFontFamily;
+$bigFont:                   $sansFontFamily;
+$alternateBigFont:          $sansFontFamily;
+$dekoFont:                  $magicHandwritten;
 
 
-$font-family-sans-serif:    $readFont               !default;
-$font-family-serif:         $serifFontFamily        !default;
-$font-family-base:          $smallReadFont          !default;
-$font-family-monospace:     $monoFontFamily         !default;
-$font-family-handwriten:    $magicHandwritten       !default;
+$font-family-sans-serif:    $sansFontFamily;
+$font-family-serif:         $sansFontFamily;
+$font-family-base:          $sansFontFamily;
+$font-family-monospace:     $monoFontFamily;
+$font-family-handwriten:    $magicHandwritten;
 
 
 // Short-Forms
@@ -103,11 +103,11 @@ $headings-font-weight:                      500 !default;
 //== Buttons
 $btn-font-weight:                           normal !default;
 
-$magicSans-font-weight-thin:                300 !default;
-$magicSans-font-weight-regular:             400 !default;
-$magicSans-font-weight-semi:                600 !default;
+$magicSans-font-weight-thin:                100 !default;
+$magicSans-font-weight-regular:             300 !default;
+$magicSans-font-weight-semi:                400 !default;
 $magicSans-font-weight-bold:                700 !default;
-$magicSans-font-weight-extra:               800 !default;
+$magicSans-font-weight-extra:               900 !default;
 
 $magicCondensedSans-font-weight-thin:       300 !default;
 $magicCondensedSans-font-weight-regular:    400 !default;

@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   # s.add_dependency "rails", "~> 4.1.1"
   
-  s.add_dependency "rails", ">= 3.1.0"
+  s.add_dependency "rails",               ">= 3.1"
   s.add_dependency 'autoprefixer-rails',  '>= 1.1'
   s.add_dependency 'sass',                '>= 3.2'
   ## since 3.2.x bootstrap-sass changed the asset structure, so first stay with 3.1.1.1

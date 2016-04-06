@@ -1,0 +1,412 @@
+//** Load fonts from this directory.
+$bettericons-font-path: "magic/";
+//** File name for all font files.
+$bettericons-font-name: "betterwork-icons";
+//** Element ID within SVG icon file.
+$bettericons-font-svg-id: "betterwork-icons";
+
+$bettericons-class-name: "bettericon";
+
+
+@font-face {
+    font-family: 'betterwork-icons';
+	src: url(if($magic-asset-helper, twbs-font-path('#{$bettericons-font-path}#{$bettericons-font-name}.eot'), '#{$bettericons-font-path}#{$bettericons-font-name}.eot'));
+    }
+
+@font-face {
+    font-family: 'betterwork-icons';
+    src: 	url(if($magic-asset-helper, twbs-font-path('#{$bettericons-font-path}#{$bettericons-font-name}.woff'), '#{$bettericons-font-path}#{$bettericons-font-name}.woff')) format('woff'),
+			url(if($magic-asset-helper, twbs-font-path('#{$bettericons-font-path}#{$bettericons-font-name}.ttf'), '#{$bettericons-font-path}#{$bettericons-font-name}.ttf')) format('truetype'),
+			url(if($magic-asset-helper, twbs-font-path('#{$bettericons-font-path}#{$bettericons-font-name}.svg##{$bettericons-font-svg-id}'), '#{$bettericons-font-path}#{$bettericons-font-name}.svg##{$bettericons-font-svg-id}')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+[class^="#{$bettericons-class-name}-"]:before,
+[class*=" #{$bettericons-class-name}-"]:before {
+  font-family: 'betterwork-icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.4em; // make them bigger
+  display: block;
+  position: relative;
+  // top: 0; right: 0; bottom: 0; left: 0;
+  text-decoration: inherit;
+  vertical-align: middle;
+  line-height: .9em;
+  color: inherit;
+  
+  // make icons thinner in webkit (white icons on dark background)
+  text-shadow: 0 0 0 rgba(0,0,0,.01);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  
+  outline: none;
+  border: none;
+}
+
+
+
+// i {
+//     /* use !important to prevent issues with browser extensions that change fonts */
+//     font-family: 'betterwork-icons' !important;
+//     speak: none;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-variant: normal;
+//     text-transform: none;
+//     line-height: 1;
+//     /* Better Font Rendering =========== */
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+
+
+
+.#{$bettericons-class-name}-eye:before { content: "\e900"; }
+.#{$bettericons-class-name}-eye-blind:before { content: "\e901"; }
+.#{$bettericons-class-name}-lightbulb:before { content: "\e902"; }
+.#{$bettericons-class-name}-bell:before { content: "\e903"; }
+.#{$bettericons-class-name}-alarm:before { content: "\e904"; }
+.#{$bettericons-class-name}-watch:before { content: "\e905"; }
+.#{$bettericons-class-name}-clock:before { content: "\e906"; }
+.#{$bettericons-class-name}-clock2:before { content: "\e907"; }
+.#{$bettericons-class-name}-sandglas:before { content: "\e908"; }
+.#{$bettericons-class-name}-briefcase:before { content: "\e909"; }
+.#{$bettericons-class-name}-bookmark:before { content: "\e90a"; }
+.#{$bettericons-class-name}-cap-academic:before { content: "\e90b"; }
+.#{$bettericons-class-name}-support:before { content: "\e90c"; }
+.#{$bettericons-class-name}-camera:before { content: "\e90d"; }
+.#{$bettericons-class-name}-camera-front:before { content: "\e90e"; }
+.#{$bettericons-class-name}-camera-selfi:before { content: "\e90f"; }
+.#{$bettericons-class-name}-camera-plus:before { content: "\e910"; }
+.#{$bettericons-class-name}-analytics-bars:before { content: "\e911"; }
+.#{$bettericons-class-name}-analytics-bars2:before { content: "\e912"; }
+.#{$bettericons-class-name}-analytics-pie:before { content: "\e913"; }
+.#{$bettericons-class-name}-analytics:before { content: "\e914"; }
+.#{$bettericons-class-name}-app-icon-badge:before { content: "\e915"; }
+.#{$bettericons-class-name}-arrow1-up:before { content: "\e916"; }
+.#{$bettericons-class-name}-arrow1-down:before { content: "\e917"; }
+.#{$bettericons-class-name}-arrow1-right:before { content: "\e918"; }
+.#{$bettericons-class-name}-arrow1-left:before { content: "\e919"; }
+.#{$bettericons-class-name}-arrow1-up-right:before { content: "\e91a"; }
+.#{$bettericons-class-name}-arrow1-down-right:before { content: "\e91b"; }
+.#{$bettericons-class-name}-arrow1-down-left:before { content: "\e91c"; }
+.#{$bettericons-class-name}-arrow1-up-left:before { content: "\e91d"; }
+.#{$bettericons-class-name}-arrow2-up:before { content: "\e91e"; }
+.#{$bettericons-class-name}-arrow2-down:before { content: "\e91f"; }
+.#{$bettericons-class-name}-arrow2-right:before { content: "\e920"; }
+.#{$bettericons-class-name}-arrow2-left:before { content: "\e921"; }
+.#{$bettericons-class-name}-arrow2-up-right:before { content: "\e922"; }
+.#{$bettericons-class-name}-arrow2-down-right:before { content: "\e923"; }
+.#{$bettericons-class-name}-arrow2-down-left:before { content: "\e924"; }
+.#{$bettericons-class-name}-arrow2-up-left:before { content: "\e925"; }
+.#{$bettericons-class-name}-arrow3-up:before { content: "\e926"; }
+.#{$bettericons-class-name}-arrow3-down:before { content: "\e927"; }
+.#{$bettericons-class-name}-arrow3-right:before { content: "\e928"; }
+.#{$bettericons-class-name}-arrow3-left:before { content: "\e929"; }
+.#{$bettericons-class-name}-plus:before { content: "\e92a"; }
+.#{$bettericons-class-name}-minus:before { content: "\e92b"; }
+.#{$bettericons-class-name}-close:before { content: "\e92c"; }
+.#{$bettericons-class-name}-checked:before { content: "\e92d"; }
+.#{$bettericons-class-name}-information:before { content: "\e92e"; }
+.#{$bettericons-class-name}-exclamation:before { content: "\e92f"; }
+.#{$bettericons-class-name}-question:before { content: "\e930"; }
+.#{$bettericons-class-name}-arrow1-up-half:before { content: "\e931"; }
+.#{$bettericons-class-name}-arrow1-down-half:before { content: "\e932"; }
+.#{$bettericons-class-name}-arrow1-right-half:before { content: "\e933"; }
+.#{$bettericons-class-name}-arrow1-left-half:before { content: "\e934"; }
+.#{$bettericons-class-name}-arrow1-up-right-half:before { content: "\e935"; }
+.#{$bettericons-class-name}-arrow1-down-right-half:before { content: "\e936"; }
+.#{$bettericons-class-name}-arrow1-down-left-half:before { content: "\e937"; }
+.#{$bettericons-class-name}-arrow1-up-left-half:before { content: "\e938"; }
+.#{$bettericons-class-name}-arrow2-up-half:before { content: "\e939"; }
+.#{$bettericons-class-name}-arrow2-down-half:before { content: "\e93a"; }
+.#{$bettericons-class-name}-arrow2-right-half:before { content: "\e93b"; }
+.#{$bettericons-class-name}-arrow2-left-half:before { content: "\e93c"; }
+.#{$bettericons-class-name}-arrow2-up-right-half:before { content: "\e93d"; }
+.#{$bettericons-class-name}-arrow2-down-right-half:before { content: "\e93e"; }
+.#{$bettericons-class-name}-arrow2-down-left-half:before { content: "\e93f"; }
+.#{$bettericons-class-name}-arrow2-up-left-half:before { content: "\e940"; }
+.#{$bettericons-class-name}-arrow3-up-half:before { content: "\e941"; }
+.#{$bettericons-class-name}-arrow3-down-half:before { content: "\e942"; }
+.#{$bettericons-class-name}-arrow3-right-half:before { content: "\e943"; }
+.#{$bettericons-class-name}-arrow3-left-half:before { content: "\e944"; }
+.#{$bettericons-class-name}-plus-half:before { content: "\e945"; }
+.#{$bettericons-class-name}-minus-half:before { content: "\e946"; }
+.#{$bettericons-class-name}-checked-half:before { content: "\e947"; }
+.#{$bettericons-class-name}-close-half:before { content: "\e948"; }
+.#{$bettericons-class-name}-information-half:before { content: "\e949"; }
+.#{$bettericons-class-name}-exclamation-half:before { content: "\e94a"; }
+.#{$bettericons-class-name}-question-half:before { content: "\e94b"; }
+.#{$bettericons-class-name}-arrow1-up-circle:before { content: "\e94c"; }
+.#{$bettericons-class-name}-arrow1-down-circle:before { content: "\e94d"; }
+.#{$bettericons-class-name}-arrow1-right-circle:before { content: "\e94e"; }
+.#{$bettericons-class-name}-arrow1-left-circle:before { content: "\e94f"; }
+.#{$bettericons-class-name}-arrow1-up-right-circle:before { content: "\e950"; }
+.#{$bettericons-class-name}-arrow1-down-right-circle:before { content: "\e951"; }
+.#{$bettericons-class-name}-arrow1-down-left-circle:before { content: "\e952"; }
+.#{$bettericons-class-name}-arrow1-up-left-circle:before { content: "\e953"; }
+.#{$bettericons-class-name}-arrow2-up-circle:before { content: "\e954"; }
+.#{$bettericons-class-name}-arrow2-down-circle:before { content: "\e955"; }
+.#{$bettericons-class-name}-arrow2-right-circle:before { content: "\e956"; }
+.#{$bettericons-class-name}-arrow2-left-circle:before { content: "\e957"; }
+.#{$bettericons-class-name}-arrow2-up-right-circle:before { content: "\e958"; }
+.#{$bettericons-class-name}-arrow2-down-right-circle:before { content: "\e959"; }
+.#{$bettericons-class-name}-arrow2-down-left-circle:before { content: "\e95a"; }
+.#{$bettericons-class-name}-arrow2-up-left-circle:before { content: "\e95b"; }
+.#{$bettericons-class-name}-arrow3-up-circle:before { content: "\e95c"; }
+.#{$bettericons-class-name}-arrow3-down-circle:before { content: "\e95d"; }
+.#{$bettericons-class-name}-arrow3-right-circle:before { content: "\e95e"; }
+.#{$bettericons-class-name}-arrow3-left-circle:before { content: "\e95f"; }
+.#{$bettericons-class-name}-plus-circle:before { content: "\e960"; }
+.#{$bettericons-class-name}-minus-circle:before { content: "\e961"; }
+.#{$bettericons-class-name}-close-circle:before { content: "\e962"; }
+.#{$bettericons-class-name}-checked-circle:before { content: "\e963"; }
+.#{$bettericons-class-name}-information-circle:before { content: "\e964"; }
+.#{$bettericons-class-name}-exclamation-circle:before { content: "\e965"; }
+.#{$bettericons-class-name}-question-circle:before { content: "\e966"; }
+.#{$bettericons-class-name}-calender:before { content: "\e967"; }
+.#{$bettericons-class-name}-calender-day:before { content: "\e968"; }
+.#{$bettericons-class-name}-calender-week:before { content: "\e969"; }
+.#{$bettericons-class-name}-calender-month:before { content: "\e96a"; }
+.#{$bettericons-class-name}-calender-list:before { content: "\e96b"; }
+.#{$bettericons-class-name}-calender-month-checked:before { content: "\e96c"; }
+.#{$bettericons-class-name}-calender-checked:before { content: "\e96d"; }
+.#{$bettericons-class-name}-at-circle:before { content: "\e96e"; }
+.#{$bettericons-class-name}-at:before { content: "\e96f"; }
+.#{$bettericons-class-name}-battery:before { content: "\e970"; }
+.#{$bettericons-class-name}-battery-low:before { content: "\e971"; }
+.#{$bettericons-class-name}-battery-half:before { content: "\e972"; }
+.#{$bettericons-class-name}-battery-full:before { content: "\e973"; }
+.#{$bettericons-class-name}-book:before { content: "\e974"; }
+.#{$bettericons-class-name}-book2-bookmark:before { content: "\e975"; }
+.#{$bettericons-class-name}-book2:before { content: "\e976"; }
+.#{$bettericons-class-name}-book3-bookmark:before { content: "\e977"; }
+.#{$bettericons-class-name}-book3:before { content: "\e978"; }
+.#{$bettericons-class-name}-calculator:before { content: "\e979"; }
+.#{$bettericons-class-name}-calculator2:before { content: "\e97a"; }
+.#{$bettericons-class-name}-calculator3:before { content: "\e97b"; }
+.#{$bettericons-class-name}-phone:before { content: "\e97c"; }
+.#{$bettericons-class-name}-call-end:before { content: "\e97d"; }
+.#{$bettericons-class-name}-call-answer:before { content: "\e97e"; }
+.#{$bettericons-class-name}-phone2:before { content: "\e97f"; }
+.#{$bettericons-class-name}-call-end-circle:before { content: "\e980"; }
+.#{$bettericons-class-name}-call-answer-circle:before { content: "\e981"; }
+.#{$bettericons-class-name}-catalog2:before { content: "\e982"; }
+.#{$bettericons-class-name}-catalog:before { content: "\e983"; }
+.#{$bettericons-class-name}-change:before { content: "\e984"; }
+.#{$bettericons-class-name}-change2:before { content: "\e985"; }
+.#{$bettericons-class-name}-change3:before { content: "\e986"; }
+.#{$bettericons-class-name}-cloud-checked:before { content: "\e987"; }
+.#{$bettericons-class-name}-cloud-lock:before { content: "\e988"; }
+.#{$bettericons-class-name}-cloud-sync:before { content: "\e989"; }
+.#{$bettericons-class-name}-cloud:before { content: "\e98a"; }
+.#{$bettericons-class-name}-house:before { content: "\e98b"; }
+.#{$bettericons-class-name}-company-office:before { content: "\e98c"; }
+.#{$bettericons-class-name}-company-producer:before { content: "\e98d"; }
+.#{$bettericons-class-name}-company-shop:before { content: "\e98e"; }
+.#{$bettericons-class-name}-envelope2:before { content: "\e98f"; }
+.#{$bettericons-class-name}-envelope-open:before { content: "\e990"; }
+.#{$bettericons-class-name}-envelope:before { content: "\e991"; }
+.#{$bettericons-class-name}-email-send:before { content: "\e992"; }
+.#{$bettericons-class-name}-euro:before { content: "\e993"; }
+.#{$bettericons-class-name}-exit-in:before { content: "\e994"; }
+.#{$bettericons-class-name}-exit-out:before { content: "\e995"; }
+.#{$bettericons-class-name}-exit:before { content: "\e996"; }
+.#{$bettericons-class-name}-exit2:before { content: "\e997"; }
+.#{$bettericons-class-name}-figure-run-left:before { content: "\e998"; }
+.#{$bettericons-class-name}-figure-run-right:before { content: "\e999"; }
+.#{$bettericons-class-name}-file-ai:before { content: "\e99a"; }
+.#{$bettericons-class-name}-file-cdr:before { content: "\e99b"; }
+.#{$bettericons-class-name}-file-eps:before { content: "\e99c"; }
+.#{$bettericons-class-name}-file-image:before { content: "\e99d"; }
+.#{$bettericons-class-name}-file-jpg:before { content: "\e99e"; }
+.#{$bettericons-class-name}-file-pdf:before { content: "\e99f"; }
+.#{$bettericons-class-name}-file-psd:before { content: "\e9a0"; }
+.#{$bettericons-class-name}-file-svg:before { content: "\e9a1"; }
+.#{$bettericons-class-name}-folder:before { content: "\e9a2"; }
+.#{$bettericons-class-name}-flag:before { content: "\e9a3"; }
+.#{$bettericons-class-name}-label:before { content: "\e9a4"; }
+.#{$bettericons-class-name}-gift:before { content: "\e9a5"; }
+.#{$bettericons-class-name}-earth:before { content: "\e9a6"; }
+.#{$bettericons-class-name}-globe:before { content: "\e9a7"; }
+.#{$bettericons-class-name}-globe2:before { content: "\e9a8"; }
+.#{$bettericons-class-name}-hand-inside-down:before { content: "\e9a9"; }
+.#{$bettericons-class-name}-hand-inside-fuck:before { content: "\e9aa"; }
+.#{$bettericons-class-name}-hand-inside-fuck2:before { content: "\e9ab"; }
+.#{$bettericons-class-name}-hand-inside-left:before { content: "\e9ac"; }
+.#{$bettericons-class-name}-hand-inside-right:before { content: "\e9ad"; }
+.#{$bettericons-class-name}-hand-inside-rock:before { content: "\e9ae"; }
+.#{$bettericons-class-name}-hand-inside-rock2:before { content: "\e9af"; }
+.#{$bettericons-class-name}-hand-inside-up:before { content: "\e9b0"; }
+.#{$bettericons-class-name}-hand-ouside-fuck:before { content: "\e9b1"; }
+.#{$bettericons-class-name}-hand-ouside-fuck2:before { content: "\e9b2"; }
+.#{$bettericons-class-name}-hearth:before { content: "\e9b3"; }
+.#{$bettericons-class-name}-identification:before { content: "\e9b4"; }
+.#{$bettericons-class-name}-layers:before { content: "\e9b5"; }
+.#{$bettericons-class-name}-link-in:before { content: "\e9b6"; }
+.#{$bettericons-class-name}-link-out:before { content: "\e9b7"; }
+.#{$bettericons-class-name}-location:before { content: "\e9b8"; }
+.#{$bettericons-class-name}-location-off:before { content: "\e9b9"; }
+.#{$bettericons-class-name}-map:before { content: "\e9ba"; }
+.#{$bettericons-class-name}-lock:before { content: "\e9bb"; }
+.#{$bettericons-class-name}-lock-open:before { content: "\e9bc"; }
+.#{$bettericons-class-name}-lock-open2:before { content: "\e9bd"; }
+.#{$bettericons-class-name}-log-out:before { content: "\e9be"; }
+.#{$bettericons-class-name}-log-out2:before { content: "\e9bf"; }
+.#{$bettericons-class-name}-loop:before { content: "\e9c0"; }
+.#{$bettericons-class-name}-loop2:before { content: "\e9c1"; }
+.#{$bettericons-class-name}-loop3:before { content: "\e9c2"; }
+.#{$bettericons-class-name}-message:before { content: "\e9c3"; }
+.#{$bettericons-class-name}-messages:before { content: "\e9c4"; }
+.#{$bettericons-class-name}-message-photo:before { content: "\e9c5"; }
+.#{$bettericons-class-name}-message-checked:before { content: "\e9c6"; }
+.#{$bettericons-class-name}-comment:before { content: "\e9c7"; }
+.#{$bettericons-class-name}-comments:before { content: "\e9c8"; }
+.#{$bettericons-class-name}-money-euro:before { content: "\e9c9"; }
+.#{$bettericons-class-name}-money-dollar:before { content: "\e9ca"; }
+.#{$bettericons-class-name}-more-horizontal-small:before { content: "\e9cb"; }
+.#{$bettericons-class-name}-more-vertical-small:before { content: "\e9cc"; }
+.#{$bettericons-class-name}-more-horizontal-large:before { content: "\e9cd"; }
+.#{$bettericons-class-name}-more-vertical-large:before { content: "\e9ce"; }
+.#{$bettericons-class-name}-on-off:before { content: "\e9cf"; }
+.#{$bettericons-class-name}-paper:before { content: "\e9d0"; }
+.#{$bettericons-class-name}-papers:before { content: "\e9d1"; }
+.#{$bettericons-class-name}-paper-checked:before { content: "\e9d2"; }
+.#{$bettericons-class-name}-paper-text:before { content: "\e9d3"; }
+.#{$bettericons-class-name}-paper-men:before { content: "\e9d4"; }
+.#{$bettericons-class-name}-paper-men2:before { content: "\e9d5"; }
+.#{$bettericons-class-name}-paper-question:before { content: "\e9d6"; }
+.#{$bettericons-class-name}-paper-star:before { content: "\e9d7"; }
+.#{$bettericons-class-name}-paper-sync:before { content: "\e9d8"; }
+.#{$bettericons-class-name}-paper-euro:before { content: "\e9d9"; }
+.#{$bettericons-class-name}-paperclip:before { content: "\e9da"; }
+.#{$bettericons-class-name}-paperclip2:before { content: "\e9db"; }
+.#{$bettericons-class-name}-paperplane:before { content: "\e9dc"; }
+.#{$bettericons-class-name}-paperplane2:before { content: "\e9dd"; }
+.#{$bettericons-class-name}-pencil:before { content: "\e9de"; }
+.#{$bettericons-class-name}-pencil-star:before { content: "\e9df"; }
+.#{$bettericons-class-name}-pencil-magic:before { content: "\e9e0"; }
+.#{$bettericons-class-name}-pencil-plus:before { content: "\e9e1"; }
+.#{$bettericons-class-name}-pin:before { content: "\e9e2"; }
+.#{$bettericons-class-name}-pin2:before { content: "\e9e3"; }
+.#{$bettericons-class-name}-picture:before { content: "\e9e4"; }
+.#{$bettericons-class-name}-picture-plus:before { content: "\e9e5"; }
+.#{$bettericons-class-name}-flash-on:before { content: "\e9e6"; }
+.#{$bettericons-class-name}-flash-off:before { content: "\e9e7"; }
+.#{$bettericons-class-name}-printer:before { content: "\e9e8"; }
+.#{$bettericons-class-name}-laptop:before { content: "\e9e9"; }
+.#{$bettericons-class-name}-printer2:before { content: "\e9ea"; }
+.#{$bettericons-class-name}-smartphone:before { content: "\e9eb"; }
+.#{$bettericons-class-name}-mouse:before { content: "\e9ec"; }
+.#{$bettericons-class-name}-product-highlights:before { content: "\e9ed"; }
+.#{$bettericons-class-name}-product-page:before { content: "\e9ee"; }
+.#{$bettericons-class-name}-product-page2:before { content: "\e9ef"; }
+.#{$bettericons-class-name}-product-pages:before { content: "\e9f0"; }
+.#{$bettericons-class-name}-product:before { content: "\e9f1"; }
+.#{$bettericons-class-name}-product2:before { content: "\e9f2"; }
+.#{$bettericons-class-name}-user:before { content: "\e9f3"; }
+.#{$bettericons-class-name}-user-plus:before { content: "\e9f4"; }
+.#{$bettericons-class-name}-user-minus:before { content: "\e9f5"; }
+.#{$bettericons-class-name}-user-arrow:before { content: "\e9f6"; }
+.#{$bettericons-class-name}-user-king:before { content: "\e9f7"; }
+.#{$bettericons-class-name}-user-basecap:before { content: "\e9f8"; }
+.#{$bettericons-class-name}-user-student:before { content: "\e9f9"; }
+.#{$bettericons-class-name}-user-team:before { content: "\e9fa"; }
+.#{$bettericons-class-name}-user-group:before { content: "\e9fb"; }
+.#{$bettericons-class-name}-user-chef:before { content: "\e9fc"; }
+.#{$bettericons-class-name}-product3:before { content: "\e9fd"; }
+.#{$bettericons-class-name}-product4:before { content: "\e9fe"; }
+.#{$bettericons-class-name}-resize-full:before { content: "\e9ff"; }
+.#{$bettericons-class-name}-resize-small:before { content: "\ea00"; }
+.#{$bettericons-class-name}-resize-full2:before { content: "\ea01"; }
+.#{$bettericons-class-name}-resize-small2:before { content: "\ea02"; }
+.#{$bettericons-class-name}-search:before { content: "\ea03"; }
+.#{$bettericons-class-name}-zoom-in:before { content: "\ea04"; }
+.#{$bettericons-class-name}-zoom-out:before { content: "\ea05"; }
+.#{$bettericons-class-name}-select-up:before { content: "\ea06"; }
+.#{$bettericons-class-name}-select-down:before { content: "\ea07"; }
+.#{$bettericons-class-name}-select-duo:before { content: "\ea08"; }
+.#{$bettericons-class-name}-select-up-half:before { content: "\ea09"; }
+.#{$bettericons-class-name}-select-down-half:before { content: "\ea0a"; }
+.#{$bettericons-class-name}-select-duo-half:before { content: "\ea0b"; }
+.#{$bettericons-class-name}-select-up-circle:before { content: "\ea0c"; }
+.#{$bettericons-class-name}-select-down-circle:before { content: "\ea0d"; }
+.#{$bettericons-class-name}-select-duo-circle:before { content: "\ea0e"; }
+.#{$bettericons-class-name}-stacker-in:before { content: "\ea0f"; }
+.#{$bettericons-class-name}-stacker:before { content: "\ea10"; }
+.#{$bettericons-class-name}-stacker-full:before { content: "\ea11"; }
+.#{$bettericons-class-name}-stacker-out:before { content: "\ea12"; }
+.#{$bettericons-class-name}-settings-edit:before { content: "\ea13"; }
+.#{$bettericons-class-name}-settings-edit2:before { content: "\ea14"; }
+.#{$bettericons-class-name}-settings-edit3:before { content: "\ea15"; }
+.#{$bettericons-class-name}-settings:before { content: "\ea16"; }
+.#{$bettericons-class-name}-sex-female:before { content: "\ea17"; }
+.#{$bettericons-class-name}-sex-male:before { content: "\ea18"; }
+.#{$bettericons-class-name}-share:before { content: "\ea19"; }
+.#{$bettericons-class-name}-share2:before { content: "\ea1a"; }
+.#{$bettericons-class-name}-shield:before { content: "\ea1b"; }
+.#{$bettericons-class-name}-shield-men:before { content: "\ea1c"; }
+.#{$bettericons-class-name}-shield-checked:before { content: "\ea1d"; }
+.#{$bettericons-class-name}-shield-star:before { content: "\ea1e"; }
+.#{$bettericons-class-name}-shield-lock:before { content: "\ea1f"; }
+.#{$bettericons-class-name}-star:before { content: "\ea20"; }
+.#{$bettericons-class-name}-star-half:before { content: "\ea21"; }
+.#{$bettericons-class-name}-star-full:before { content: "\ea22"; }
+.#{$bettericons-class-name}-sync:before { content: "\ea23"; }
+.#{$bettericons-class-name}-sync2:before { content: "\ea24"; }
+.#{$bettericons-class-name}-text-left:before { content: "\ea25"; }
+.#{$bettericons-class-name}-text-block:before { content: "\ea26"; }
+.#{$bettericons-class-name}-text-right:before { content: "\ea27"; }
+.#{$bettericons-class-name}-text-edit:before { content: "\ea28"; }
+.#{$bettericons-class-name}-text-list-plus:before { content: "\ea29"; }
+.#{$bettericons-class-name}-text-list:before { content: "\ea2a"; }
+.#{$bettericons-class-name}-text-left-small:before { content: "\ea2b"; }
+.#{$bettericons-class-name}-text:before { content: "\ea2c"; }
+.#{$bettericons-class-name}-timer:before { content: "\ea2d"; }
+.#{$bettericons-class-name}-trash:before { content: "\ea2e"; }
+.#{$bettericons-class-name}-umbrella:before { content: "\ea2f"; }
+.#{$bettericons-class-name}-van-delivery:before { content: "\ea30"; }
+.#{$bettericons-class-name}-view-list-circle:before { content: "\ea31"; }
+.#{$bettericons-class-name}-view-block-circle:before { content: "\ea32"; }
+.#{$bettericons-class-name}-view-block-circle2:before { content: "\ea33"; }
+.#{$bettericons-class-name}-view-list-square:before { content: "\ea34"; }
+.#{$bettericons-class-name}-view-block-square:before { content: "\ea35"; }
+.#{$bettericons-class-name}-wrench:before { content: "\ea36"; }
+.#{$bettericons-class-name}-wrench2:before { content: "\ea37"; }
+.#{$bettericons-class-name}-social-facebook-circle-half:before { content: "\ea38"; }
+.#{$bettericons-class-name}-social-google-circle-half:before { content: "\ea39"; }
+.#{$bettericons-class-name}-social-google2-circle-half:before { content: "\ea3a"; }
+.#{$bettericons-class-name}-social-instagram-circle-half:before { content: "\ea3b"; }
+.#{$bettericons-class-name}-social-github-circle-half:before { content: "\ea3c"; }
+.#{$bettericons-class-name}-social-linkedin-circle-half:before { content: "\ea3d"; }
+.#{$bettericons-class-name}-social-xing-circle-half:before { content: "\ea3e"; }
+.#{$bettericons-class-name}-social-mail-circle-half:before { content: "\ea3f"; }
+.#{$bettericons-class-name}-social-paypal-circle-half:before { content: "\ea40"; }
+.#{$bettericons-class-name}-social-pinterest-circle-half:before { content: "\ea41"; }
+.#{$bettericons-class-name}-social-pocket-circle-half:before { content: "\ea42"; }
+.#{$bettericons-class-name}-social-spotify-circle-half:before { content: "\ea43"; }
+.#{$bettericons-class-name}-social-tumblr-circle-half:before { content: "\ea44"; }
+.#{$bettericons-class-name}-social-twitter-circle-half:before { content: "\ea45"; }
+.#{$bettericons-class-name}-social-youtube-circle-half:before { content: "\ea46"; }
+.#{$bettericons-class-name}-social-facebook-circle:before { content: "\ea47"; }
+.#{$bettericons-class-name}-social-google-circle:before { content: "\ea48"; }
+.#{$bettericons-class-name}-social-google2-circle:before { content: "\ea49"; }
+.#{$bettericons-class-name}-social-instagram-circle:before { content: "\ea4a"; }
+.#{$bettericons-class-name}-social-github-circle:before { content: "\ea4b"; }
+.#{$bettericons-class-name}-social-linkedin-circle:before { content: "\ea4c"; }
+.#{$bettericons-class-name}-social-xing-circle:before { content: "\ea4d"; }
+.#{$bettericons-class-name}-social-mail-circle:before { content: "\ea4e"; }
+.#{$bettericons-class-name}-social-paypal-circle:before { content: "\ea4f"; }
+.#{$bettericons-class-name}-social-pinterest-circle:before { content: "\ea50"; }
+.#{$bettericons-class-name}-social-pocket-circle:before { content: "\ea51"; }
+.#{$bettericons-class-name}-social-spotify-circle:before { content: "\ea52"; }
+.#{$bettericons-class-name}-social-tumblr-circle:before { content: "\ea53"; }
+.#{$bettericons-class-name}-social-twitter-circle:before { content: "\ea54"; }
+.#{$bettericons-class-name}-social-youtube-circle:before { content: "\ea55"; }
+
+
