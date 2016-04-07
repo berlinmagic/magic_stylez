@@ -48,14 +48,20 @@
 	z-index: 2;
 	transform: rotateY(0deg);
 	background: #fff;
-	background-size: cover;
+	&.bg {
+	    background-size: cover;
+	    background-image: image-url("magic/bgs/rain-flower.jpg");
+	}
 }
 
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(-180deg);
 	background: #ccc;
-	background-size: cover;
+	&.bg {
+	    background-size: cover;
+	    background-image: image-url("magic/bgs/seucide.jpg");
+	}
 }
 
 

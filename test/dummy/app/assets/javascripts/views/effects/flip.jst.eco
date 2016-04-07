@@ -40,9 +40,30 @@
           </div>
         </div>
       </div>
+      
+      <div class="col-sm-6">
+        <h4>Usual with Image</h4>
+        <p>Reacts on hover</p>
+        <div class="flip-container">
+          <div class="front bg"></div>
+          <div class="back bg"></div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h4>Infinite with Image</h4>
+        <p>Allways flips</p>
+        <div class="flip-container infinite">
+          <div class="front bg"></div>
+          <div class="back bg"></div>
+        </div>
+      </div>
     </div>
     
   </div>
 </div>
 
-
+<div class="section sctn-xl">
+  <div class="corset">
+    <br/>
+  </div>
+</div>

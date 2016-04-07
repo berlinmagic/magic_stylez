@@ -1,0 +1,94 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Dots</h1>
+  </div>
+</div>
+
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4>
+    <code>@import "magic/helper/dots";</code>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset center_text">
+    
+    <div class="row">
+      
+      <div class="col-sm-3">
+        <div class="dot dot-<%= x %>"></div>
+        .dot
+        <div class="clearfix"></div>
+        <br/>
+      </div>
+      
+      <% for x, i in ["default", "success", "info", "warning", "danger", "brand", "one", "two", "three", "facebook", "google", "twitter", "paypal"]: %>
+        <div class="col-sm-3">
+          <div class="dot dot-<%= x %>"></div>
+          .dot.dot-<%= x %>
+          <div class="clearfix"></div>
+          <br/>
+        </div>
+      <% end %>
+    </div>
+    
+    
+  </div>
+</div>
+
+<div class="section head">
+  <div class="corset">
+    <h1>Number-Dots</h1>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset center_text">
+    
+    <div class="row">
+      <% for x in [1,2,3,4]: %>
+        <div class="col-sm-3">
+          <div class="number_dot"><%= x %></div>
+        </div>
+      <% end %>
+    </div>
+    
+    
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset center_text">
+    
+    <h3>Sizes</h3>
+    
+    <div class="row">
+      <% for x, i in ["xs", "sm", "", "lg", "xl", "xxl"]: %>
+        <div class="col-sm-2">
+          <div class="number_dot dot-brand<%= if x != "" then " dot-#{x}" else "" %>"><%= i + 1 %></div>
+          <div class="clearfix"></div>
+          <p><%= if x != "" then ".dot-#{x}" else "" %></p>
+        </div>
+      <% end %>
+    </div>
+    
+    <br/>
+    
+    <h3>Colors</h3>
+    
+    <div class="row">
+      <% for x, i in ["default", "success", "info", "warning", "danger", "brand", "one", "two", "three", "facebook", "google", "twitter", "paypal"]: %>
+        <div class="col-sm-2">
+          <div class="number_dot dot-lg dot-<%= x %>"><%= i + 1 %></div>
+          <div class="clearfix"></div>
+          <p>.dot-<%= x %></p>
+        </div>
+      <% end %>
+    </div>
+    
+    
+  </div>
+</div>
+
+
