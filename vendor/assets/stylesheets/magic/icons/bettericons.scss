@@ -59,6 +59,13 @@ $bettericons-class-name: "bettericon";
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    
+    /* Make them bigger =========== */
+    font-size: 1.4em;
+    vertical-align: middle;
+    line-height: .9em;
+    &:before { vertical-align: text-top; }
+    
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -5,35 +5,61 @@
 </div>
 
 <div class="section">
-  <div class="corset">
+  <div class="corset full">
     <div class="row">
       <% dflt_btns = ["default", "success", "primary", "info", "warning", "danger"] %>
       <% brnd_btns = ["brand"] %>
       <% cstm_btns = ["one", "two", "three"] %>
       
+      <% colClass = "col-md-6 col-lg-4" %>
+      
       <% buttons = { default: dflt_btns, brand: brnd_btns, custom: cstm_btns } %>
-      <div class="col-md-6">
-        <h4 class="center_text">Flat</h4>
+      <div class="<%= colClass %>">
+        <h4>Flat</h4>
         <% for key, value of buttons: %>
           <hr/>
-          <h5 class="center_text"><%= key %></h5>
+          <h5><%= key %></h5>
           <% for btn, i in value: %>
             <p class="loud">
-              Some text .. 
               <span class="label label-<%= btn %>">.label-<%= btn %></span>
             </p>
           <% end %>
         <% end %>
       </div>
-      <div class="col-md-6">
-        <h4 class="center_text">Blank</h4>
+      <div class="<%= colClass %>">
+        <h4>Blank</h4>
         <% for key, value of buttons: %>
           <hr/>
-          <h5 class="center_text"><%= key %></h5>
+          <h5><%= key %></h5>
           <% for btn, i in value: %>
             <p class="loud">
-              Some text .. 
               <span class="label label-<%= btn %> label-blank">.label-<%= btn %> + .label-blank</span>
+            </p>
+          <% end %>
+        <% end %>
+      </div>
+      
+      <div class="<%= colClass %>">
+        <h4>Blank - Soft</h4>
+        <% for key, value of buttons: %>
+          <hr/>
+          <h5><%= key %></h5>
+          <% for btn, i in value: %>
+            <p class="loud">
+              <span class="label label-<%= btn %> label-blank-soft">.label-<%= btn %> + .label-blank-soft</span>
+            </p>
+          <% end %>
+        <% end %>
+      </div>
+      
+      <div class="<%= colClass %>">
+        <h4>Round</h4>
+        <% for key, value of buttons: %>
+          <hr/>
+          <h5><%= key %></h5>
+          <% for btn, i in value: %>
+            <p class="loud">
+              <span class="label label-<%= btn %> label-round">.label-<%= btn %> + .label-round</span>
             </p>
           <% end %>
         <% end %>

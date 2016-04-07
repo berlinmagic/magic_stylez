@@ -7,8 +7,7 @@
 <div class="section dark flatted">
   <div class="corset">
     <h4>dependency:</h4> 
-    <code>@import "magic/content/buttons";</code><br/>
-    <code>@import "magic/content/buttons_nice";</code>
+    <code>@import "magic/content/buttons";</code>
   </div>
 </div>
 
@@ -126,7 +125,7 @@
 <div class="section">
   <div class="corset">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <h4 class="center_text">Flat</h4>
         <hr/>
         <% buttons = ["facebook", "google", "paypal", "twitter"]%>
@@ -141,12 +140,27 @@
           </div>
         <% end%>
       </div>
-      <div class="col-md-6">
-        <h4 class="center_text">Nice</h4>
+      <div class="col-md-4">
+        <h4 class="center_text">Blank</h4>
         <hr/>
         <% buttons = ["facebook", "google", "paypal", "twitter"]%>
         <% for btn, i in buttons: %>
-          <div class="btn btn-<%= btn %>-nice btn-lg btn-divided">
+          <div class="btn btn-<%= btn %> btn-blank btn-lg btn-divided">
+            <div class="icn">
+              <i class="icomoon-<%= if btn == "google" then "googleplus" else btn %>"></i>
+            </div>
+            <div class="text">
+              .btn-<%= btn %>-nice
+            </div>
+          </div>
+        <% end%>
+      </div>
+      <div class="col-md-4">
+        <h4 class="center_text">Blur</h4>
+        <hr/>
+        <% buttons = ["facebook", "google", "paypal", "twitter"]%>
+        <% for btn, i in buttons: %>
+          <div class="btn btn-<%= btn %> btn-blur btn-lg btn-divided">
             <div class="icn">
               <i class="icomoon-<%= if btn == "google" then "googleplus" else btn %>"></i>
             </div>
@@ -227,13 +241,13 @@
       </div>
       
       <div class="col-md-3">
-        <h4 class="center_text">Nice</h4>
+        <h4 class="center_text">blank-soft</h4>
         <% for key, value of buttons: %>
           <hr/>
           <h5 class="center_text"><%= key %></h5>
           <% for btn, i in value: %>
-            <div class="btn btn-<%= btn %>-nice btn-lg btn-block">
-              .btn-<%= btn %>-nice
+            <div class="btn btn-<%= btn %> btn-blank-soft btn-lg btn-block">
+              .btn-blank-soft
             </div>
           <% end %>
         <% end %>

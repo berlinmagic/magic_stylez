@@ -148,6 +148,20 @@
   }
 }
 
+@mixin label-blank-soft-variant( $color ) {
+  background-color: transparent;
+  color: $color;
+  border: solid 1px transparentize($color, .60);;
+  &[href] {
+    &:hover,
+    &:focus {
+        color: darken($color, 10%);
+        border: solid 1px transparentize($color, .42);
+        background-color: transparent;
+    }
+  }
+}
+
 
 
 // Button helper from twbs ..changed

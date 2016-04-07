@@ -1,0 +1,115 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Pictures .. <small>Images and Image-helpers</small></h1>
+  </div>
+</div>
+
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4> 
+    <code>@import "magic/content/pix";</code>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    
+    <h4>Avatar <code>.avatar</code></h4>
+    <p>Round Image in different sizes</p>
+    <div class="row">
+      <% for size in ["xs", "sm", "", "lg", "xl", "xxl"]: %>
+        <div class="col-xs-4 col-sm-2">
+          <code>.avatar<%= if size != "" then ".#{size}" else "" %></code>
+          <div class="clearfix"></div>
+          <img src="<%= assetPath("magic/pix/avatar.jpg") %>" class="avatar <%= size %>" />
+          <div class="clearfix"></div>
+        </div>
+      <% end %>
+    </div>
+    
+    <br/>
+    
+    <h4>Logo <code>.logo</code></h4>
+    <p>Rounded Image in different sizes</p>
+    <div class="row">
+      <% for size in ["xs", "sm", "", "lg", "xl", "xxl"]: %>
+        <div class="col-xs-4 col-sm-2">
+          <code>.logo<%= if size != "" then ".#{size}" else "" %></code>
+          <div class="clearfix"></div>
+          <img src="<%= assetPath("magic/pix/magic.jpg") %>" class="logo <%= size %>" />
+          <div class="clearfix"></div>
+        </div>
+      <% end %>
+    </div>
+    
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset tight">
+    
+    <h4>Image Cards <code>.image_card</code> | <code>.image-card</code></h4>
+    <p>For Images with Text, like Avatars or Projects.</p>
+    <div class="image_card">
+      <img src="<%= assetPath("magic/pix/magic.jpg") %>" />
+      <p>Text one</p>
+      <p>Text two</p>
+    </div>
+    
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset tight">
+    
+    <h4>Responsive <code>.responsive</code></h4>
+    <p>Responsive Image, allways uses 100% of available width.</p>
+    <img src="<%= assetPath("magic/bgs/rain-flower.jpg") %>" class="responsive" />
+    
+  </div>
+</div>
+
+
+<div class="section hard-top">
+  <div class="corset tight">
+    
+    <h4>Pic-List <code>ul.pic-list</code></h4>
+    <ul class="pic-list">
+      <li>
+        <div>
+          <div class="pic">
+            <img src="<%= assetPath("magic/pix/magic.jpg") %>" class="responsive" />
+          </div>
+          <div class="facts">
+            <div class="head">
+              Head - Text
+            </div>
+            <div class="body">
+              Body - Text
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div class="pic">
+            <img src="<%= assetPath("magic/pix/magic.jpg") %>" class="responsive" />
+          </div>
+          <div class="facts">
+            <div class="head">
+              Head - Text
+            </div>
+            <div class="body">
+              Body - Text
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>

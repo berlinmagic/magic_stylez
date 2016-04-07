@@ -1,0 +1,97 @@
+<div class="section head">
+  <div class="corset">
+    <h1>(Old School-) Gradient Buttons</h1>
+  </div>
+</div>
+
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4> 
+    <code>@import "magic/content/buttons_nice";</code>
+  </div>
+</div>
+
+
+<div class="section flat-bottom hard-top">
+  <div class="corset">
+    <h2>Available Colors</h2>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    <div class="row">
+      <% dflt_btns = ["default", "success", "primary", "info", "warning", "danger"] %>
+      <% scl_btns = ["facebook", "google", "paypal", "twitter"] %>
+      <% brnd_btns = ["brand"] %>
+      <% cstm_btns = ["one", "two", "three"] %>
+      
+      <% buttons = { default: dflt_btns, socials: scl_btns, brand: brnd_btns, custom: cstm_btns } %>
+
+      
+  
+        <% for key, value of buttons: %>
+          <div class="col-md-3">
+          <h5 class="center_text"><%= key %></h5>
+          <% for btn, i in value: %>
+            <div class="btn btn-<%= btn %>-nice btn-lg btn-block">
+              .btn-<%= btn %>-nice
+            </div>
+          <% end %>
+          </div>
+        <% end %>
+        
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    <div class="row">
+      <div class="col-md-6">
+        <h4 class="center_text">Nice</h4>
+        <hr/>
+        <% buttons = ["facebook", "google", "paypal", "twitter"]%>
+        <% for btn, i in buttons: %>
+          <div class="btn btn-<%= btn %>-nice btn-lg btn-divided">
+            <div class="icn">
+              <i class="icomoon-<%= if btn == "google" then "googleplus" else btn %>"></i>
+            </div>
+            <div class="text">
+              .btn-<%= btn %>-nice
+            </div>
+          </div>
+        <% end%>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    <h2>Special Classes:</h2>
+    <% btns = ["btn-xs", "btn-sm", "", "btn-lg", "btn-xl"] %>
+    <h4>Round</h4>
+    <% for btn in btns: %>
+      <button class="btn btn-success btn-round <%= btn %>">
+        .btn-round + .<%= btn %>
+      </button>
+    <% end %>
+    <h4>Borderless</h4>
+    <% for btn in btns: %>
+      <button class="btn btn-success btn-borderless btn-blur <%= btn %>">
+        .btn-borderless + .<%= btn %>
+      </button>
+    <% end %>
+    <h4>Width</h4>
+    <% for btn in btns: %>
+      <button class="btn btn-primary btn-width <%= btn %>">
+        .btn-width + .<%= btn %>
+      </button>
+    <% end %>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>

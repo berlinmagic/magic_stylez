@@ -6,6 +6,8 @@
 
 appImages = <%= imgs.to_json %>
 
+# console.log "appImages", appImages
+
 @assetPath = (path) ->
   # "/assets/angular/app/views/#{path}.html"
   appImages["#{path}"]
