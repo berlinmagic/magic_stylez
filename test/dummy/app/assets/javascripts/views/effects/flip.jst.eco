@@ -1,0 +1,48 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Flip - Effect</h1>
+  </div>
+</div>
+
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4> 
+    <code>@import "magic/effects/flip";</code>
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="corset top">
+    
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Usual</h4>
+        <p>Reacts on hover</p>
+        <div class="flip-container">
+          <div class="front">
+            Hallo Welt
+          </div>
+          <div class="back">
+            Hello World
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h4>Infinite</h4>
+        <p>Allways flips</p>
+        <div class="flip-container infinite">
+          <div class="front">
+            Hallo Welt
+          </div>
+          <div class="back">
+            Hello World
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
