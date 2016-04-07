@@ -1,0 +1,136 @@
+<div class="section head">
+  <div class="corset">
+    <h1><small>Responsive</small> Tile - Buckets</h1>
+  </div>
+</div>
+
+<div class="section dark flatted">
+  <div class="corset">
+    <h4>dependency:</h4>
+    <code>@import "magic/helper/tile_buckets";</code>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">
+    
+    <h3>Needs to be written without spaces between the <code>.tile</code> elements.</h3>
+    
+<pre><code>&lt;div class=&quot;bucket&quot;&gt;
+  &lt;div class=&quot;tile&quot;&gt;
+    ...
+  &lt;/div&gt;&lt;div class=&quot;tile&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">
+    
+    <p class="loud">Filled with Products + <small><code>.spaced_10</code></small></p>
+    <div class="responsive_bucket bucket spaced_10">
+      <% for nmbr in [1..8]: %><div class="responsive_tile">
+        <div class="box product">
+          <div class="body">
+            <img class="responsive" src="http://lorempixel.com/400/300/technics/<%= nmbr %>" alt="White 43">
+            <div class="clearfix"></div>
+            <div class="product-name">
+              Product <%= nmbr %>
+            </div>
+            <div class="product-facts">
+              some details you should know
+            </div>
+          </div>
+        </div>
+      </div><% end %>
+    </div>
+    
+  </div>
+</div>
+
+<div class="section">
+  <div class="corset">
+    <p class="loud">No Spaces Between boxes .. <small>needs to be written without spaces between the <code>.tile</code> elements.</small></p>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="bucket bucket_s_2_4">
+          <% for nmbr in [1..8]: %><div class="responsive_tile">
+            <img src="http://lorempixel.com/400/400/sports/<%= nmbr %>" class="responsive" >
+            <%#= nmbr %>
+          </div><% end %>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="bucket bucket_s_2_4">
+          <% for nmbr in [1..8]: %><div class="responsive_tile">
+            <img src="http://lorempixel.com/400/400/nature/<%= nmbr %>" class="responsive" >
+            <%#= nmbr %>
+          </div><% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset">
+    <table class="table table-lined table-no-head">
+      <tr>
+        <td colspan="2"><strong>Buckets:</strong></td>
+      </tr>
+      <tr>
+        <td><code>.bucket</code> | <code>.tile_bucket</code> | <code>.tileBucket</code></td>
+        <td>Usual Bucket</td>
+      </tr>
+      
+      <tr>
+        <td colspan="2">Sizes:</td>
+      </tr>
+      <tr>
+        <td><code>.bucket.bucket_s_1_4</code></td>
+        <td>1/4 Sized bucket</td>
+      </tr>
+      <tr>
+        <td><code>.bucket.bucket_s_2_4</code></td>
+        <td>1/2 Sized bucket</td>
+      </tr>
+      <tr>
+        <td><code>.bucket.bucket_s_3_4</code></td>
+        <td>3/4 Sized bucket</td>
+      </tr>
+      
+      <tr>
+        <td colspan="2">Spaces:</td>
+      </tr>
+      <tr>
+        <td><code>.bucket.spaced_5</code></td>
+        <td>5px Size between Tiles</td>
+      </tr>
+      <tr>
+        <td><code>.bucket.spaced_0|5|10|15|20|30|40|50</code></td>
+        <td>0|5|10|15|20|30|40|50px Size between Tiles</td>
+      </tr>
+      
+      <tr>
+        <td colspan="2"><strong>Tiles:</strong></td>
+      </tr>
+      <tr>
+        <td><code>.tile</code> | <code>.responsive_tile</code> | <code>.responsiveTile</code></td>
+        <td>Usual Tile</td>
+      </tr>
+      
+    </table>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="bucket">
+    <% for nmbr in [1..8]: %><div class="responsive_tile">
+      <img src="http://lorempixel.com/400/400/abstract/<%= nmbr %>" class="responsive" >
+      <%#= nmbr %>
+    </div><% end %>
+  </div>
+</div>

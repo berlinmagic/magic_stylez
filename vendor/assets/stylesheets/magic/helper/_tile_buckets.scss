@@ -1,0 +1,99 @@
+.bucket, .tile_bucket, .tileBucket { position: relative; text-align: center; }
+
+.tile, .responsive_tile, .responsiveTile {
+	// float: left;
+	display: inline; display: inline-block;
+	width: 50%;
+	&.item { width: 48%; }
+	// @include no_wrap;
+	overflow: visible;
+	img {
+		vertical-align: top;
+		width: 100%;
+	}
+	
+
+	z-index: 3;
+	
+}
+
+
+
+
+
+.bucket_s_3_4, .bucket_s_2_4, .bucket_s_1_4 {
+    .tile, .responsive_tile, .responsiveTile { width: 100%; }
+}
+
+
+
+@media only screen and (min-width: 460px) {
+	
+	
+	// .tile, .responsive_tile, .responsiveTile { width: 33.33333%; &.item { width: 32.33333%; } }
+	.bucket_s_3_4 { .tile, .responsive_tile, .responsiveTile { width: 50%; &.item { width: 48%; } } }
+	.bucket_s_2_4 { .tile, .responsive_tile, .responsiveTile {width: 100%;} }
+	.bucket_s_1_4 { .tile, .responsive_tile, .responsiveTile {width: 100%;} }
+	
+}
+
+@media only screen and (min-width: 760px) {
+	
+	// .tile, .responsive_tile, .responsiveTile { width: 25%; &.item { width: 24%; } }
+	.tile, .responsive_tile, .responsiveTile { width: 33.33333%; &.item { width: 32.33333%; } }
+	.bucket_s_3_4, .bucket_3_4 { .tile, .responsive_tile, .responsiveTile {width: 33.33333%; &.item { width: 32.33333%; } } }
+	.bucket_s_2_4, .bucket_2_4 { .tile, .responsive_tile, .responsiveTile {width: 50%; &.item { width: 48%; } } }
+	.bucket_s_1_4, .bucket_1_4 { .tile, .responsive_tile, .responsiveTile {width: 50%; &.item { width: 48%; } } }
+	
+	.bucket_33 { .tile, .responsive_tile, .responsiveTile {width: 33.33333%; &.item { width: 32.33333%; }}}
+	
+}
+
+@media only screen and (min-width: 1010px) {
+	
+	// .tile, .responsive_tile, .responsiveTile { width: 20%; &.item { width: 19.5%; } }
+	.tile, .responsive_tile, .responsiveTile { width: 25%; &.item { width: 24%; } }
+	.bucket_s_3_4, .bucket_3_4, .bucket_l_3_4 { .tile, .responsive_tile, .responsiveTile {width: 25%;  &.item { width: 24%; } }}
+	.bucket_s_2_4, .bucket_2_4, .bucket_l_2_4 { .tile, .responsive_tile, .responsiveTile {width: 33.33333%; &.item { width: 32.33333%; }}}
+	.bucket_s_1_4, .bucket_1_4, .bucket_l_1_4 { .tile, .responsive_tile, .responsiveTile {width: 50%; &.item { width: 48%; } } }
+	
+}
+
+
+@media only screen and (min-width: 1260px) {
+	
+	// .tile, .responsive_tile, .responsiveTile { width: 16.66666%; &.item { width: 16.3%; } }
+	.tile, .responsive_tile, .responsiveTile { width: 20%; &.item { width: 19.5%; } }
+	.bucket_s_3_4, .bucket_3_4, .bucket_l_3_4 { .tile, .responsive_tile, .responsiveTile {width: 20%; &.item { width: 19.5%; } }}
+	.bucket_s_2_4, .bucket_2_4, .bucket_l_2_4 { .tile, .responsive_tile, .responsiveTile {width: 25%; &.item { width: 24%; } }}
+	.bucket_s_1_4, .bucket_1_4, .bucket_l_1_4 { .tile, .responsive_tile, .responsiveTile {width: 50%; &.item { width: 48%; } }}
+	
+}
+
+
+
+.quarter-bucket {
+	.tile, .responsive_tile, .responsiveTile { width: 25%; &.item { width: 24%; } }
+}
+
+.bucket, .tile_bucket, .tileBucket {
+    .tile-bucket {
+        display: none; position: relative;
+        margin: 0; padding: 0;
+        &.active { display: block; }
+    }
+    
+    
+    @each $size in 0, 5, 10, 15, 20, 30, 40, 50 {
+    
+        &.spaced_#{$size} {
+            @include horizontal_margin( -#{$size}px );
+            .tile, .responsive_tile, .responsiveTile { 
+                padding: #{$size}px;
+                & > * { margin: 0; }
+            }
+        }
+    }
+    
+}
+
