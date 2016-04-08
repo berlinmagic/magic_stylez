@@ -12787,6 +12787,23 @@ html, body, #body {
     padding-left: 50px;
     padding-right: 50px; }
 
+.btn-uppercase, .btn-upcase {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 5px; }
+  .btn-uppercase.btn-xs, .btn-group-xs > .btn-uppercase.btn, .btn-upcase.btn-xs, .btn-group-xs > .btn-upcase.btn {
+    letter-spacing: 1px;
+    word-spacing: 3px; }
+  .btn-uppercase.btn-sm, .btn-group-sm > .btn-uppercase.btn, .btn-upcase.btn-sm, .btn-group-sm > .btn-upcase.btn {
+    letter-spacing: 1px;
+    word-spacing: 3px; }
+  .btn-uppercase.btn-lg, .btn-group-lg > .btn-uppercase.btn, .btn-upcase.btn-lg, .btn-group-lg > .btn-upcase.btn {
+    letter-spacing: 2px;
+    word-spacing: 5px; }
+  .btn-uppercase.btn-xl, .btn-upcase.btn-xl {
+    letter-spacing: 2px;
+    word-spacing: 6px; }
+
 .btn-group-block.input-group .btn {
   text-align: left;
   padding: 10px; }
@@ -15597,9 +15614,9 @@ a.image-card, a.image_card {
     text-decoration: none;
     color: #006699; }
 
-table.table.table-middled tr th, table.table.table-middled tr td {
+table.table.table-middled tr th, table.table.table-middled tr td, table.table.middled tr th, table.table.middled tr td {
   vertical-align: middle; }
-  table.table.table-middled tr th > *, table.table.table-middled tr td > * {
+  table.table.table-middled tr th > *, table.table.table-middled tr td > *, table.table.middled tr th > *, table.table.middled tr td > * {
     vertical-align: middle; }
 table.table.table-left tr th, table.table.table-left tr td {
   text-align: left; }
@@ -15609,11 +15626,55 @@ table.table.table-lg tr th, table.table.table-lg tr td {
   padding: 14px 8px; }
 table.table.table-xl tr th, table.table.table-xl tr td {
   padding: 20px 8px; }
-
-table.table-no-head > tr:first-child, table.table-no-head tbody tr:first-child {
+table.table.table-no-head > tr:first-child, table.table.table-no-head tbody tr:first-child {
   border-top: none; }
-  table.table-no-head > tr:first-child td, table.table-no-head > tr:first-child th, table.table-no-head tbody tr:first-child td, table.table-no-head tbody tr:first-child th {
+  table.table.table-no-head > tr:first-child td, table.table.table-no-head > tr:first-child th, table.table.table-no-head tbody tr:first-child td, table.table.table-no-head tbody tr:first-child th {
     border-top: none; }
+table.table th.col-1, table.table td.col-1 {
+  width: 8.3333333333%; }
+table.table th.col-2, table.table td.col-2 {
+  width: 16.6666666667%; }
+table.table th.col-3, table.table td.col-3 {
+  width: 25%; }
+table.table th.col-4, table.table td.col-4 {
+  width: 33.3333333333%; }
+table.table th.col-5, table.table td.col-5 {
+  width: 41.6666666667%; }
+table.table th.col-6, table.table td.col-6 {
+  width: 50%; }
+table.table th.col-7, table.table td.col-7 {
+  width: 58.3333333333%; }
+table.table th.col-8, table.table td.col-8 {
+  width: 66.6666666667%; }
+table.table th.col-9, table.table td.col-9 {
+  width: 75%; }
+table.table th.col-10, table.table td.col-10 {
+  width: 83.3333333333%; }
+table.table th.col-11, table.table td.col-11 {
+  width: 91.6666666667%; }
+table.table th.col-12, table.table td.col-12 {
+  width: 100%; }
+
+table.facts {
+  width: auto;
+  margin: 0 auto;
+  border-spacing: 5px; }
+  table.facts.prdct {
+    margin: 0; }
+
+table.facts th {
+  font-weight: 200;
+  color: #666;
+  text-align: right; }
+
+table.facts td {
+  font-weight: 400;
+  color: #333;
+  text-align: left; }
+
+table.facts {
+  border-spacing: 8px 0;
+  border-collapse: separate; }
 
 .help_arrow {
   position: relative;
