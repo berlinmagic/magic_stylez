@@ -95,18 +95,24 @@
     	    &.dot-blank {
     	        background-color:   transparent;
         	    color:              map-get($appColorz, btn-#{$current-color}-bg);
-        	    border-color:       map-get($appColorz, btn-#{$current-color}-border);
+        	    border-color:       map-get($appColorz, btn-#{$current-color}-bg);
     	    }
     	    &.dot-blank-soft {
     	        background-color:   transparent;
         	    color:              map-get($appColorz, btn-#{$current-color}-bg);
-        	    border-color:       transparentize(map-get($appColorz, btn-#{$current-color}-border), .58);
+        	    border-color:       transparentize(map-get($appColorz, btn-#{$current-color}-bg), .58);
     	    }
 	    }
 	}
 	&.dot-default {
-	    &.dot-blank {       color:              map-get($appColorz, btn-default-border); }
-    	&.dot-blank-soft {  color:              map-get($appColorz, btn-default-border); }
+	    &.dot-blank {
+	        color:              map-get($appColorz, btn-default-border);
+	        border-color:       map-get($appColorz, btn-default-border);
+	    }
+    	&.dot-blank-soft {
+    	    color:              map-get($appColorz, btn-default-border);
+    	    border-color:       transparentize(map-get($appColorz, btn-default-border), .58);
+    	}
 	}
 }
 
