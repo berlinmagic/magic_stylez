@@ -12,7 +12,7 @@
 	line-height: 36px;
 	text-align: center;
 	@include border-radius( 100px );
-	@include box-shadow (inset 0 1px 1px 0 rgba(51,102,153,0.4));
+	box-shadow: inset 0 1px 1px 0 rgba(51,102,153,0.4);
 	text-shadow: 0 2px rgba(51,102,153,0.4);
 	border: solid 2px #fff;
 	color: #fff;
@@ -21,7 +21,21 @@
 	font-weight: 800;
 	margin: 0 auto $general-vertical-spacing-half;
 	
-	
+	&.dot-blank {
+        background-color:   transparent;
+        color:              $pink;
+        border-color:       $pink;
+        text-shadow:        none;
+        box-shadow:         none;
+    }
+    
+    &.dot-blank-soft {
+        background-color:   transparent;
+        color:              $pink;
+        border-color:       transparentize($pink, .58);
+        text-shadow:        none;
+        box-shadow:         none;
+    }
 
 	
 	&.sm {
@@ -31,6 +45,7 @@
 	    border: solid 1px #fff;
 	    font-size: 18px;
 	    margin: 0 5px 0 0;
+	    text-shadow: none;
 	}
 	
 	&.dot-xs {
@@ -38,12 +53,14 @@
 	    line-height: 18px;
 	    border-width: 1px;
 	    font-size: 14px;
+	    text-shadow: none;
 	}
 	&.dot-sm {
 	    height: 30px; width: 30px;
 	    line-height: 26px;
 	    border-width: 1px;
 	    font-size: 18px;
+	    text-shadow: none;
 	}
 	
 	&.dot-lg {
@@ -75,7 +92,21 @@
 	        background-color:   map-get($appColorz, btn-#{$current-color}-bg);
     	    color:              map-get($appColorz, btn-#{$current-color}-color);
     	    border-color:       map-get($appColorz, btn-#{$current-color}-border);
+    	    &.dot-blank {
+    	        background-color:   transparent;
+        	    color:              map-get($appColorz, btn-#{$current-color}-bg);
+        	    border-color:       map-get($appColorz, btn-#{$current-color}-border);
+    	    }
+    	    &.dot-blank-soft {
+    	        background-color:   transparent;
+        	    color:              map-get($appColorz, btn-#{$current-color}-bg);
+        	    border-color:       transparentize(map-get($appColorz, btn-#{$current-color}-border), .58);
+    	    }
 	    }
+	}
+	&.dot-default {
+	    &.dot-blank {       color:              map-get($appColorz, btn-default-color); }
+    	&.dot-blank-soft {  color:              map-get($appColorz, btn-default-color); }
 	}
 }
 
