@@ -22,13 +22,19 @@
     <p class="loud">There are many usecases for dividers</p>
     
     <div class="divider half">
-      <span class="name">I'm a .half divider</span>
+      <span class="name">I'm a <code>.half</code> divider</span>
+    </div>
+    
+    <p class="loud">There are many usecases for dividers</p>
+    
+    <div class="divider left">
+      <span class="name">I'm a <code>.left</code> divider</span>
     </div>
     
     <p class="loud">There are many usecases for dividers</p>
     
     <div class="divider tight">
-      <span class="name">I'm a .tight divider</span>
+      <span class="name">I'm a <code>.tight</code> divider</span>
     </div>
 
     

@@ -16,6 +16,15 @@
 
 <div class="section sctn-sm">
   <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.96</h4>
+    <p>
+      + improve divider <code>.divider.left</code>
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
     <h4><small>Version</small> 0.0.0.94</h4>
     <p>
       + add grid table helper <code>th|td.col-1..12</code>

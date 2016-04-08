@@ -105,8 +105,8 @@
 	    }
 	}
 	&.dot-default {
-	    &.dot-blank {       color:              map-get($appColorz, btn-default-color); }
-    	&.dot-blank-soft {  color:              map-get($appColorz, btn-default-color); }
+	    &.dot-blank {       color:              map-get($appColorz, btn-default-border); }
+    	&.dot-blank-soft {  color:              map-get($appColorz, btn-default-border); }
 	}
 }
 

@@ -44,10 +44,6 @@
   &.active,
   .open > &.dropdown-toggle {
     background-color: darken($background, 10%) !important;
-  }
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
     background-image: none;
   }
   &.disabled,
