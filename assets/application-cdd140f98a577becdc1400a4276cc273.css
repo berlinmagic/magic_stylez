@@ -15852,8 +15852,6 @@ hr.half-press, hr.press-half, .divider.half-press, .divider.press-half {
   line-height: 36px;
   text-align: center;
   border-radius: 100px;
-  -ms-box-shadow: inset 0 1px 1px 0 rgba(51, 102, 153, 0.4);
-  -o-box-shadow: inset 0 1px 1px 0 rgba(51, 102, 153, 0.4);
   box-shadow: inset 0 1px 1px 0 rgba(51, 102, 153, 0.4);
   text-shadow: 0 2px rgba(51, 102, 153, 0.4);
   border: solid 2px #fff;
@@ -15862,25 +15860,40 @@ hr.half-press, hr.press-half, .divider.half-press, .divider.press-half {
   font-size: 22px;
   font-weight: 800;
   margin: 0 auto 10px; }
+  .number_dot.dot-blank, .number-dot.dot-blank, .nmbr_dot.dot-blank, .nmbr-dot.dot-blank {
+    background-color: transparent;
+    color: #c3325f;
+    border-color: #c3325f;
+    text-shadow: none;
+    box-shadow: none; }
+  .number_dot.dot-blank-soft, .number-dot.dot-blank-soft, .nmbr_dot.dot-blank-soft, .nmbr-dot.dot-blank-soft {
+    background-color: transparent;
+    color: #c3325f;
+    border-color: rgba(195, 50, 95, 0.42);
+    text-shadow: none;
+    box-shadow: none; }
   .number_dot.sm, .number-dot.sm, .nmbr_dot.sm, .nmbr-dot.sm {
     height: 24px;
     line-height: 20px;
     width: 24px;
     border: solid 1px #fff;
     font-size: 18px;
-    margin: 0 5px 0 0; }
+    margin: 0 5px 0 0;
+    text-shadow: none; }
   .number_dot.dot-xs, .number-dot.dot-xs, .nmbr_dot.dot-xs, .nmbr-dot.dot-xs {
     height: 20px;
     width: 20px;
     line-height: 18px;
     border-width: 1px;
-    font-size: 14px; }
+    font-size: 14px;
+    text-shadow: none; }
   .number_dot.dot-sm, .number-dot.dot-sm, .nmbr_dot.dot-sm, .nmbr-dot.dot-sm {
     height: 30px;
     width: 30px;
     line-height: 26px;
     border-width: 1px;
-    font-size: 18px; }
+    font-size: 18px;
+    text-shadow: none; }
   .number_dot.dot-lg, .number-dot.dot-lg, .nmbr_dot.dot-lg, .nmbr-dot.dot-lg {
     height: 60px;
     width: 60px;
@@ -15904,54 +15917,162 @@ hr.half-press, hr.press-half, .divider.half-press, .divider.press-half {
   background-color: #fff;
   color: #333;
   border-color: #ccc; }
+  .dot.dot-default.dot-blank, .number_dot.dot-default.dot-blank, .number-dot.dot-default.dot-blank, .nmbr_dot.dot-default.dot-blank, .nmbr-dot.dot-default.dot-blank {
+    background-color: transparent;
+    color: #fff;
+    border-color: #ccc; }
+  .dot.dot-default.dot-blank-soft, .number_dot.dot-default.dot-blank-soft, .number-dot.dot-default.dot-blank-soft, .nmbr_dot.dot-default.dot-blank-soft, .nmbr-dot.dot-default.dot-blank-soft {
+    background-color: transparent;
+    color: #fff;
+    border-color: rgba(204, 204, 204, 0.42); }
 .dot.dot-success, .number_dot.dot-success, .number-dot.dot-success, .nmbr_dot.dot-success, .nmbr-dot.dot-success {
   background-color: #5cb85c;
   color: #fff;
   border-color: #4cae4c; }
+  .dot.dot-success.dot-blank, .number_dot.dot-success.dot-blank, .number-dot.dot-success.dot-blank, .nmbr_dot.dot-success.dot-blank, .nmbr-dot.dot-success.dot-blank {
+    background-color: transparent;
+    color: #5cb85c;
+    border-color: #4cae4c; }
+  .dot.dot-success.dot-blank-soft, .number_dot.dot-success.dot-blank-soft, .number-dot.dot-success.dot-blank-soft, .nmbr_dot.dot-success.dot-blank-soft, .nmbr-dot.dot-success.dot-blank-soft {
+    background-color: transparent;
+    color: #5cb85c;
+    border-color: rgba(76, 174, 76, 0.42); }
 .dot.dot-info, .number_dot.dot-info, .number-dot.dot-info, .nmbr_dot.dot-info, .nmbr-dot.dot-info {
   background-color: #5bc0de;
   color: #fff;
   border-color: #46b8da; }
+  .dot.dot-info.dot-blank, .number_dot.dot-info.dot-blank, .number-dot.dot-info.dot-blank, .nmbr_dot.dot-info.dot-blank, .nmbr-dot.dot-info.dot-blank {
+    background-color: transparent;
+    color: #5bc0de;
+    border-color: #46b8da; }
+  .dot.dot-info.dot-blank-soft, .number_dot.dot-info.dot-blank-soft, .number-dot.dot-info.dot-blank-soft, .nmbr_dot.dot-info.dot-blank-soft, .nmbr-dot.dot-info.dot-blank-soft {
+    background-color: transparent;
+    color: #5bc0de;
+    border-color: rgba(70, 184, 218, 0.42); }
 .dot.dot-warning, .number_dot.dot-warning, .number-dot.dot-warning, .nmbr_dot.dot-warning, .nmbr-dot.dot-warning {
   background-color: #f0ad4e;
   color: #fff;
   border-color: #eea236; }
+  .dot.dot-warning.dot-blank, .number_dot.dot-warning.dot-blank, .number-dot.dot-warning.dot-blank, .nmbr_dot.dot-warning.dot-blank, .nmbr-dot.dot-warning.dot-blank {
+    background-color: transparent;
+    color: #f0ad4e;
+    border-color: #eea236; }
+  .dot.dot-warning.dot-blank-soft, .number_dot.dot-warning.dot-blank-soft, .number-dot.dot-warning.dot-blank-soft, .nmbr_dot.dot-warning.dot-blank-soft, .nmbr-dot.dot-warning.dot-blank-soft {
+    background-color: transparent;
+    color: #f0ad4e;
+    border-color: rgba(238, 162, 54, 0.42); }
 .dot.dot-danger, .number_dot.dot-danger, .number-dot.dot-danger, .nmbr_dot.dot-danger, .nmbr-dot.dot-danger {
   background-color: #d9534f;
   color: #fff;
   border-color: #d43f3a; }
+  .dot.dot-danger.dot-blank, .number_dot.dot-danger.dot-blank, .number-dot.dot-danger.dot-blank, .nmbr_dot.dot-danger.dot-blank, .nmbr-dot.dot-danger.dot-blank {
+    background-color: transparent;
+    color: #d9534f;
+    border-color: #d43f3a; }
+  .dot.dot-danger.dot-blank-soft, .number_dot.dot-danger.dot-blank-soft, .number-dot.dot-danger.dot-blank-soft, .nmbr_dot.dot-danger.dot-blank-soft, .nmbr-dot.dot-danger.dot-blank-soft {
+    background-color: transparent;
+    color: #d9534f;
+    border-color: rgba(212, 63, 58, 0.42); }
 .dot.dot-brand, .number_dot.dot-brand, .number-dot.dot-brand, .nmbr_dot.dot-brand, .nmbr-dot.dot-brand {
   background-color: #a0c775;
   color: #fff;
   border-color: #94c063; }
+  .dot.dot-brand.dot-blank, .number_dot.dot-brand.dot-blank, .number-dot.dot-brand.dot-blank, .nmbr_dot.dot-brand.dot-blank, .nmbr-dot.dot-brand.dot-blank {
+    background-color: transparent;
+    color: #a0c775;
+    border-color: #94c063; }
+  .dot.dot-brand.dot-blank-soft, .number_dot.dot-brand.dot-blank-soft, .number-dot.dot-brand.dot-blank-soft, .nmbr_dot.dot-brand.dot-blank-soft, .nmbr-dot.dot-brand.dot-blank-soft {
+    background-color: transparent;
+    color: #a0c775;
+    border-color: rgba(148, 192, 99, 0.42); }
 .dot.dot-one, .number_dot.dot-one, .number-dot.dot-one, .nmbr_dot.dot-one, .nmbr-dot.dot-one {
   background-color: #e42b3e;
   color: #fff;
   border-color: #da1c2f; }
+  .dot.dot-one.dot-blank, .number_dot.dot-one.dot-blank, .number-dot.dot-one.dot-blank, .nmbr_dot.dot-one.dot-blank, .nmbr-dot.dot-one.dot-blank {
+    background-color: transparent;
+    color: #e42b3e;
+    border-color: #da1c2f; }
+  .dot.dot-one.dot-blank-soft, .number_dot.dot-one.dot-blank-soft, .number-dot.dot-one.dot-blank-soft, .nmbr_dot.dot-one.dot-blank-soft, .nmbr-dot.dot-one.dot-blank-soft {
+    background-color: transparent;
+    color: #e42b3e;
+    border-color: rgba(218, 28, 47, 0.42); }
 .dot.dot-two, .number_dot.dot-two, .number-dot.dot-two, .nmbr_dot.dot-two, .nmbr-dot.dot-two {
   background-color: #aee41c;
   color: #fff;
   border-color: #9dce19; }
+  .dot.dot-two.dot-blank, .number_dot.dot-two.dot-blank, .number-dot.dot-two.dot-blank, .nmbr_dot.dot-two.dot-blank, .nmbr-dot.dot-two.dot-blank {
+    background-color: transparent;
+    color: #aee41c;
+    border-color: #9dce19; }
+  .dot.dot-two.dot-blank-soft, .number_dot.dot-two.dot-blank-soft, .number-dot.dot-two.dot-blank-soft, .nmbr_dot.dot-two.dot-blank-soft, .nmbr-dot.dot-two.dot-blank-soft {
+    background-color: transparent;
+    color: #aee41c;
+    border-color: rgba(157, 206, 25, 0.42); }
 .dot.dot-three, .number_dot.dot-three, .number-dot.dot-three, .nmbr_dot.dot-three, .nmbr-dot.dot-three {
   background-color: #e4a032;
   color: #fff;
   border-color: #df951d; }
+  .dot.dot-three.dot-blank, .number_dot.dot-three.dot-blank, .number-dot.dot-three.dot-blank, .nmbr_dot.dot-three.dot-blank, .nmbr-dot.dot-three.dot-blank {
+    background-color: transparent;
+    color: #e4a032;
+    border-color: #df951d; }
+  .dot.dot-three.dot-blank-soft, .number_dot.dot-three.dot-blank-soft, .number-dot.dot-three.dot-blank-soft, .nmbr_dot.dot-three.dot-blank-soft, .nmbr-dot.dot-three.dot-blank-soft {
+    background-color: transparent;
+    color: #e4a032;
+    border-color: rgba(223, 149, 29, 0.42); }
 .dot.dot-facebook, .number_dot.dot-facebook, .number-dot.dot-facebook, .nmbr_dot.dot-facebook, .nmbr-dot.dot-facebook {
   background-color: #3b5998;
   color: #fff;
   border-color: #344e86; }
+  .dot.dot-facebook.dot-blank, .number_dot.dot-facebook.dot-blank, .number-dot.dot-facebook.dot-blank, .nmbr_dot.dot-facebook.dot-blank, .nmbr-dot.dot-facebook.dot-blank {
+    background-color: transparent;
+    color: #3b5998;
+    border-color: #344e86; }
+  .dot.dot-facebook.dot-blank-soft, .number_dot.dot-facebook.dot-blank-soft, .number-dot.dot-facebook.dot-blank-soft, .nmbr_dot.dot-facebook.dot-blank-soft, .nmbr-dot.dot-facebook.dot-blank-soft {
+    background-color: transparent;
+    color: #3b5998;
+    border-color: rgba(52, 78, 134, 0.42); }
 .dot.dot-google, .number_dot.dot-google, .number-dot.dot-google, .nmbr_dot.dot-google, .nmbr-dot.dot-google {
   background-color: #dd4b39;
   color: #fff;
   border-color: #d73925; }
+  .dot.dot-google.dot-blank, .number_dot.dot-google.dot-blank, .number-dot.dot-google.dot-blank, .nmbr_dot.dot-google.dot-blank, .nmbr-dot.dot-google.dot-blank {
+    background-color: transparent;
+    color: #dd4b39;
+    border-color: #d73925; }
+  .dot.dot-google.dot-blank-soft, .number_dot.dot-google.dot-blank-soft, .number-dot.dot-google.dot-blank-soft, .nmbr_dot.dot-google.dot-blank-soft, .nmbr-dot.dot-google.dot-blank-soft {
+    background-color: transparent;
+    color: #dd4b39;
+    border-color: rgba(215, 57, 37, 0.42); }
 .dot.dot-twitter, .number_dot.dot-twitter, .number-dot.dot-twitter, .nmbr_dot.dot-twitter, .nmbr-dot.dot-twitter {
   background-color: #00aced;
   color: #fff;
   border-color: #0099d3; }
+  .dot.dot-twitter.dot-blank, .number_dot.dot-twitter.dot-blank, .number-dot.dot-twitter.dot-blank, .nmbr_dot.dot-twitter.dot-blank, .nmbr-dot.dot-twitter.dot-blank {
+    background-color: transparent;
+    color: #00aced;
+    border-color: #0099d3; }
+  .dot.dot-twitter.dot-blank-soft, .number_dot.dot-twitter.dot-blank-soft, .number-dot.dot-twitter.dot-blank-soft, .nmbr_dot.dot-twitter.dot-blank-soft, .nmbr-dot.dot-twitter.dot-blank-soft {
+    background-color: transparent;
+    color: #00aced;
+    border-color: rgba(0, 153, 211, 0.42); }
 .dot.dot-paypal, .number_dot.dot-paypal, .number-dot.dot-paypal, .nmbr_dot.dot-paypal, .nmbr-dot.dot-paypal {
   background-color: #1784cb;
   color: #fff;
   border-color: #1475b4; }
+  .dot.dot-paypal.dot-blank, .number_dot.dot-paypal.dot-blank, .number-dot.dot-paypal.dot-blank, .nmbr_dot.dot-paypal.dot-blank, .nmbr-dot.dot-paypal.dot-blank {
+    background-color: transparent;
+    color: #1784cb;
+    border-color: #1475b4; }
+  .dot.dot-paypal.dot-blank-soft, .number_dot.dot-paypal.dot-blank-soft, .number-dot.dot-paypal.dot-blank-soft, .nmbr_dot.dot-paypal.dot-blank-soft, .nmbr-dot.dot-paypal.dot-blank-soft {
+    background-color: transparent;
+    color: #1784cb;
+    border-color: rgba(20, 117, 180, 0.42); }
+.dot.dot-default.dot-blank, .number_dot.dot-default.dot-blank, .number-dot.dot-default.dot-blank, .nmbr_dot.dot-default.dot-blank, .nmbr-dot.dot-default.dot-blank {
+  color: #333; }
+.dot.dot-default.dot-blank-soft, .number_dot.dot-default.dot-blank-soft, .number-dot.dot-default.dot-blank-soft, .nmbr_dot.dot-default.dot-blank-soft, .nmbr-dot.dot-default.dot-blank-soft {
+  color: #333; }
 
 .smallReadFont {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
