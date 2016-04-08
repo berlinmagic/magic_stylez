@@ -266,18 +266,33 @@
         .btn-round + .<%= btn %>
       </button>
     <% end %>
+    <div class="clearfix"></div>
+    <br/>
     <h4>Borderless</h4>
     <% for btn in btns: %>
       <button class="btn btn-success btn-borderless btn-blur <%= btn %>">
         .btn-borderless + .<%= btn %>
       </button>
     <% end %>
+    <div class="clearfix"></div>
+    <br/>
     <h4>Width</h4>
     <% for btn in btns: %>
       <button class="btn btn-primary btn-width <%= btn %>">
         .btn-width + .<%= btn %>
       </button>
     <% end %>
+    <div class="clearfix"></div>
+    <br/>
+    <h4>Uppercase</h4>
+    <p><code>.btn-uppercase</code> | <code>.btn-upcase</code></p>
+    <% for btn in btns: %>
+      <button class="btn btn-primary btn-uppercase <%= btn %>">
+        .btn-uppercase + .<%= btn %>
+      </button>
+    <% end %>
+    <div class="clearfix"></div>
+    <br/>
   </div>
 </div>
 

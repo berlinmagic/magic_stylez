@@ -190,6 +190,16 @@ $darkBgButtons: info warning;
     &.btn-xl { @include horizontal-padding( 50px ); }
 }
 
+.btn-uppercase, .btn-upcase {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    &.btn-xs { letter-spacing: 1px; word-spacing: 3px; }
+    &.btn-sm { letter-spacing: 1px; word-spacing: 3px; }
+    &.btn-lg { letter-spacing: 2px; word-spacing: 5px; }
+    &.btn-xl { letter-spacing: 2px; word-spacing: 6px; }
+}
+
 
 
 // # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 

@@ -16,6 +16,89 @@
 
 <div class="section sctn-sm">
   <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.94</h4>
+    <p>
+      + add grid table helper <code>th|td.col-1..12</code>
+    </p>
+    <p>
+      + add middled table helper <code>.table.middled|table-middled</code>
+    </p>
+    <p>
+      + add uppercase button helper <code>.btn.btn-upcase|uppercase</code>
+    </p>
+    <p>
+      + add buckets and tiles
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.93</h4>
+    <p>
+      + add no-head table helper <code>.table.table-no-head</code>
+    </p>
+    <p>
+      + add buckets and tiles
+    </p>
+  </div>
+</div>
+
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.92</h4>
+    <p>
+      + add dots: <code>.dot</code>
+    </p>
+    <p>
+      + add number dots: <code>.number-dot</code>
+    </p>
+    <p>
+      + add flip effect preview
+    </p>
+  </div>
+</div>
+
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.91</h4>
+    <p>
+      + add blank-soft-button: <code>.btn-blank-soft</code>
+    </p>
+    <p>
+      + add blank-soft-label: <code>.btn-label-soft</code>
+    </p>
+    <p>
+      + add round label <code>.label.label-round</code>
+    </p>
+    <p>
+      + add width label <code>.label.label-width</code>
+    </p>
+    <p>
+      + improve iconset: <code>bettericons</code> .. bigger font-size
+    </p>
+    <p>
+      + add avatar and logo <code>img.avatar|logo</code>
+    </p>
+    <p>
+      + add image-card <code>img.image-card</code>
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.90</h4>
+    <p>
+      + improve iconset: <code>bettericons</code>
+    </p>
+  </div>
+</div>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
     <h4><small>Version</small> 0.0.0.89</h4>
     <p>
       + added iconset: <code>bettericons</code>

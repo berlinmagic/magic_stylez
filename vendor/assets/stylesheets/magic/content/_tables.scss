@@ -1,6 +1,8 @@
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+// Rewrites and Additions
 table.table {
     
-    &.table-middled tr {
+    &.table-middled tr, &.middled tr {
         th, td { 
             vertical-align: middle;
             & > * { vertical-align: middle; }
@@ -19,10 +21,44 @@ table.table {
         th, td { padding: 20px 8px; }
     }
     
+    // no-header
+    &.table-no-head > tr:first-child,  &.table-no-head tbody tr:first-child {
+        border-top: none;
+        td, th { border-top: none; }
+    }
+    
+    // grid steps
+    th, td {
+        @for $i from 1 through 12 {
+            &.col-#{$i} { width: percentage(1 / 12 * $i); }
+        }
+    }
+    
+}
+
+// table.table-no-head > tr:first-child,  table.table-no-head tbody tr:first-child {
+//     border-top: none;
+//     td, th { border-top: none; }
+// }
+
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+// more stuff
+table.facts {
+  width: auto;
+  margin: 0 auto;
+  border-spacing: 5px;
+  &.prdct {
+      margin: 0;
+  }
+}
+table.facts th { font-weight: 200; color: #666; text-align: right; }
+table.facts td { font-weight: 400; color: #333; text-align: left; }
+
+table.facts {
+    border-spacing: 8px 0;
+    border-collapse: separate;
 }
 
 
-table.table-no-head > tr:first-child,  table.table-no-head tbody tr:first-child {
-    border-top: none;
-    td, th { border-top: none; }
-}
+
