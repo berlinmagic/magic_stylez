@@ -237,6 +237,9 @@
 	}
 	
 	.navbar-nav {
+	    
+	    @media (min-width: $grid-float-breakpoint) { height: $navHeight; }
+	    
 		// a:not(.btn) { }
 		& > li > a, & > a  {
 			padding: $padHorizontal $navbar-padding-horizontal;
