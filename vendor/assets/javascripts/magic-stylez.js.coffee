@@ -16,6 +16,8 @@
 #= require magic/circle_diagram
 #= require magic/helper
 #= require magic/collapse
+#= require magic/check_switch
+#= require magic/wrapped_fields
 
 icon = (icn) ->
   "<i class='icon icon-#{icn}'></i>"

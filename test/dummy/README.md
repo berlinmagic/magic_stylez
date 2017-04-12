@@ -17,3 +17,9 @@ copy page-html ... because there is no page-caching in rails4 :(
 - /fixed-header
 - /responsive-slidebar
 
+
+## new 
+
+use to get cached pages:
+
+/cache_pages

@@ -1,0 +1,105 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Wrapped Fields</h1>
+  </div>
+</div>
+
+<div class="section sctn-xs dark">
+  <div class="corset">
+    <h4>dependencies:</h4> 
+    <table class="table table-no-head table-left table-condensed half-press">
+      <tr>
+        <td>CSS: </td>
+        <td class="col-12">
+          <code>@import "magic/content/wrapped_fields";</code>
+        </td>
+      </tr>
+      <tr>
+        <td>JS: </td>
+        <td class="col-12">
+          <code>//= magic/wrapped_fields</code>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset tight">
+    
+    <label for="sample-email" class="wrapping">
+      <span class="input-label">Email</span>
+      <div class="input-wrapper email-wrapper">
+        <input type="text" name="onefield" placeholder="Email" />
+      </div>
+    </label>
+    <label for="bla" class="wrapping">
+      <span class="input-label">Password</span>
+      <div class="input-wrapper password-wrapper">
+        <input type="text" name="bla" id="bla" placeholder="Password" />
+      </div>
+    </label>
+    
+    <br/>
+    
+    <div class="well sm">
+      Not a password-field to stop browsers from autofill
+    </div>
+    
+  </div>
+</div>
+
+<div class="section dark shine-top">
+  <div class="corset">
+    <pre><code>
+    &lt;label for=&quot;email&quot; class=&quot;wrapping&quot;&gt;
+      &lt;span class=&quot;input-label&quot;&gt;Email&lt;/span&gt;
+      &lt;div class=&quot;input-wrapper email-wrapper&quot;&gt;
+        &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; placeholder=&quot;Email&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/label&gt;
+
+    &lt;label for=&quot;password&quot; class=&quot;wrapping&quot;&gt;
+      &lt;span class=&quot;input-label&quot;&gt;Password&lt;/span&gt;
+      &lt;div class=&quot;input-wrapper password-wrapper&quot;&gt;
+        &lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; placeholder=&quot;Password&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/label&gt;
+    </code></pre>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset tight">
+    
+    <label for="number" class="wrapping">
+      <span class="input-label">Card-Number</span>
+      <span class="Card-Type"></span>
+      <div class="input-wrapper number-wrapper">
+        <input type="number" name="number" id="number" placeholder="Card-Number" />
+      </div>
+    </label>
+  
+    <div class="row">
+      <div class="col-sm-6 left_text">
+        <label for="expiration" class="wrapping">
+          <span class="input-label">Expiration</span>
+          <div class="input-wrapper date-wrapper">
+            <input type="text" name="expiration" placeholder="Expiration" />
+          </div>
+        </label>
+      </div>
+      <div class="col-sm-6">
+        <label for="cvv" class="wrapping">
+          <span class="input-label">CVV</span>
+          <div class="input-wrapper cvv-wrapper">
+            <input type="text" name="cvv" id="cvv" placeholder="CVV" />
+          </div>
+        </label>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+

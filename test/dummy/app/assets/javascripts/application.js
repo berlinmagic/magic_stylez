@@ -15,6 +15,8 @@
 //= require magic-stylez
 //= require assets
 //= require magic/render_eco
+//= require magic/wrapped_fields
+//= require magic/check_switch
 //= require app
 //- require_self
 

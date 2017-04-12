@@ -106,13 +106,9 @@
               <label>check_switch</label>
             </div>
             <div class="col-sm-3 press">
-              <div class="check_switch">
+              <div class="check_switch inactive">
+                <input type="checkbox" name="checker" value="on">
                 <div class="switch_toggle"></div>
-              </div>
-            </div>
-            <div class="col-sm-4 press">
-              <div class="check">
-                <a href="#" class="checka"><i class="icon-ok"></i></a>
               </div>
             </div>
           </div>

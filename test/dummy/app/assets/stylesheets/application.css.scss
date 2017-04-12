@@ -1,4 +1,6 @@
 @import "magic-stylez";
+@import "magic/content/wrapped_fields";
+@import "magic/content/check_switch";
 
 html, body {
 	width: 100%; height: 100%; 
@@ -112,60 +114,60 @@ body.aside-on {
 
 
 
-.check_switch {
-	display: block; position: relative; margin: 0; padding: 0;
-	margin: 7px 0 0 7px;
-	@include border-radius(100px);
-	width: 30px;
-	height: 15px;
-	border: solid 1px #ccc;
-	background: #c5c5c5;
-	@include box-shadow( inset 0 1px 1px 0 rgba(0,0,0,.50) );
-	.switch_toggle {
-		display: block; position: relative; margin: 0; padding: 0;
-		width: 17px; height: 17px;
-		position: absolute;
-		left: -2px; top: -2px;
-		background: #fff;
-		@include border-radius(100px);
-		border: solid 1px #ccc;
-		@include box-shadow( 0 1px 1px 0 rgba(0,0,0,.30) );
-		@include linear-gradient(#ffffff, #e5e5e5);
-	}
-}
-
-
-.check {
-	display: block; position: relative;
-	width: 30px;
-	height: 28px;
-	margin: -2px 2px;
-	border: none;
-	float: left;
-	text-align: center;
-	// clickable and disabled checkbox
-	.checka {
-	  display: block;
-		position: absolute;
-		top: 9px; right: 10px; bottom: 9px; left: 9px;
-		border: solid 1px #ccc;
-		color: #ccc;
-		i {
-		  display: none;
-		  margin: -3px -4px -3px 0;
-		  font-size: 15px;
-			text-decoration: none;
-			line-height: 22px;
-		}
-		&.checked i { display: block; }
-	}
-	// clickable checkbox
-	a.checka {
-	  color: #aaa;
-	  border: solid 1px #999;
-	}
-}
-
+// .check_switch {
+// 	display: block; position: relative; margin: 0; padding: 0;
+// 	margin: 7px 0 0 7px;
+// 	@include border-radius(100px);
+// 	width: 30px;
+// 	height: 15px;
+// 	border: solid 1px #ccc;
+// 	background: #c5c5c5;
+// 	@include box-shadow( inset 0 1px 1px 0 rgba(0,0,0,.50) );
+// 	.switch_toggle {
+// 		display: block; position: relative; margin: 0; padding: 0;
+// 		width: 17px; height: 17px;
+// 		position: absolute;
+// 		left: -2px; top: -2px;
+// 		background: #fff;
+// 		@include border-radius(100px);
+// 		border: solid 1px #ccc;
+// 		@include box-shadow( 0 1px 1px 0 rgba(0,0,0,.30) );
+// 		@include linear-gradient(#ffffff, #e5e5e5);
+// 	}
+// }
+// 
+// 
+// .check {
+// 	display: block; position: relative;
+// 	width: 30px;
+// 	height: 28px;
+// 	margin: -2px 2px;
+// 	border: none;
+// 	float: left;
+// 	text-align: center;
+// 	// clickable and disabled checkbox
+// 	.checka {
+// 	  display: block;
+// 		position: absolute;
+// 		top: 9px; right: 10px; bottom: 9px; left: 9px;
+// 		border: solid 1px #ccc;
+// 		color: #ccc;
+// 		i {
+// 		  display: none;
+// 		  margin: -3px -4px -3px 0;
+// 		  font-size: 15px;
+// 			text-decoration: none;
+// 			line-height: 22px;
+// 		}
+// 		&.checked i { display: block; }
+// 	}
+// 	// clickable checkbox
+// 	a.checka {
+// 	  color: #aaa;
+// 	  border: solid 1px #999;
+// 	}
+// }
+// 
 
 
 

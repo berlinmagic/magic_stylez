@@ -1,0 +1,178 @@
+<div class="section head">
+  <div class="corset">
+    <h1>Check-Switch <small>= Nice Checkboxes and Radios</small></h1>
+  </div>
+</div>
+
+<div class="section sctn-xs dark">
+  <div class="corset">
+    <h4>dependencies:</h4> 
+    <table class="table table-no-head table-left table-condensed half-press">
+      <tr>
+        <td class="col-1">CSS: </td>
+        <td><code>@import "magic/content/check_switch";</code></td>
+      </tr>
+      <tr>
+        <td class="col-1">JS: </td>
+        <td><code>//= magic/check_switch</code></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset tight">
+    
+    <% label_col  = "col-sm-9" %>
+    <% switch_col = "col-sm-3 right_text" %>
+  
+  
+    <div class="form-line">
+      <div class="line-field">
+        <div class="row no-press">
+          <div class="<%= label_col %>">
+            <label for="foobar" class="switch_label">Do you like Foobar</label>
+          </div>
+          <div class="<%= switch_col %>">
+            <div class="check_switch active">
+              <input type="checkbox" name="foobar" id="foobar" value="like" checked>
+              <div class="switch_toggle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line-description">
+        Decide if you like FOOBAR or not so much .. its all your descission
+      </div>
+    </div>
+  
+    <hr class="half-press"/>
+  
+    <div class="form-line">
+      <div class="line-field">
+        <div class="row no-press">
+          <div class="<%= label_col %>">
+            <label for="foo" class="switch_label">Do you like Foo</label>
+          </div>
+          <div class="<%= switch_col %>">
+            <div class="check_switch inactive">
+              <input type="checkbox" name="foo" id="foo" value="like">
+              <div class="switch_toggle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="half-press"/>
+  
+    <div class="form-line">
+      <div class="line-field">
+        <div class="row no-press">
+          <div class="<%= label_col %>">
+            <label for="bar" class="switch_label">Do you like Bar</label>
+          </div>
+          <div class="<%= switch_col %>">
+            <div class="check_switch inactive">
+              <input type="checkbox" name="bar" id="bar" value="like">
+              <div class="switch_toggle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+  </div>
+</div>
+
+<div class="section dark shine-top">
+  <div class="corset">
+    <pre><code>
+  &lt;div class=&quot;check_switch active&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;foobar&quot; id=&quot;foobar&quot; value=&quot;like&quot; checked&gt;
+    &lt;div class=&quot;switch_toggle&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;check_switch inactive&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;foo&quot; id=&quot;foo&quot; value=&quot;like&quot;&gt;
+    &lt;div class=&quot;switch_toggle&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+    </code></pre>
+  </div>
+</div>
+
+<div class="section hard-top">
+  <div class="corset tight">
+    
+    <% label_col  = "col-sm-11" %>
+    <% switch_col = "col-sm-1 left_text" %>
+    
+    <div class="row no-press">
+      <div class="<%= switch_col %>">
+        <div class="radio_switch active liking">
+          <input type="radio" name="like" id="like_foobar" value="foobar" checked>
+          <div class="switch_toggle"></div>
+        </div>
+      </div>
+      <div class="<%= label_col %>">
+        <label for="like_foobar" class="switch_label">Do you like FooBar?</label>
+      </div>
+    </div>
+    <hr class="half-press"/>
+    
+    <div class="row no-press">
+      <div class="<%= switch_col %>">
+        <div class="radio_switch inactive liking">
+          <input type="radio" name="like" id="like_foo" value="foo">
+          <div class="switch_toggle"></div>
+        </div>
+      </div>
+      <div class="<%= label_col %>">
+        <label for="like_foo" class="switch_label">Do you like Foo?</label>
+      </div>
+    </div>
+    <hr class="half-press"/>
+    
+    <div class="row no-press">
+      <div class="<%= switch_col %>">
+        <div class="radio_switch inactive liking">
+          <input type="radio" name="like" id="like_bar" value="bar">
+          <div class="switch_toggle"></div>
+        </div>
+      </div>
+      <div class="<%= label_col %>">
+        <label for="like_bar" class="switch_label">Do you like Bar?</label>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="section dark shine-top">
+  <div class="corset">
+    <pre><code>
+  &lt;div class=&quot;radio_switch active&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;like&quot; id=&quot;like_foo&quot; value=&quot;foo&quot; checked&gt;
+    &lt;div class=&quot;switch_toggle&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;radio_switch inactive&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;like&quot; id=&quot;like_bar&quot; value=&quot;bar&quot;&gt;
+    &lt;div class=&quot;switch_toggle&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+    </code></pre>
+    <strong>IF you have multiple Radio-Groups on one page</strong> use data-radio and class!
+    <pre><code>
+  &lt;div class=&quot;radio_switch active radio-group1&quot; data-radio=&quot;radio-group1&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;like&quot; id=&quot;like_foo&quot; value=&quot;foo&quot; checked&gt;
+    &lt;div class=&quot;switch_toggle&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;radio_switch inactive radio-group1&quot; data-radio=&quot;radio-group1&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;like&quot; id=&quot;like_bar&quot; value=&quot;bar&quot;&gt;
+    &lt;div class=&quot;switch_toggle&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+    </code></pre>
+  </div>
+</div>
