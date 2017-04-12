@@ -1,3 +1,43 @@
+<div class="fullpage-table" id="banner-berlin">
+  <div class="table-row">
+    <div class="cell table-cell header-cell">
+      
+      <div class="corset center_text">
+        <p class="highlight no-press">Header</p>
+      </div>
+      
+    </div>
+  </div>
+  <div class="table-row">
+    <div class="cell table-cell content-cell fill">
+      
+      <div class="corset center_text">
+        <h1 class="loud white-clr upcase">FullPage Table</h1>
+        <p class="loud white-clr">
+          FullPage-Tables always use full page size!
+        </p>
+      </div>
+      
+    </div>
+  </div>
+  <div class="table-row">
+    <div class="cell table-cell footer-cell">
+      
+      <div class="corset center_text">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+            <button class="btn btn-success btn-block help_arrow fakeClick" data-text="Go click me!">
+              Click Me
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
 <div class="fullpage-table" id="banner-one">
   <div class="table-row">
     <div class="banner-box responsive-hero with-footer with-header fill berlin">
@@ -23,7 +63,7 @@
           <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
               <!--<a href="#" class="btn btn-success btn-block btn-lg">Sign up now</a>-->
-              <button class="btn btn-success btn-block help_arrow" data-text="Go click me!">
+              <button class="btn btn-success btn-block help_arrow fakeClick" data-text="Go click me!">
                 Click Me
               </button>
             </div>
@@ -72,7 +112,7 @@
           <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
               <!--<a href="#" class="btn btn-success btn-block btn-lg">Sign up now</a>-->
-              <button class="btn btn-success btn-block help_arrow" data-text="Go click me!">
+              <button class="btn btn-success btn-block help_arrow fakeClick" data-text="Go click me!">
                 Click Me
               </button>
             </div>

@@ -99,6 +99,16 @@ $ ->
     console.log "main_template SCROLL"
 
 
+  $("body").on "click", ".fakeClick", (e) ->
+    e.preventDefault()
+    $(@).blur()
+    # alert "Why do you click here?\n\nStop that!"
+    if $(@).attr("data-text") == "Go click me!"
+      $(@).attr("data-text", "You really clicked?!")
+    else
+      $(@).attr("data-text", "Go click me!")
+    false
+
 
   $("body").on "click", "#mobile_header", ->
     $("body").toggleClass("aside-on")

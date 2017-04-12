@@ -7,12 +7,24 @@
 
 <div class="section sctn-sm hard-bottom">
   <div class="corset tight">
-    <p class="loud">I try to this allways up to date .. but sometimes important changes may not be in here so allways do <code>$ rails g magic_stylez:update</code> when update.</p>
+    <p class="loud">I try to keep this allways up to date .. but sometimes important changes may not be in here so allways do <code>$ rails g magic_stylez:update</code> when update.</p>
     
   </div>
 </div>
 
 <br/>
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.0.0.99</h4>
+    <p>
+      + add new <a href="#content/check_switch">check-switches and radios</a>
+    </p>
+    <p>
+      + add new <a href="#content/wrapped_fields">wrapped_fields</a> inspirered by braintree
+    </p>
+  </div>
+</div>
 
 <div class="section sctn-sm">
   <div class="corset tight">
