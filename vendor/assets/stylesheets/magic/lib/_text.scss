@@ -123,8 +123,8 @@
 	text-rendering: optimizelegibility;
 }
 
-@mixin antialiased_text {  @include noWrap; }
-@mixin antialiased-text {  @include noWrap; }
+@mixin antialiased_text {  @include antialiasedText; }
+@mixin antialiased-text {  @include antialiasedText; }
 
 
 // make it smooth and app-like on mobile (best in body!)

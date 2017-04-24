@@ -27,16 +27,14 @@
                 line-height: inherit;
                 @include border-radius( 10px );
                 padding: 0;
-				width: $line-height-computed + 10;
+				        width: $line-height-computed + 10;
                 margin-left: 10px;
                 text-align: center;
                 // background: $gray-light;
-				background: transparent;
-				color: inherit;
-				float: right;
-                &:before {
-                    
-                }
+        				background: transparent;
+        				color: inherit;
+        				float: right;
+                &:before {}
             }
         }
         
@@ -51,24 +49,24 @@
             //                     );
             background: $gray-softer;
 
-			// ####
-			overflow: hidden;
-			&:before, &:after {
-				display: block; position: absolute; content: "";
-				margin: 0; padding: 0;
-				z-index: 3;
-			}
-			&:before {
-				top: -10px; left: -10px; right: -10px;
-				height: 8px;
-				@include box-shadow( 0 3px 10px 0 rgba(0,0,0,.35));
-			}
-			&:after {
-				bottom: -10px; left: -10px; right: -10px;
-				height: 8px;
-				@include box-shadow( 0 -3px 10px 0 rgba(0,0,0,.30));
-			}
-			// ####
+      			// ####
+      			overflow: hidden;
+      			&:before, &:after {
+      				display: block; position: absolute; content: "";
+      				margin: 0; padding: 0;
+      				z-index: 3;
+      			}
+      			&:before {
+      				top: -10px; left: -10px; right: -10px;
+      				height: 8px;
+      				@include box-shadow( 0 3px 10px 0 rgba(0,0,0,.35));
+      			}
+      			&:after {
+      				bottom: -10px; left: -10px; right: -10px;
+      				height: 8px;
+      				@include box-shadow( 0 -3px 10px 0 rgba(0,0,0,.30));
+      			}
+      			// ####
             
             li {
                 // &:first-child { border-top: solid 1px $gray-light; }
@@ -76,11 +74,8 @@
                 a, span.lst_lnk {
                     padding: 5px 10px;
                     line-height: $line-height-computed;
-
-					background: $gray-softer;
-
+					          background: $gray-softer;
                     // background: transparent; color: $gray;
-
                 }
                 
                 .sub_nav {
@@ -109,37 +104,37 @@
         }
         
 		
-		&.active {
-			background: $blue-light;
+    		&.active {
+    			  background: $blue-light;
             & > a {
-				margin: 0 0 0 5px;
+				        margin: 0 0 0 5px;
                 color: $blue-light;
                 background: $white;
             }
         }
 		
 		
-		.sub_nav li {
-			&.current > a {
-				background: $gray-soft;
-			}
-			&.active > a {
-				color: $blue-light;
-				background: $gray-soft;
-	        }
-		}
+    		.sub_nav li {
+      			&.current > a {
+      				background: $gray-soft;
+      			}
+      			&.active > a {
+      				color: $blue-light;
+      				background: $gray-soft;
+    	      }
+    		}
 		
 
-		&.active {
-			background: $blue-light;
+		    &.active {
+			      background: $blue-light;
             & > a {
-				margin: 0 0 0 5px;
+				        margin: 0 0 0 5px;
                 color: $blue-light;
                 background: $white;
             }
         }
 		
-		a, span {
+		    a, span {
             i { 
                 font-size: $font-size-large;
                 margin-right: 3px;
@@ -151,13 +146,13 @@
         }
 		
         &.current, &.active {
-			a:hover, span:hover {
+			      a:hover, span:hover {
                 color: $blue !important;
                 // background: $gray-softer;
-				background: $gray-soft;
+				        background: $gray-soft;
             }
-			& > .sub_nav { display: block; }
-		}
+			      & > .sub_nav { display: block; }
+		    }
         
         // &:first-child { border-top: none; }
         &:last-child { border-bottom: none; }

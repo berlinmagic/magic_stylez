@@ -4,13 +4,13 @@
     margin: 0 10px !important; // margin: 0 5%;
     padding: 0; 
     background: transparent;
-	width: auto;
-    // max-width: 1200px;
-	text-align: inherit;
-	&.left { text-align: left; }
-	&.right { text-align: right; }
+  	width: auto;
+      // max-width: 1200px;
+  	text-align: inherit;
+  	&.left { text-align: left; }
+  	&.right { text-align: right; }
 
-	&.full { margin: 0 10px !important; }
+  	&.full { margin: 0 10px !important; }
     
     &.tight { margin: 0 30px !important; }
     &.extra-tight { margin: 0 40px !important; }
