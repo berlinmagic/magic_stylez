@@ -8,7 +8,7 @@ table.layout {
     @include border-radius(5px);
     border-collapse: separate;
     // overflow:hidden;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     
     td.tbox {
         
@@ -228,7 +228,7 @@ table.layout {
 			display: block; position: relative;
 			margin: 0;
 			@include border-radius( 0 );
-			@include box-sizing(border-box);
+			box-sizing: border-box;
 			width: 100%;
 			border: solid 1px $gray-light;
 			border-right: none;

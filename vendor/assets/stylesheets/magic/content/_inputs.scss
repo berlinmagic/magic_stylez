@@ -76,7 +76,7 @@
 				padding: $padding-base-vertical $padding-base-horizontal $padding-base-vertical 5px;
 				margin: 0;
 				height: $input-height-base + 1;
-				@include box-sizing(border-box);
+				box-sizing: border-box;
 				border: none;
 				@include box-shadow( none );
 				outline: none;

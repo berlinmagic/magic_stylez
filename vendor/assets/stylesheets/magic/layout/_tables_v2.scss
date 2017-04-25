@@ -124,7 +124,7 @@ $lyt_border_radius: 5px;
 			display: block; position: relative;
 			margin: 0;
 			@include border-radius( 0 );
-			@include box-sizing(border-box);
+			box-sizing: border-box;
 			// height: 32px;
 			width: 100%;
 			// border: solid 1px $gray-light;
@@ -148,7 +148,7 @@ $lyt_border_radius: 5px;
 		background: #fff;
 		margin: 0 0 $general-vertical-spacing-half;
 		padding: 5px;
-		@include box-sizing(border-box);
+		box-sizing: border-box;
 		text-align: left;
 		& > .cell, & > .box {
 			padding: 0 5px;

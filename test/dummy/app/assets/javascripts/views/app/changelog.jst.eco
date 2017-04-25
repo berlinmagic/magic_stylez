@@ -14,6 +14,23 @@
 
 <br/>
 
+
+<div class="section sctn-sm">
+  <div class="corset tight">
+    <h4><small>Version</small> 0.1.0</h4>
+    <p>
+      + add a real Version number .. is in use for some time now, so should work :)
+    </p>
+    <p>
+      + removed some bourbon and scss warnings
+    </p>
+    <p>
+      + fixed some typos
+    </p>
+  </div>
+</div>
+
+
 <div class="section sctn-sm">
   <div class="corset tight">
     <h4><small>Version</small> 0.0.0.99</h4>

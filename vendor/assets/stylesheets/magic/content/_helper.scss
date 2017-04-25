@@ -78,11 +78,11 @@
 // Background and Text colors
 // -------------------------
 @each $clrName, $clrValue in $appColorz {
-    .#{$clrName}-bg, .bg-#{$clrName} {
+    .#{"" + $clrName}-bg, .bg-#{"" + $clrName} {
         background: #{ $clrValue };
     }
-    .#{$clrName}-text, .text-#{$clrName}, .txt-#{$clrName}, .#{$clrName}-txt, 
-    .clr-#{$clrName}, .#{$clrName}-clr, .color-#{$clrName}, .#{$clrName}-color {
+    .#{"" + $clrName}-text, .text-#{"" + $clrName}, .txt-#{"" + $clrName}, .#{"" + $clrName}-txt, 
+    .clr-#{"" + $clrName}, .#{"" + $clrName}-clr, .color-#{"" + $clrName}, .#{"" + $clrName}-color {
         color: #{ $clrValue };
     }
 }
