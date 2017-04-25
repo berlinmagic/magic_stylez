@@ -4,6 +4,7 @@ class FrontController < ApplicationController
   
   def start
     Rails.logger.info "Front - Start"
+    @show_dev_bar = true
   end
   
   def templates

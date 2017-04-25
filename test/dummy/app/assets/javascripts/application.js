@@ -11,9 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require_tree ./views
 //= require magic-stylez
 //= require assets
+//= require_tree ./views
 //= require magic/render_eco
 //= require magic/wrapped_fields
 //= require magic/check_switch

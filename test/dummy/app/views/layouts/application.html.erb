@@ -31,6 +31,15 @@
   </script>
 </head>
 <body class="main_template">
+  <% if @show_dev_bar && Rails.env.production? %>
+  <div style="display: block; position: fixed; top: 0; right: 0; background: rgba(0,0,0,.25); color: #fff; z-index: 1111; padding: 10px 30px;">
+  
+    <a class="btn btn-warning pull-right" href="/cache_pages">
+      render pages
+    </a>
+  
+  </div>
+  <% end %>
   <a href="#" id="mobile_header" class="inline_table center_text">
     <div class="cell icn col-1 middle">
       <i class="olicons-show-sb"></i>

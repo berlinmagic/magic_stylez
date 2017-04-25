@@ -1,4 +1,4 @@
-currentPath = ""
+currentPath = null
 
 loadCircles = ->
   if $('.circle-diagram').length > 1

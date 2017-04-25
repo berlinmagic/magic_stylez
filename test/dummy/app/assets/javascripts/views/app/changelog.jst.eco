@@ -12,7 +12,12 @@
   </div>
 </div>
 
-<br/>
+<div class="section sctn-xs hard-bottom">
+  <div class="corset tight">
+    <p class="loud no-press">Current-Version: <strong><%= MagicStylezVersion %></strong></p>
+    
+  </div>
+</div>
 
 
 <div class="section sctn-sm">

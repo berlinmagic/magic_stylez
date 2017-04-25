@@ -50,12 +50,12 @@
 	}
 	
 	@each $clrName, $clrValue in $appColorz {
-	    &.#{$clrName}-bg, .#{$clrName}-bg, 
-	    &.bg-#{$clrName}, .bg-#{$clrName} {
+	    &.#{"" + $clrName}-bg, .#{"" + $clrName}-bg, 
+	    &.bg-#{"" + $clrName}, .bg-#{"" + $clrName} {
 	        background: #{ $clrValue };
 	    }
-	    &.#{$clrName}-text, .#{$clrName}-text, 
-	    &.text-#{$clrName}, .text-#{$clrName} {
+	    &.#{"" + $clrName}-text, .#{"" + $clrName}-text, 
+	    &.text-#{"" + $clrName}, .text-#{"" + $clrName} {
 	        color: #{ $clrValue };
 	    }
 	}
