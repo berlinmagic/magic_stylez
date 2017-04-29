@@ -11,7 +11,7 @@
   <div class="table-row">
     <div class="cell table-cell content-cell fill">
       
-      <div class="corset center_text">
+      <div class="corset responsive-hero center_text">
         <h1 class="loud white-clr upcase">FullPage Table</h1>
         <p class="loud white-clr">
           FullPage-Tables always use full page size!
@@ -38,42 +38,7 @@
 </div>
 <div class="clearfix"></div>
 
-<div class="fullpage-table" id="banner-one">
-  <div class="table-row">
-    <div class="banner-box responsive-hero with-footer with-header fill berlin">
-      <div class="banner-header">
-        <div class="corset">
-          <h1 class="loud">Fullpage Table</h1>
-        </div>
-      </div>
-      
-      <div class="banner-content">
-        <div class="corset">
-          <p class="loud">This is a fullpage-table, it allways uses fullpage-height<br/>(if content fits in).</p>
-          <div class="well">
-            surounding element (i.e. body) needs the following <em>css</em>:
-            <br/>
-            <code>width: 100%; height: 100%;</code>
-          </div>
-        </div>
-      </div>
-      
-      <div class="banner-footer" id="sign_up_banner">
-        <div class="corset">
-          <div class="row">
-            <div class="col-sm-4 col-sm-offset-4">
-              <!--<a href="#" class="btn btn-success btn-block btn-lg">Sign up now</a>-->
-              <button class="btn btn-success btn-block help_arrow fakeClick" data-text="Go click me!">
-                Click Me
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
+
 
 
 <div class="section shine-top">
@@ -81,45 +46,49 @@
     <h2>Usage</h2>
     <pre>
     <code>
-&lt;div class=&quot;fullpage-table&quot; id=&quot;front-banner&quot;&gt;
-  &lt;div class=&quot;table-row&quot;&gt;<br/>    &lt;div class=&quot;banner-box responsive-hero with-footer with-header fill wood&quot;&gt;<br/>      &lt;div class=&quot;banner-header&quot;&gt;<br/>        &lt;div class=&quot;corset&quot;&gt;<br/>          &lt;h1 class=&quot;loud&quot;&gt;Fullpage Table&lt;/h1&gt;<br/>        &lt;/div&gt;<br/>      &lt;/div&gt;<br/>      <br/>      &lt;div class=&quot;banner-content&quot;&gt;<br/>        &lt;div class=&quot;corset&quot;&gt;<br/>          &lt;p class=&quot;loud&quot;&gt;This is a fullpage-table, it allways uses fullpage-height (if content fits in).&lt;/p&gt;<br/>        &lt;/div&gt;<br/>      &lt;/div&gt;<br/>      <br/>      &lt;div class=&quot;banner-footer&quot; id=&quot;sign_up_banner&quot;&gt;<br/>        &lt;div class=&quot;corset&quot;&gt;<br/>          &lt;div class=&quot;row&quot;&gt;<br/>            &lt;div class=&quot;col-sm-4 col-sm-offset-4&quot;&gt;<br/>              &lt;a href=&quot;#&quot; class=&quot;btn btn-success btn-block btn-lg&quot;&gt;Sign up now&lt;/a&gt;<br/>            &lt;/div&gt;<br/>          &lt;/div&gt;<br/>        &lt;/div&gt;<br/>      &lt;/div&gt;<br/>      <br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;
+&lt;div class=&quot;fullpage-table&quot; id=&quot;banner-one&quot;&gt;<br/>  &lt;div class=&quot;table-row&quot;&gt;<br/>    &lt;div class=&quot;header-cell bright&quot;&gt;<br/>      &lt;div class=&quot;corset center_text&quot;&gt;<br/>        &lt;h1 class=&quot;loud&quot;&gt;Fullpage Table&lt;/h1&gt;<br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>  &lt;div class=&quot;table-row&quot;&gt;<br/>    &lt;div class=&quot;content-cell fill&quot;&gt;<br/>      &lt;div class=&quot;corset responsive-hero center_text&quot;&gt;<br/>        <br/>        &lt;p class=&quot;loud &quot;&gt;This is a fullpage-table, it allways uses fullpage-height&lt;br/&gt;(if content fits in).&lt;/p&gt;<br/>        &lt;div class=&quot;well&quot;&gt;<br/>          surounding element (i.e. body) needs the following &lt;em&gt;css&lt;/em&gt;:<br/>          &lt;br/&gt;<br/>          &lt;code&gt;width: 100%; height: 100%;&lt;/code&gt;<br/>        &lt;/div&gt;<br/>        <br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>  &lt;div class=&quot;table-row&quot;&gt;<br/>    &lt;div class=&quot;footer-cell bright&quot;&gt;<br/>      &lt;div class=&quot;corset center_text&quot;&gt;<br/>        <br/>        &lt;div class=&quot;row&quot;&gt;<br/>          &lt;div class=&quot;col-sm-4 col-sm-offset-4&quot;&gt;<br/>            &lt;!--&lt;a href=&quot;#&quot; class=&quot;btn btn-success btn-block btn-lg&quot;&gt;Sign up now&lt;/a&gt;--&gt;<br/>            &lt;button class=&quot;btn btn-success btn-block help_arrow fakeClick&quot; data-text=&quot;Go click me!&quot;&gt;<br/>              Click Me<br/>            &lt;/button&gt;<br/>          &lt;/div&gt;<br/>        &lt;/div&gt;<br/>        <br/>      &lt;/div&gt;<br/>    &lt;/div&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;<br/>
     </code>
     </pre>
   </div>
 </div>
 
-<div class="fullpage-table" id="banner-two">
+<div class="fullpage-table" id="banner-one">
+  
   <div class="table-row">
-    <div class="banner-box responsive-hero with-footer with-header fill berlin fixed-bg">
-      <div class="banner-header">
-        <div class="corset">
-          <h1 class="loud">Fullpage Table <small>with fixed Background</small></h1>
-        </div>
+    <div class="header-cell bright">
+      <div class="corset center_text">
+        <h1 class="loud">Fullpage Table</h1>
       </div>
-      
-      <div class="banner-content">
-        <div class="corset">
-          <p class="loud">This is a fullpage-table, it allways uses fullpage-height<br/>(if content fits in).</p>
+    </div>
+  </div>
+  <div class="table-row">
+    <div class="content-cell fill">
+      <div class="corset responsive-hero center_text">
+        
+        <p class="loud ">This is a fullpage-table, it allways uses fullpage-height<br/>(if content fits in).</p>
+        <div class="well">
+          surounding element (i.e. body) needs the following <em>css</em>:
           <br/>
-          <div class="well">
-            <strong>!!!</strong> fixed background doesn't work on chrome browser (Version 35.x - 39.x) <strong>!!!</strong>
+          <code>width: 100%; height: 100%;</code>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="table-row">
+    <div class="footer-cell bright">
+      <div class="corset center_text">
+        
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+            <!--<a href="#" class="btn btn-success btn-block btn-lg">Sign up now</a>-->
+            <button class="btn btn-success btn-block help_arrow fakeClick" data-text="Go click me!">
+              Click Me
+            </button>
           </div>
         </div>
+        
       </div>
-      
-      <div class="banner-footer" id="sign_up_banner">
-        <div class="corset">
-          <div class="row">
-            <div class="col-sm-4 col-sm-offset-4">
-              <!--<a href="#" class="btn btn-success btn-block btn-lg">Sign up now</a>-->
-              <button class="btn btn-success btn-block help_arrow fakeClick" data-text="Go click me!">
-                Click Me
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
     </div>
   </div>
 </div>

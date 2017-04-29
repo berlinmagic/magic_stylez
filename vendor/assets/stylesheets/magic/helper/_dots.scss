@@ -118,3 +118,67 @@
 
 
 
+.numbered_time_line {
+    display: block; position: relative;
+    
+    .numbered_line {
+        display: block; position: relative;
+        text-align: left;
+        padding: 6px 0 6px 50px;
+        margin: 0 0 40px;
+        
+        .number_dot {
+            position: absolute;
+            left: 0; top: 0;
+            background: $brand-color;
+            border: none;
+            line-height: 40px;
+            font-weight: 300;
+        }
+        p {
+            margin: 0;
+            line-height: 28px;
+            color: #333 !important;
+            font-weight: 400;
+        }
+    }
+    
+    &:before {
+        display: block; position: absolute;
+        margin: 0; padding: 0;
+        content: "";
+        top: 0; left: 19px; bottom: 0; width: 2px;
+        background: $brand-color;
+    }
+    
+}
+
+
+
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+@include responsiveStep-sm {
+
+    .numbered_time_line {
+        .numbered_line {
+            &:nth-child(even) { 
+                text-align: right;
+                margin-right: 50%; 
+                padding: 6px 30px 6px 0px;
+                .number_dot { left: auto; right: -20px; }
+            }
+            &:nth-child(odd) { 
+                margin-left: 50%; 
+                padding: 6px 0px 6px 30px;
+                .number_dot { left: -20px; }
+            }
+        }
+        &:before {
+            margin-left: -1px;
+            left: 50%;
+        }
+    
+    }
+
+}
+
+
