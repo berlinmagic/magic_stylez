@@ -92,3 +92,56 @@
     </div>
   </div>
 </div>
+
+
+<div class="section">
+  <div class="corset">
+    <h2>Sizes:</h2>
+    
+    <p>For <code>.header-cell</code>, <code>.content-cell</code> and <code>.footer-cell</code> within the <code>fullpage-table</code>.
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Padding-Top</th>
+          <th>Padding-Bottom</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th> </th>
+          <td>20px</td>
+          <td>20px</td>
+        </tr>
+        <tr>
+          <th>.xs<br/>.flat</th>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>.sm</th>
+          <td>10px</td>
+          <td>10px</td>
+        </tr>
+        <tr>
+          <th>.lg</th>
+          <td>30px</td>
+          <td>30px</td>
+        </tr>
+        <tr>
+          <th>.xl</th>
+          <td>40px</td>
+          <td>40px</td>
+        </tr>
+        <tr>
+          <th>.dark</th>
+          <td colspan="2">Dark Background (<code>$fullpageDarkBG</code>)</td>
+        </tr>
+        <tr>
+          <th>.bright</th>
+          <td colspan="2">Bright Background (<code>$fullpageBrightBG</code>)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

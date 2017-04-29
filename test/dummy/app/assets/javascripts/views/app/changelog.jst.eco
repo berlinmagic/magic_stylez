@@ -22,6 +22,19 @@
 
 <div class="section sctn-sm">
   <div class="corset tight">
+    <h4><small>Version</small> 0.1.1</h4>
+    <p>
+      + fullpage-table => <code>header-cell</code>, <code>footer-cell</code> default without bg
+    </p>
+    <p>
+      + add timeline for <a href="#helper/dots">dots</a>
+    </p>
+  </div>
+</div>
+
+
+<div class="section sctn-sm">
+  <div class="corset tight">
     <h4><small>Version</small> 0.1.0</h4>
     <p>
       + add a real Version number .. is in use for some time now, so should work :)

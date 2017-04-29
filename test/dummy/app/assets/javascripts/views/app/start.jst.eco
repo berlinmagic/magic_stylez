@@ -25,7 +25,7 @@
   <div class="corset full center_text">
     <h4 class="no-press-top">Warning</h4>
     <p class="gray-clr thin">This Gem is still work in process!</p>
-    <p class="gray-clr thin">Its just the start to outsource my style framework (I mostly rebuild for every app).</p>
+    <p class="gray-clr thin">(But it is already used in some production apps).</p>
     <p class="gray-clr thin">It is mostly driven by my own habits, so I don't know if its usefull for others.</p>
     <hr/>
     <h4>Info</h4>

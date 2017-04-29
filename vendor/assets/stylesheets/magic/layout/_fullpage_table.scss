@@ -4,6 +4,11 @@ html, body, #body {
 	// overflow-y: auto;
 }
 
+
+$fullpageBrightBG:    rgba(255,255,255,.42)     !default;
+$fullpageDarkBG:      rgba(0,0,0,.23)           !default;
+
+
 .fullpage-table, div.table {
 	width: 100%;
 	display: block;
@@ -19,11 +24,12 @@ html, body, #body {
   
   .header-cell, .footer-cell, .content-cell { 
     padding: 20px 0; 
+    &.xs, &.flat { padding: 0; }
     &.sm { padding: 10px 0; }
     &.lg { padding: 30px 0; }
-    &.lg { padding: 40px 0; }
-    &.bright {  background: rgba(255,255,255,.42); }
-    &.dark {    background: rgba(0,0,0,.23); }
+    &.xl { padding: 40px 0; }
+    &.bright {  background: $fullpageBrightBG; }
+    &.dark {    background: $fullpageDarkBG; }
   }
   
 }
