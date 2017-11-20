@@ -1,40 +1,35 @@
 .section {
-    display: block; position: relative;
-    margin: 0; 
-    padding: $section-padding 0;
-    // background: $white;
-    text-align: center;
+  display: block; position: relative;
+  margin: 0; 
+  padding: $section-padding 0;
+  // background: $white;
+  text-align: center;
     
 	font-size: $font-size-base;
+  
 	.corset, .container { background: inherit; }
 	
     
-    &.z, &.zindex, &.z-index { z-index: 1; }
+  &.z, &.zindex, &.z-index { z-index: 1; }
     
     
-    &.image {
-        &.fixed { background-attachment: fixed; /* position: static; */ z-index: 88; }
+  &.image {
+      &.fixed { background-attachment: fixed; /* position: static; */ z-index: 88; }
         
-        background-color: transparent;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-image: url('http://lorempixel.com/g/1200/500/nature/');
-		
-		// &.fixed { 
-		//     background: transparent image-url('magic/bgs/hdr_landsberger.jpg') no-repeat center center fixed; 
-		//     background-size: cover; 
-		// }
-		
-		.corset, .container { background: transparent; }
-    }
-    
-    &.noise {
-        .corset, .container { background: transparent; }
-    }
+      background-color: transparent;
+  		background-position: center center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		background-image: url('http://lorempixel.com/g/1200/500/nature/');
+		  .corset, .container { background: transparent; }
+  }
+  
+  &.noise {
+      .corset, .container { background: transparent; }
+  }
     
     
-    // 
+  // 
 	//   Header Section
 	// 
 	&.head {
@@ -56,55 +51,55 @@
 	// 
 	//   Sections with shine
 	// 
-    &.shine-top {
-        z-index: 1;
-        overflow: hidden;
-        &:before {
-            display: block; position: absolute; content: ""; z-index: 11;
-            margin: 0; padding: 0;
-            bottom: 100%; left: 10%; right: 10%; height: 100px;
-            @include spezial_radius( 500px / 20px );
-            @include box-shadow( 0 5px 20px 0 rgba(0,0,0,.23) );
-        }
-    }
-    &.shine-bottom {
-        z-index: 1;
-        overflow: hidden;
-        &:after {
-            display: block; position: absolute; content: ""; z-index: 11;
-            margin: 0; padding: 0;
-            top: 100%; left: 10%; right: 10%; height: 100px;
-            @include spezial_radius( 500px / 20px );
-            @include box-shadow( 0 -5px 20px 0 rgba(0,0,0,.23) );
-        }
-    }
+  &.shine-top {
+      z-index: 1;
+      overflow: hidden;
+      &:before {
+          display: block; position: absolute; content: ""; z-index: 11;
+          margin: 0; padding: 0;
+          bottom: 100%; left: 10%; right: 10%; height: 100px;
+          @include spezial_radius( 500px / 20px );
+          @include box-shadow( 0 5px 20px 0 rgba(0,0,0,.23) );
+      }
+  }
+  &.shine-bottom {
+      z-index: 1;
+      overflow: hidden;
+      &:after {
+          display: block; position: absolute; content: ""; z-index: 11;
+          margin: 0; padding: 0;
+          top: 100%; left: 10%; right: 10%; height: 100px;
+          @include spezial_radius( 500px / 20px );
+          @include box-shadow( 0 -5px 20px 0 rgba(0,0,0,.23) );
+      }
+  }
     
 
 	// 
 	//   Border Stylez
 	// 
-    &.hard-top {
-        border-top: solid 1px $main-border-color;
-        @include box-shadow( inset 0 1px 1px 0 rgba(255,255,255,.75) );
-    }
+  &.hard-top {
+      border-top: solid 1px $main-border-color;
+      @include box-shadow( inset 0 1px 1px 0 rgba(255,255,255,.75) );
+  }
 	&.hard-bottom {
-        border-bottom: solid 1px rgba(255,255,255,.75);
-        @include box-shadow( inset 0 -1px 1px 0 $main-border-color );
-    }
+      border-bottom: solid 1px rgba(255,255,255,.75);
+      @include box-shadow( inset 0 -1px 1px 0 $main-border-color );
+  }
 	&.hard-top.hard-bottom {
-		@include box-shadow( inset 0 1px 1px 0 rgba(255,255,255,.75), inset 0 -1px 1px 0 $main-border-color );
+		  @include box-shadow( inset 0 1px 1px 0 rgba(255,255,255,.75), inset 0 -1px 1px 0 $main-border-color );
 	}
 	
 	&.dotted-top {
-        border-top: dotted 2px $gray-light;
-        @include box-shadow( inset 0 1px 1px 0 rgba(255,255,255,.75) );
-    }
+      border-top: dotted 2px $gray-light;
+      @include box-shadow( inset 0 1px 1px 0 rgba(255,255,255,.75) );
+  }
 	&.dotted-bottom {
-        border-bottom: dotted 2px $gray-light;
-        @include box-shadow( 0 1px 1px 0 rgba(255,255,255,.75) );
-    }
+      border-bottom: dotted 2px $gray-light;
+      @include box-shadow( 0 1px 1px 0 rgba(255,255,255,.75) );
+  }
 	&.dotted-top, &.dotted-bottom {
-		@include box-shadow( inset 0 1px 1px 0 rgba(255,255,255,.75), 0 1px 1px 0 rgba(255,255,255,.75) );
+		  @include box-shadow( inset 0 1px 1px 0 rgba(255,255,255,.75), 0 1px 1px 0 rgba(255,255,255,.75) );
 	}
 	
 	// 
@@ -119,7 +114,7 @@
 	
 	&.flat { padding-top: 0; padding-bottom: 0; }
 	&.flat-top { padding-top: 0; }
-    &.flat-bottom { padding-bottom: 0; }
+  &.flat-bottom { padding-bottom: 0; }
 	
 	
 	// 
@@ -128,17 +123,17 @@
 	background: $section-background;
 	@include all_form_elements { background: $section-input-bg; }
 	
-    &.dark {
+  &.dark {
 		background: $section-dark-background;
 		.three-previews .preview { border-color: $main-border-color; }
 		@include all_form_elements { background: $section-dark-input-bg; }
-    }
-    &.black {
+  }
+  &.black {
 		background: #333;
 		color: #fff;
 		.three-previews .preview { border-color: $main-border-color; }
 		@include all_form_elements { background: $section-dark-input-bg; }
-    }
+  }
 	&.bright {
 		background: $section-bright-background;
 		@include all_form_elements { background: $section-bright-input-bg; }
@@ -151,9 +146,9 @@
 		background: $section-soft-background; 
 		@include all_form_elements { background: $section-soft-input-bg; }
 	}
-    &.blank { background: transparent; }
+  &.blank { background: transparent; }
     
-    &.one { 
+  &.one { 
 		background: $section-one-background; 
 		@include all_form_elements { background: $section-one-input-bg; }
 	}
@@ -171,49 +166,49 @@
 	//   Speech Section
 	// 
 	&.speech {
-        &:after {
-            display: block; position: absolute; content: "";
-            margin: 0; padding: 0;
-            width: 0; height: 0;
-            border: solid 10px transparent;
-            border-right:  solid 10px $section-background;
-            border-bottom: solid 10px $section-background;
-            bottom: -8px;
-            left: 50%;
-            margin-left: -8px;
-            @include rotation( 45 );
-            z-index: 99;
-        }
-        &.dark:after {
-            border-right:  solid 10px $section-dark-background;
-            border-bottom: solid 10px $section-dark-background;
-        }
-        &.bright:after {
-            border-right:  solid 10px $section-bright-background;
-            border-bottom: solid 10px $section-bright-background;
-        }
-        &.brand:after {
-            border-right:  solid 10px $section-brand-background;
-            border-bottom: solid 10px $section-brand-background;
-        }
-        &.soft:after {
-            border-right:  solid 10px $section-soft-background;
-            border-bottom: solid 10px $section-soft-background;
-        }
-        
-        &.one:after {
-            border-right:  solid 10px $section-one-background;
-            border-bottom: solid 10px $section-one-background;
-        }
-        &.two:after {
-            border-right:  solid 10px $section-two-background;
-            border-bottom: solid 10px $section-two-background;
-        }
-        &.three:after {
-            border-right:  solid 10px $section-three-background;
-            border-bottom: solid 10px $section-three-background;
-        }
-    }
+      &:after {
+          display: block; position: absolute; content: "";
+          margin: 0; padding: 0;
+          width: 0; height: 0;
+          border: solid 10px transparent;
+          border-right:  solid 10px $section-background;
+          border-bottom: solid 10px $section-background;
+          bottom: -8px;
+          left: 50%;
+          margin-left: -8px;
+          @include rotation( 45 );
+          z-index: 99;
+      }
+      &.dark:after {
+          border-right:  solid 10px $section-dark-background;
+          border-bottom: solid 10px $section-dark-background;
+      }
+      &.bright:after {
+          border-right:  solid 10px $section-bright-background;
+          border-bottom: solid 10px $section-bright-background;
+      }
+      &.brand:after {
+          border-right:  solid 10px $section-brand-background;
+          border-bottom: solid 10px $section-brand-background;
+      }
+      &.soft:after {
+          border-right:  solid 10px $section-soft-background;
+          border-bottom: solid 10px $section-soft-background;
+      }
+      
+      &.one:after {
+          border-right:  solid 10px $section-one-background;
+          border-bottom: solid 10px $section-one-background;
+      }
+      &.two:after {
+          border-right:  solid 10px $section-two-background;
+          border-bottom: solid 10px $section-two-background;
+      }
+      &.three:after {
+          border-right:  solid 10px $section-three-background;
+          border-bottom: solid 10px $section-three-background;
+      }
+  }
 	
 	
 	// 
